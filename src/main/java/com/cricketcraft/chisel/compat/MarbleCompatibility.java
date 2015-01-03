@@ -1,10 +1,8 @@
 package com.cricketcraft.chisel.compat;
 
-import net.minecraft.block.Block;
-
 import com.cricketcraft.chisel.carving.Carving;
-
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import net.minecraft.block.Block;
 
 public class MarbleCompatibility
 {
@@ -82,6 +80,7 @@ public class MarbleCompatibility
                             ClassBlockCompat.this.doAction(block);
                         }
                     };
+                    block.setHarvestLevel("chisel", 0, 0);
                 }
             };
         }
