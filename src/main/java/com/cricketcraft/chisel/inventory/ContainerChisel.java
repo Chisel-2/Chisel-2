@@ -72,6 +72,14 @@ public class ContainerChisel extends Container {
 		if (par3 == 2 && par2 == currentIndex)
 			return null;
 
+		// if the chisel was clicked, ignore the click
+		if (par1 >= 0) {
+			Slot slot = (Slot) this.inventorySlots.get(par1);
+			ItemStack stack = slot.getStack();
+			if (stack != null && stack.isItemEqual(chisel)) {
+				return null;
+			}
+		}
 		return super.slotClick(par1, par2, par3, par4EntityPlayer);
 	}
 
