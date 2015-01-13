@@ -19,6 +19,7 @@ public class ContainerChisel extends Container {
 	public ItemStack chisel;
 	public boolean finished;
 	public Carving carving;
+	private Slot activeChiselSlot;
 
 	public ContainerChisel(InventoryPlayer inventoryplayer, InventoryChiselSelection inv) {
 		inventory = inv;
@@ -45,7 +46,11 @@ public class ContainerChisel extends Container {
 
 		top += 58;
 		for (int i = 0; i < 9; i++) {
-			addSlotToContainer(new Slot(inventoryplayer, i, left + ((i % 9) * 18), top + (i / 9) * 18));
+			Slot slot = new Slot(inventoryplayer, i, left + ((i % 9) * 18), top + (i / 9) * 18);
+			if (i == currentIndex) {
+				activeChiselSlot = slot;
+			}
+			addSlotToContainer(slot);
 		}
 
 		chisel = inventoryplayer.getCurrentItem();
@@ -65,6 +70,14 @@ public class ContainerChisel extends Container {
 		// we need to subtract away all the other slots
 		if (par1 - inventory.getSizeInventory() - 27 == currentIndex)
 			return null;
+
+		// if the slot containing the active chisel was clicked, ignore the click
+		if (par1 >= 0 && activeChiselSlot != null) {
+			Slot slot = (Slot) this.inventorySlots.get(par1);
+			if (slot == activeChiselSlot) {
+				return null;
+			}
+		}
 
 		return super.slotClick(par1, par2, par3, par4EntityPlayer);
 	}
