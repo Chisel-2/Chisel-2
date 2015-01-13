@@ -19,12 +19,14 @@ public class ContainerChisel extends Container {
 	public ItemStack chisel;
 	public boolean finished;
 	public Carving carving;
+	private Slot activeChiselSlot;
 
 	public ContainerChisel(InventoryPlayer inventoryplayer, InventoryChiselSelection inv) {
 		inventory = inv;
 		playerInventory = inventoryplayer;
 		currentIndex = playerInventory.currentItem;
 		inv.container = this;
+
 
 		int[] leftOffsets = { 8, 26, 134, 152, 44, 116 };
 		int[] topOffsets = { 8, 26, 44, 62 };
@@ -52,7 +54,12 @@ public class ContainerChisel extends Container {
 		}
 
 		for (int l = 0; l < 9; l++) {
-			addSlotToContainer(l == currentIndex ? new SlotChiselPlayer(this, inventoryplayer, l, 8 + l * 18, 160 - 18) : new Slot(inventoryplayer, l, 8 + l * 18, 160 - 18));
+			if (l == currentIndex) {
+				activeChiselSlot = new SlotChiselPlayer(this, inventoryplayer, l, 8 + l * 18, 160 - 18);
+				addSlotToContainer(activeChiselSlot);
+			} else {
+				addSlotToContainer(new Slot(inventoryplayer, l, 8 + l * 18, 160 - 18));
+			}
 		}
 
 		chisel = inventoryplayer.getCurrentItem();
@@ -72,11 +79,10 @@ public class ContainerChisel extends Container {
 		if (par3 == 2 && par2 == currentIndex)
 			return null;
 
-		// if the chisel was clicked, ignore the click
-		if (par1 >= 0) {
+		// if the slot containing the active chisel was clicked, ignore the click
+		if (par1 >= 0 && activeChiselSlot != null) {
 			Slot slot = (Slot) this.inventorySlots.get(par1);
-			ItemStack stack = slot.getStack();
-			if (stack != null && stack.isItemEqual(chisel)) {
+			if (slot == activeChiselSlot) {
 				return null;
 			}
 		}
