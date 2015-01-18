@@ -1,7 +1,5 @@
 package com.cricketcraft.chisel.compat;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import mcp.mobius.waila.api.IWailaConfigHandler;
@@ -15,11 +13,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.api.ICarvable;
-import com.cricketcraft.chisel.block.BlockCarvable;
-import com.cricketcraft.chisel.block.BlockCarvableTorch;
-import com.cricketcraft.chisel.block.BlockPresent;
 import com.cricketcraft.chisel.carving.CarvableVariation;
 
 public class WailaCompat implements IWailaDataProvider {
