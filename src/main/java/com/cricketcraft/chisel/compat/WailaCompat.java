@@ -14,6 +14,7 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
 import com.cricketcraft.chisel.api.ICarvable;
+import com.cricketcraft.chisel.carving.CarvableVariation;
 
 public class WailaCompat implements IWailaDataProvider {
 
@@ -35,8 +36,14 @@ public class WailaCompat implements IWailaDataProvider {
 		if (accessor.getBlock() instanceof ICarvable) {
 			ICarvable block = (ICarvable) accessor.getBlock();
 			MovingObjectPosition pos = accessor.getPosition();
-			strings.add(block.getVariation(accessor.getWorld(), pos.blockX, pos.blockY, pos.blockZ, accessor.getMetadata()).getDescription());
+			CarvableVariation variation = block.getVariation(accessor.getWorld(), pos.blockX, pos.blockY, pos.blockZ, accessor.getMetadata());
+			String description = "";
+			if(variation != null)
+				description = variation.getDescription();
+		
+			strings.add(description);
 		}
+		
 		return strings;
 	}
 
