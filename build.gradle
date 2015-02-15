@@ -121,7 +121,7 @@ publishing {
     }
 
     repositories {
-        String prop = dev ? "chisel_mavendir" : "chisel_dev_mavendir"
+        String prop = dev ? "chisel_dev_mavendir" : "chisel_mavendir"
         if (project.hasProperty(prop)) {
             maven { url project.getProperty(prop) }
         }
@@ -165,3 +165,5 @@ curse {
     displayName = "Chisel 2 - ${mod_version}"
     additionalArtifact deobfJar, sourcesJar, apiJar
 }
+
+sourceSets { main { output.resourcesDir = output.classesDir } }

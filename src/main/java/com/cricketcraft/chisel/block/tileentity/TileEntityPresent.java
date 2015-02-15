@@ -1,110 +1,326 @@
 package com.cricketcraft.chisel.block.tileentity;
 
-import java.util.Iterator;
-import java.util.List;
-
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.tileentity.TileEntityChest;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
-import com.cricketcraft.chisel.inventory.ContainerPresent;
-import com.cricketcraft.chisel.inventory.InventoryLargePresent;
+import com.cricketcraft.chisel.init.ChiselBlocks;
+import com.cricketcraft.chisel.network.PacketHandler;
+import com.cricketcraft.chisel.network.message.MessagePresentConnect;
 
-public class TileEntityPresent extends TileEntityChest {
+public class TileEntityPresent extends TileEntity implements IInventory, IDoubleChest {
 
-	public int type;
-	private int ticksSinceSync;
-
-	public TileEntityPresent(int type) {
-		this.type = type;
-	}
-
-	@Override
-	public boolean isUseableByPlayer(EntityPlayer player) {
-		return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord) != this ? false : player.getDistanceSq(this.xCoord + 0.5D, this.yCoord + 0.5D, this.zCoord + 0.5D) <= 64.0D;
-	}
+	private TileEntityPresent connection = null;
+	private ForgeDirection cachedDir = null;
+	private boolean isParent;
+	private final ItemStack[] inventory = new ItemStack[27];
+	private int rotation;
+	private boolean autoSearch = true;
 
 	@Override
 	public void updateEntity() {
-		super.updateEntity();
-		this.checkForAdjacentChests();
-		++this.ticksSinceSync;
-		float f;
+		if (isConnected() && connection.isInvalid()) {
+			disconnect();
+		}
 
-		if (!this.worldObj.isRemote && this.numPlayersUsing != 0 && (this.ticksSinceSync + this.xCoord + this.yCoord + this.zCoord) % 200 == 0) {
-			this.numPlayersUsing = 0;
-			f = 5.0F;
-			List list = this.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox(this.xCoord - f, this.yCoord - f,
-					this.zCoord - f, this.xCoord + 1 + f, this.yCoord + 1 + f, this.zCoord + 1 + f));
-			Iterator iterator = list.iterator();
+		if (autoSearch && worldObj != null /* ugh */) {
+			if (cachedDir != null) {
+				connectTo(cachedDir);
+			} else {
+				findConnections();
+			}
+			autoSearch = false;
+		}
+	}
 
-			while (iterator.hasNext()) {
-				EntityPlayer entityplayer = (EntityPlayer) iterator.next();
+	public boolean isConnected() {
+		return connection != null;
+	}
 
-				if (entityplayer.openContainer instanceof ContainerPresent) {
-					IInventory iinventory = ((ContainerChest) entityplayer.openContainer).getLowerChestInventory();
+	private boolean connectTo(TileEntityPresent present, ForgeDirection dir) {
+		if (present.getBlockMetadata() == getBlockMetadata() && !present.isConnected() && Math.abs(present.xCoord - xCoord + present.yCoord - yCoord + present.zCoord - zCoord) == 1) {
+			connection = present;
+			connection.connection = this;
+			connection.cachedDir = dir.getOpposite();
+			connection.markDirty();
+			cachedDir = dir;
+			isParent = !present.isParent;
+			markDirty();
+			PacketHandler.INSTANCE.sendToDimension(new MessagePresentConnect(this, dir, true), worldObj.provider.dimensionId);
+			return true;
+		}
+		return false;
+	}
 
-					if (iinventory == this || iinventory instanceof InventoryLargePresent && ((InventoryLargePresent) iinventory).isPartOfLargePresent(this)) {
-						++this.numPlayersUsing;
+	public boolean connectTo(ForgeDirection dir) {
+		TileEntity te = worldObj.getTileEntity(xCoord + dir.offsetX, yCoord + dir.offsetY, zCoord + dir.offsetZ);
+		if (te instanceof TileEntityPresent) {
+			return connectTo((TileEntityPresent) te, dir);
+		}
+		return false;
+	}
+
+	public void disconnect() {
+		if (isConnected()) {
+			this.connection.cachedDir = null;
+			this.connection.connection = null;
+			this.connection.markDirty();
+			this.cachedDir = null;
+			this.connection = null;
+			this.markDirty();
+			PacketHandler.INSTANCE.sendToDimension(new MessagePresentConnect(this, ForgeDirection.UNKNOWN, false), worldObj.provider.dimensionId);
+		}
+	}
+
+	public TileEntityPresent getConnection() {
+		return connection;
+	}
+
+	public ForgeDirection getConnectionDir() {
+		return cachedDir == null ? ForgeDirection.UNKNOWN : cachedDir;
+	}
+
+	public boolean isParent() {
+		return isParent || !isConnected();
+	}
+
+	public int getRotation() {
+		return rotation;
+	}
+
+	public void setRotation(int rot) {
+		this.rotation = rot;
+	}
+
+	public void findConnections() {
+		if (!isConnected()) {
+			for (ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS) {
+				if (dir != ForgeDirection.UP && dir != ForgeDirection.DOWN) {
+					if (connectTo(dir)) {
+						break;
 					}
 				}
 			}
 		}
+	}
+	
+	public TileEntityPresent getParent() {
+		return isParent || connection == null ? this : connection;
+	}
 
-		this.prevLidAngle = this.lidAngle;
-		f = 0.1F;
-		double d2;
+	@Override
+	public AxisAlignedBB getRenderBoundingBox() {
+		return ChiselBlocks.present.getBoundingBox(this);
+	}
 
-		if (this.numPlayersUsing > 0 && this.lidAngle == 0.0F && this.adjacentChestZNeg == null && this.adjacentChestXNeg == null) {
-			double d1 = this.xCoord + 0.5D;
-			d2 = this.zCoord + 0.5D;
+	@Override
+	public void writeToNBT(NBTTagCompound tag)
+	{
+		super.writeToNBT(tag);
+		NBTTagList nbttaglist = new NBTTagList();
 
-			if (this.adjacentChestZPos != null) {
-				d2 += 0.5D;
-			}
-
-			if (this.adjacentChestXPos != null) {
-				d1 += 0.5D;
-			}
-
-			this.worldObj.playSoundEffect(d1, this.yCoord + 0.5D, d2, "random.chestopen", 0.5F, this.worldObj.rand.nextFloat() * 0.1F + 0.9F);
-		}
-
-		if (this.numPlayersUsing == 0 && this.lidAngle > 0.0F || this.numPlayersUsing > 0 && this.lidAngle < 1.0F) {
-			float f1 = this.lidAngle;
-
-			if (this.numPlayersUsing > 0) {
-				this.lidAngle += f;
-			} else {
-				this.lidAngle -= f;
-			}
-
-			if (this.lidAngle > 1.0F) {
-				this.lidAngle = 1.0F;
-			}
-
-			float f2 = 0.5F;
-
-			if (this.lidAngle < f2 && f1 >= f2 && this.adjacentChestZNeg == null && this.adjacentChestXNeg == null) {
-				d2 = this.xCoord + 0.5D;
-				double d0 = this.zCoord + 0.5D;
-
-				if (this.adjacentChestZPos != null) {
-					d0 += 0.5D;
-				}
-
-				if (this.adjacentChestXPos != null) {
-					d2 += 0.5D;
-				}
-
-				this.worldObj.playSoundEffect(d2, this.yCoord + 0.5D, d0, "random.chestclosed", 0.5F, this.worldObj.rand.nextFloat() * 0.1F + 0.9F);
-			}
-
-			if (this.lidAngle < 0.0F) {
-				this.lidAngle = 0.0F;
+		for (int i = 0; i < getTrueSizeInventory(); ++i)
+		{
+			if (inventory[i] != null)
+			{
+				NBTTagCompound nbttagcompound1 = new NBTTagCompound();
+				nbttagcompound1.setByte("Slot", (byte) i);
+				inventory[i].writeToNBT(nbttagcompound1);
+				nbttaglist.appendTag(nbttagcompound1);
 			}
 		}
+
+		tag.setTag("Items", nbttaglist);
+		tag.setBoolean("isParent", isParent);
+		tag.setInteger("rotation", rotation);
+		if (cachedDir != null) {
+			tag.setInteger("conDir", cachedDir.ordinal());
+		}
+	}
+
+	@Override
+	public void readFromNBT(NBTTagCompound tag)
+	{
+		super.readFromNBT(tag);
+		NBTTagList nbttaglist = tag.getTagList("Items", 10);
+
+		for (int i = 0; i < nbttaglist.tagCount(); ++i)
+		{
+			NBTTagCompound nbttagcompound1 = nbttaglist.getCompoundTagAt(i);
+			int j = nbttagcompound1.getByte("Slot") & 255;
+
+			if (j >= 0 && j < getTrueSizeInventory())
+			{
+				inventory[j] = ItemStack.loadItemStackFromNBT(nbttagcompound1);
+			}
+		}
+
+		this.isParent = tag.getBoolean("isParent");
+
+		this.rotation = tag.getInteger("rotation");
+		if (tag.hasKey("conDir")) {
+			cachedDir = ForgeDirection.values()[tag.getInteger("conDir")];
+		}
+		autoSearch = true;
+	}
+	
+	@Override
+	public Packet getDescriptionPacket() {
+		NBTTagCompound tag = new NBTTagCompound();
+		writeToNBT(tag);
+		return new S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tag);
+	}
+
+	@Override
+	public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity packet) {
+		readFromNBT(packet.func_148857_g());
+	}
+	
+	@Override
+	public boolean shouldRefresh(Block oldBlock, Block newBlock, int oldMeta, int newMeta, World world, int x, int y, int z) {
+		// prevent losing TE data when in-world chiseling
+		return oldBlock != newBlock;
+	}
+
+	private int getAdjustedSlot(int slot) {
+		slot %= getSizeInventory();
+		if (isConnected() && !isParent) {
+			slot = (slot + getTrueSizeInventory()) % getSizeInventory();
+		}
+		return slot;
+	}
+	
+	/* IInventory */
+
+	@Override
+	public int getSizeInventory() {
+		return isConnected() ? getTrueSizeInventory() + connection.getTrueSizeInventory() : getTrueSizeInventory();
+	}
+
+	@Override
+	public ItemStack getStackInSlot(int slot) {
+		slot = getAdjustedSlot(slot);
+		if (slot >= getTrueSizeInventory()) {
+			return isConnected() ? connection.inventory[slot % getTrueSizeInventory()] : null;
+		} else {
+			return inventory[slot];
+		}
+	}
+
+	@Override
+	public ItemStack decrStackSize(int slot, int amount)
+	{
+		slot = getAdjustedSlot(slot);
+		ItemStack[] inv = inventory;
+		if (isConnected() && slot >= getTrueSizeInventory()) {
+			inv = connection.inventory;
+			slot %= getTrueSizeInventory();
+		}
+
+		if (inv[slot] != null)
+		{
+			ItemStack itemstack;
+
+			if (inv[slot].stackSize <= amount)
+			{
+				itemstack = inv[slot];
+				inv[slot] = null;
+				this.markDirty();
+				return itemstack;
+			}
+			else
+			{
+				itemstack = inv[slot].splitStack(amount);
+
+				if (inv[slot].stackSize == 0)
+				{
+					inv[slot] = null;
+				}
+
+				this.markDirty();
+				return itemstack;
+			}
+		}
+		else
+		{
+			return null;
+		}
+	}
+
+	@Override
+	public ItemStack getStackInSlotOnClosing(int slot) {
+		return getStackInSlot(slot);
+	}
+
+	@Override
+	public void setInventorySlotContents(int slot, ItemStack stack) {
+		slot = getAdjustedSlot(slot);
+		if (slot < getTrueSizeInventory()) {
+			inventory[slot] = stack;
+		} else if (isConnected()) {
+			connection.inventory[slot % getTrueSizeInventory()] = stack;
+		}
+	}
+
+	@Override
+	public String getInventoryName() {
+		return "chisel.present";
+	}
+
+	@Override
+	public boolean hasCustomInventoryName() {
+		return false;
+	}
+
+	@Override
+	public int getInventoryStackLimit() {
+		return 64;
+	}
+
+	@Override
+	public boolean isUseableByPlayer(EntityPlayer p_70300_1_) {
+		return true;
+	}
+
+	@Override
+	public void openInventory() {
+		;
+	}
+
+	@Override
+	public void closeInventory() {
+		;
+	}
+
+	@Override
+	public boolean isItemValidForSlot(int p_94041_1_, ItemStack p_94041_2_) {
+		return true;
+	}
+	
+	/* IDoubleChest */
+	
+	@Override
+	public int getTrueSizeInventory() {
+		return inventory.length;
+	}
+	
+	@Override
+	public ItemStack getTrueStackInSlot(int slot) {
+		return inventory[slot % getTrueSizeInventory()];
+	}
+	
+	@Override
+	public void putStackInTrueSlot(int slot, ItemStack stack) {
+		inventory[slot % getTrueSizeInventory()] = stack; 
 	}
 }
