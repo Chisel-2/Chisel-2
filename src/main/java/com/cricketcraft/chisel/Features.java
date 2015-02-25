@@ -65,7 +65,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable aluminum = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable aluminum = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			aluminum.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/aluminum/caution");
 			aluminum.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/aluminum/crate");
@@ -82,7 +82,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable amber = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable amber = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("amber", GameRegistry.findBlock("Thaumcraft", "blockCosmeticOpaque"), 0, 0);
 			Carving.chisel.addVariation("amber", GameRegistry.findBlock("Thaumcraft", "blockCosmeticOpaque"), 1, 1);
 			amber.carverHelper.registerAll(amber, "amber");
@@ -94,7 +94,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable andesite = (BlockCarvable) new BlockCarvable(Material.rock).setHardness(2.0F).setResistance(10.0F).setCreativeTab(ChiselTabs.tabChiselBlocks);
+			BlockCarvable andesite = (BlockCarvable) new BlockCarvable(Material.rock).setHardness(2.0F).setResistance(10.0F).setCreativeTab(ChiselTabs.tabChisel);
 			andesite.carverHelper.setChiselBlockName("andesite");
 			andesite.carverHelper.addVariation("tile.andesite.0.desc", 0, "andesite/andesite");
 			andesite.carverHelper.addVariation("tile.andesite.1.desc", 1, "andesite/andesitePolished");
@@ -113,7 +113,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable antiBlock = (BlockCarvable) new BlockCarvableAntiBlock().setCreativeTab(ChiselTabs.tabChiselBlocks);
+			BlockCarvable antiBlock = (BlockCarvable) new BlockCarvableAntiBlock().setCreativeTab(ChiselTabs.tabChisel);
 			antiBlock.carverHelper.setChiselBlockName("Anti Block");
 			if (!Configurations.allowChiselCrossColors) {
 				antiBlock.carverHelper.forbidChiseling = true;
@@ -146,7 +146,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable arcane = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable arcane = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("arcane", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 6, 0);
 			Carving.chisel.addVariation("arcane", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 7, 1);
 			arcane.carverHelper.addVariation("tile.arcane.0.desc", 0, "arcane/moonEngrave");
@@ -215,7 +215,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable bloodRune = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable bloodRune = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("bloodRune", GameRegistry.findBlock("AWWayofTime", "AlchemicalWizardrybloodRune"), 0, 0);
 			bloodRune.carverHelper.addVariation("tile.bloodRune.0.desc", 0, "bloodMagic/bloodRuneArranged");
 			bloodRune.carverHelper.addVariation("tile.bloodRune.1.desc", 1, "bloodMagic/bloodRuneBricks");
@@ -232,7 +232,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable bloodBrick = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable bloodBrick = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("bloodBrick", GameRegistry.findBlock("AWWayofTime", "largeBloodStoneBrick"), 0, 0);
 			Carving.chisel.addVariation("bloodBrick", GameRegistry.findBlock("AWWayofTime", "bloodStoneBrick"), 0, 1);
 			bloodBrick.carverHelper.registerAll(bloodBrick, "bloodBrick");
@@ -244,7 +244,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable bookshelf = (BlockCarvable) new BlockCarvableBookshelf().setHardness(1.5F).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeWood);
+			BlockCarvable bookshelf = (BlockCarvable) new BlockCarvableBookshelf().setHardness(1.5F).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeWood);
 			Carving.chisel.addVariation("bookshelf", Blocks.bookshelf, 0, 0);
 			bookshelf.carverHelper.addVariation("tile.bookshelf.1.desc", 1, "bookshelf/rainbow");
 			bookshelf.carverHelper.addVariation("tile.bookshelf.2.desc", 2, "bookshelf/necromancer-novice");
@@ -264,7 +264,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable brickCustom = (BlockCarvable) new BlockCarvable(Material.rock).setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChiselBlocks);
+			BlockCarvable brickCustom = (BlockCarvable) new BlockCarvable(Material.rock).setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChisel);
 			Carving.chisel.addVariation("brickCustom", Blocks.brick_block, 0, 0);
 			brickCustom.carverHelper.addVariation("tile.brickCustom.1.desc", 1, "brickCustom/large");
 			brickCustom.carverHelper.addVariation("tile.brickCustom.2.desc", 2, "brickCustom/mortarless");
@@ -282,7 +282,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable bronze = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable bronze = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			bronze.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/bronze/caution");
 			bronze.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/bronze/crate");
@@ -299,7 +299,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable carpet_block = (BlockCarvable) new BlockCarvable(Material.cloth).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvable carpet_block = (BlockCarvable) new BlockCarvable(Material.cloth).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Block.soundTypeCloth);
 			carpet_block.carverHelper.setChiselBlockName("Carpet Block");
 			carpet_block.carverHelper.addVariation("tile.carpet_block.0.desc", 0, "carpet/white");
@@ -340,7 +340,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockMarbleCarpet carpet = (BlockMarbleCarpet) new BlockMarbleCarpet(Material.cloth).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.1F).setStepSound(Block.soundTypeCloth)
+			BlockMarbleCarpet carpet = (BlockMarbleCarpet) new BlockMarbleCarpet(Material.cloth).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.1F).setStepSound(Block.soundTypeCloth)
 					.setLightOpacity(0).setStepSound(Block.soundTypeCloth);
 			carpet.carverHelper.setChiselBlockName("Carpet");
 			carpet.carverHelper.addVariation("tile.carpet.0.desc", 0, "carpet/white");
@@ -417,7 +417,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable cloud = (BlockCloud) new BlockCloud().setHardness(0.2F).setCreativeTab(ChiselTabs.tabChiselBlocks).setLightOpacity(3).setStepSound(Block.soundTypeCloth);
+			BlockCarvable cloud = (BlockCloud) new BlockCloud().setHardness(0.2F).setCreativeTab(ChiselTabs.tabChisel).setLightOpacity(3).setStepSound(Block.soundTypeCloth);
 			cloud.carverHelper.addVariation("tile.cloud.0.desc", 0, "cloud/cloud");
 			cloud.carverHelper.addVariation("tile.cloud.1.desc", 1, "cloud/large");
 			cloud.carverHelper.addVariation("tile.cloud.2.desc", 2, "cloud/small");
@@ -445,7 +445,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable cobblestone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvable cobblestone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("cobblestone", Blocks.cobblestone, 0, 0);
 			cobblestone.carverHelper.addVariation("tile.cobblestone.0.desc", 1, "cobblestone/terrain-cobb-brickaligned");
@@ -473,7 +473,7 @@ public enum Features {
 		@Override
 		void addBlocks() {
 
-			BlockCarvable mossy_cobblestone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10.0F)
+			BlockCarvable mossy_cobblestone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10.0F)
 					.setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("mossy_cobblestone", Blocks.mossy_cobblestone, 0, 0);
 			mossy_cobblestone.carverHelper.addVariation("tile.stoneMoss.1.desc", 1, "cobblestonemossy/terrain-cobb-brickaligned");
@@ -500,7 +500,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable concrete = (BlockConcrete) new BlockConcrete().setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.5F);
+			BlockCarvable concrete = (BlockConcrete) new BlockConcrete().setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.5F);
 			concrete.carverHelper.addVariation("tile.concrete.0.desc", 0, "concrete/default");
 			concrete.carverHelper.addVariation("tile.concrete.1.desc", 1, "concrete/block");
 			concrete.carverHelper.addVariation("tile.concrete.2.desc", 2, "concrete/doubleslab");
@@ -533,7 +533,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable copper = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable copper = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			copper.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/copper/caution");
 			copper.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/copper/crate");
@@ -551,7 +551,7 @@ public enum Features {
 		@Override
 		void addBlocks() {
 
-			BlockCarvable diamond_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F).setResistance(10F).setStepSound(Block.soundTypeMetal);
+			BlockCarvable diamond_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChisel).setHardness(5F).setResistance(10F).setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("diamond_block", Blocks.diamond_block, 0, 0);
 			diamond_block.carverHelper.addVariation("tile.diamond.1.desc", 1, "diamond/terrain-diamond-embossed");
 			diamond_block.carverHelper.addVariation("tile.diamond.2.desc", 2, "diamond/terrain-diamond-gem");
@@ -574,7 +574,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable diorite = (BlockCarvable) new BlockCarvable(Material.rock).setHardness(2.0F).setResistance(10.0F).setCreativeTab(ChiselTabs.tabChiselBlocks);
+			BlockCarvable diorite = (BlockCarvable) new BlockCarvable(Material.rock).setHardness(2.0F).setResistance(10.0F).setCreativeTab(ChiselTabs.tabChisel);
 			diorite.carverHelper.setChiselBlockName("diorite");
 			diorite.carverHelper.addVariation("tile.diorite.0.desc", 0, "diorite/diorite");
 			diorite.carverHelper.addVariation("tile.diorite.1.desc", 1, "diorite/dioritePolished");
@@ -593,7 +593,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable dirt = (BlockCarvable) new BlockCarvable(Material.ground).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.5F).setStepSound(Block.soundTypeGravel)
+			BlockCarvable dirt = (BlockCarvable) new BlockCarvable(Material.ground).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.5F).setStepSound(Block.soundTypeGravel)
 					.setBlockName("dirt.default");
 			Carving.chisel.addVariation("dirt", Blocks.dirt, 0, 0);
 			dirt.carverHelper.setChiselBlockName("Dirt");
@@ -622,7 +622,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable emerald_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5.0F).setResistance(10.0F)
+			BlockCarvable emerald_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChisel).setHardness(5.0F).setResistance(10.0F)
 					.setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("emerald_block", Blocks.emerald_block, 0, 0);
 			emerald_block.carverHelper.addVariation("tile.emerald.1.desc", 1, "emerald/panel");
@@ -645,7 +645,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable factoryblock = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvable factoryblock = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Chisel.soundMetalFootstep);
 			factoryblock.carverHelper.setChiselBlockName("factoryblock");
 			factoryblock.carverHelper.addVariation("tile.factory.0.desc", 0, "factory/dots");
@@ -679,7 +679,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable fantasyblock = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+			BlockCarvable fantasyblock = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
 			fantasyblock.carverHelper.setChiselBlockName("Fantasy Block");
 			fantasyblock.carverHelper.addVariation("tile.fantasyblock.0.desc", 0, "fantasy/brick");
 			fantasyblock.carverHelper.addVariation("tile.fantasyblock.1.desc", 1, "fantasy/brick-faded");
@@ -700,7 +700,7 @@ public enum Features {
 			fantasyblock.carverHelper.registerAll(fantasyblock, "fantasyblock");
 			Carving.chisel.registerOre("fantasyblock", "fantasy");
 
-			BlockCarvable fantasyblock2 = (BlockCarvable) new BlockCarvable().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+			BlockCarvable fantasyblock2 = (BlockCarvable) new BlockCarvable().setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
 			fantasyblock2.carverHelper.addVariation("tile.fantasyblock2.0.desc", 0, "fantasy2/brick");
 			fantasyblock2.carverHelper.addVariation("tile.fantasyblock2.1.desc", 1, "fantasy2/brick-faded");
 			fantasyblock2.carverHelper.addVariation("tile.fantasyblock2.2.desc", 2, "fantasy2/brick-wear");
@@ -735,7 +735,7 @@ public enum Features {
 		void addBlocks() {
 			BlockCarvable futura = (BlockCarvable) new BlockCarvable(Material.rock/*
 																				 * , "futura/screenOverlay-ctm"
-																				 */).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+																				 */).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
 			futura.carverHelper.addVariation("tile.futura.0.desc", 0, "futura/WIP/screenMetallicWIP");
 			futura.carverHelper.addVariation("tile.futura.1.desc", 1, "futura/WIP/screenCyanWIP");
 			futura.carverHelper.addVariation("tile.futura.2.desc", 2, "futura/WIP/controllerWIP");
@@ -754,7 +754,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvableGlass glass = (BlockCarvableGlass) new BlockCarvableGlass().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.3F).setStepSound(Block.soundTypeGlass);
+			BlockCarvableGlass glass = (BlockCarvableGlass) new BlockCarvableGlass().setCreativeTab(ChiselTabs.tabChisel).setHardness(0.3F).setStepSound(Block.soundTypeGlass);
 			Carving.chisel.addVariation("glass", Blocks.glass, 0, 0);
 			glass.carverHelper.addVariation("tile.glass.1.desc", 1, "glass/terrain-glassbubble");
 			glass.carverHelper.addVariation("tile.glass.2.desc", 2, "glass/terrain-glass-chinese");
@@ -780,7 +780,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvablePane glass_pane = (BlockCarvablePane) new BlockCarvablePane(Material.glass, false).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.3F)
+			BlockCarvablePane glass_pane = (BlockCarvablePane) new BlockCarvablePane(Material.glass, false).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.3F)
 					.setStepSound(Block.soundTypeGlass);
 			Carving.chisel.addVariation("glass_pane", Blocks.glass_pane, 0, 0);
 			glass_pane.carverHelper.addVariation("tile.glass_pane.1.desc", 1, "glasspane/terrain-glassbubble");
@@ -839,7 +839,7 @@ public enum Features {
 				int glassId = i >> 1;
 				if (glassPrefix == 0) {
 					stainedGlassPane[glassId] = (BlockCarvablePane) new BlockCarvablePane(Material.glass, true).setStained(true).setHardness(0.3F).setStepSound(Block.soundTypeGlass)
-							.setBlockName("Stained Glass Pane").setCreativeTab(ChiselTabs.tabChiselBlocks);
+							.setBlockName("Stained Glass Pane").setCreativeTab(ChiselTabs.tabChisel);
 					stainedGlassPane[glassId].carverHelper.registerBlock(stainedGlassPane[glassId], blockName);
 					stainedGlassPane[glassId].carverHelper.blockName = "Stained Glass Pane";
 				}
@@ -864,7 +864,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvableGlowstone glowstone = (BlockCarvableGlowstone) new BlockCarvableGlowstone().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.3F).setLightLevel(1.0F)
+			BlockCarvableGlowstone glowstone = (BlockCarvableGlowstone) new BlockCarvableGlowstone().setCreativeTab(ChiselTabs.tabChisel).setHardness(0.3F).setLightLevel(1.0F)
 					.setStepSound(Block.soundTypeGlass);
 			Carving.chisel.addVariation("glowstone", Blocks.glowstone, 0, 0);
 			glowstone.carverHelper.addVariation("tile.lightstone.1.desc", 1, "lightstone/terrain-sulphur-cobble");
@@ -891,7 +891,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable gold_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(3F).setResistance(10F).setStepSound(Block.soundTypeMetal);
+			BlockCarvable gold_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChisel).setHardness(3F).setResistance(10F).setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("gold_block", Blocks.gold_block, 0, 0);
 			gold_block.carverHelper.addVariation("tile.gold.1.desc", 1, "gold/terrain-gold-largeingot");
 			gold_block.carverHelper.addVariation("tile.gold.2.desc", 2, "gold/terrain-gold-smallingot");
@@ -916,7 +916,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable granite = (BlockCarvable) new BlockCarvable(Material.rock).setHardness(2.0F).setResistance(10.0F).setCreativeTab(ChiselTabs.tabChiselBlocks);
+			BlockCarvable granite = (BlockCarvable) new BlockCarvable(Material.rock).setHardness(2.0F).setResistance(10.0F).setCreativeTab(ChiselTabs.tabChisel);
 			granite.carverHelper.setChiselBlockName("granite");
 			granite.carverHelper.addVariation("tile.granite.0.desc", 0, "granite/granite");
 			granite.carverHelper.addVariation("tile.granite.1.desc", 1, "granite/granitePolished");
@@ -935,7 +935,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable grimstone = (BlockGrimstone) new BlockGrimstone(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+			BlockCarvable grimstone = (BlockGrimstone) new BlockGrimstone(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
 			grimstone.carverHelper.addVariation("tile.grimstone.0.desc", 0, "grimstone/grimstone");
 			grimstone.carverHelper.addVariation("tile.grimstone.1.desc", 1, "grimstone/smooth");
 			grimstone.carverHelper.addVariation("tile.grimstone.2.desc", 2, "grimstone/hate");
@@ -965,7 +965,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable hexPlating = (BlockCarvable) new BlockCarvableGlow("hexPlating/hexAnim").setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10.0F);
+			BlockCarvable hexPlating = (BlockCarvable) new BlockCarvableGlow("hexPlating/hexAnim").setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10.0F);
 			for (int i = 0; i < 16; i++) {
 				hexPlating.carverHelper.addVariation("tile.hexPlating." + ItemDye.field_150921_b[i] + ".desc", i, "hexPlating/hexBase");
 			}
@@ -983,7 +983,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable holystone = (BlockHolystone) new BlockHolystone(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvable holystone = (BlockHolystone) new BlockHolystone(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Chisel.soundHolystoneFootstep);
 			holystone.carverHelper.addVariation("tile.holystone.0.desc", 0, "holystone/holystone");
 			holystone.carverHelper.addVariation("tile.holystone.1.desc", 1, "holystone/smooth");
@@ -1014,7 +1014,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvableIce ice = (BlockCarvableIce) new BlockCarvableIce().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.5F).setLightOpacity(3).setStepSound(Block.soundTypeGlass);
+			BlockCarvableIce ice = (BlockCarvableIce) new BlockCarvableIce().setCreativeTab(ChiselTabs.tabChisel).setHardness(0.5F).setLightOpacity(3).setStepSound(Block.soundTypeGlass);
 			Carving.chisel.addVariation("ice", Blocks.ice, 0, 0);
 			ice.carverHelper.addVariation("tile.ice.1.desc", 1, "ice/a1-ice-light");
 			ice.carverHelper.addVariation("tile.ice.2.desc", 2, "ice/a1-stonecobble-icecobble");
@@ -1045,7 +1045,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvableIcePillar ice_pillar = (BlockCarvableIcePillar) new BlockCarvableIcePillar(Material.ice).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.5F).setLightOpacity(3)
+			BlockCarvableIcePillar ice_pillar = (BlockCarvableIcePillar) new BlockCarvableIcePillar(Material.ice).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.5F).setLightOpacity(3)
 					.setStepSound(Block.soundTypeGlass);
 			ice_pillar.carverHelper.setChiselBlockName("Ice Pillar");
 			ice_pillar.carverHelper.addVariation("tile.icePillar.0.desc", 0, "icepillar/plainplain");
@@ -1101,7 +1101,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvablePane iron_bars = (BlockCarvablePane) new BlockCarvablePane(Material.iron, true).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.3F)
+			BlockCarvablePane iron_bars = (BlockCarvablePane) new BlockCarvablePane(Material.iron, true).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.3F)
 					.setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("iron_bars", Blocks.iron_bars, 0, 0);
 			iron_bars.carverHelper.addVariation("tile.iron_bars.1.desc", 1, "ironpane/fenceIron");
@@ -1123,7 +1123,7 @@ public enum Features {
 		@Override
 		void addBlocks() {
 
-			BlockCarvable iron_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F).setResistance(10F).setStepSound(Block.soundTypeMetal);
+			BlockCarvable iron_block = (BlockBeaconBase) new BlockBeaconBase().setCreativeTab(ChiselTabs.tabChisel).setHardness(5F).setResistance(10F).setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("iron_block", Blocks.iron_block, 0, 0);
 			iron_block.carverHelper.addVariation("tile.iron.1.desc", 1, "iron/terrain-iron-largeingot");
 			iron_block.carverHelper.addVariation("tile.iron.2.desc", 2, "iron/terrain-iron-smallingot");
@@ -1150,8 +1150,8 @@ public enum Features {
 		@Override
 		void addBlocks() {
 			for (int metadata = 0; metadata < 16; metadata++) {
-				jackolantern[metadata] = (BlockCarvablePumpkin) new BlockCarvablePumpkin(true).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(1.0F).setBlockName("litpumpkin")
-						.setCreativeTab(ChiselTabs.tabChiselBlocks).setLightLevel(1.0f);
+				jackolantern[metadata] = (BlockCarvablePumpkin) new BlockCarvablePumpkin(true).setCreativeTab(ChiselTabs.tabChisel).setHardness(1.0F).setBlockName("litpumpkin")
+						.setCreativeTab(ChiselTabs.tabChisel).setLightLevel(1.0f);
 				jackolantern[metadata].setInformation("pumpkin/pumpkin_face_" + (metadata + 1) + "_on");
 				GameRegistry.registerBlock(jackolantern[metadata], ("jackolantern" + (metadata + 1)));
 				Carving.chisel.addVariation("jackolantern", jackolantern[metadata], 0, (metadata + 1));
@@ -1165,7 +1165,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable laboratoryblock = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvable laboratoryblock = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Chisel.soundMetalFootstep);
 			laboratoryblock.carverHelper.setChiselBlockName("laboratoryblock");
 			laboratoryblock.carverHelper.addVariation("tile.laboratory.0.desc", 0, "laboratory/wallpanel");
@@ -1198,7 +1198,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable lapis_block = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(3F).setResistance(5F)
+			BlockCarvable lapis_block = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(3F).setResistance(5F)
 					.setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("lapis_block", Blocks.lapis_block, 0, 0);
 			lapis_block.carverHelper.addVariation("tile.lapis.1.desc", 1, "lapis/terrain-lapisblock-chunky");
@@ -1218,7 +1218,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockLavastone lavastone = (BlockLavastone) new BlockLavastone(Material.rock, "lava_flow").setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+			BlockLavastone lavastone = (BlockLavastone) new BlockLavastone(Material.rock, "lava_flow").setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
 			lavastone.carverHelper.addVariation("tile.lavastone.0.desc", 0, "lavastone/cobble");
 			lavastone.carverHelper.addVariation("tile.lavastone.1.desc", 1, "lavastone/black");
 			lavastone.carverHelper.addVariation("tile.lavastone.2.desc", 2, "lavastone/tiles");
@@ -1242,7 +1242,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable lead = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable lead = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			lead.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/lead/caution");
 			lead.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/lead/crate");
@@ -1259,7 +1259,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockLeaf leaves = (BlockLeaf) new BlockLeaf(Material.leaves).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.2F).setStepSound(Block.soundTypeGrass);
+			BlockLeaf leaves = (BlockLeaf) new BlockLeaf(Material.leaves).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.2F).setStepSound(Block.soundTypeGrass);
 			Carving.chisel.addGroup(new CarvingGroup("leaves") {
 
 				public List<ICarvingVariation> getVariations() {
@@ -1309,7 +1309,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable limestone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvable limestone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Block.soundTypeStone);
 			limestone.carverHelper.setChiselBlockName("Limestone");
 			limestone.carverHelper.addVariation("tile.limestone.0.desc", 0, "limestone");
@@ -1332,7 +1332,7 @@ public enum Features {
 			OreDictionary.registerOre("limestone", limestone);
 			Carving.chisel.registerOre("limestone", "limestone");
 
-			BlockCarvableSlab limestone_slab = (BlockCarvableSlab) new BlockCarvableSlab(limestone).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+			BlockCarvableSlab limestone_slab = (BlockCarvableSlab) new BlockCarvableSlab(limestone).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
 			limestone_slab.carverHelper.setChiselBlockName("Limestone Slab");
 			limestone_slab.carverHelper.addVariation("tile.limestoneSlab.0.desc", 0, "limestone");
 			limestone_slab.carverHelper.addVariation("tile.limestoneSlab.1.desc", 1, "limestone/terrain-cobbsmalltilelight");
@@ -1386,7 +1386,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable marble = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvable marble = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Block.soundTypeStone);
 			marble.carverHelper.setChiselBlockName("Marble");
 			marble.carverHelper.addVariation("tile.marble.0.desc", 0, "marble");
@@ -1467,7 +1467,7 @@ public enum Features {
 
 			BlockCarvable marble_pillar;
 			if (Configurations.oldPillars) {
-				marble_pillar = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+				marble_pillar = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 						.setStepSound(Block.soundTypeStone);
 				marble_pillar.carverHelper.setChiselBlockName("Marble Pillar");
 				marble_pillar.carverHelper.addVariation("tile.marblePillarOld.0.desc", 0, "marblepillarold/column");
@@ -1487,7 +1487,7 @@ public enum Features {
 				marble_pillar.carverHelper.addVariation("tile.marblePillarOld.14.desc", 14, "marblepillarold/a1-stonepillar-greekbottomgreek");
 				marble_pillar.carverHelper.addVariation("tile.marblePillarOld.15.desc", 15, "marblepillarold/a1-stonepillar-plainbottomgreek");
 			} else {
-				marble_pillar = (BlockCarvable) new BlockCarvablePillar(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+				marble_pillar = (BlockCarvable) new BlockCarvablePillar(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 						.setStepSound(Block.soundTypeStone);
 				marble_pillar.carverHelper.setChiselBlockName("Marble Pillar");
 				marble_pillar.carverHelper.addVariation("tile.marblePillar.0.desc", 0, "marblepillar/pillar");
@@ -1509,7 +1509,7 @@ public enum Features {
 			}
 			marble_pillar.carverHelper.registerAll(marble_pillar, "marble_pillar");
 
-			BlockCarvableSlab marble_pillar_slab = (BlockCarvableSlab) new BlockCarvableSlab(marble_pillar).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F)
+			BlockCarvableSlab marble_pillar_slab = (BlockCarvableSlab) new BlockCarvableSlab(marble_pillar).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F)
 					.setStepSound(Block.soundTypeStone);
 			marble_pillar_slab.carverHelper.setChiselBlockName("Marble Pillar Slab");
 			if (Configurations.oldPillars) {
@@ -1562,7 +1562,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable nether_brick = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10.0F)
+			BlockCarvable nether_brick = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10.0F)
 					.setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("nether_brick", Blocks.nether_brick, 0, 0);
 			// netherBrick.carverHelper.addVariation("Nether brick", 0,
@@ -1592,7 +1592,7 @@ public enum Features {
 		@Override
 		void addBlocks() {
 
-			BlockCarvable netherrack = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.4F).setStepSound(Block.soundTypeStone);
+			BlockCarvable netherrack = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.4F).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("netherrack", Blocks.netherrack, 0, 0);
 			netherrack.carverHelper.addVariation("tile.hellrock.1.desc", 1, "netherrack/a1-netherrack-bloodgravel");
 			netherrack.carverHelper.addVariation("tile.hellrock.2.desc", 2, "netherrack/a1-netherrack-bloodrock");
@@ -1617,7 +1617,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable obsidian = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(50.0F).setResistance(2000.0F)
+			BlockCarvable obsidian = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(50.0F).setResistance(2000.0F)
 					.setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("obsidian", Blocks.obsidian, 0, 0);
 			obsidian.carverHelper.addVariation("tile.obsidian.1.desc", 1, "obsidian/pillar");
@@ -1644,7 +1644,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvablePackedIce packedice = (BlockCarvablePackedIce) new BlockCarvablePackedIce().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.5F).setLightOpacity(3)
+			BlockCarvablePackedIce packedice = (BlockCarvablePackedIce) new BlockCarvablePackedIce().setCreativeTab(ChiselTabs.tabChisel).setHardness(0.5F).setLightOpacity(3)
 					.setStepSound(Block.soundTypeGlass);
 			Carving.chisel.addVariation("packedice", Blocks.packed_ice, 0, 0);
 			packedice.carverHelper.addVariation("tile.packedice.1.desc", 1, "ice/a1-ice-light");
@@ -1671,7 +1671,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvablePackedIcePillar packedice_pillar = (BlockCarvablePackedIcePillar) new BlockCarvablePackedIcePillar(Material.ice).setCreativeTab(ChiselTabs.tabChiselBlocks)
+			BlockCarvablePackedIcePillar packedice_pillar = (BlockCarvablePackedIcePillar) new BlockCarvablePackedIcePillar(Material.ice).setCreativeTab(ChiselTabs.tabChisel)
 					.setHardness(0.5F).setLightOpacity(3).setStepSound(Block.soundTypeGlass);
 			packedice_pillar.carverHelper.setChiselBlockName("Packed Ice Pillar");
 			packedice_pillar.carverHelper.addVariation("tile.packedice_pillar.0.desc", 0, "icepillar/plainplain");
@@ -1722,7 +1722,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvablePane paperwall = (BlockCarvablePane) new BlockCarvablePane(Material.ground, true).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.5F).setResistance(0.5F);
+			BlockCarvablePane paperwall = (BlockCarvablePane) new BlockCarvablePane(Material.ground, true).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.5F).setResistance(0.5F);
 			paperwall.carverHelper.setChiselBlockName("Paper Wall");
 			paperwall.carverHelper.addVariation("tile.paperwall.0.desc", 0, "paper/box");
 			paperwall.carverHelper.addVariation("tile.paperwall.1.desc", 1, "paper/throughMiddle");
@@ -1737,7 +1737,7 @@ public enum Features {
 			paperwall.carverHelper.registerAll(paperwall, "paperwall");
 			Carving.chisel.registerOre("paperwall", "paperwall");
 
-			BlockCarvable paperwall_block = (BlockCarvable) new BlockCarvable(Material.ground).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.5F).setResistance(0.5F);
+			BlockCarvable paperwall_block = (BlockCarvable) new BlockCarvable(Material.ground).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.5F).setResistance(0.5F);
 			paperwall_block.carverHelper.setChiselBlockName("Paper Wall Block");
 			paperwall_block.carverHelper.addVariation("tile.paperwall.0.desc", 0, "paper/box");
 			paperwall_block.carverHelper.addVariation("tile.paperwall.1.desc", 1, "paper/throughMiddle");
@@ -1764,7 +1764,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockPresent present = (BlockPresent) new BlockPresent().setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10.0F).setBlockName("chisel.present");
+			BlockPresent present = (BlockPresent) new BlockPresent().setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10.0F).setBlockName("chisel.present");
 			for (int i = 0; i < 16; i++) {
 				present.carverHelper.addVariation("tile.chisel.present.desc", i, Blocks.chest);
 			}
@@ -1788,8 +1788,8 @@ public enum Features {
 		@Override
 		void addBlocks() {
 			for (int metadata = 0; metadata < 16; metadata++) {
-				pumpkin[metadata] = (BlockCarvablePumpkin) new BlockCarvablePumpkin(false).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(1.0F).setBlockName("pumpkin")
-						.setCreativeTab(ChiselTabs.tabChiselBlocks);
+				pumpkin[metadata] = (BlockCarvablePumpkin) new BlockCarvablePumpkin(false).setCreativeTab(ChiselTabs.tabChisel).setHardness(1.0F).setBlockName("pumpkin")
+						.setCreativeTab(ChiselTabs.tabChisel);
 				pumpkin[metadata].setInformation("pumpkin/pumpkin_face_" + (metadata + 1) + "_off");
 				GameRegistry.registerBlock(pumpkin[metadata], "pumpkin" + (metadata + 1));
 				Carving.chisel.addVariation("pumpkin", pumpkin[metadata], 0, (metadata + 1));
@@ -1961,7 +1961,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable redstone_block = (BlockCarvablePowered) (new BlockCarvablePowered(Material.iron)).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5.0F).setResistance(10.0F)
+			BlockCarvable redstone_block = (BlockCarvablePowered) (new BlockCarvablePowered(Material.iron)).setCreativeTab(ChiselTabs.tabChisel).setHardness(5.0F).setResistance(10.0F)
 					.setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("redstone_block", Blocks.redstone_block, 0, 0);
 			redstone_block.carverHelper.addVariation("tile.redstone_block.1.desc", 1, "redstone/smooth");
@@ -1988,7 +1988,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockRoadLine road_line = (BlockRoadLine) new BlockRoadLine().setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(0.01F)
+			BlockRoadLine road_line = (BlockRoadLine) new BlockRoadLine().setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChisel).setHardness(0.01F)
 					.setBlockName("roadLine");
 			road_line.carverHelper.addVariation("tile.roadLine.0.desc", 0, "line-marking/white-center");
 			road_line.carverHelper.addVariation("tile.roadLine.1.desc", 1, "line-marking/double-white-center");
@@ -2008,7 +2008,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable sandstone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone).setHardness(0.8F);
+			BlockCarvable sandstone = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone).setHardness(0.8F);
 			Carving.chisel.addVariation("sandstone", Blocks.sandstone, 0, 0);
 			Carving.chisel.addVariation("sandstone", Blocks.sandstone, 1, 1);
 			Carving.chisel.addVariation("sandstone", Blocks.sandstone, 2, 2);
@@ -2046,7 +2046,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable sandstone_scribbles = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone).setHardness(0.8F);
+			BlockCarvable sandstone_scribbles = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone).setHardness(0.8F);
 			sandstone_scribbles.carverHelper.addVariation("tile.sandstoneScribbles.desc", 0, "sandstone-scribbles/scribbles-0");
 			sandstone_scribbles.carverHelper.addVariation("tile.sandstoneScribbles.desc", 1, "sandstone-scribbles/scribbles-1");
 			sandstone_scribbles.carverHelper.addVariation("tile.sandstoneScribbles.desc", 2, "sandstone-scribbles/scribbles-2");
@@ -2077,7 +2077,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable silver = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable silver = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			silver.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/silver/caution");
 			silver.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/silver/crate");
@@ -2110,7 +2110,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockSnakestone sand_snakestone = (BlockSnakestone) new BlockSnakestone("Chisel:snakestone/sandsnake/").setCreativeTab(ChiselTabs.tabChiselBlocks).setBlockName(
+			BlockSnakestone sand_snakestone = (BlockSnakestone) new BlockSnakestone("Chisel:snakestone/sandsnake/").setCreativeTab(ChiselTabs.tabChisel).setBlockName(
 					"chisel.snakestoneSand");
 			GameRegistry.registerBlock(sand_snakestone, ItemCarvable.class, "sand_snakestone");
 			// TODO- eat me!
@@ -2128,7 +2128,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockSnakestone stone_snakestone = (BlockSnakestone) new BlockSnakestone("Chisel:snakestone/snake/").setBlockName("chisel.snakestoneStone").setCreativeTab(ChiselTabs.tabChiselBlocks);
+			BlockSnakestone stone_snakestone = (BlockSnakestone) new BlockSnakestone("Chisel:snakestone/snake/").setBlockName("chisel.snakestoneStone").setCreativeTab(ChiselTabs.tabChisel);
 			GameRegistry.registerBlock(stone_snakestone, ItemCarvable.class, "stone_snakestone");
 			// LanguageRegistry.addName(new ItemStack(snakestone, 1, 1),
 			// "Stone snake block head");
@@ -2158,7 +2158,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable steel = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable steel = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			steel.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/steel/caution");
 			steel.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/steel/crate");
@@ -2175,7 +2175,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable stonebricksmooth = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(1.5F).setResistance(10.0F)
+			BlockCarvable stonebricksmooth = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(1.5F).setResistance(10.0F)
 					.setStepSound(Block.soundTypeStone);
 			if (Configurations.allowSmoothStone) {
 				Carving.chisel.addVariation("stonebricksmooth", Blocks.stone, 0, -1);
@@ -2215,7 +2215,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable tallow = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeSnow);
+			BlockCarvable tallow = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeSnow);
 			Carving.chisel.addVariation("tallow", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 5, 0);
 			tallow.carverHelper.addVariation("tile.tallow.0.desc", 0, "tallow/smooth");
 			tallow.carverHelper.addVariation("tile.tallow.0.desc", 1, "tallow/faces");
@@ -2228,7 +2228,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable technical = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+			BlockCarvable technical = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
 			technical.carverHelper.addVariation("tile.technical.0.desc", 0, "technical/scaffold");
 			technical.carverHelper.addVariation("tile.technical.1.desc", 1, "technical/cautiontape");
 			technical.carverHelper.addVariation("tile.technical.2.desc", 2, "technical/industrialrelic");
@@ -2255,7 +2255,7 @@ public enum Features {
             technical2.carverHelper.registerBlock(technical2, "technical2");
             technical2.carverHelper.registerVariations("technical", technical2);
 
-            BlockCarvable technical3 = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10F);
+            BlockCarvable technical3 = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10F);
             technical3.carverHelper.addVariation("tile.technical3.0.desc", 0, "technical/massiveFan");
             technical3.carverHelper.addVariation("tile.technical3.1.desc", 1, "technical/massiveHexPlating");
             technical2.carverHelper.registerBlock(technical3, "technical3");
@@ -2277,7 +2277,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable templeblock = (BlockCarvable) new BlockEldritch().setHardness(2.0F).setCreativeTab(ChiselTabs.tabChiselBlocks).setResistance(10F)
+			BlockCarvable templeblock = (BlockCarvable) new BlockEldritch().setHardness(2.0F).setCreativeTab(ChiselTabs.tabChisel).setResistance(10F)
 					.setStepSound(Chisel.soundTempleFootstep);
 			templeblock.carverHelper.setChiselBlockName("Temple Block");
 			templeblock.carverHelper.addVariation("tile.templeblock.0.desc", 0, "temple/cobble");
@@ -2310,7 +2310,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable mossy_templeblock = (BlockCarvable) new BlockEldritch().setHardness(2.0F).setCreativeTab(ChiselTabs.tabChiselBlocks).setResistance(10F)
+			BlockCarvable mossy_templeblock = (BlockCarvable) new BlockEldritch().setHardness(2.0F).setCreativeTab(ChiselTabs.tabChisel).setResistance(10F)
 					.setStepSound(Chisel.soundTempleFootstep);
 			mossy_templeblock.carverHelper.setChiselBlockName("Mossy Temple Block");
 			mossy_templeblock.carverHelper.addVariation("tile.mossy_templeblock.0.desc", 0, "templemossy/cobble");
@@ -2340,7 +2340,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable tin = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable tin = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			tin.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/tin/caution");
 			tin.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/tin/crate");
@@ -2401,7 +2401,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable thaumium = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeMetal);
+			BlockCarvable thaumium = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("thaumium", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 4, 0);
 			thaumium.carverHelper.addVariation("tile.thaumium.0.desc", 0, "thaumium/ornate");
 			thaumium.carverHelper.addVariation("tile.thaumium.1.desc", 1, "thaumium/totem");
@@ -2437,7 +2437,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable tyrian = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5.0F).setResistance(10.0F)
+			BlockCarvable tyrian = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChisel).setHardness(5.0F).setResistance(10.0F)
 					.setStepSound(Block.soundTypeMetal);
 			tyrian.carverHelper.setChiselBlockName("Futuristic Armor Plating Block");
 			tyrian.carverHelper.addVariation("tile.tyrian.0.desc", 0, "tyrian/shining");
@@ -2471,7 +2471,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable uranium = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
+			BlockCarvable uranium = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChisel).setHardness(5F)
 					.setResistance(10F);
 			uranium.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/uranium/caution");
 			uranium.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/uranium/crate");
@@ -2488,7 +2488,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable valentines = (BlockCarvable) new BlockCarvable(Material.wood).setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2F)
+			BlockCarvable valentines = (BlockCarvable) new BlockCarvable(Material.wood).setStepSound(Block.soundTypeStone).setCreativeTab(ChiselTabs.tabChisel).setHardness(2F)
 					.setResistance(10F);
 			valentines.carverHelper.addVariation("tile.valentines.0.desc", 0, "valentines/bricks");
 			valentines.carverHelper.addVariation("tile.valentines.1.desc", 1, "valentines/companion");
@@ -2506,8 +2506,8 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable voidstone = (BlockCarvable) new BlockCarvable().setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone)
-					.setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5.0F).setResistance(10.0F);
+			BlockCarvable voidstone = (BlockCarvable) new BlockCarvable().setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone)
+					.setCreativeTab(ChiselTabs.tabChisel).setHardness(5.0F).setResistance(10.0F);
 			voidstone.carverHelper.addVariation("tile.voidstone.0.desc", 0, "voidstone/raw");
 			voidstone.carverHelper.addVariation("tile.voidstone.1.desc", 1, "voidstone/quarters");
 			voidstone.carverHelper.addVariation("tile.voidstone.2.desc", 2, "voidstone/smooth");
@@ -2521,7 +2521,7 @@ public enum Features {
 			Carving.chisel.registerOre("voidstone", "voidstone");
 
 			BlockMarbleTexturedOre voidstone2 = (BlockMarbleTexturedOre) new BlockMarbleTexturedOre(Material.rock, Chisel.MOD_ID + ":voidstone/animated/void").setStepSound(Block.soundTypeStone)
-					.setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5.0F).setResistance(10.0F);
+					.setCreativeTab(ChiselTabs.tabChisel).setHardness(5.0F).setResistance(10.0F);
 			voidstone2.carverHelper.addVariation("tile.voidstone.0.desc", 0, "voidstone/animated/raw");
 			voidstone2.carverHelper.addVariation("tile.voidstone.1.desc", 1, "voidstone/animated/quarters");
 			voidstone2.carverHelper.addVariation("tile.voidstone.2.desc", 2, "voidstone/animated/smooth");
@@ -2548,7 +2548,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvablePillar voidstonePillar = (BlockCarvablePillar) new BlockCarvablePillar(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvablePillar voidstonePillar = (BlockCarvablePillar) new BlockCarvablePillar(Material.rock).setCreativeTab(ChiselTabs.tabChisel).setStepSound(Block.soundTypeStone);
 			voidstonePillar.carverHelper.addVariation("tile.voidstonePillar.0.desc", 0, "voidstone/pillar");
 			voidstonePillar.carverHelper.registerAll(voidstonePillar, "voidstonePillar");
 			Carving.chisel.registerOre("voidstonePillar", "voidstonePillar");
@@ -2570,7 +2570,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvableLayered warningSign = (BlockCarvableLayered) new BlockCarvableLayered(Material.iron, "warning/base").setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F)
+			BlockCarvableLayered warningSign = (BlockCarvableLayered) new BlockCarvableLayered(Material.iron, "warning/base").setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F)
 					.setResistance(10.0F);
 			warningSign.carverHelper.addVariation("tile.warningSign.0.desc", 0, "warning/rad");
 			warningSign.carverHelper.addVariation("tile.warningSign.1.desc", 1, "warning/bio");
@@ -2601,7 +2601,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockWaterstone waterstone = (BlockWaterstone) new BlockWaterstone(Material.rock, "water_flow").setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(10.0F);
+			BlockWaterstone waterstone = (BlockWaterstone) new BlockWaterstone(Material.rock, "water_flow").setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(10.0F);
 			waterstone.carverHelper.addVariation("tile.waterstone.0.desc", 0, "waterstone/cobble");
 			waterstone.carverHelper.addVariation("tile.waterstone.1.desc", 1, "waterstone/black");
 			waterstone.carverHelper.addVariation("tile.waterstone.2.desc", 2, "waterstone/tiles");
@@ -2631,7 +2631,7 @@ public enum Features {
 				String u = plank_ucnames[i];
 				final String name = n.replace('-', '_') + "_planks";
 
-				planks[i] = (BlockCarvable) (new BlockCarvable(Material.wood)).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood);
+				planks[i] = (BlockCarvable) (new BlockCarvable(Material.wood)).setCreativeTab(ChiselTabs.tabChisel).setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood);
 				planks[i].carverHelper.setChiselBlockName(u + " Wood Planks");
 				planks[i].carverHelper.addVariation("Smooth " + n + " wood planks", 1, "planks-" + n + "/clean");
 				planks[i].carverHelper.addVariation("Short " + n + " wood planks", 2, "planks-" + n + "/short");
@@ -2661,7 +2661,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable woolen_clay = (BlockCarvable) new BlockCarvable(Material.clay).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(2F).setResistance(10F);
+			BlockCarvable woolen_clay = (BlockCarvable) new BlockCarvable(Material.clay).setCreativeTab(ChiselTabs.tabChisel).setHardness(2F).setResistance(10F);
 			woolen_clay.carverHelper.setChiselBlockName("Woolen Clay");
 
 			for (int i = 0; i < 16; i++)

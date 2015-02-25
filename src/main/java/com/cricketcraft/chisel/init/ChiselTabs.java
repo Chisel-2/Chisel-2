@@ -62,34 +62,13 @@ public class ChiselTabs {
 	    }
 	}
 
-	public static final CustomCreativeTab tabChisel = new CustomCreativeTab("tabChisel", false);
-	public static final CustomCreativeTab tabChiselBlocks = new CustomCreativeTab("tabChiselBlocks", true);	
+	public static final CustomCreativeTab tabChisel = new CustomCreativeTab("tabChisel", true);
 	
 	public static void postInit() {
-		
-		boolean bool0 = Loader.isModLoaded("Thaumcraft");
-		boolean bool1 = Loader.isModLoaded("AWayOfTime");
 
 		if(Features.CHISEL.enabled())
 		tabChisel.setTabIconItemStack(new ItemStack(ChiselItems.chisel));
 		else tabChisel.setTabIconItemStack(new ItemStack(Items.stick));
-		if(Features.HOLYSTONE.enabled())
-		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.holystone));
-		else if(Features.WOOD.enabled())
-		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.planks[0], 1, 1));
-		else if(Features.TECHNICAL.enabled())
-		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.technical));
-		else if(Features.JACKOLANTERN.enabled())
-		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.jackolantern[0]));
-		else if(Features.ARCANE.enabled() && bool0 == true)
-			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.arcane));
-		else if(Features.BLOOD_RUNE.enabled() && bool1 == true)
-			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.bloodRune));
-		else if(ChiselBlocks.voidstone != null)
-			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.voidstone));
-		else 
-			tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.lit_pumpkin));
-			//tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.stonebrick));
 
 	}
 }

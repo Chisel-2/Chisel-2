@@ -29,7 +29,7 @@ public class BlockCarvableGlass extends BlockGlass implements ICarvable {
 		super(Material.glass, false);
 
 		carverHelper = new CarvableHelper();
-		setCreativeTab(ChiselTabs.tabChiselBlocks);
+		setCreativeTab(ChiselTabs.tabChisel);
 	}
 
 	public BlockCarvableGlass setStained(boolean a) {
