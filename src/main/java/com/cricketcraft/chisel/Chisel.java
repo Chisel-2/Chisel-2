@@ -116,7 +116,6 @@ public class Chisel {
 		Configurations.config.load();
 		Configurations.refreshConfig();
 
-		ChiselTabs.preInit();
 		Features.preInit();
 		PacketHandler.init();
 		ChiselController.INSTANCE.preInit();

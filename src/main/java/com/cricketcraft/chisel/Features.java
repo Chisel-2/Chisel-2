@@ -65,7 +65,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable aluminum = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable aluminum = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			aluminum.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/aluminum/caution");
 			aluminum.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/aluminum/crate");
@@ -82,7 +82,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable amber = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable amber = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("amber", GameRegistry.findBlock("Thaumcraft", "blockCosmeticOpaque"), 0, 0);
 			Carving.chisel.addVariation("amber", GameRegistry.findBlock("Thaumcraft", "blockCosmeticOpaque"), 1, 1);
 			amber.carverHelper.registerAll(amber, "amber");
@@ -146,7 +146,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable arcane = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable arcane = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("arcane", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 6, 0);
 			Carving.chisel.addVariation("arcane", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 7, 1);
 			arcane.carverHelper.addVariation("tile.arcane.0.desc", 0, "arcane/moonEngrave");
@@ -215,7 +215,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable bloodRune = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable bloodRune = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("bloodRune", GameRegistry.findBlock("AWWayofTime", "AlchemicalWizardrybloodRune"), 0, 0);
 			bloodRune.carverHelper.addVariation("tile.bloodRune.0.desc", 0, "bloodMagic/bloodRuneArranged");
 			bloodRune.carverHelper.addVariation("tile.bloodRune.1.desc", 1, "bloodMagic/bloodRuneBricks");
@@ -232,7 +232,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable bloodBrick = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setStepSound(Block.soundTypeStone);
+			BlockCarvable bloodBrick = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeStone);
 			Carving.chisel.addVariation("bloodBrick", GameRegistry.findBlock("AWWayofTime", "largeBloodStoneBrick"), 0, 0);
 			Carving.chisel.addVariation("bloodBrick", GameRegistry.findBlock("AWWayofTime", "bloodStoneBrick"), 0, 1);
 			bloodBrick.carverHelper.registerAll(bloodBrick, "bloodBrick");
@@ -282,7 +282,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable bronze = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable bronze = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			bronze.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/bronze/caution");
 			bronze.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/bronze/crate");
@@ -533,7 +533,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable copper = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable copper = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			copper.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/copper/caution");
 			copper.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/copper/crate");
@@ -1242,7 +1242,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable lead = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable lead = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			lead.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/lead/caution");
 			lead.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/lead/crate");
@@ -2077,7 +2077,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable silver = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable silver = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			silver.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/silver/caution");
 			silver.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/silver/crate");
@@ -2158,7 +2158,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable steel = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable steel = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			steel.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/steel/caution");
 			steel.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/steel/crate");
@@ -2215,7 +2215,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable tallow = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setStepSound(Block.soundTypeSnow);
+			BlockCarvable tallow = (BlockCarvable) new BlockCarvable(Material.rock).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeSnow);
 			Carving.chisel.addVariation("tallow", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 5, 0);
 			tallow.carverHelper.addVariation("tile.tallow.0.desc", 0, "tallow/smooth");
 			tallow.carverHelper.addVariation("tile.tallow.0.desc", 1, "tallow/faces");
@@ -2340,7 +2340,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable tin = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable tin = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			tin.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/tin/caution");
 			tin.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/tin/crate");
@@ -2401,7 +2401,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable thaumium = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setStepSound(Block.soundTypeMetal);
+			BlockCarvable thaumium = (BlockCarvable) new BlockCarvable(Material.iron).setCreativeTab(ChiselTabs.tabChiselBlocks).setStepSound(Block.soundTypeMetal);
 			Carving.chisel.addVariation("thaumium", GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 4, 0);
 			thaumium.carverHelper.addVariation("tile.thaumium.0.desc", 0, "thaumium/ornate");
 			thaumium.carverHelper.addVariation("tile.thaumium.1.desc", 1, "thaumium/totem");
@@ -2471,7 +2471,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable uranium = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
+			BlockCarvable uranium = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			uranium.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/uranium/caution");
 			uranium.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/uranium/crate");
