@@ -26,7 +26,7 @@ public class BlockCarvableTorch extends BlockTorch implements ICarvable {
 	public BlockCarvableTorch() {
 		super();
 		carverHelper = new CarvableHelper();
-		setCreativeTab(ChiselTabs.tabChiselBlocks);
+		setCreativeTab(ChiselTabs.tabChisel);
 		setLightLevel(0.9375F);
 		setBlockName("torch");
 	}

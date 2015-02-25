@@ -30,7 +30,7 @@ public class BlockCarvablePane extends BlockPane implements ICarvable {
 
 		carverHelper = new CarvableHelper();
 
-		setCreativeTab(ChiselTabs.tabChiselBlocks);
+		setCreativeTab(ChiselTabs.tabChisel);
 	}
 
 	public BlockCarvablePane setStained(boolean a) {
