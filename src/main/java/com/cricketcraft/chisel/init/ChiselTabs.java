@@ -80,15 +80,14 @@ public class ChiselTabs {
 		else tabChisel.setTabIconItemStack(new ItemStack(Items.stick));
 		if(Features.HOLYSTONE.enabled())
 		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.holystone));
-		else if(Features.WOOD.enabled() &&)
+		else if(Features.WOOD.enabled())
 		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.planks[0], 1, 1));
 		else if(Features.TECHNICAL.enabled())
 		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.technical));
 		else if(Features.JACKOLANTERN.enabled())
 		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.jackolantern[0]));
 		else {
-			tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.lit_pumpkin));
-			//tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.stonebrick));
+			
 		}
 
 		if (atLeastOneModIsLoaded) {
@@ -99,7 +98,10 @@ public class ChiselTabs {
 			} else {
 				if(ChiselBlocks.voidstone != null)
 				tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.voidstone));
-				else tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.obsidian));
+				else {
+					tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.lit_pumpkin));
+				}
+			//tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.stonebrick));
 			}
 		}
 	}
