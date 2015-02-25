@@ -35,6 +35,7 @@ public class Configurations {
 	public static boolean disableCTM;
 	public static boolean fancy;
 	public static boolean blockDescriptions;
+	public static boolean searchBars;
 
 	public static boolean allowChiselDamage;
 	public static int ironChiselMaxDamage;
@@ -87,6 +88,7 @@ public class Configurations {
 		fancy = config.get(category, "fancyLeaves", true, "Enable fancy textures").getBoolean(true);
 		blockDescriptions = config.get(category, "tooltipsUseBlockDescriptions", true, "Make variations of blocks have the same name, and use the description in tooltip to distinguish them.")
 				.getBoolean(true);
+		searchBars = config.get(category, "creativeSearchBars", true, "Enable search bars in creative tabs").getBoolean(true);
 
 		/* chisel */
 		category = "chisel";

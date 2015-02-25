@@ -6,7 +6,11 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 import com.cricketcraft.chisel.Features;
+import com.cricketcraft.chisel.config.Configurations;
 
 public class ChiselTabs {
 
@@ -58,11 +62,11 @@ public class ChiselTabs {
 	private static boolean atLeastOneModIsLoaded = false;
 
 	public static final CustomCreativeTab tabChisel = new CustomCreativeTab("tabChisel", false);
-	public static final CustomCreativeTab tabStoneChiselBlocks = new CustomCreativeTab("tabStoneChiselBlocks", true);
-	public static final CustomCreativeTab tabWoodChiselBlocks = new CustomCreativeTab("tabWoodChiselBlocks", true);
-	public static final CustomCreativeTab tabMetalChiselBlocks = new CustomCreativeTab("tabMetalChiselBlocks", true);
-	public static final CustomCreativeTab tabOtherChiselBlocks = new CustomCreativeTab("tabOtherChiselBlocks", true);
-	public static final CustomCreativeTab tabModdedChiselBlocks = new CustomCreativeTab("tabModdedChiselBlocks", true);
+	public static final CustomCreativeTab tabStoneChiselBlocks = new CustomCreativeTab("tabStoneChiselBlocks", Configurations.searchBars);
+	public static final CustomCreativeTab tabWoodChiselBlocks = new CustomCreativeTab("tabWoodChiselBlocks", Configurations.searchBars);
+	public static final CustomCreativeTab tabMetalChiselBlocks = new CustomCreativeTab("tabMetalChiselBlocks", Configurations.searchBars);
+	public static final CustomCreativeTab tabOtherChiselBlocks = new CustomCreativeTab("tabOtherChiselBlocks", Configurations.searchBars);
+	public static final CustomCreativeTab tabModdedChiselBlocks = new CustomCreativeTab("tabModdedChiselBlocks", Configurations.searchBars);
 
 	// this serves mostly just to load the static initializers
 	public static void preInit() {
