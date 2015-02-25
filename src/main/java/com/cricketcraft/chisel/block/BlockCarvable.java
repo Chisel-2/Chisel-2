@@ -35,7 +35,7 @@ public class BlockCarvable extends Block implements ICarvable {
 		carverHelper = new CarvableHelper();
 		setResistance(10.0F);
 		setHardness(2.0F);
-		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
+		setCreativeTab(ChiselTabs.tabChisel);
 	}
 
 	public BlockCarvable setStained(boolean a) {
