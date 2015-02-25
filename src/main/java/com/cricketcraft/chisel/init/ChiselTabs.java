@@ -11,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import com.cricketcraft.chisel.Features;
 
 import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -61,19 +62,13 @@ public class ChiselTabs {
 	    }
 	}
 
-	private static boolean atLeastOneModIsLoaded = false;
-
-
 	public static final CustomCreativeTab tabChisel = new CustomCreativeTab("tabChisel", false);
-	public static final CustomCreativeTab tabModdedChiselBlocks = new CustomCreativeTab("tabModdedChiselBlocks", true);
 	public static final CustomCreativeTab tabChiselBlocks = new CustomCreativeTab("tabChiselBlocks", true);	
 	
-	// this serves mostly just to load the static initializers
-	public static void preInit() {
-		atLeastOneModIsLoaded = Features.oneModdedFeatureLoaded();
-	}
-
 	public static void postInit() {
+		
+		boolean bool0 = Loader.isModLoaded("Thaumcraft");
+		boolean bool1 = Loader.isModLoaded("AWayOfTime");
 
 		if(Features.CHISEL.enabled())
 		tabChisel.setTabIconItemStack(new ItemStack(ChiselItems.chisel));
@@ -86,23 +81,15 @@ public class ChiselTabs {
 		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.technical));
 		else if(Features.JACKOLANTERN.enabled())
 		tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.jackolantern[0]));
-		else {
-			
-		}
-
-		if (atLeastOneModIsLoaded) {
-			if (Features.ARCANE.enabled()) {
-				tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.arcane));
-			} else if (Features.BLOOD_RUNE.enabled()) {
-				tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.bloodRune));
-			} else {
-				if(ChiselBlocks.voidstone != null)
-				tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.voidstone));
-				else {
-					tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.lit_pumpkin));
-				}
+		else if(Features.ARCANE.enabled() && bool0 == true)
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.arcane));
+		else if(Features.BLOOD_RUNE.enabled() && bool1 == true)
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.bloodRune));
+		else if(ChiselBlocks.voidstone != null)
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.voidstone));
+		else 
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.lit_pumpkin));
 			//tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.stonebrick));
-			}
-		}
+
 	}
 }
