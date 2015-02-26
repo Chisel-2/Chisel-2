@@ -15,18 +15,18 @@ public class BlockMarbleLamp extends BlockCarvable {
 	BlockMarbleLamp blockPowered;
 	boolean powered;
 
-	public BlockMarbleLamp() {
-		super(Material.redstoneLight);
+	public BlockMarbleLamp(int i) {
+		super(Material.redstoneLight, i);
 
 		powered = false;
 		blockUnpowered = this;
-		blockPowered = new BlockMarbleLamp(this);
+		blockPowered = new BlockMarbleLamp(this, i);
 
 		setHardness(0.3F);
 	}
 
-	public BlockMarbleLamp(BlockMarbleLamp unpoweredVersion) {
-		super(Material.redstoneLight);
+	public BlockMarbleLamp(BlockMarbleLamp unpoweredVersion, int i) {
+		super(Material.redstoneLight, i);
 
 		carverHelper = unpoweredVersion.carverHelper;
 

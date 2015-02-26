@@ -6,6 +6,9 @@ import static net.minecraftforge.common.util.ForgeDirection.UP;
 import java.util.List;
 import java.util.Random;
 
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCompressedPowered;
 import net.minecraft.block.BlockFarmland;
@@ -33,24 +36,33 @@ public class BlockCarvableSlab extends BlockCarvable {
 	public BlockCarvableSlab top;
 	public boolean isBottom;
 
-	public BlockCarvableSlab(BlockCarvable marble) {
+	public BlockCarvableSlab(BlockCarvable marble, int i) {
+		super(i);
 		opaque = true;
 
 		setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
+		
 
 		master = marble;
 		bottom = this;
-		top = new BlockCarvableSlab(this);
+		top = new BlockCarvableSlab(this, i);
 
 		isBottom = true;
 	}
 
-	public BlockCarvableSlab(BlockCarvableSlab bottomBlock) {
-		super();
+	public BlockCarvableSlab(BlockCarvableSlab bottomBlock, int i) {
+		super(i);
 		setBlockBounds(0.0F, 0.5F, 0.0F, 1.0F, 1.0F, 1.0F);
 		master = bottomBlock.master;
 		bottom = bottomBlock;
 		top = this;
+		if(Configurations.tabMod == true && i == 2) {
+			setCreativeTab(ChiselTabs.tabModdedChiselBlocks);
+		} else if((Configurations.tabBlocks == true && i == 1) || Configurations.tabMod == false) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 
 		carverHelper = bottomBlock.carverHelper;
 		isBottom = false;

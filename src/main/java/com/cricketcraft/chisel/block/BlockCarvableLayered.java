@@ -14,8 +14,8 @@ public class BlockCarvableLayered extends BlockCarvable {
 	private IIcon baseTexture;
 	private String baseTexLocation;
 
-	public BlockCarvableLayered(Material mat, String baseTexLocation) {
-		super(mat);
+	public BlockCarvableLayered(Material mat, String baseTexLocation, int i) {
+		super(mat, i);
 		this.baseTexLocation = baseTexLocation;
 	}
 	@Override

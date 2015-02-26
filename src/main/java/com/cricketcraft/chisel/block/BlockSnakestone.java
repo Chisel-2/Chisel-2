@@ -14,6 +14,8 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 import com.cricketcraft.chisel.client.render.BlockSnakeStoneRenderer;
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 public class BlockSnakestone extends Block {
 
@@ -52,6 +54,11 @@ public class BlockSnakestone extends Block {
 
 	public BlockSnakestone(String iconPrefix) {
 		super(Material.rock);
+		if(Configurations.tabBlocks == true) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 		setHardness(1.5F);
 		setResistance(10.0F);
 		setStepSound(Block.soundTypeStone);

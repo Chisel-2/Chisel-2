@@ -21,8 +21,8 @@ public class BlockRoadLine extends BlockCarvable {
 	public IIcon halfLineIcon[] = new IIcon[4];
 	public IIcon fullLineIcon[] = new IIcon[4];
 
-	public BlockRoadLine() {
-		super(Material.circuits);
+	public BlockRoadLine(int i) {
+		super(Material.circuits, i);
 
 		if (Configurations.useRoadLineTool) {
 			this.setHarvestLevel(Configurations.getRoadLineTool, Configurations.roadLineToolLevel);

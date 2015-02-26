@@ -11,6 +11,8 @@ import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.api.ICarvable;
 import com.cricketcraft.chisel.carving.CarvableHelper;
 import com.cricketcraft.chisel.carving.CarvableVariation;
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -24,11 +26,18 @@ public class BlockCarvablePumpkin extends BlockPumpkin implements ICarvable {
 
 	private String faceLocation;
 
-	public BlockCarvablePumpkin(boolean isOn) {
+	public BlockCarvablePumpkin(boolean isOn, int i) {
 		super(isOn);
 		this.setStepSound(Block.soundTypeWood);
 		if (isOn)
 			setLightLevel(10.0F);
+		if(Configurations.tabMod == true && i == 2) {
+			setCreativeTab(ChiselTabs.tabModdedChiselBlocks);
+		} else if((Configurations.tabBlocks == true && i == 1) || Configurations.tabMod == false) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 		carverHelper = new CarvableHelper();
 	}
 

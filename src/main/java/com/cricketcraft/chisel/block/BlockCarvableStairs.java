@@ -18,6 +18,8 @@ import com.cricketcraft.chisel.api.ICarvable;
 import com.cricketcraft.chisel.carving.CarvableHelper;
 import com.cricketcraft.chisel.carving.CarvableVariation;
 import com.cricketcraft.chisel.client.render.BlockMarbleStairsRenderer;
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 public class BlockCarvableStairs extends BlockStairs implements ICarvable {
 
@@ -26,6 +28,11 @@ public class BlockCarvableStairs extends BlockStairs implements ICarvable {
 
 	public BlockCarvableStairs(Block block, int meta, CarvableHelper helper) {
 		super(block, meta);
+		if(Configurations.tabBlocks == true) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 
 		this.useNeighborBrightness = true;
 		carverHelper = helper;

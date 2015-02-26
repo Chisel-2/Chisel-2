@@ -10,13 +10,22 @@ import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 
 import com.cricketcraft.chisel.carving.CarvableHelper;
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 public class BlockMarbleWall extends BlockWall {
 
 	CarvableHelper carverHelper;
 
-	public BlockMarbleWall(Block block) {
+	public BlockMarbleWall(Block block, int i) {
 		super(block);
+		if(Configurations.tabMod == true && i == 2) {
+			setCreativeTab(ChiselTabs.tabModdedChiselBlocks);
+		} else if((Configurations.tabBlocks == true && i == 1) || Configurations.tabMod == false) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 
 		carverHelper = new CarvableHelper();
 	}

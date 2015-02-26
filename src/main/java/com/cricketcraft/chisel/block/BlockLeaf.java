@@ -4,8 +4,8 @@ import net.minecraft.block.material.Material;
 
 public class BlockLeaf extends BlockCarvable {
 
-	public BlockLeaf(Material material) {
-		super(material);
+	public BlockLeaf(Material material, int i) {
+		super(material, i);
 	}
 
 	@Override

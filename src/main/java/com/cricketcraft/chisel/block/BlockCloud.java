@@ -18,7 +18,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class BlockCloud extends BlockCarvable {
 
 	public BlockCloud() {
-		super(Material.ice);
+		super(Material.ice, 1);
 		useNeighborBrightness = true;
 	}
 

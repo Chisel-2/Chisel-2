@@ -21,7 +21,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class BlockCarvableIcePillar extends BlockCarvablePillar {
 
 	public BlockCarvableIcePillar(Material m) {
-		super(m);
+		super(m, 1);
 		this.slipperiness = 0.98F;
 		this.setTickRandomly(true);
 		setStained(true);

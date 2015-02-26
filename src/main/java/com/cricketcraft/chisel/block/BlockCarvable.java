@@ -4,7 +4,9 @@ import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.api.ICarvable;
 import com.cricketcraft.chisel.carving.CarvableHelper;
 import com.cricketcraft.chisel.carving.CarvableVariation;
+import com.cricketcraft.chisel.config.Configurations;
 import com.cricketcraft.chisel.init.ChiselTabs;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -23,11 +25,18 @@ public class BlockCarvable extends Block implements ICarvable {
 	public CarvableHelper carverHelper;
 	private boolean isAlpha;
 
-	public BlockCarvable() {
-		this(Material.rock);
+	public BlockCarvable(int i) {
+		this(Material.rock, i);
+		if(Configurations.tabMod == true && i == 2) {
+			setCreativeTab(ChiselTabs.tabModdedChiselBlocks);
+		} else if((Configurations.tabBlocks == true && i == 1) || Configurations.tabMod == false) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 	}
 
-	public BlockCarvable(Material m) {
+	public BlockCarvable(Material m, int i) {
 		super(m);
 		if (m == Material.rock || m == Material.iron) {
 			setHarvestLevel("pickaxe", 0);
@@ -35,7 +44,13 @@ public class BlockCarvable extends Block implements ICarvable {
 		carverHelper = new CarvableHelper();
 		setResistance(10.0F);
 		setHardness(2.0F);
-		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
+		if(Configurations.tabMod == true && i == 2) {
+			setCreativeTab(ChiselTabs.tabModdedChiselBlocks);
+		} else if((Configurations.tabBlocks == true && i == 1) || Configurations.tabMod == false) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 	}
 
 	public BlockCarvable setStained(boolean a) {

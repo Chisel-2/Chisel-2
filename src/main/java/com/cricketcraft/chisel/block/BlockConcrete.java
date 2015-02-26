@@ -6,14 +6,15 @@ import net.minecraft.world.World;
 
 import com.cricketcraft.chisel.client.GeneralChiselClient;
 import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
 
 public class BlockConcrete extends BlockCarvable {
 
-	public BlockConcrete() {
-		super();
+	public BlockConcrete(int i) {
+		super(i);
 	}
 
 	@Override

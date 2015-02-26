@@ -1,17 +1,20 @@
 package com.cricketcraft.chisel.block;
 
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockCarvableColor extends BlockCarvable {
 
-    public BlockCarvableColor() {
-        this(Material.rock);
+    public BlockCarvableColor(int i) {
+        this(Material.rock, i);
     }
 
-    public BlockCarvableColor(Material m) {
-        super(m);
+    public BlockCarvableColor(Material m, int i) {
+        super(m, i);
     }
 
     @Override

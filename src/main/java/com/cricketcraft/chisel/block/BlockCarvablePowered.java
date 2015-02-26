@@ -5,8 +5,8 @@ import net.minecraft.world.IBlockAccess;
 
 public class BlockCarvablePowered extends BlockCarvable {
 
-	public BlockCarvablePowered(Material m) {
-		super(m);
+	public BlockCarvablePowered(Material m, int i) {
+		super(m, i);
 	}
 
 	/**

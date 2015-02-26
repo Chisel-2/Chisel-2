@@ -4,8 +4,8 @@ import com.cricketcraft.chisel.Chisel;
 
 public class BlockEldritch extends BlockCarvable {
 
-	public BlockEldritch() {
-		super();
+	public BlockEldritch(int i) {
+		super(i);
 	}
 
 	@Override
