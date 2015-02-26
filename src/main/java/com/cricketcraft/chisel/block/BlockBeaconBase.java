@@ -8,12 +8,12 @@ import net.minecraft.world.IBlockAccess;
  */
 public class BlockBeaconBase extends BlockCarvable {
 
-	public BlockBeaconBase() {
-		super();
+	public BlockBeaconBase(int i) {
+		super(i);
 	}
 
-	public BlockBeaconBase(Material mat) {
-		super(mat);
+	public BlockBeaconBase(Material mat, int i) {
+		super(mat, i);
 	}
 
 	@Override

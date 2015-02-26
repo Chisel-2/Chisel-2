@@ -115,7 +115,7 @@ public class Chisel {
 		Configurations.config = new Configuration(configFile);
 		Configurations.config.load();
 		Configurations.refreshConfig();
-
+		
 		Features.preInit();
 		PacketHandler.init();
 		ChiselController.INSTANCE.preInit();
@@ -133,6 +133,7 @@ public class Chisel {
 		addWorldgen(Features.ANDESITE, ChiselBlocks.andesite, Configurations.andesiteAmount, 40, 100, 0.5);
 		addWorldgen(Features.GRANITE, ChiselBlocks.granite, Configurations.graniteAmount, 40, 100, 0.5);
 		addWorldgen(Features.DIORITE, ChiselBlocks.diorite, Configurations.dioriteAmount, 40, 100, 0.5);
+		
 		GameRegistry.registerWorldGenerator(GeneratorChisel.INSTANCE, 1000);
 
 		proxy.init();
@@ -153,7 +154,7 @@ public class Chisel {
 			}
 		}
 	}
-
+	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		ChiselTabs.postInit();

@@ -1,12 +1,14 @@
 package com.cricketcraft.chisel.config;
 
-import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.Features;
+import java.util.Locale;
+
 import net.minecraft.item.ItemDye;
 import net.minecraftforge.common.config.Configuration;
+
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Locale;
+import com.cricketcraft.chisel.Chisel;
+import com.cricketcraft.chisel.Features;
 
 public class Configurations {
 
@@ -50,7 +52,11 @@ public class Configurations {
 	public static boolean useRoadLineTool;
 	public static String getRoadLineTool;
 	public static int roadLineToolLevel;
-
+	public static boolean searchbars;
+	public static boolean tabBlocks;
+	public static boolean tabMod;
+	public static boolean tabItems = true;
+	
     public static int[] configColors = new int[ItemDye.field_150923_a.length];
 
 	public static boolean refreshConfig() {
@@ -87,6 +93,9 @@ public class Configurations {
 		fancy = config.get(category, "fancyLeaves", true, "Enable fancy textures").getBoolean(true);
 		blockDescriptions = config.get(category, "tooltipsUseBlockDescriptions", true, "Make variations of blocks have the same name, and use the description in tooltip to distinguish them.")
 				.getBoolean(true);
+		searchbars = config.get(category, "creativeSearchBars", true, "Enable search bars in creative tabs").getBoolean(true);
+		tabBlocks =  config.get(category, "creativeTabBlocks", false, "Enable Blocks Creative Tab").getBoolean(false);
+		tabMod = config.get(category, "creativeTabModded", false, "Enable Modded Creative Tab").getBoolean(false);
 
 		/* chisel */
 		category = "chisel";
@@ -126,6 +135,15 @@ public class Configurations {
                 configColors[i] = ItemDye.field_150922_c[i];
             }
         }
+        
+        if(tabMod == true && tabBlocks == false) {
+        	tabMod = false;
+        	tabBlocks = true;
+        }
+        
+        if(tabBlocks == true || searchbars == false){
+        	tabItems = false;
+        }
 
 		if (config.hasChanged()) {
 			config.save();
@@ -136,7 +154,7 @@ public class Configurations {
 	public static boolean featureEnabled(Features feature) {
 		return config.get("features", featureName(feature), true).getBoolean(true) && refreshConfig();
 	}
-
+	
 	/**
 	 * Makes the old camelCase names from the new CONSTANT_CASE names
 	 */
@@ -157,4 +175,5 @@ public class Configurations {
 	public static boolean featureEnabled(String feature) {
 		return false;
 	}
+
 }

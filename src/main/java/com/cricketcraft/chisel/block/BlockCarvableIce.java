@@ -17,6 +17,8 @@ import net.minecraft.world.World;
 import com.cricketcraft.chisel.api.ICarvable;
 import com.cricketcraft.chisel.carving.CarvableHelper;
 import com.cricketcraft.chisel.carving.CarvableVariation;
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 public class BlockCarvableIce extends BlockIce implements ICarvable {
 
@@ -24,6 +26,11 @@ public class BlockCarvableIce extends BlockIce implements ICarvable {
 
 	public BlockCarvableIce() {
 		super();
+		if(Configurations.tabBlocks == true) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 		carverHelper = new CarvableHelper();
 	}
 

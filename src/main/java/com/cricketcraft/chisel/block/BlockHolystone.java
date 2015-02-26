@@ -14,8 +14,8 @@ public class BlockHolystone extends BlockCarvable {
 
 	public IIcon iconStar;
 
-	public BlockHolystone(Material m) {
-		super(m);
+	public BlockHolystone(Material m, int i) {
+		super(m, i);
 
 		this.setLightLevel(0.25F);
 	}

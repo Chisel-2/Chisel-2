@@ -19,14 +19,14 @@ public class BlockMarbleTexturedOre extends BlockTexturedOre implements ICarvabl
 
 	public CarvableHelper carverHelper;
 
-	public BlockMarbleTexturedOre(Material mat, String baseIcon) {
-		super(mat, baseIcon);
+	public BlockMarbleTexturedOre(Material mat, String baseIcon, int i) {
+		super(mat, baseIcon, i);
 
 		carverHelper = new CarvableHelper();
 	}
 
-	public BlockMarbleTexturedOre(Material mat, Block block) {
-		super(mat, block);
+	public BlockMarbleTexturedOre(Material mat, Block block, int i) {
+		super(mat, block, i);
 
 		carverHelper = new CarvableHelper();
 	}

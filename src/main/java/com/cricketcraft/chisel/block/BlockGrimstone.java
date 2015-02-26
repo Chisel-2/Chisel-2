@@ -15,8 +15,8 @@ public class BlockGrimstone extends BlockCarvable {
 
 	public IIcon iconStar;
 
-	public BlockGrimstone(Material m) {
-		super(m);
+	public BlockGrimstone(Material m, int i) {
+		super(m, i);
 	}
 
 	@Override

@@ -12,6 +12,7 @@ import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.api.ICarvable;
 import com.cricketcraft.chisel.carving.CarvableHelper;
 import com.cricketcraft.chisel.carving.CarvableVariation;
+import com.cricketcraft.chisel.config.Configurations;
 import com.cricketcraft.chisel.init.ChiselTabs;
 
 import cpw.mods.fml.relauncher.Side;
@@ -23,10 +24,21 @@ public class BlockCarvableTorch extends BlockTorch implements ICarvable {
 	private String texLocation;
 	protected boolean emitsParticles = true;
 
-	public BlockCarvableTorch() {
+	public BlockCarvableTorch(int i) {
 		super();
+		if(Configurations.tabMod == true && i == 2) {
+			setCreativeTab(ChiselTabs.tabModdedChiselBlocks);
+		} else if((Configurations.tabBlocks == true && i == 1) || Configurations.tabMod == false) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 		carverHelper = new CarvableHelper();
-		setCreativeTab(ChiselTabs.tabChisel);
+		if(Configurations.tabBlocks == true) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);
+		}
 		setLightLevel(0.9375F);
 		setBlockName("torch");
 	}

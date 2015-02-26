@@ -9,6 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import com.cricketcraft.chisel.Features;
+import com.cricketcraft.chisel.config.Configurations;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -17,7 +18,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ChiselTabs {
 
-	private static class CustomCreativeTab extends CreativeTabs {
+	public static class CustomCreativeTab extends CreativeTabs {
 		
 		private boolean search;
 
@@ -61,14 +62,56 @@ public class ChiselTabs {
 	        return search;
 	    }
 	}
-
-	public static final CustomCreativeTab tabChisel = new CustomCreativeTab("tabChisel", true);
 	
-	public static void postInit() {
+	public static CustomCreativeTab tabChisel = new CustomCreativeTab("tabChisel", Configurations.tabItems);
+	public static CustomCreativeTab tabChiselBlocks;
+	public static CustomCreativeTab tabModdedChiselBlocks;
 
+	private static boolean atLeastOneModIsLoaded = false;
+	
+	// this serves mostly just to load the static initializers
+	public static void preInit() {
+		atLeastOneModIsLoaded = Features.oneModdedFeatureLoaded();	
+	}
+
+	public static void postInit() {
+		
 		if(Features.CHISEL.enabled())
 		tabChisel.setTabIconItemStack(new ItemStack(ChiselItems.chisel));
 		else tabChisel.setTabIconItemStack(new ItemStack(Items.stick));
 
+		if(Configurations.tabBlocks == true){
+			tabChiselBlocks = new CustomCreativeTab("tabModdedChiselBlocks", Configurations.searchbars);
+			
+			if(Features.HOLYSTONE.enabled())
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.holystone));
+			else if(Features.WOOD.enabled())
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.planks[0], 1, 1));
+			else if(Features.TECHNICAL.enabled())
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.technical));
+			else if(Features.JACKOLANTERN.enabled())
+			tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.jackolantern[0]));
+			else {
+				tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.lit_pumpkin));
+			}
+		}
+		if(Configurations.tabMod == true){
+			tabModdedChiselBlocks = new CustomCreativeTab("tabChiselBlocks", Configurations.searchbars);
+			
+			if (atLeastOneModIsLoaded && Configurations.tabMod == true) {
+				if (Features.ARCANE.enabled()) {
+					tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.arcane));
+				} else if (Features.BLOOD_RUNE.enabled()) {
+					tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.bloodRune));
+				} else {
+					if(ChiselBlocks.voidstone != null)
+					tabChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.voidstone));
+					else {
+						tabChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.obsidian));
+					}
+				}
+			}
+		}
 	}
+	
 }

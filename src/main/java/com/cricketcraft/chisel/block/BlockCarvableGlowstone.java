@@ -14,8 +14,8 @@ import net.minecraft.world.World;
 
 public class BlockCarvableGlowstone extends BlockCarvable {
 
-	public BlockCarvableGlowstone() {
-		super(Material.glass);
+	public BlockCarvableGlowstone(int i) {
+		super(Material.glass, i);
 	}
 
 	@Override

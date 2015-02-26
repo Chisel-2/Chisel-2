@@ -14,8 +14,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockCarvableBookshelf extends BlockCarvable {
 
-	public BlockCarvableBookshelf() {
-		super(Material.wood);
+	public BlockCarvableBookshelf(int i) {
+		super(Material.wood, i);
 		setHarvestLevel("axe", 0);
 	}
 

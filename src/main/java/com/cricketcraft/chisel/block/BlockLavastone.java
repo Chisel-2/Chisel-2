@@ -9,8 +9,8 @@ import com.cricketcraft.chisel.client.GeneralChiselClient;
 
 public class BlockLavastone extends BlockMarbleTexturedOre {
 
-	public BlockLavastone(Material mat, String baseIcon) {
-		super(mat, baseIcon);
+	public BlockLavastone(Material mat, String baseIcon, int i) {
+		super(mat, baseIcon, i);
 		setLightLevel(1F);
 	}
 

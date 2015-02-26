@@ -16,14 +16,14 @@ public class BlockCarvableGlow extends BlockCarvableColor {
 
 	private String glowTexturePath;
 
-	public BlockCarvableGlow(String glowTexture) {
-		super();
+	public BlockCarvableGlow(String glowTexture, int i) {
+		super(i);
 		setLightLevel(0.5f);
 		this.glowTexturePath = glowTexture;
 	}
 
-	public BlockCarvableGlow(Material mat, String glowTexture) {
-		super(mat);
+	public BlockCarvableGlow(Material mat, String glowTexture, int i) {
+		super(mat, i);
 		this.glowTexturePath = glowTexture;
 	}
 

@@ -6,6 +6,8 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
 
 import com.cricketcraft.chisel.client.render.BlockTexturedOreRenderer;
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 public class BlockTexturedOre extends Block {
 
@@ -14,13 +16,20 @@ public class BlockTexturedOre extends Block {
 	public IIcon icon;
 	String iconFile;
 
-	public BlockTexturedOre(Material mat, Block base) {
+	public BlockTexturedOre(Material mat, Block base, int i) {
 		super(mat);
+		if(Configurations.tabMod == true && i == 2) {
+			setCreativeTab(ChiselTabs.tabModdedChiselBlocks);
+		} else if((Configurations.tabBlocks == true && i == 1) || Configurations.tabMod == false) {
+			setCreativeTab(ChiselTabs.tabChiselBlocks);
+		} else {
+			setCreativeTab(ChiselTabs.tabChisel);		
+		}
 
 		this.base = base;
 	}
 
-	public BlockTexturedOre(Material mat, String iconFile) {
+	public BlockTexturedOre(Material mat, String iconFile, int i) {
 		super(mat);
 
 		this.iconFile = iconFile;

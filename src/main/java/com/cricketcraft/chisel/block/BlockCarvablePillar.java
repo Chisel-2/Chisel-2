@@ -11,8 +11,8 @@ public class BlockCarvablePillar extends BlockCarvable {
 
 	public IIcon sides[] = new IIcon[6];
 
-	public BlockCarvablePillar(Material m) {
-		super(m);
+	public BlockCarvablePillar(Material m, int i) {
+		super(m, i);
 	}
 
 	@Override
