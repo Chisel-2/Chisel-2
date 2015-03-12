@@ -1,122 +1,122 @@
 # Key localizations
 
 # Item localizations
-item.chisel.name=정
+item.chisel.name=끌
 
-item.chisel.chisel.desc.gui=Right-Click to open GUI
-item.chisel.chisel.desc.lc1=Left click to chisel blocks in world
-item.chisel.chisel.desc.lc2=Can target a block by leaving it in the inventory
+item.chisel.chisel.desc.gui=우클릭으로 GUI 열기
+item.chisel.chisel.desc.lc1=왼클릭으로 블록을 순차적으로 모양을 변경
+item.chisel.chisel.desc.lc2=끌에 변경된 블록이 있으면 해당 블록으로만 변경
 item.chisel.chisel.desc.modes=Has multiple modes for chiseling.
 
-item.chisel.chisel_diamond.name=Diamond Chisel
+item.chisel.chisel_diamond.name=다이아몬드 정
 
 item.ballMoss.name=이끼 공
-item.ballMoss.desc=Right-Click to throw. This will turn Cobblestone to Moss Stone on impact.
+item.ballMoss.desc=우클릭으로 던지기. 돌과 조약돌에 이끼가 낍니다.
 item.cloudBottle.name=구름이 들어있는 유리병
-item.cloudBottle.desc=Right-Click to throw. This will spawn clouds on impact.
-item.smashingRock.name=Smashing Rock
-item.smashingRock.desc=Right-Click to throw. This will turn Cobblestone into Gravel, Gravel into Sand etc on impact.
-item.upgrade_speed.name=Speed Upgrade
-item.upgrade_automation.name=Automation Upgrade
-item.upgrade_stack.name=Stack Upgrade
+item.cloudBottle.desc=우클릭으로 던지기. 구름이 생성됩니다.
+item.smashingRock.name=파쇄석
+item.smashingRock.desc=우클릭으로 던지기. 조약돌을 자갈로 자갈을 모래등으로 바꿉니다.
+item.upgrade_speed.name=속도 업그레이드
+item.upgrade_automation.name=자동화 업그레이드
+item.upgrade_stack.name=중첩 업그레이드
 
-item.upgrade_speed.desc=Increases the rate at which it works
-item.upgrade_automation.desc=Allows things to push in and out of the Auto Chisel
-item.upgrade_stack.desc=Allows it to manufacture stacks at a time
+item.upgrade_speed.desc=작업 속도를 증가시킵니다.
+item.upgrade_automation.desc=블록들을 자동으로 넣고 뺄 수 있게 합니다.
+item.upgrade_stack.desc=한 번에 작업하는 블록 양을 늘립니다.
 
 # Block localizations
 # Have fun! ~zombiepig333
 
 #Chisel 2
 
-#Valentines
-tile.chisel.valentines.name=Valentines Block
-tile.valentines.0.desc=Valentines Bricks
-tile.valentines.1.desc=If it speaks, I wouldn't touch it
+# 발렌타인 (Valentines)
+tile.chisel.valentines.name=발렌타인 블록
+tile.valentines.0.desc=발렌타인 블록
+tile.valentines.1.desc=저라면, 이거 안만져요.
 
-#AntiBlocks
-tile.chisel.antiBlock.name=Anti Block
-tile.antiBlock.black.desc=Black Anti Block
-tile.antiBlock.blue.desc=Blue Anti Block
-tile.antiBlock.brown.desc=Brown Anti Block
-tile.antiBlock.cyan.desc=Cyan Anti Block
-tile.antiBlock.green.desc=Green Anti Block
-tile.antiBlock.light_blue.desc=Light Blue Anti Block
-tile.antiBlock.silver.desc=Light Gray Anti Block
-tile.antiBlock.lime.desc=Lime Anti Block
-tile.antiBlock.magenta.desc=Magenta Anti Block
-tile.antiBlock.orange.desc=Orange Anti Block
-tile.antiBlock.pink.desc=Pink Anti Block
-tile.antiBlock.purple.desc=Purple Anti Block
-tile.antiBlock.red.desc=Red Anti Block
-tile.antiBlock.white.desc=White Anti Block
-tile.antiBlock.yellow.desc=Yellow Anti Block
-tile.antiBlock.gray.desc=Gray Anti Block
+# 형광블록 (AntiBlocks)
+tile.chisel.antiBlock.name=형광 블록
+tile.antiBlock.black.desc=검은색 형광 블록
+tile.antiBlock.blue.desc=파란색 형광 블록
+tile.antiBlock.brown.desc=갈색 형광 블록
+tile.antiBlock.cyan.desc=청록색 형광 블록
+tile.antiBlock.green.desc=초록색 형광 블록
+tile.antiBlock.light_blue.desc=하늘색 형광 블록
+tile.antiBlock.silver.desc=밝은 회색 형광 블록
+tile.antiBlock.lime.desc=연두색 형광 블록
+tile.antiBlock.magenta.desc=자홍색 형광 블록
+tile.antiBlock.orange.desc=주황색 형광 블록
+tile.antiBlock.pink.desc=분홍색 형광 블록
+tile.antiBlock.purple.desc=보라색 형광 블록
+tile.antiBlock.red.desc=빨간색 형광 블록
+tile.antiBlock.white.desc=하얀색 형광 블록
+tile.antiBlock.yellow.desc=노란색 형광 블록
+tile.antiBlock.gray.desc=회색 형광 블록
 
-#Diorite
-tile.chisel.diorite.name=Diorite
-tile.diorite.0.desc=Generates in your world
-tile.diorite.1.desc=Polished Diorite
-tile.diorite.2.desc=Diorite Pillar
+# 섬록암 (Diorite)
+tile.chisel.diorite.name=섬록암
+tile.diorite.0.desc=현재 세계에 생성되어있습니다.
+tile.diorite.1.desc=손질된 섬록암
+tile.diorite.2.desc=섬록암 기둥
 
-#Andesite
-tile.chisel.andesite.name=Andesite
-tile.andesite.0.desc=Generates in your world
-tile.andesite.1.desc=Polished Andesite
-tile.andesite.2.desc=Andesite Pillar
+# 안산암 (Andesite)
+tile.chisel.andesite.name=안산암
+tile.andesite.0.desc=현재 세계에 생성되어있습니다.
+tile.andesite.1.desc=손질된 안산암
+tile.andesite.2.desc=안산암 기둥
 
-#Granite
-tile.chisel.granite.name=Granite
-tile.granite.0.desc=Generates in your world
-tile.granite.1.desc=Polished Granite
-tile.granite.2.desc=Granite Pillar
+# 화강암 (Granite)
+tile.chisel.granite.name=화강암
+tile.granite.0.desc=현재 세계에 생성되어있습니다.
+tile.granite.1.desc=손질된 화강암
+tile.granite.2.desc=화강암 기둥
 
-#Auto Chisel
-tile.chisel.autoChisel.name=Auto Chisel
-autochisel.slot.chisel.tooltip=Chisel Slot
-autochisel.slot.target.tooltip=Target Slot
+# 자동화 끌 (Auto Chisel)
+tile.chisel.autoChisel.name=자동화 끌
+autochisel.slot.chisel.tooltip=끌 넣는 곳
+autochisel.slot.target.tooltip=견본 넣는 곳
 
-#Leaves
-tile.leaves.6.desc=Dead Leaves
-tile.leaves.7.desc=Fancy Leaves
-tile.leaves.8.desc=Pink Petals
-tile.leaves.9.desc=Red Rose
-tile.leaves.10.desc=White Rose
-tile.leaves.11.desc=Christmas Balls
-tile.leaves.12.desc=Christmas Lights
+# 나뭇잎 (Leaves)
+tile.leaves.6.desc=죽은 나뭇잎
+tile.leaves.7.desc=특이한 나뭇잎
+tile.leaves.8.desc=벚꽃잎
+tile.leaves.9.desc=붉은 장미
+tile.leaves.10.desc=하얀 장미
+tile.leaves.11.desc=크리스마스 트리 구슬
+tile.leaves.12.desc=크리스마스 트리 전구
 
-#Void Stone Blocks
-tile.chisel.voidstone.name=Voidstone
-tile.voidstone.0.desc=Raw Voidstone
-tile.voidstone.1.desc=Large Voidstone Tiles
-tile.voidstone.2.desc=Smooth Voidstone
-tile.voidstone.3.desc=Skull Voidstone
-tile.voidstone.4.desc=Runic Voidstone
-tile.voidstone.5.desc=Metal-Bordered Voidstone
-tile.voidstone.6.desc=Eye Voidstone
-tile.voidstone.7.desc=Beveled Voidstone
+# 공허석 블록 (Void Stone Blocks)
+tile.chisel.voidstone.name=공허석
+tile.voidstone.0.desc=가공 안된 공허석
+tile.voidstone.1.desc=대형 공허석 타일
+tile.voidstone.2.desc=부드러운 공허석
+tile.voidstone.3.desc=해골 문양 공허석
+tile.voidstone.4.desc=룬이 새겨진 공허석
+tile.voidstone.5.desc=금속 테두리의 공허석
+tile.voidstone.6.desc=눈 모양의 공허석
+tile.voidstone.7.desc=모서리를 다듬은 공허석
 
-#Void Stone Pillars
-tile.chisel.voidstonePillar.name=Voidstone Pillar
-tile.voidstonePillar.0.desc=Striped Voidstone Pillar
+# 공허석 기둥 (Void Stone Pillars)
+tile.chisel.voidstonePillar.name=공허석 기둥
+tile.voidstonePillar.0.desc=줄무늬 공허석 기둥
 
--#Warning
-tile.chisel.warningSign.name=Warning Sign
-tile.warningSign.0.desc=Radiation
-tile.warningSign.1.desc=Biohazard
-tile.warningSign.2.desc=Fire
-tile.warningSign.3.desc=Explosion
-tile.warningSign.4.desc=Death
-tile.warningSign.5.desc=Falling Objects
-tile.warningSign.6.desc=Danger of Falling
-tile.warningSign.7.desc=High Voltage
-tile.warningSign.8.desc=Generic Warning
-tile.warningSign.9.desc=Dangerous Chemicals
-tile.warningSign.10.desc=Under Construction
-tile.warningSign.11.desc=Loud Sounds
-tile.warningSign.12.desc=No Entry
-tile.warningSign.13.desc=Cryogenic Freezing in progress
-tile.warningSign.14.desc=Oxygen Required
+# 경고 (Warning)
+tile.chisel.warningSign.name=경고 표시
+tile.warningSign.0.desc=방사능
+tile.warningSign.1.desc=생물학적 위험
+tile.warningSign.2.desc=불
+tile.warningSign.3.desc=폭발
+tile.warningSign.4.desc=사망
+tile.warningSign.5.desc=낙하물
+tile.warningSign.6.desc=추락
+tile.warningSign.7.desc=고압
+tile.warningSign.8.desc=경고
+tile.warningSign.9.desc=위험한 화학물질
+tile.warningSign.10.desc=공사중
+tile.warningSign.11.desc=큰 소움
+tile.warningSign.12.desc=출입 금지
+tile.warningSign.13.desc=극저온 냉동 진행중
+tile.warningSign.14.desc=산소 필요
 
 #Energised Void Stone Blocks
 tile.chisel.voidstone2.name=Energised Voidstone
