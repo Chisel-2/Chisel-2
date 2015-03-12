@@ -1210,32 +1210,32 @@ tile.coloredSand.13.desc=Green Colored Sand
 tile.coloredSand.14.desc=Red Colored Sand
 tile.coloredSand.15.desc=Black Colored Sand
 
-#Laboratory Block
-tile.chisel.laboratoryblock.name=Laboratory Block
-tile.laboratory.0.desc=Wall Panel
-tile.laboratory.1.desc=Dotted Panel
-tile.laboratory.2.desc=Enamelled Wall
-tile.laboratory.3.desc=Enamelled Roundel Wall
-tile.laboratory.4.desc=Enamelled Wall Vents
-tile.laboratory.5.desc=Large Enamelled Tile
-tile.laboratory.6.desc=Small Enamelled Tiles
-tile.laboratory.7.desc=Laboratory Floor
-tile.laboratory.8.desc=Checkerboard Floor
-tile.laboratory.9.desc=Clear Panel
-tile.laboratory.10.desc=Fuzzy Panel
-tile.laboratory.11.desc=Large Steel Tile
-tile.laboratory.12.desc=Small Steel Tiles
-tile.laboratory.13.desc=Direction Console (Right)
-tile.laboratory.14.desc=Direction Console (Left)
-tile.laboratory.15.desc=Information Console
+# 연구소 블록 (Laboratory Block)
+tile.chisel.laboratoryblock.name=연구소 블록
+tile.laboratory.0.desc=벽 패널
+tile.laboratory.1.desc=점이 찍힌 패널
+tile.laboratory.2.desc=에나멜 벽
+tile.laboratory.3.desc=구멍난 에나멜 벽
+tile.laboratory.4.desc=에나멜 통풍 벽
+tile.laboratory.5.desc=대형 에나멜 타일
+tile.laboratory.6.desc=소형 에나멜 타일
+tile.laboratory.7.desc=연구실 바닥
+tile.laboratory.8.desc=바둑판 무늬 바닥
+tile.laboratory.9.desc=깨끗한 패널
+tile.laboratory.10.desc=흐릿한 패널
+tile.laboratory.11.desc=대형 강철 타일
+tile.laboratory.12.desc=소형 강철 타일
+tile.laboratory.13.desc=오른쪽 방향 콘솔
+tile.laboratory.14.desc=왼쪽 방향 콘솔
+tile.laboratory.15.desc=정보 콘솔
 
-# Creative Tab localizations
-itemGroup.tabOtherChiselBlocks=Other Chisel Blocks
-itemGroup.tabStoneChiselBlocks=Stone Chisel Blocks
-itemGroup.tabWoodChiselBlocks=Wood Chisel Blocks
-itemGroup.tabMetalChiselBlocks=Metal Chisel Blocks
-itemGroup.tabModdedChiselBlocks=Modded Chisel Blocks
-itemGroup.tabChisel=치슬 아이
+# 크리에이티브 탭 한글화
+itemGroup.tabOtherChiselBlocks=기타 치슬 블록
+itemGroup.tabStoneChiselBlocks=돌 치슬 블록
+itemGroup.tabWoodChiselBlocks=나무 치슬 블록
+itemGroup.tabMetalChiselBlocks=금속 치슬 블록
+itemGroup.tabModdedChiselBlocks=모들 치슬 블록
+itemGroup.tabChisel=치슬 아이템
 
 #Container
 container.chisel=치슬
