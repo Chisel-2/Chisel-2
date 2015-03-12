@@ -8,7 +8,7 @@ item.chisel.chisel.desc.lc1=왼클릭으로 블록을 순차적으로 모양을 
 item.chisel.chisel.desc.lc2=끌에 변경된 블록이 있으면 해당 블록으로만 변경
 item.chisel.chisel.desc.modes=Has multiple modes for chiseling.
 
-item.chisel.chisel_diamond.name=다이아몬드 정
+item.chisel.chisel_diamond.name=다이아몬드 끌
 
 item.ballMoss.name=이끼 공
 item.ballMoss.desc=우클릭으로 던지기. 돌과 조약돌에 이끼가 낍니다.
@@ -90,15 +90,15 @@ tile.chisel.voidstone.name=공허석
 tile.voidstone.0.desc=가공 안된 공허석
 tile.voidstone.1.desc=대형 공허석 타일
 tile.voidstone.2.desc=부드러운 공허석
-tile.voidstone.3.desc=해골 문양 공허석
+tile.voidstone.3.desc=해골 문양의 공허석
 tile.voidstone.4.desc=룬이 새겨진 공허석
 tile.voidstone.5.desc=금속 테두리의 공허석
-tile.voidstone.6.desc=눈 모양의 공허석
+tile.voidstone.6.desc=눈 문양의 공허석
 tile.voidstone.7.desc=모서리를 다듬은 공허석
 
 # 공허석 기둥 (Void Stone Pillars)
 tile.chisel.voidstonePillar.name=공허석 기둥
-tile.voidstonePillar.0.desc=줄무늬 공허석 기둥
+tile.voidstonePillar.0.desc=줄무늬의 공허석 기둥
 
 # 경고 (Warning)
 tile.chisel.warningSign.name=경고 표시
@@ -118,46 +118,47 @@ tile.warningSign.12.desc=출입 금지
 tile.warningSign.13.desc=극저온 냉동 진행중
 tile.warningSign.14.desc=산소 필요
 
-#Energised Void Stone Blocks
-tile.chisel.voidstone2.name=Energised Voidstone
-tile.voidstone2.0.desc=Raw Energised Voidstone
-tile.voidstone2.1.desc=Large Energised Voidstone Tiles
-tile.voidstone2.2.desc=Smooth Energised Voidstone
-tile.voidstone2.3.desc=Skull Energised Voidstone
-tile.voidstone2.4.desc=Runic Energised Voidstone
-tile.voidstone2.5.desc=Metal-Bordered Energised Voidstone
-tile.voidstone2.6.desc=Eye Energised Voidstone
-tile.voidstone2.7.desc=Beveled Voidstone
+# 충전된 공허석 블록 (Energised Void Stone)
+tile.chisel.voidstone2.name=충전된 공허석
+tile.voidstone2.0.desc=가공 안된 충전된 공허석
+tile.voidstone2.1.desc=대형 충전된 공허석 타일
+tile.voidstone2.2.desc=부드러운 충전된 공허석
+tile.voidstone2.3.desc=해골 문양의 충전된 공허석
+tile.voidstone2.4.desc=룬이 새겨진 충전된 공허석
+tile.voidstone2.5.desc=금속 테두리의 충전된 공허석
+tile.voidstone2.6.desc=눈 문양의 충전된 공허석
+tile.voidstone2.7.desc=모서리를 다듬은 충전된 공허석
 
-#Void Stone Pillars
-tile.chisel.voidstonePillar2.name=Energised Voidstone Pillar
-tile.voidstonePillar2.0.desc=Striped Energised Voidstone Pillar
+# 충전된 공허석 기둥 (Energised Void Stone Pillars)
+tile.chisel.voidstonePillar2.name=충전된 공허석 기둥
+tile.voidstonePillar2.0.desc=줄무늬의 충전된 공허석
 
-#Arcane
-tile.chisel.arcane.name=Arcane Stone Block
-tile.arcane.0.desc=Engraved Moon
-tile.arcane.1.desc=Glowing Moon
-tile.arcane.2.desc=Beveled Tile
-tile.arcane.3.desc=Engraved Symbols
-tile.arcane.4.desc=Glowing Symbols
-tile.arcane.5.desc=Bricks
-tile.arcane.6.desc=Temporal Conduit
-tile.arcane.7.desc=Braaainz
-tile.arcane.8.desc=Spatial Conduit
+# 아케인 스톤 (Arcane Stone)
+tile.chisel.arcane.name=아케인 스톤 블록
+tile.arcane.0.desc=달 문양
+tile.arcane.1.desc=빛나는 달 문양
+tile.arcane.2.desc=모서리를 다듬은 타일
+tile.arcane.3.desc=룬 문양
+tile.arcane.4.desc=빛나는 룬 문양
+tile.arcane.5.desc=벽돌
+tile.arcane.6.desc=시간의 도관
+#tile.arcane.7.desc=놰애애애 (Braaainz)
+tile.arcane.8.desc=공간의 도관
 
-#Thaumium
-tile.chisel.thaumium.name=Thaumium Block
-tile.thaumium.0.desc=Ornate Pattern
-tile.thaumium.1.desc=Totem Faces
-tile.thaumium.2.desc=Bricks
-tile.thaumium.3.desc=Small Tiles
-tile.thaumium.4.desc=Lattice
-tile.thaumium.5.desc=Bounded Planks
+# 사우뮴 블록 (Thaumium)
+tile.chisel.thaumium.name=사우뮴 블록
+tile.thaumium.0.desc=화려한 무늬
+tile.thaumium.1.desc=토템 얼굴
+tile.thaumium.2.desc=벽돌
+tile.thaumium.3.desc=작은 타일
+tile.thaumium.4.desc=격자
+tile.thaumium.5.desc=구속된 목재
 
-#Tallow
-tile.chisel.tallow.name=Block of Tallow
-tile.tallow.0.desc=Smooth Tallow Block
-tile.tallow.1.desc=Ensouled Tallow Block
+# 수지 블록 (Tallow)
+tile.chisel.tallow.name=수지 블록
+tile.tallow.0.desc=
+tile.tallow.1.desc=부드러운 수지 블록
+tile.tallow.2.desc=혼이 담긴 수지 블록
 
 #Blood Rune
 tile.chisel.bloodRune.name=Blood Rune
