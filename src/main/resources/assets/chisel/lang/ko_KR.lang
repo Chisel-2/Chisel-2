@@ -131,7 +131,7 @@ tile.voidstone2.7.desc=모서리를 다듬은 충전된 공허석
 
 # 충전된 공허석 기둥 (Energised Void Stone Pillars)
 tile.chisel.voidstonePillar2.name=충전된 공허석 기둥
-tile.voidstonePillar2.0.desc=줄무늬의 충전된 공허석
+tile.voidstonePillar2.0.desc=줄무늬의 충전된 공허석 기둥
 
 # 아케인 스톤 (Arcane Stone)
 tile.chisel.arcane.name=아케인 스톤 블록
