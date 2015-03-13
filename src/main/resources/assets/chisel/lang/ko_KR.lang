@@ -142,7 +142,7 @@ tile.arcane.3.desc=룬 문양
 tile.arcane.4.desc=빛나는 룬 문양
 tile.arcane.5.desc=벽돌
 tile.arcane.6.desc=시간의 도관
-#tile.arcane.7.desc=놰애애애 (Braaainz)
+tile.arcane.7.desc=뇌에에에
 tile.arcane.8.desc=공간의 도관
 
 # 사우뮴 블록 (Thaumium)
@@ -176,34 +176,34 @@ tile.futura.1.desc=빛나는 화면과 청록색 테두리
 #tile.futura.2.desc=Applied Labyrinthic Neon Lines
 #tile.futura.3.desc=Poptart Rainbow
 
-#Waterstone
-tile.chisel.waterstone.name=Waterstone
-tile.waterstone.0.desc=Waterstone Bricks
-tile.waterstone.1.desc=Black Waterstone
-tile.waterstone.2.desc=Waterstone Tiles
-tile.waterstone.3.desc=Chaotic Waterstone Bricks
-tile.waterstone.4.desc=Water Creeper in Tiles
-tile.waterstone.5.desc=Water Panel
-tile.waterstone.6.desc=Ornate Water Panel
+# 수석 (Waterstone)
+tile.chisel.waterstone.name=수석
+tile.waterstone.0.desc=수석 벽돌
+tile.waterstone.1.desc=검은 수석 벽돌
+tile.waterstone.2.desc=수석 타일
+tile.waterstone.3.desc=복잡한 수석 벽돌
+tile.waterstone.4.desc=크리퍼 문양 수석 타일
+tile.waterstone.5.desc=수석 패널
+tile.waterstone.6.desc=화려한 수석 패널
 
-#Hex Plating
-tile.chisel.hexPlating.name=Hex Plating
-tile.hexPlating.black.desc=Black Plating
-tile.hexPlating.blue.desc=Blue Plating
-tile.hexPlating.brown.desc=Brown Plating
-tile.hexPlating.cyan.desc=Cyan Plating
-tile.hexPlating.green.desc=Green Plating
-tile.hexPlating.light_blue.desc=Light Blue Plating
-tile.hexPlating.silver.desc=Light Gray Plating
-tile.hexPlating.lime.desc=Lime Plating
-tile.hexPlating.magenta.desc=Magenta Plating
-tile.hexPlating.orange.desc=Orange Plating
-tile.hexPlating.pink.desc=Pink Plating
-tile.hexPlating.purple.desc=Purple Plating
-tile.hexPlating.red.desc=Red Plating
-tile.hexPlating.white.desc=White Plating
-tile.hexPlating.yellow.desc=Yellow Plating
-tile.hexPlating.gray.desc=Gray Plating
+# 육각 무늬 판 (Hex Plating)
+tile.chisel.hexPlating.name=육각 무늬 판
+tile.hexPlating.black.desc=검은색 육간 무늬 판
+tile.hexPlating.blue.desc=파란색 육각 무늬 판
+tile.hexPlating.brown.desc=갈색 육각 무늬 판
+tile.hexPlating.cyan.desc=청록색 육각 무늬 판
+tile.hexPlating.green.desc=초록색 육각 무늬 판
+tile.hexPlating.light_blue.desc=하늘색 육각 무늬 판
+tile.hexPlating.silver.desc=밝은 회색 육각 무늬 판
+tile.hexPlating.lime.desc=연두색 육각 무늬 판
+tile.hexPlating.magenta.desc=자홍색 육각 무늬 판
+tile.hexPlating.orange.desc=주황색 육각 무늬 판
+tile.hexPlating.pink.desc=분홍색 육각 무늬 판
+tile.hexPlating.purple.desc=보라색 육각 무늬 판
+tile.hexPlating.red.desc=빨간색 육각 무늬 판
+tile.hexPlating.white.desc=하얀색 육각 무늬 판
+tile.hexPlating.yellow.desc=노란색 육각 무늬 판
+tile.hexPlating.gray.desc=회색 육각 무늬 판
 
 #Grimstone
 tile.chisel.grimstone.name=Grimstone
@@ -1121,75 +1121,75 @@ tile.chisel.stained_glass_pane_green.name=Stained Glass Pane
 tile.chisel.stained_glass_pane_red.name=Stained Glass Pane
 tile.chisel.stained_glass_pane_black.name=Stained Glass Pane
 
-#Fantasy block
-tile.chisel.fantasyblock.name=Purpled Fantasy Block
-tile.fantasyblock.0.desc=Purpled Fantasy Brick
-tile.fantasyblock.1.desc=Purpled Faded Fantasy Brick
-tile.fantasyblock.2.desc=Purpled Worn Fantasy Brick
-tile.fantasyblock.3.desc=Purpled Damaged Fantasy Bricks
-tile.fantasyblock.4.desc=Purpled Fantasy Decoration
-tile.fantasyblock.5.desc=Purpled Fantasy Decoration Block
-tile.fantasyblock.6.desc=Purpled Fantasy Pillar
-tile.fantasyblock.7.desc=Purpled Fantasy Pillar Decoration
-tile.fantasyblock.8.desc=Purpled Fantasy Gold Snake Decoration
-tile.fantasyblock.9.desc=Purpled Fantasy Gold Noise Decoration
-tile.fantasyblock.10.desc=Purpled Fantasy Gold Engravings Decoration
-tile.fantasyblock.11.desc=Purpled Fantasy Gold Chains Decoration
-tile.fantasyblock.12.desc=Purpled Fantasy Plate Decoration
-tile.fantasyblock.13.desc=Purpled Fantasy Block
-tile.fantasyblock.14.desc=Purpled Fantasy Bricks in disarray
-tile.fantasyblock.15.desc=Purpled Worn Fantasy Bricks in disarray
+# 판타지 블록 (Fantasy block)
+tile.chisel.fantasyblock.name=보라빛 판타지 블록
+tile.fantasyblock.0.desc=보라빛 판타지 벽돌
+tile.fantasyblock.1.desc=빛바랜 보라빛 판타지 벽돌
+tile.fantasyblock.2.desc=닳은 보라빛 판타지 벽돌
+tile.fantasyblock.3.desc=손상된 보라빛 판타지 벽돌
+tile.fantasyblock.4.desc=보라빛 판타지 황금 장식
+tile.fantasyblock.5.desc=보라빛 판타지 장식
+tile.fantasyblock.6.desc=보라빛 판타지 기둥
+tile.fantasyblock.7.desc=보라빛 판타지 장식 기둥
+tile.fantasyblock.8.desc=보라빛 판타지 황금 뱀 장식
+tile.fantasyblock.9.desc=보라빛 판타지 요란한 황금 장식
+tile.fantasyblock.10.desc=보라빛 판타지 황금 전각 장식
+tile.fantasyblock.11.desc=보라빛 판타지 황금 사슬 장식
+tile.fantasyblock.12.desc=보라빛 판타지 판 무늬 장식
+tile.fantasyblock.13.desc=보라빛 판타지 블록
+tile.fantasyblock.14.desc=복잡한 보라빛 판타지 벽돌
+tile.fantasyblock.15.desc=닳은 복잡한 보라빛 판타지 벽돌
 
-#Fantasy block 2
-tile.chisel.fantasyblock2.name=Fantasy Block
-tile.fantasyblock2.0.desc=Fantasy Brick
-tile.fantasyblock2.1.desc=Faded Fantasy Brick
-tile.fantasyblock2.2.desc=Worn Fantasy Brick
-tile.fantasyblock2.3.desc=Damaged Fantasy Bricks
-tile.fantasyblock2.4.desc=Fantasy Decoration
-tile.fantasyblock2.5.desc=Fantasy Decoration Block
-tile.fantasyblock2.6.desc=Fantasy Pillar
-tile.fantasyblock2.7.desc=Fantasy Pillar Decoration
-tile.fantasyblock2.8.desc=Fantasy Gold Snake Decoration
-tile.fantasyblock2.9.desc=Fantasy Gold Noise Decoration
-tile.fantasyblock2.10.desc=Fantasy Gold Engravings Decoration
-tile.fantasyblock2.11.desc=Fantasy Gold Chains Decoration
-tile.fantasyblock2.12.desc=Fantasy Plate Decoration
-tile.fantasyblock2.13.desc=Fantasy Block
-tile.fantasyblock2.14.desc=Fantasy Bricks in disarray
-tile.fantasyblock2.15.desc=Worn Fantasy Bricks in disarray
+# 판타지 블록 2 (Fantasy block 2)
+tile.chisel.fantasyblock2.name=판타지 블록
+tile.fantasyblock2.0.desc=판타지 벽돌
+tile.fantasyblock2.1.desc=빛바랜 판타지 벽돌
+tile.fantasyblock2.2.desc=닳은 판타지 벽돌
+tile.fantasyblock2.3.desc=손상된 판타지 벽돌
+tile.fantasyblock2.4.desc=판타지 황금 장식
+tile.fantasyblock2.5.desc=판타지 장식
+tile.fantasyblock2.6.desc=판타지 기둥
+tile.fantasyblock2.7.desc=판타지 장식 기둥
+tile.fantasyblock2.8.desc=판타지 황금 뱀 장식
+tile.fantasyblock2.9.desc=판타지 요란한 황금 장식
+tile.fantasyblock2.10.desc=판타지 황금 전각 장식
+tile.fantasyblock2.11.desc=판타지 황금 사슬 장식
+tile.fantasyblock2.12.desc=판타지 판 무늬 장식
+tile.fantasyblock2.13.desc=판타지 블록
+tile.fantasyblock2.14.desc=복잡한 판타지 벽돌
+tile.fantasyblock2.15.desc=닳은 복잡한 판타지 벽돌
 
-#Paperwall
+# 종이벽 (Paperwall)
 tile.chisel.paperwall.name=종이벽
-tile.chisel.paperwall_block.name=Paperwall Block
-tile.paperwall.0.desc=Boxed Paperwall
-tile.paperwall.1.desc=Middle Striked Paperwall
-tile.paperwall.2.desc=Crossed Paperwall
-tile.paperwall.3.desc=Six Sectioned Paperwall
-tile.paperwall.4.desc=Vertically Striked Paperwall
-tile.paperwall.5.desc=Horizontally Striked Paperwall
-tile.paperwall.6.desc=Floral Adorned Paperwall
-tile.paperwall.7.desc=Plain Paperwall
-tile.paperwall.8.desc=Door Shaped Paperwall
+tile.chisel.paperwall_block.name=종이벽 블록
+tile.paperwall.0.desc=테두리 있는 종이벽
+tile.paperwall.1.desc=이등분 종이벽
+tile.paperwall.2.desc=사등분 종이벽
+tile.paperwall.3.desc=육등분 종이벽
+tile.paperwall.4.desc=세로 방향 종이벽
+tile.paperwall.5.desc=가로 방향 종이벽
+tile.paperwall.6.desc=꽃 무늬 종이벽
+tile.paperwall.7.desc=테두리 없는 종이벽
+tile.paperwall.8.desc=문 모양 종이벽
 
-#Woolen Clay
-tile.chisel.woolen_clay.name=Woolen Clay
-tile.woolenClay.0.desc=White Woolen Clay
-tile.woolenClay.1.desc=Orange Woolen Clay
-tile.woolenClay.2.desc=Magenta Woolen Clay
-tile.woolenClay.3.desc=Light Blue Woolen Clay
-tile.woolenClay.4.desc=Yellow Woolen Clay
-tile.woolenClay.5.desc=Lime Woolen Clay
-tile.woolenClay.6.desc=Pink Woolen Clay
-tile.woolenClay.7.desc=Grey Woolen Clay
-tile.woolenClay.8.desc=Light Grey Woolen Clay
-tile.woolenClay.9.desc=Cyan Woolen Clay
-tile.woolenClay.10.desc=Purple Woolen Clay
-tile.woolenClay.11.desc=Blue Woolen Clay
-tile.woolenClay.12.desc=Brown Woolen Clay
-tile.woolenClay.13.desc=Green Woolen Clay
-tile.woolenClay.14.desc=Red Woolen Clay
-tile.woolenClay.15.desc=Black Woolen Clay
+# 양모 점토 (Woolen Clay)
+tile.chisel.woolen_clay.name=양모 점토
+tile.woolenClay.0.desc=하얀색 양모 점토
+tile.woolenClay.1.desc=주황색 양모 점토
+tile.woolenClay.2.desc=자홍색 양모 점토
+tile.woolenClay.3.desc=하늘색 양모 점토
+tile.woolenClay.4.desc=노란색 양모 점토
+tile.woolenClay.5.desc=연두색 양모 점토
+tile.woolenClay.6.desc=분홍색 양모 점토
+tile.woolenClay.7.desc=회색 양모 점토
+tile.woolenClay.8.desc=밝은 회색 양모 점토
+tile.woolenClay.9.desc=청록색 양모 점토
+tile.woolenClay.10.desc=보라색 양모 점토
+tile.woolenClay.11.desc=파란색 양모 점토
+tile.woolenClay.12.desc=갈색 양모 점토
+tile.woolenClay.13.desc=초록색 양모 점토
+tile.woolenClay.14.desc=빨간색 양모 점토
+tile.woolenClay.15.desc=검은색 양모 점토
 
 #Colored Sand
 tile.chisel.colored_sand.name=Colored Sand
