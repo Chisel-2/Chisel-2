@@ -1234,7 +1234,7 @@ itemGroup.tabOtherChiselBlocks=기타 치슬 블록
 itemGroup.tabStoneChiselBlocks=돌 치슬 블록
 itemGroup.tabWoodChiselBlocks=나무 치슬 블록
 itemGroup.tabMetalChiselBlocks=금속 치슬 블록
-itemGroup.tabModdedChiselBlocks=모들 치슬 블록
+itemGroup.tabModdedChiselBlocks=모드 치슬 블록
 itemGroup.tabChisel=치슬 아이템
 
 #Container
