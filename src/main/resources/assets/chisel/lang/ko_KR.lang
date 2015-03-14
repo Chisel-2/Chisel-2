@@ -134,7 +134,7 @@ tile.chisel.voidstonePillar2.name=충전된 공허석 기둥
 tile.voidstonePillar2.0.desc=줄무늬의 충전된 공허석 기둥
 
 # 아케인 스톤 (Arcane Stone)
-tile.chisel.arcane.name=아케인 스톤 블록
+tile.chisel.arcane.name=아케인 스톤
 tile.arcane.0.desc=달 문양
 tile.arcane.1.desc=빛나는 달 문양
 tile.arcane.2.desc=모서리를 다듬은 타일
@@ -243,96 +243,96 @@ tile.technical.14.desc=환풍기 (불량)
 tile.technical.15.desc=녹슨 창살
 tile.chisel.technical2.name=투명 기술 블록
 
-#Metal Blocks
-tile.chisel.aluminumblock.name=Block of Aluminum
-tile.chisel.bronzeblock.name=Block of Bronze
-tile.chisel.copperblock.name=Block of Copper
-tile.chisel.leadblock.name=Block of Lead
-tile.chisel.silverblock.name=Block of Silver
-tile.chisel.steelblock.name=Block of Steel
-tile.chisel.tinblock.name=Block of Tin
-tile.chisel.uraniumblock.name=Block of Uranium
-tile.metalOre.0.desc=Caution Stripes
-tile.metalOre.1.desc=Shipping Crate
-tile.metalOre.2.desc=Thermal
-tile.metalOre.3.desc=An Old Relic from the land of Oneteufyv
-tile.metalOre.4.desc=Egregiously Bordered Block
-tile.metalOre.5.desc=Fancy Bolted Plating
+# 금속 블록 (Metal Blocks)
+tile.chisel.aluminumblock.name=알루미늄 블록
+tile.chisel.bronzeblock.name=청동 블록
+tile.chisel.copperblock.name=구리 블록
+tile.chisel.leadblock.name=납 블록
+tile.chisel.silverblock.name=은 블록
+tile.chisel.steelblock.name=강철 블록
+tile.chisel.tinblock.name=주석 블록
+tile.chisel.uraniumblock.name=우라늄 블록
+tile.metalOre.0.desc=경고 줄무늬
+tile.metalOre.1.desc=선박 화물
+tile.metalOre.2.desc=써멀 익스펜션
+#tile.metalOre.3.desc=An Old Relic from the land of Oneteufyv
+tile.metalOre.4.desc=테두리를 두른 블록
+tile.metalOre.5.desc=화려한 볼트 판
 
-#Present Chest
-tile.chisel.present.name=Present
-tile.chisel.present.desc=A pretty present chest
+# 선물 상자 (Present Chest)
+tile.chisel.present.name=선물 상자
+tile.chisel.present.desc=예쁜 선물 상자
 
-#Brick
-tile.chisel.brickCustom.name=Brick Block
-tile.brickCustom.1.desc=Large Bricks
-tile.brickCustom.2.desc=Mortarless Bricks
-tile.brickCustom.3.desc=Varied Bricks
-tile.brickCustom.5.desc=Aged Bricks
-tile.brickCustom.6.desc=Yellow Bricks
+# 벽돌 (Brick)
+tile.chisel.brickCustom.name=벽돌
+tile.brickCustom.1.desc=대형 벽돌
+tile.brickCustom.2.desc=모르타르가 없는 벽돌
+tile.brickCustom.3.desc=다양한 벽돌
+tile.brickCustom.5.desc=오래된 벽돌
+tile.brickCustom.6.desc=노란 벽돌
 
 #Chisel 1
 
-#Cobblestone Blocks
+# 조약돌 (Cobblestone Blocks)
 tile.chisel.cobblestone.name=조약돌
-tile.cobblestone.0.desc=줄무늬 조약돌 벽돌
+tile.cobblestone.0.desc=조약돌 벽돌
 tile.cobblestone.1.desc=섬세한 조약돌 벽돌
 tile.cobblestone.2.desc=작은 조약돌 벽돌
-tile.cobblestone.3.desc=큰 조약돌 타일
-tile.cobblestone.4.desc=작은 조약돌 타일
+tile.cobblestone.3.desc=대형 조약돌 타일
+tile.cobblestone.4.desc=소형 조약돌 타일
 tile.cobblestone.5.desc=프랑스풍 조약돌 타일
 tile.cobblestone.6.desc=프랑스풍 조약돌 타일
 tile.cobblestone.7.desc=크리퍼 문양 조약돌 타일
-tile.cobblestone.8.desc=깨진 조약돌 타일
-tile.cobblestone.9.desc=큰 조약돌 타일
-tile.cobblestone.10.desc=크리퍼 조약돌 패널
-tile.cobblestone.11.desc=파인 조약돌
+tile.cobblestone.8.desc=손상된 조약돌 타일
+tile.cobblestone.9.desc=거대한 조약돌 타일
+tile.cobblestone.10.desc=크리퍼 문양 조약돌 패널
+tile.cobblestone.11.desc=오목한 조약돌
 tile.cobblestone.12.desc=조약돌 패널
 tile.cobblestone.13.desc=밝은 조약돌 패널
 tile.cobblestone.14.desc=어두운 조약돌 패널
 
-#Sandstone Blocks
+# 사암 (Sandstone Blocks)
 tile.chisel.sandstone.name=사암
 
-#Marble Blocks
+# 대리석 (Marble Blocks)
 tile.chisel.marble.name=대리석
-tile.marble.0.desc=대리석
+tile.marble.0.desc=가공 안된 대리석
 tile.marble.1.desc=대리석 벽돌
-tile.marble.2.desc=클래식 대리석 패널
+tile.marble.2.desc=고전적인 대리석 패널
 tile.marble.3.desc=화려한 대리석 패널
 tile.marble.4.desc=대리석 패널
 tile.marble.5.desc=대리석 블록
-tile.marble.6.desc=어두운 크리퍼 대리석
-tile.marble.7.desc=밝은 크리퍼 대리석
+tile.marble.6.desc=어두운 크리퍼 문양 대리석
+tile.marble.7.desc=밝은 크리퍼 문양 대리석
 tile.marble.8.desc=조각된 대리석
-tile.marble.9.desc=둥근 조각의 대리석
-tile.marble.10.desc=파인 대리석
-tile.marble.11.desc=크게 파인 대리석
-tile.marble.12.desc=대리석 타일
-tile.marble.13.desc=Arranged Marble Tiles
-tile.marble.14.desc=화려한 대리석 타일
-tile.marble.15.desc=대리석 블록
+tile.marble.9.desc=방사형으로 조각된 대리석
+tile.marble.10.desc=오목한 대리석
+tile.marble.11.desc=크게 오목한 대리석
+tile.marble.12.desc=작은 대리석 타일
+tile.marble.13.desc=정렬된 대리석 타일
+tile.marble.14.desc=예쁜 대리석 타일
+tile.marble.15.desc=대리석 타일
 
-#Marble Slabs
-tile.chisel.marbleSlab.name=대리석 반블럭
-tile.marbleSlab.0.desc=대리석 반블럭
-tile.marbleSlab.1.desc=반블럭 대리석 벽돌
-tile.marbleSlab.2.desc=클래식 대리석 반블럭  패널
-tile.marbleSlab.3.desc=화려한 대리석 반블럭 패널
-tile.marbleSlab.4.desc=반블럭 대리석 패널
-tile.marbleSlab.5.desc=대리석 블록 반블럭
-tile.marbleSlab.6.desc=어두운 크리퍼 대리석 반블럭
-tile.marbleSlab.7.desc=밝은 크리퍼 대리석 반블럭
-tile.marbleSlab.8.desc=조각된 대리석 반블럭
-tile.marbleSlab.9.desc=Radial Carved Marble Slab
-tile.marbleSlab.10.desc=파인 대리석 반블럭
-tile.marbleSlab.11.desc=크게 파인 대리석 반블럭
-tile.marbleSlab.12.desc=대리석 반블럭 타일
-tile.marbleSlab.13.desc=Arranged Marble Tiled Slab
-tile.marbleSlab.14.desc=화려한 대리석 반블럭 타일
-tile.marbleSlab.15.desc=대리석 블록 반블럭
+# 대리석 반 블록 (Marble Slabs)
+tile.chisel.marble_slab.name=대리석 반 블록
+tile.marbleSlab.0.desc=가공 안된 대리석 반 블록
+tile.marbleSlab.1.desc=대리석 벽돌 반 블록
+tile.marbleSlab.2.desc=고전적인 대리석 패널 반 블록
+tile.marbleSlab.3.desc=화려한 대리석 패널 반 블록
+tile.marbleSlab.4.desc=대리석 패널 반 블록
+tile.marbleSlab.5.desc=대리석 반 블록
+tile.marbleSlab.6.desc=어두운 크리퍼 문양 대리석 반 블록
+tile.marbleSlab.7.desc=밝은 크리퍼 문양 대리석 반 블록
+tile.marbleSlab.8.desc=조각된 대리석 반 블록
+tile.marbleSlab.9.desc=방사형으로 조각된 대리석 반 블록
+tile.marbleSlab.10.desc=오목한 대리석 반 블록
+tile.marbleSlab.11.desc=크게 오목한 대리석 반 블록
+tile.marbleSlab.12.desc=작은 대리석 타일 반 블록
+tile.marbleSlab.13.desc=정렬된 대리석 타일 반 블록
+tile.marbleSlab.14.desc=예쁜 대리석 타일 반 블록
+tile.marbleSlab.15.desc=대리석 타일 반 블록
 
-#Marble Pillars (old)
+# 구버전 대리석 기둥 (old Marble Pillars)
 tile.chisel.marble_pillar.name=대리석 기둥
 tile.marblePillarOld.0.desc=대리석 기둥
 tile.marblePillarOld.1.desc=대리석 기둥 꼭대기
@@ -1077,49 +1077,49 @@ tile.mossy_templeblock.13.desc=Small Mossy Temple Tiles
 tile.mossy_templeblock.14.desc=Light Mossy Temple Tiles
 tile.mossy_templeblock.15.desc=Small Light Mossy Temple Tiles
 
-#Cloud
-tile.chisel.cloud.name=Cloud
-tile.cloud.0.desc=Cloud Block
-tile.cloud.1.desc=Large Cloud Bricks
-tile.cloud.2.desc=Small Cloud Bricks
-tile.cloud.3.desc=Small Vertical Cloud Bricks
-tile.cloud.4.desc=Gridded Cloud Bricks
+# 구름 (Cloud)
+tile.chisel.cloud.name=구름
+tile.cloud.0.desc=구름
+tile.cloud.1.desc=대형 구름 벽돌
+tile.cloud.2.desc=소형 구름 벽돌
+tile.cloud.3.desc=수직 구름 벽돌
+tile.cloud.4.desc=격자무늬 구름 벽돌
 
-#Stained glass T.T
-tile.chisel.stained_glass_white.name=Stained Glass
-tile.chisel.stained_glass_orange.name=Stained Glass
-tile.chisel.stained_glass_magenta.name=Stained Glass
-tile.chisel.stained_glass_lightBlue.name=Stained Glass
-tile.chisel.stained_glass_yellow.name=Stained Glass
-tile.chisel.stained_glass_lime.name=Stained Glass
-tile.chisel.stained_glass_pink.name=Stained Glass
-tile.chisel.stained_glass_gray.name=Stained Glass
-tile.chisel.stained_glass_lightgray.name=Stained Glass
-tile.chisel.stained_glass_cyan.name=Stained Glass
-tile.chisel.stained_glass_purple.name=Stained Glass
-tile.chisel.stained_glass_blue.name=Stained Glass
-tile.chisel.stained_glass_brown.name=Stained Glass
-tile.chisel.stained_glass_green.name=Stained Glass
-tile.chisel.stained_glass_red.name=Stained Glass
-tile.chisel.stained_glass_black.name=Stained Glass
+# 스테인드 글라스 (Stained glass)
+tile.chisel.stained_glass_white.name=스테인드 글라스
+tile.chisel.stained_glass_orange.name=스테인드 글라스
+tile.chisel.stained_glass_magenta.name=스테인드 글라스
+tile.chisel.stained_glass_lightBlue.name=스테인드 글라스
+tile.chisel.stained_glass_yellow.name=스테인드 글라스
+tile.chisel.stained_glass_lime.name=스테인드 글라스
+tile.chisel.stained_glass_pink.name=스테인드 글라스
+tile.chisel.stained_glass_gray.name=스테인드 글라스
+tile.chisel.stained_glass_lightgray.name=스테인드 글라스
+tile.chisel.stained_glass_cyan.name=스테인드 글라스
+tile.chisel.stained_glass_purple.name=스테인드 글라스
+tile.chisel.stained_glass_blue.name=스테인드 글라스
+tile.chisel.stained_glass_brown.name=스테인드 글라스
+tile.chisel.stained_glass_green.name=스테인드 글라스
+tile.chisel.stained_glass_red.name=스테인드 글라스
+tile.chisel.stained_glass_black.name=스테인드 글라스
 
-#Stained GlassPane T.T
-tile.chisel.stained_glass_pane_white.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_orange.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_magenta.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_lightBlue.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_yellow.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_lime.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_pink.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_gray.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_lightgray.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_cyan.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_purple.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_blue.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_brown.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_green.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_red.name=Stained Glass Pane
-tile.chisel.stained_glass_pane_black.name=Stained Glass Pane
+# 스테인드 글라스판 (Stained GlassPane)
+tile.chisel.stained_glass_pane_white.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_orange.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_magenta.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_lightBlue.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_yellow.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_lime.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_pink.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_gray.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_lightgray.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_cyan.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_purple.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_blue.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_brown.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_green.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_red.name=스테인드 글라스판
+tile.chisel.stained_glass_pane_black.name=스테인드 글라스판
 
 # 판타지 블록 (Fantasy block)
 tile.chisel.fantasyblock.name=보라빛 판타지 블록
