@@ -205,23 +205,23 @@ tile.hexPlating.white.desc=하얀색 육각 무늬 판
 tile.hexPlating.yellow.desc=노란색 육각 무늬 판
 tile.hexPlating.gray.desc=회색 육각 무늬 판
 
-#Grimstone
-tile.chisel.grimstone.name=Grimstone
-tile.grimstone.0.desc=Grimstone
-tile.grimstone.1.desc=Smooth Grimstone
-tile.grimstone.2.desc=Mysterious Grimstone Symbol
-tile.grimstone.3.desc=Chiseled Grimstone
-tile.grimstone.4.desc=Grimstone Blocks
-tile.grimstone.5.desc=Rough Grimstone Blocks
-tile.grimstone.6.desc=Grimstone Bricks
-tile.grimstone.7.desc=Large Grimstone Bricks
-tile.grimstone.8.desc=Grimstone Platform
-tile.grimstone.9.desc=Grimstone Platform Tiles
-tile.grimstone.10.desc=Fancy Grimstone Construction
-tile.grimstone.11.desc=Fancy Grimstone Tiles
-tile.grimstone.12.desc=Smooth Grimstone Plate
-tile.grimstone.13.desc=Grimstone Plate
-tile.grimstone.14.desc=Flaky Grimstone
+# 음산한 돌 (Grimstone)
+tile.chisel.grimstone.name=음산한 돌
+tile.grimstone.0.desc=음산한 돌
+tile.grimstone.1.desc=부드러운 음산한 돌
+tile.grimstone.2.desc=알 수 없는 문양의 음산한 돌
+tile.grimstone.3.desc=조각된 음산한 돌
+tile.grimstone.4.desc=음산한 돌 블록
+tile.grimstone.5.desc=거친 음산한 돌 블록
+tile.grimstone.6.desc=음산한 돌 벽돌
+tile.grimstone.7.desc=커다란 음산한 돌 벽돌
+tile.grimstone.8.desc=음산한 돌 강단
+tile.grimstone.9.desc=음산한 돌 강단 타일
+tile.grimstone.10.desc=화려한 음산한 돌
+tile.grimstone.11.desc=화려한 음산한 돌 타일
+tile.grimstone.12.desc=부드러운 음산한 돌판
+tile.grimstone.13.desc=음산한 돌판
+tile.grimstone.14.desc=벗겨진 음산한 돌
 
 # 기술 블록 (Technical Block)
 tile.chisel.technical.name=기술 블록
@@ -335,78 +335,78 @@ tile.marbleSlab.15.desc=대리석 타일 반 블록
 # 구버전 대리석 기둥 (old Marble Pillars)
 tile.chisel.marble_pillar.name=대리석 기둥
 tile.marblePillarOld.0.desc=대리석 기둥
-tile.marblePillarOld.1.desc=대리석 기둥 꼭대기
-tile.marblePillarOld.2.desc=대리석 기둥 베이스
+tile.marblePillarOld.1.desc=대리석 갓돌
+tile.marblePillarOld.2.desc=기초 대리석 기둥
 tile.marblePillarOld.3.desc=작은 대리석 기둥
 tile.marblePillarOld.4.desc=조각된 대리석 기둥
 tile.marblePillarOld.5.desc=장식된 대리석 기둥
 tile.marblePillarOld.6.desc=그리스풍 대리석 기둥
 tile.marblePillarOld.7.desc=깔끔한 대리석 기둥
-tile.marblePillarOld.8.desc=그리스풍 대리석 기둥 꼭대기
-tile.marblePillarOld.9.desc=깔끔한 대리석 기둥 꼭대기
-tile.marblePillarOld.10.desc=그리스풍 대리석 기둥 베이스
+tile.marblePillarOld.8.desc=그리스풍 대리석 갓돌
+tile.marblePillarOld.9.desc=깔끔한 대리석 갓돌
+tile.marblePillarOld.10.desc=그리스풍 기초 대리석 기둥
 tile.marblePillarOld.11.desc=깔끔한 대리석 기둥 베이스
-tile.marblePillarOld.12.desc=그리스 장식된 대리석 기둥 꼭대기
-tile.marblePillarOld.13.desc=깔끔하며 화려한 대리석 기둥 꼭대기
-tile.marblePillarOld.14.desc=그리스풍 장식된 대리석 기둥 베이스
-tile.marblePillarOld.15.desc=깔끔하며 화려한 대리석 기둥 베이스
+tile.marblePillarOld.12.desc=그리스 장식된 대리석 갓돌
+tile.marblePillarOld.13.desc=깔끔하며 화려한 대리석 갓돌
+tile.marblePillarOld.14.desc=그리스풍 장식된 기초 대리석 기둥
+tile.marblePillarOld.15.desc=깔끔하며 화려한 기초 대리석 기둥
 
-#Marble Pillars (current)
+# 대리석 기둥 (current Marble Pillars)
 tile.marblePillar.0.desc=대리석 기둥
 tile.marblePillar.1.desc=기본 대리석 기둥
 tile.marblePillar.2.desc=단순한 대리석 기둥
-tile.marblePillar.3.desc=볼록한 대리서 기둥
+tile.marblePillar.3.desc=볼록한 대리석 기둥
 tile.marblePillar.4.desc=울퉁불퉁한 대리석 기둥
-tile.marblePillar.5.desc=그리스풍인 대리석 기둥과 장식된 대리석 기둥 꼭대기
-tile.marblePillar.6.desc=그리스풍 대리석 기둥
-tile.marblePillar.7.desc=그리스풍인 대리석 기둥과 깔끔한 대리석 기둥 꼭대기
-tile.marblePillar.8.desc=깔끔한 대리석 기둥과 화려한 대리석 기둥 꼭대기
-tile.marblePillar.9.desc=깔끔한 대러석 기둥과 그리스풍이 나는 대리석 기둥 꼭대기
-tile.marblePillar.10.desc=깔끔한 대리석 기둥
-tile.marblePillar.11.desc=넓은 대리석 기둥과 화려한 대리석 기둥 꼭대기
-tile.marblePillar.12.desc=넓은 대리석 기둥과 그리스풍이 나는 대리석 기둥 꼭대기
-tile.marblePillar.13.desc=넓은 대리석 기둥과 깔끔한 대리석 기둥 꼭대기
-tile.marblePillar.14.desc=조각된 기둥 꼭대기
-tile.marblePillar.15.desc=화려한 기둥 꼭대기
+tile.marblePillar.5.desc=그리스풍의 대리석 기둥과 화려한 갓돌
+tile.marblePillar.6.desc=그리스풍의 대리석 기둥
+tile.marblePillar.7.desc=그리스풍의 대리석 기둥과 단순한 갓돌
+tile.marblePillar.8.desc=단순한 대리석 기둥과 화려한 갓돌
+tile.marblePillar.9.desc=단순한 대리석 기둥과 그리스풍의 갓돌
+tile.marblePillar.10.desc=단순한 대리석 기둥
+tile.marblePillar.11.desc=넓은 대리석 기둥과 화려한 갓돌
+tile.marblePillar.12.desc=넓은 대리석 기둥과 그리스풍의 갓돌
+tile.marblePillar.13.desc=넓은 대리석 기둥과 단순한 갓돌
+tile.marblePillar.14.desc=조각된 갓돌
+tile.marblePillar.15.desc=장식용 갓돌
 
-#Marble Slabs (old)
-tile.chisel.marble_pillar_slab.name=Marble Pillar Slab
-tile.marblePillarSlabOld.0.desc=Marble Pillar Slab
-tile.marblePillarSlabOld.1.desc=Marble Pillar Capstone Slab
-tile.marblePillarSlabOld.2.desc=Marble Pillar Base Slab
-tile.marblePillarSlabOld.3.desc=Small Marble Pillar Slab
-tile.marblePillarSlabOld.4.desc=Carved Marble Pillar Slab
-tile.marblePillarSlabOld.5.desc=Ornamental Marble Pillar Slab
-tile.marblePillarSlabOld.6.desc=Greek Marble Pillar Slab
-tile.marblePillarSlabOld.7.desc=Plain Marble Pillar Slab
-tile.marblePillarSlabOld.8.desc=Greek Marble Pillar Capstone Slab
-tile.marblePillarSlabOld.9.desc=Plain Marble Pillar capstone Slab
-tile.marblePillarSlabOld.10.desc=Greek Marble Pillar Base Slab
-tile.marblePillarSlabOld.11.desc=Plain Marble Pillar Base Slab
-tile.marblePillarSlabOld.12.desc=Greek Marble Pillar Ornate Capstone Slab
-tile.marblePillarSlabOld.13.desc=Plain Marble Pillar Ornate Capstone Slab
-tile.marblePillarSlabOld.14.desc=Greek Marble Pillar Ornate Base Slab
-tile.marblePillarSlabOld.15.desc=Plain Marble Pillar Ornate Base Slab
+# 구버전 대리석 기둥 반 블록 (old Marble Pillars Slabs)
+tile.chisel.marble_pillar_slab.name=대리석 기둥 반 블록
+tile.marblePillarSlabOld.0.desc=대리석 기둥 반 블록
+tile.marblePillarSlabOld.1.desc=대리석 갓돌 반 블록
+tile.marblePillarSlabOld.2.desc=기초 대리석 기둥 반 블록
+tile.marblePillarSlabOld.3.desc=작은 대리석 기둥 반 블록
+tile.marblePillarSlabOld.4.desc=조각된 대리석 기둥 반 블록
+tile.marblePillarSlabOld.5.desc=장식된 대리석 기둥 반 블록
+tile.marblePillarSlabOld.6.desc=그리스풍 대리석 기둥 반 블록
+tile.marblePillarSlabOld.7.desc=깔끔한 대리석 기둥 반 블록
+tile.marblePillarSlabOld.8.desc=그리스풍 대리석 갓돌 반 블록
+tile.marblePillarSlabOld.9.desc=깔끔한 대리석 갓돌 반 블록
+tile.marblePillarSlabOld.10.desc=그리스풍 기초 대리석 기둥 반 블록
+tile.marblePillarSlabOld.11.desc=깔끔한 대리석 기둥 베이스 반 블록
+tile.marblePillarSlabOld.12.desc=그리스 장식된 대리석 갓돌 반 블록
+tile.marblePillarSlabOld.13.desc=깔끔하며 화려한 대리석 갓돌 반 블록
+tile.marblePillarSlabOld.14.desc=그리스풍 장식된 기초 대리석 기둥 반 블록
+tile.marblePillarSlabOld.15.desc=깔끔하며 화려한 기초 대리석 기둥 반 블록
 
-#Marble Slabs (current)
-tile.marblePillarSlab.0.desc=대리석 기둥 반블럭
-tile.marblePillarSlab.1.desc=화려한 대리석 기둥 반블럭
-tile.marblePillarSlab.2.desc=단순한 대리석 기둥 반블럭
-tile.marblePillarSlab.3.desc=볼록한 대리석 기둥 반블럭
-tile.marblePillarSlab.4.desc=울퉁불퉁한 대리석 기둥 반블럭
-tile.marblePillarSlab.5.desc=그리스풍 대리석 기둥 반블럭과 화려한 꼭대기
-tile.marblePillarSlab.6.desc=그리스풍 대리석 기둥 반블럭
-tile.marblePillarSlab.7.desc=그리스풍 대리석 기둥 반블럭과 깔끔한 꼭대기
-tile.marblePillarSlab.8.desc=깔끔한 대리석 기둥 반블럭과 화려한 꼭대기
-tile.marblePillarSlab.9.desc=깔끔한 대리석 기둥 반블럭과 그리스풍 꼭대기
-tile.marblePillarSlab.10.desc=깔끔한 대리석 기둥 반블럭
-tile.marblePillarSlab.11.desc=넓은 대리석 기둥 반블럭과 화려한 꼭대기
-tile.marblePillarSlab.12.desc=넓은 대리석 기둥 반블럭과 그리스풍 꼭대기
-tile.marblePillarSlab.13.desc=넓은 대리석 기둥 반블럭과 깔끔한 꼭대기
-tile.marblePillarSlab.14.desc=조각된 대리석 기둥 반블럭
-tile.marblePillarSlab.15.desc=화려한 꼭대기 반블럭
+# 대리석 기둥 반 블록 (current Marble Pillars Slabs)
+tile.marblePillarSlab.0.desc=대리석 기둥 반 블록
+tile.marblePillarSlab.1.desc=기본 대리석 기둥 반 블록
+tile.marblePillarSlab.2.desc=단순한 대리석 기둥 반 블록
+tile.marblePillarSlab.3.desc=볼록한 대리석 기둥 반 블록
+tile.marblePillarSlab.4.desc=울퉁불퉁한 대리석 기둥 반 블록
+tile.marblePillarSlab.5.desc=그리스풍의 대리석 기둥과 화려한 갓돌 반 블록
+tile.marblePillarSlab.6.desc=그리스풍의 대리석 기둥 반 블록
+tile.marblePillarSlab.7.desc=그리스풍의 대리석 기둥과 단순한 갓돌 반 블록
+tile.marblePillarSlab.8.desc=단순한 대리석 기둥과 화려한 갓돌 반 블록
+tile.marblePillarSlab.9.desc=단순한 대리석 기둥과 그리스풍의 갓돌 반 블록
+tile.marblePillarSlab.10.desc=단순한 대리석 기둥 반 블록
+tile.marblePillarSlab.11.desc=넓은 대리석 기둥과 화려한 갓돌 반 블록
+tile.marblePillarSlab.12.desc=넓은 대리석 기둥과 그리스풍의 갓돌 반 블록
+tile.marblePillarSlab.13.desc=넓은 대리석 기둥과 단순한 갓돌 반 블록
+tile.marblePillarSlab.14.desc=조각된 갓돌 반 블록
+tile.marblePillarSlab.15.desc=장식용 갓돌 반 블록
 
-#Marble Stairs
+# 대리석 계단 (Marble Stairs)
 #The same name goes here 8 different times since stairs take up 8 block positions.
 #Sorry!  It was the only way!
 tile.chisel.marble_stairs.0.name=대리석 계단
@@ -418,25 +418,26 @@ tile.chisel.marble_stairs.5.name=대리석 계단
 tile.chisel.marble_stairs.6.name=대리석 계단
 tile.chisel.marble_stairs.7.name=대리석 계단
 
+# 대리석 계단 (Marble Stairs)
 #These are bugged.... so sad :,(
-tile.marbleStairs.0.desc=대리석 계단
+tile.marbleStairs.0.desc=가공 안된 대리석 계단
 tile.marbleStairs.1.desc=대리석 벽돌 계단
-tile.marbleStairs.2.desc=클래식 대리석 패널 계단
+tile.marbleStairs.2.desc=고전적인 대리석 패널 계단
 tile.marbleStairs.3.desc=화려한 대리석 패널 계단
 tile.marbleStairs.4.desc=대리석 패널 계단
 tile.marbleStairs.5.desc=대리석 블록 계단
 tile.marbleStairs.6.desc=어두운 크리퍼 문양 대리석 계단
 tile.marbleStairs.7.desc=밝은 크리퍼 문양 대리석 계단
 tile.marbleStairs.8.desc=조각된 대리석 계단
-tile.marbleStairs.9.desc=반지름 조각된 대리석 계단
-tile.marbleStairs.10.desc=움푹 들어간 대리석 계단
-tile.marbleStairs.11.desc=크게 움푹 들어간 대리석 계단
-tile.marbleStairs.12.desc=대리석 타일 계단
-tile.marbleStairs.13.desc=가지런한 대리석 타일 계단
-tile.marbleStairs.14.desc=화려한 대리석 타일 계단
-tile.marbleStairs.15.desc=대리석 블록 계단
+tile.marbleStairs.9.desc=방사형으로 조각된 대리석 계단
+tile.marbleStairs.10.desc=오목한 대리석 계단
+tile.marbleStairs.11.desc=크게 오목한 대리석 계단
+tile.marbleStairs.12.desc=작은 대리석 타일 계단
+tile.marbleStairs.13.desc=정렬된 대리석 타일 계단
+tile.marbleStairs.14.desc=예쁜 대리석 타일 계단
+tile.marbleStairs.15.desc=대리석 타일 계단
 
-#Limestone
+# 석회암 (Limestone)
 tile.chisel.limestone.name=석회암
 tile.limestone.0.desc=석회암
 tile.limestone.1.desc=작은 석회암 타일
@@ -1020,62 +1021,62 @@ tile.bookshelf.6.desc=Hoarder's Bookshelf
 tile.bookshelf.7.desc=Bookshelf filled to the brim with boring Pastel Books
 tile.bookshelf.8.desc=Historian's Bookshelf
 
-#Tyrian
-tile.chisel.tyrian.name=Tyrian
-tile.tyrian.0.desc=Futuristic Armor Plating Block
-tile.tyrian.1.desc=Bleak Futuristic Armor Plating Block
-tile.tyrian.2.desc=Purple Futuristic Armor Plating Block
-tile.tyrian.3.desc=Faded Purple Futuristic Armor Plating Block
-tile.tyrian.4.desc=Rusted Futuristic Armor Plating Block
-tile.tyrian.5.desc=Elaborate Futuristic Armor Plating Block
-tile.tyrian.6.desc=Futuristic Armor Plating Block with many seams
-tile.tyrian.7.desc=Futuristic Platform Block
-tile.tyrian.8.desc=Futuristic Armor Plating Tiles
-tile.tyrian.9.desc=Diagonal Futuristic Armor Plating Block
-tile.tyrian.10.desc=Futuristic Armor Plating Block with dent
-tile.tyrian.11.desc=Blue Futuristic Armor Plating Block
-tile.tyrian.12.desc=Black Futuristic Armor Plating Block
-tile.tyrian.13.desc=Black Futuristic Armor Plating Tiles
-tile.tyrian.14.desc=Black Futuristic Armor Plating Block with Opening
-tile.tyrian.15.desc=Shiny Futuristic Armor Plating
+# 티리안 (Tyrian)
+tile.chisel.tyrian.name=티리안
+tile.tyrian.0.desc=미래적 강화판 블록
+tile.tyrian.1.desc=황폐한 미래적 강화판 블록
+tile.tyrian.2.desc=보라빛의 미래적 강화판 블록
+tile.tyrian.3.desc=옅은 보라빛의 미래적 강화판 블록
+tile.tyrian.4.desc=녹슨 미래적 강화판 블록
+tile.tyrian.5.desc=정교한 미래적 강화판 블록
+tile.tyrian.6.desc=이음새가 많은 미래적 강화판 블록
+tile.tyrian.7.desc=미래적 플랫폼 블록
+tile.tyrian.8.desc=미래적 강화판 타일
+tile.tyrian.9.desc=사선방향의 미래적 강화판 블록
+tile.tyrian.10.desc=오목한 미래적 강화판 블록
+tile.tyrian.11.desc=푸른 미래적 강화판 블록
+tile.tyrian.12.desc=검은 미래적 강화판 블록
+tile.tyrian.13.desc=검은 미래적 강화판 타일
+tile.tyrian.14.desc=개방된 검은 미래적 강화판 블록
+tile.tyrian.15.desc=빛나는 미래적 강화판
 
-#Temple
-tile.chisel.templeblock.name=Temple Block
-tile.templeblock.0.desc=Temple Cobblestone
-tile.templeblock.1.desc=Ornate Temple Block
-tile.templeblock.2.desc=Temple Plate
-tile.templeblock.3.desc=Cracked Temple Plate
-tile.templeblock.4.desc=Temple Bricks
-tile.templeblock.5.desc=Large Temple Bricks
-tile.templeblock.6.desc=Worn Temple Bricks
-tile.templeblock.7.desc=Temple Bricks in disarray
-tile.templeblock.8.desc=Temple Column
-tile.templeblock.9.desc=Temple Stand
-tile.templeblock.10.desc=Temple Mosaic Stand
-tile.templeblock.11.desc=Temple Creeper Stand
-tile.templeblock.12.desc=Temple Tiles
-tile.templeblock.13.desc=Small Temple Tiles
-tile.templeblock.14.desc=Light Temple Tiles
-tile.templeblock.15.desc=Small Light Temple Tiles
+# 사원 블록 (Temple)
+tile.chisel.templeblock.name=사원 블록
+tile.templeblock.0.desc=사원 조약돌
+tile.templeblock.1.desc=화려한 사원 블록
+tile.templeblock.2.desc=사원 블록
+tile.templeblock.3.desc=금간 사원 블록
+tile.templeblock.4.desc=사원 벽돌
+tile.templeblock.5.desc=대형 사원 벽돌
+tile.templeblock.6.desc=닳은 사원 벽돌
+tile.templeblock.7.desc=복잡한 사원 블록
+tile.templeblock.8.desc=사원 기둥
+tile.templeblock.9.desc=사원 받침
+tile.templeblock.10.desc=모자이크 사원 받침
+tile.templeblock.11.desc=크리퍼 문양 사원 받침
+tile.templeblock.12.desc=사원 타일
+tile.templeblock.13.desc=작은 사원 타일
+tile.templeblock.14.desc=밝은 사원 타일
+tile.templeblock.15.desc=밝고 작은 사원 타일
 
-#Temple Mossy
-tile.chisel.mossy_templeblock.name=Mossy Temple Block
-tile.mossy_templeblock.0.desc=Mossy Temple Cobblestone
-tile.mossy_templeblock.1.desc=Ornate Mossy Temple Block
-tile.mossy_templeblock.2.desc=Mossy Temple Plate
-tile.mossy_templeblock.3.desc=Cracked Mossy Temple Plate
-tile.mossy_templeblock.4.desc=Mossy Temple Bricks
-tile.mossy_templeblock.5.desc=Large Mossy Temple Bricks
-tile.mossy_templeblock.6.desc=Worn Mossy Temple Bricks
-tile.mossy_templeblock.7.desc=Mossy Temple Bricks in disarray
-tile.mossy_templeblock.8.desc=Mossy Temple Column
-tile.mossy_templeblock.9.desc=Mossy Temple Stand
-tile.mossy_templeblock.10.desc=Mossy Temple Mosaic Stand
-tile.mossy_templeblock.11.desc=Mossy Temple Creeper Stand
-tile.mossy_templeblock.12.desc=Mossy Temple Tiles
-tile.mossy_templeblock.13.desc=Small Mossy Temple Tiles
-tile.mossy_templeblock.14.desc=Light Mossy Temple Tiles
-tile.mossy_templeblock.15.desc=Small Light Mossy Temple Tiles
+# 이끼 낀 사원 블록 (Temple Mossy)
+tile.chisel.mossy_templeblock.name=이끼 낀 사원 블록
+tile.mossy_templeblock.0.desc=이끼 낀 사원 조약돌
+tile.mossy_templeblock.1.desc=이끼 낀 화려한 사원 블록
+tile.mossy_templeblock.2.desc=이끼 낀 사원 블록
+tile.mossy_templeblock.3.desc=이끼 낀 금간 사원 블록
+tile.mossy_templeblock.4.desc=이끼 낀 사원 벽돌
+tile.mossy_templeblock.5.desc=이끼 낀 대형 사원 벽돌
+tile.mossy_templeblock.6.desc=이끼 낀 닳은 사원 벽돌
+tile.mossy_templeblock.7.desc=이끼 낀 복잡한 사원 블록
+tile.mossy_templeblock.8.desc=이끼 낀 사원 기둥
+tile.mossy_templeblock.9.desc=이끼 낀 사원 받침
+tile.mossy_templeblock.10.desc=이끼 낀 모자이크 사원 받침
+tile.mossy_templeblock.11.desc=이끼 낀 크리퍼 문양 사원 받침
+tile.mossy_templeblock.12.desc=이끼 낀 사원 타일
+tile.mossy_templeblock.13.desc=이끼 낀 작은 사원 타일
+tile.mossy_templeblock.14.desc=이끼 낀 밝은 사원 타일
+tile.mossy_templeblock.15.desc=이끼 낀 밝고 작은 사원 타일
 
 # 구름 (Cloud)
 tile.chisel.cloud.name=구름
@@ -1191,24 +1192,24 @@ tile.woolenClay.13.desc=초록색 양모 점토
 tile.woolenClay.14.desc=빨간색 양모 점토
 tile.woolenClay.15.desc=검은색 양모 점토
 
-#Colored Sand
-tile.chisel.colored_sand.name=Colored Sand
-tile.coloredSand.0.desc=White Colored Sand
-tile.coloredSand.1.desc=Orange Colored Sand
-tile.coloredSand.2.desc=Magenta Colored Sand
-tile.coloredSand.3.desc=Light Blue Colored Sand
-tile.coloredSand.4.desc=Yellow Colored Sand
-tile.coloredSand.5.desc=Lime Colored Sand
-tile.coloredSand.6.desc=Pink Colored Sand
-tile.coloredSand.7.desc=Grey Colored Sand
-tile.coloredSand.8.desc=Light Grey Colored Sand
-tile.coloredSand.9.desc=Cyan Colored Sand
-tile.coloredSand.10.desc=Purple Colored Sand
-tile.coloredSand.11.desc=Blue Colored Sand
-tile.coloredSand.12.desc=Brown Colored Sand
-tile.coloredSand.13.desc=Green Colored Sand
-tile.coloredSand.14.desc=Red Colored Sand
-tile.coloredSand.15.desc=Black Colored Sand
+# 색칠된 모래 (Colored Sand)
+tile.chisel.colored_sand.name=색칠된 모래
+tile.coloredSand.0.desc=하얀색 색칠된 모래
+tile.coloredSand.1.desc=주황색 색칠된 모래
+tile.coloredSand.2.desc=자홍색 색칠된 모래
+tile.coloredSand.3.desc=하늘색 색칠된 모래
+tile.coloredSand.4.desc=노란색 색칠된 모래
+tile.coloredSand.5.desc=연두색 색칠된 모래
+tile.coloredSand.6.desc=분홍색 색칠된 모래
+tile.coloredSand.7.desc=회색 색칠된 모래
+tile.coloredSand.8.desc=밝은 회색 색칠된 모래
+tile.coloredSand.9.desc=청록색 색칠된 모래
+tile.coloredSand.10.desc=보라색 색칠된 모래
+tile.coloredSand.11.desc=파란색 색칠된 모래
+tile.coloredSand.12.desc=갈색 색칠된 모래
+tile.coloredSand.13.desc=초록색 색칠된 모래
+tile.coloredSand.14.desc=빨간색 색칠된 모래
+tile.coloredSand.15.desc=검은색 색칠된 모래
 
 # 연구소 블록 (Laboratory Block)
 tile.chisel.laboratoryblock.name=연구소 블록
