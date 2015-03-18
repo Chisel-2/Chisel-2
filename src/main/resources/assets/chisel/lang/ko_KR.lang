@@ -972,54 +972,54 @@ tile.lavastone.5.desc=Lava Panel
 tile.lavastone.6.desc=Ornate Lava Panel
 tile.lavastone.7.desc=Dark Lavastone
 
-#Carpet
-tile.chisel.carpet_block.name=Carpet
-tile.carpet_block.0.desc=White Carpet Block
-tile.carpet_block.1.desc=Orange Carpet Block
-tile.carpet_block.2.desc=Magenta Carpet Block
-tile.carpet_block.3.desc=Light Blue Carpet Block
-tile.carpet_block.4.desc=Yellow Carpet Block
-tile.carpet_block.5.desc=Light green Carpet Block
-tile.carpet_block.6.desc=Pink Carpet Block
-tile.carpet_block.7.desc=Dark grey Carpet Block
-tile.carpet_block.8.desc=Grey Carpet Block
-tile.carpet_block.9.desc=Teal Carpet Block
-tile.carpet_block.10.desc=Purple Carpet Block
-tile.carpet_block.11.desc=Dark blue Carpet Block
-tile.carpet_block.12.desc=Brown Carpet Block
-tile.carpet_block.13.desc=Green Carpet Block
-tile.carpet_block.14.desc=Red Carpet Block
-tile.carpet_block.15.desc=Black Carpet Block
+# 융단 블록 (Carpet)
+tile.chisel.carpet_block.name=융단 블록
+tile.carpet_block.0.desc=하얀색 융단
+tile.carpet_block.1.desc=주황색 융단
+tile.carpet_block.2.desc=자홍색 융단
+tile.carpet_block.3.desc=하늘색 융단
+tile.carpet_block.4.desc=노란색 융단
+tile.carpet_block.5.desc=연두색 융단
+tile.carpet_block.6.desc=분홍색 융단
+tile.carpet_block.7.desc=회색 융단
+tile.carpet_block.8.desc=밝은 회색 융단
+tile.carpet_block.9.desc=청록색 융단
+tile.carpet_block.10.desc=보라색 융단
+tile.carpet_block.11.desc=파란색 융단
+tile.carpet_block.12.desc=갈색 융단
+tile.carpet_block.13.desc=초록색 융단
+tile.carpet_block.14.desc=빨간색 융단
+tile.carpet_block.15.desc=검은색 융단
 
-#Carpet floor
-tile.chisel.carpet.name=Floor Carpet
-tile.carpet.0.desc=White Carpet
-tile.carpet.1.desc=Orange Carpet
-tile.carpet.2.desc=Magenta Carpet
-tile.carpet.3.desc=Light Blue Carpet
-tile.carpet.4.desc=Yellow Carpet
-tile.carpet.5.desc=Light Green Carpet
-tile.carpet.6.desc=Pink Carpet
-tile.carpet.7.desc=Dark Grey Carpet
-tile.carpet.8.desc=Grey Carpet
-tile.carpet.9.desc=Teal Carpet
-tile.carpet.10.desc=Purple Carpet
-tile.carpet.11.desc=Dark Blue Carpet
-tile.carpet.12.desc=Brown Carpet
-tile.carpet.13.desc=Green Carpet
-tile.carpet.14.desc=Red Carpet
-tile.carpet.15.desc=Black Carpet
+# 융단 (Carpet floor)
+tile.chisel.carpet.name=융단
+tile.carpet.0.desc=하얀색 융단
+tile.carpet.1.desc=주황색 융단
+tile.carpet.2.desc=자홍색 융단
+tile.carpet.3.desc=하늘색 융단
+tile.carpet.4.desc=노란색 융단
+tile.carpet.5.desc=연두색 융단
+tile.carpet.6.desc=분홍색 융단
+tile.carpet.7.desc=회색 융단
+tile.carpet.8.desc=밝은 회색 융단
+tile.carpet.9.desc=청록색 융단
+tile.carpet.10.desc=보라색 융단
+tile.carpet.11.desc=파란색 융단
+tile.carpet.12.desc=갈색 융단
+tile.carpet.13.desc=초록색 융단
+tile.carpet.14.desc=빨간색 융단
+tile.carpet.15.desc=검은색 융단
 
-#Bookshelf
-tile.chisel.bookshelf.name=Bookshelf
-tile.bookshelf.1.desc=Bookshelf with Rainbow Books
-tile.bookshelf.2.desc=Necromancer’s Apprentice Bookshelf
-tile.bookshelf.3.desc=Necromancer's Bookshelf
-tile.bookshelf.4.desc=Bookshelf with Red Tomes
-tile.bookshelf.5.desc=Abandoned Bookshelf
-tile.bookshelf.6.desc=Hoarder's Bookshelf
-tile.bookshelf.7.desc=Bookshelf filled to the brim with boring Pastel Books
-tile.bookshelf.8.desc=Historian's Bookshelf
+# 책장 (Bookshelf)
+tile.chisel.bookshelf.name=책장
+tile.bookshelf.1.desc=알록달록한 책장
+tile.bookshelf.2.desc=견습 강령술사의 책장
+tile.bookshelf.3.desc=강령술사의 책장
+tile.bookshelf.4.desc=붉은 학술서 책장
+tile.bookshelf.5.desc=버려진 책장
+tile.bookshelf.6.desc=수집가의 책장
+tile.bookshelf.7.desc=지루한 책으로 가득찬 책장
+tile.bookshelf.8.desc=역사학자의 책장
 
 # 티리안 (Tyrian)
 tile.chisel.tyrian.name=티리안
