@@ -437,130 +437,130 @@ tile.marbleStairs.13.desc=정렬된 대리석 타일 계단
 tile.marbleStairs.14.desc=예쁜 대리석 타일 계단
 tile.marbleStairs.15.desc=대리석 타일 계단
 
-# 석회암 (Limestone)
-tile.chisel.limestone.name=석회암
-tile.limestone.0.desc=석회암
-tile.limestone.1.desc=작은 석회암 타일
-tile.limestone.2.desc=프랑스풍 석회암 타일
-tile.limestone.3.desc=프랑스풍 석회암 타일
-tile.limestone.4.desc=크리퍼 문양의 석회암 타일
-tile.limestone.5.desc=작은 석회암 벽돌
-tile.limestone.6.desc=금이 간 석회암 타일
-tile.limestone.7.desc=부드러운 석회암
-tile.limestone.8.desc=화려한 패널의 석회암
-tile.limestone.9.desc=화려한 패널의 석회암
-tile.limestone.10.desc=크리퍼 문양 패널의 석회암
-tile.limestone.11.desc=파인 석회암
-tile.limestone.12.desc=패널이 있는 석회암
-tile.limestone.13.desc=큰 석회암 타일
-tile.limestone.14.desc=밝은 석회암 타일
-tile.limestone.15.desc=어두운 석회암 타일
+# 석회석 (Limestone)
+tile.chisel.limestone.name=석회석
+tile.limestone.0.desc=석회석
+tile.limestone.1.desc=작은 석회석 타일
+tile.limestone.2.desc=프랑스풍 석회석 타일
+tile.limestone.3.desc=프랑스풍 석회석 타일
+tile.limestone.4.desc=크리퍼 문양 석회석 타일
+tile.limestone.5.desc=작은 석회석 벽돌
+tile.limestone.6.desc=손상된 석회석 타일
+tile.limestone.7.desc=부드러운 석회석
+tile.limestone.8.desc=화려한 석회석 패널
+tile.limestone.9.desc=조각된 화려한 석회석 패널
+tile.limestone.10.desc=크리퍼 문양 석회석 타일
+tile.limestone.11.desc=오목한 석회석
+tile.limestone.12.desc=석회석 패널
+tile.limestone.13.desc=대형 석회석 패널
+tile.limestone.14.desc=밝은 석회석 패널
+tile.limestone.15.desc=어두운 석회석 패널
 
-#Limestone Slabs
-tile.chisel.limestone_slab.name=석회암 반블럭
-tile.limestoneSlab.0.desc=석회암 반블럭
-tile.limestoneSlab.1.desc=작은 석회암 타일 반블럭
-tile.limestoneSlab.2.desc=프랑스풍 석회암 타일 반블럭
-tile.limestoneSlab.3.desc=프랑스풍 석회암 타일 반블럭
-tile.limestoneSlab.4.desc=크리퍼 문양 석회암 타일 반블럭
-tile.limestoneSlab.5.desc=작은 석회암 벽돌 반블럭
-tile.limestoneSlab.6.desc=깨진 석회암 타일 반블럭
-tile.limestoneSlab.7.desc=부드러운 석회암 반블럭
-tile.limestoneSlab.8.desc=화려한 패널의 석회암 반블럭
-tile.limestoneSlab.9.desc=화려한 패널의 석회암 반블럭
-tile.limestoneSlab.10.desc=크리퍼 문양 패널의 석회암 반블럭
-tile.limestoneSlab.11.desc=파인 석회암 반블럭
-tile.limestoneSlab.12.desc=패널이 있는 석회암
-tile.limestoneSlab.13.desc=큰 석회암 타일 반블럭
-tile.limestoneSlab.14.desc=밝은 석회암 타일 반블럭
-tile.limestoneSlab.15.desc=어두운 석회암 타일 반블럭
+# 석회석 반 블록 (Limestone Slabs)
+tile.chisel.limestone_slab.name=석회석 반 블록
+tile.limestoneSlab.0.desc=석회석 반 블록
+tile.limestoneSlab.1.desc=작은 석회석 타일 반 블록
+tile.limestoneSlab.2.desc=프랑스풍 석회석 타일 반 블록
+tile.limestoneSlab.3.desc=프랑스풍 석회석 타일 반 블록
+tile.limestoneSlab.4.desc=크리퍼 문양 석회석 타일 반 블록
+tile.limestoneSlab.5.desc=작은 석회석 벽돌 반 블록
+tile.limestoneSlab.6.desc=손상된 석회석 타일 반 블록
+tile.limestoneSlab.7.desc=부드러운 석회석 반 블록
+tile.limestoneSlab.8.desc=화려한 석회석 패널 반 블록
+tile.limestoneSlab.9.desc=조각된 화려한 석회석 패널 반 블록
+tile.limestoneSlab.10.desc=크리퍼 문양 석회석 타일 반 블록
+tile.limestoneSlab.11.desc=오목한 석회석 반 블록
+tile.limestoneSlab.12.desc=석회석 패널 반 블록
+tile.limestoneSlab.13.desc=대형 석회석 패널 반 블록
+tile.limestoneSlab.14.desc=밝은 석회석 패널 반 블록
+tile.limestoneSlab.15.desc=어두운 석회석 패널 반 블록
 
-#Limestone Stairs
+# 석회석 계단 (Limestone Stairs)
 #The same name goes here 8 different times since stairs take up 8 block positions.
 #Sorry!  It was the only way!
-tile.chisel.limestone_stairs.0.name=석회암 계단
-tile.chisel.limestone_stairs.1.name=석회암 계단
-tile.chisel.limestone_stairs.2.name=석회암 계단
-tile.chisel.limestone_stairs.3.name=석회암 계단
-tile.chisel.limestone_stairs.4.name=석회암 계단
-tile.chisel.limestone_stairs.5.name=석회암 계단
-tile.chisel.limestone_stairs.6.name=석회암 계단
-tile.chisel.limestone_stairs.7.name=석회암 계단
+tile.chisel.limestone_stairs.0.name=석회석 계단
+tile.chisel.limestone_stairs.1.name=석회석 계단
+tile.chisel.limestone_stairs.2.name=석회석 계단
+tile.chisel.limestone_stairs.3.name=석회석 계단
+tile.chisel.limestone_stairs.4.name=석회석 계단
+tile.chisel.limestone_stairs.5.name=석회석 계단
+tile.chisel.limestone_stairs.6.name=석회석 계단
+tile.chisel.limestone_stairs.7.name=석회석 계단
 
 #These are bugged.... so sad :,(
-tile.limestoneStairs.0.desc=석회암 계단
-tile.limestoneStairs.1.desc=작은 석회암 타일 계단
-tile.limestoneStairs.2.desc=프랑스풍 타일 석회암 계단
-tile.limestoneStairs.3.desc=프랑스풍 석회암 타일 계단
-tile.limestoneStairs.4.desc=크리퍼 문양 석회암 타일 계단
-tile.limestoneStairs.5.desc=작은 석회암 벽돌 계단
-tile.limestoneStairs.6.desc=금이 간 석회암 타일 계단
-tile.limestoneStairs.7.desc=부드러운 석회암 계단
-tile.limestoneStairs.8.desc=화려한 패널의 석회암 계단
-tile.limestoneStairs.9.desc=화려한 패널의 석회암 계단
-tile.limestoneStairs.10.desc=크리퍼 패널의 석회암 계단
-tile.limestoneStairs.11.desc=파인 석회암 계단
-tile.limestoneStairs.12.desc=패널이 있는 석회암 계단
-tile.limestoneStairs.13.desc=큰 타일이 있는 석회암 계단
-tile.limestoneStairs.14.desc=밝은 패널의 석회암 계단
-tile.limestoneStairs.15.desc=어두운 패널의 석회암 계단
+tile.limestoneStairs.0.desc=석회석 계단
+tile.limestoneStairs.1.desc=작은 석회석 타일 계단
+tile.limestoneStairs.2.desc=프랑스풍 석회석 타일 계단
+tile.limestoneStairs.3.desc=프랑스풍 석회석 타일 계단
+tile.limestoneStairs.4.desc=크리퍼 문양 석회석 타일 계단
+tile.limestoneStairs.5.desc=작은 석회석 벽돌 계단
+tile.limestoneStairs.6.desc=손상된 석회석 타일 계단
+tile.limestoneStairs.7.desc=부드러운 석회석 계단
+tile.limestoneStairs.8.desc=화려한 석회석 패널 계단
+tile.limestoneStairs.9.desc=조각된 화려한 석회석 패널 계단
+tile.limestoneStairs.10.desc=크리퍼 문양 석회석 타일 계단
+tile.limestoneStairs.11.desc=오목한 석회석 계단
+tile.limestoneStairs.12.desc=석회석 패널 계단
+tile.limestoneStairs.13.desc=대형 석회석 패널 계단
+tile.limestoneStairs.14.desc=밝은 석회석 패널 계단
+tile.limestoneStairs.15.desc=어두운 석회석 패널 계단
 
-#Factory Blocks
-tile.chisel.factoryblock.name=공장 블럭
-tile.factory.0.desc=도트 패턴이 있는 녹슨 금속 판
+# 공장 블록 (Factory Blocks)
+tile.chisel.factoryblock.name=공장 블록
+tile.factory.0.desc=우둘투둘한 녹슨 금속 판
 tile.factory.1.desc=녹슨 금속 판
-tile.factory.2.desc=매우 녹이 슨 금속 판
-tile.factory.3.desc=살짝 녹이 슨 금속 판
+tile.factory.2.desc=매우 녹슨 금속 판
+tile.factory.3.desc=조금 녹슨 금속 판
 tile.factory.4.desc=와이어 프레임
-tile.factory.5.desc=보라색 그림자의 와이어 프레임
-tile.factory.6.desc=노랑-검정의 공장 블럭
-tile.factory.7.desc=오렌지-하얀색의 공장 블럭
-tile.factory.8.desc=화려한 서킷 블럭
+tile.factory.5.desc=보라빛 와이어 프레임
+tile.factory.6.desc=위험 경고(노랑-검정)
+tile.factory.7.desc=위험 경고(주황-하양)
+tile.factory.8.desc=화려한 회로 블록
 tile.factory.9.desc=화려한 금속 상자
-tile.factory.10.desc=금으로 도색된 화려한 서킷 블럭
-tile.factory.11.desc=금으로 도색된 녹슨 보라색 블럭
-tile.factory.12.desc=빛나는 금속 건축자재 블럭
-tile.factory.13.desc=Worn Metal Wall with Ventilation Openings
+tile.factory.10.desc=금 도금한 화려한 회로 블록
+tile.factory.11.desc=금 도금한 녹슨 보라빛 블록
+tile.factory.12.desc=빛나는 건축용 금속 블록
+tile.factory.13.desc=통풍구가 있는 마모된 금속 벽
 tile.factory.14.desc=녹슨 금속 판
-tile.factory.15.desc=닳은 금속 기둥
+tile.factory.15.desc=마모된 금속 기둥
 
-#Diamond blocks
-tile.chisel.diamond_block.name=다이아몬드 블럭
-tile.diamond.1.desc=부풀린 다이아몬드 블럭
-tile.diamond.2.desc=패널이 있는 다이아몬드 블럭
+# 다이아몬드 블록 (Diamond blocks)
+tile.chisel.diamond_block.name=다이아몬드 블록
+tile.diamond.1.desc=밝은 다이아몬드 블록
+tile.diamond.2.desc=다이아몬드 블록 패널
 tile.diamond.3.desc=다이아몬드 셀
-tile.diamond.4.desc=Diamonds in Purple Obsidian
-tile.diamond.5.desc=Diamonds in Obsidian
-tile.diamond.6.desc=Simple Diamond Block
-tile.diamond.7.desc=Bismuth Diamond Block
-tile.diamond.8.desc=Crushed Diamond
-tile.diamond.9.desc=Small Diamond Blocks
-tile.diamond.10.desc=Small Ornate Diamond Blocks
-tile.diamond.11.desc=Zelda Diamond Block
-tile.diamond.12.desc=Diamond Block with Ornate Layer
+tile.diamond.4.desc=보라빛 흑요석에 포함된 다이아몬드
+tile.diamond.5.desc=흑요석에 포함된 다이아몬드
+tile.diamond.6.desc=어두운 다이아몬드 블록
+tile.diamond.7.desc=비스무트 문양 다이아몬드 블록
+tile.diamond.8.desc=손상된 다이아몬드 블록
+tile.diamond.9.desc=작은 다이아몬드 블록
+tile.diamond.10.desc=작고 화려한 다이아몬드 블록
+tile.diamond.11.desc=젤다의 다이아몬드 블록
+tile.diamond.12.desc=화려한 테두리의 다이아몬드 블록
 
-#Snakestone
+# 뱀 모양 돌 (Snakestone)
 tile.chisel.snakestoneSand.name=뱀 모양 사암
 tile.chisel.snakestoneStone.name=뱀 모양 돌
-tile.chisel.obsidianSnakestone.name=뱀 모양 옵시디언
+tile.chisel.obsidianSnakestone.name=뱀 모양 흑요석
 
-#Glass blocks
+# 유리 (Glass blocks)
 tile.chisel.glass.name=유리
-tile.glass.1.desc=Bubble Glass
-tile.glass.2.desc=중국산 유리
+tile.glass.1.desc=광택나는 유리
+tile.glass.2.desc=중국풍 유리
 tile.glass.3.desc=일본풍 유리
 tile.glass.4.desc=던전 유리
 tile.glass.5.desc=밝은 유리
-tile.glass.6.desc=Borderless Glass
-tile.glass.7.desc=Ornate Steel Glass
+tile.glass.6.desc=경계선이 없는 유리
+tile.glass.7.desc=화려한 강철 유리
 tile.glass.8.desc=스크린
-tile.glass.9.desc=Shale Glass
-tile.glass.10.desc=금속 프레임 유리
-tile.glass.11.desc=돌 프레임 유리
-tile.glass.12.desc=Streak Glass
-tile.glass.13.desc=격자가 굵은 유리
-tile.glass.14.desc=격자가 얇은 유리
-tile.glass.15.desc=현대풍 철 울타리
+tile.glass.9.desc=셰일 유리
+tile.glass.10.desc=강철 테두리 유리
+tile.glass.11.desc=돌 테두리 유리
+tile.glass.12.desc=테두리가 없는 유리
+tile.glass.13.desc=두꺼운 격자 유리
+tile.glass.14.desc=얇은 격자 유리
+tile.glass.15.desc=현대적인 철 울타리
 
 #Sandstone
 tile.chisel.sandstone.name=사암
