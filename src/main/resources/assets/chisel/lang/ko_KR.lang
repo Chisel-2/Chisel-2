@@ -683,56 +683,56 @@ tile.emerald.11.desc=화려한 에메랄드 블록
 
 # 네더 벽돌 (Nether Brick)
 tile.chisel.nether_brick.name=네더 벽돌
-tile.netherBrick.1.desc=Blue Nether Brick
-tile.netherBrick.2.desc=Spattered Nether Brick
-tile.netherBrick.3.desc=Nether Brick made of Guts
-tile.netherBrick.4.desc=Dark Nether Brick made of Guts
-tile.netherBrick.5.desc=Small Nether Brick made of Guts
-tile.netherBrick.6.desc=Blue Nether Brick with Lava
-tile.netherBrick.7.desc=Brown Nether Brick
-tile.netherBrick.8.desc=Obsidian Nether Brick
-tile.netherBrick.9.desc=Stone Nether Brick
-tile.netherBrick.10.desc=Nether Brick made of Meat
-tile.netherBrick.11.desc=Red Nether Brick made of Meat
-tile.netherBrick.12.desc=Small Nether Brick made of Meat
-tile.netherBrick.13.desc=Small Red Nether Brick made of Meat
-tile.netherBrick.14.desc=Red Nether Brick
-tile.netherBrick.15.desc=Small Red Nether Brick
+tile.netherBrick.1.desc=파란색 네더 벽돌
+tile.netherBrick.2.desc=피뭍은 네더 벽돌
+tile.netherBrick.3.desc=내장으로 만든 네더 벽돌
+tile.netherBrick.4.desc=내장으로 만든 어두운 네더 벽돌
+tile.netherBrick.5.desc=내장으로 만든 작은 네더 벽돌
+tile.netherBrick.6.desc=용암이 흐르는 파란색 네더 벽돌
+tile.netherBrick.7.desc=용암이 흐르는 갈색 네더 벽돌
+tile.netherBrick.8.desc=용암이 흐르는 흑요석 네더 벽돌
+tile.netherBrick.9.desc=용암이 흐르는 돌 네더 벽돌
+tile.netherBrick.10.desc=고기로 만든 네더 벽돌
+tile.netherBrick.11.desc=고기로 만든 붉은 네더 벽돌
+tile.netherBrick.12.desc=고기로 만든 작은 네더 벽돌
+tile.netherBrick.13.desc=고기로 만든 붉고 작은 네더 벽돌
+tile.netherBrick.14.desc=빨간색 네더 벽돌
+tile.netherBrick.15.desc=빨간색 작은 네더 벽돌
 
 # 네더랙 (Netherrack)
 tile.chisel.netherrack.name=네더랙
-tile.hellrock.1.desc=Nethergravel with Blood
-tile.hellrock.2.desc=Netherrack with Blood
-tile.hellrock.3.desc=Darker Netherrack with Blood
-tile.hellrock.4.desc=Blue Netherrack
-tile.hellrock.5.desc=Shale Blue Netherrack
-tile.hellrock.6.desc=Classic Netherrack
-tile.hellrock.7.desc=Spattered Netherrack
-tile.hellrock.8.desc=Netherrack made of Guts
-tile.hellrock.9.desc=Dark Netherrack made of Guts
-tile.hellrock.10.desc=Netherrack made of Meat
-tile.hellrock.11.desc=Red Netherrack made of Meat
-tile.hellrock.12.desc=Netherrack made of Smaller Meat Chunks
-tile.hellrock.13.desc=Dark Red Netherrack
-tile.hellrock.14.desc=Netherrack with Flowing Lava
+tile.hellrock.1.desc=피를 머금은 네더자갈
+tile.hellrock.2.desc=피를 머금은 네더랙
+tile.hellrock.3.desc=피를 머금은 어두운 네더랙
+tile.hellrock.4.desc=파란색 네더랙
+tile.hellrock.5.desc=셰일 문양의 파란색 네더랙
+tile.hellrock.6.desc=고전적인 네더랙
+tile.hellrock.7.desc=피뭍은 네더랙
+tile.hellrock.8.desc=내장으로 만든 네더랙
+tile.hellrock.9.desc=내장으로 만든 어두운 네더랙
+tile.hellrock.10.desc=고기로 만든 네더랙
+tile.hellrock.11.desc=고기로 만든 붉은 네더랙
+tile.hellrock.12.desc=고기 조각으로 만든 네더랙
+tile.hellrock.13.desc=검붉은 네더랙
+tile.hellrock.14.desc=용암이 흐르는 네더랙
 
 # 이끼 낀 조약돌 (Mossy CobbleStone)
 tile.chisel.mossy_cobblestone.name=이끼 낀 조약돌
-tile.stoneMoss.1.desc=Aligned Mossy Cobblestone Bricks
-tile.stoneMoss.2.desc=Detailed Mossy Cobblestone Bricks
-tile.stoneMoss.3.desc=Small Mossy Cobblestone Bricks
-tile.stoneMoss.4.desc=Large Mossy Cobblestone Tiles
-tile.stoneMoss.5.desc=Small Mossy Cobblestone Tiles
-tile.stoneMoss.6.desc=French Mossy Cobblestone Tiles
-tile.stoneMoss.7.desc=French Mossy Cobblestone Tiles
-tile.stoneMoss.8.desc=Creeper Mossy Cobblestone Tiles
-tile.stoneMoss.9.desc=Damaged Mossy Cobblestone Tiles
-tile.stoneMoss.10.desc=Huge Mossy Cobblestone Tiles
-tile.stoneMoss.11.desc=Mossy Cobblestone with Creeper Panel
-tile.stoneMoss.12.desc=Mossy Cobblestone with Dent
-tile.stoneMoss.13.desc=Mossy Cobblestone with Pane
-tile.stoneMoss.14.desc=Mossy Cobblestone with Light Panel
-tile.stoneMoss.15.desc=Mossy Cobblestone with Dark Panel
+tile.stoneMoss.1.desc=이끼 낀 조약돌 벽돌
+tile.stoneMoss.2.desc=이끼 낀 섬세한 조약돌 벽돌
+tile.stoneMoss.3.desc=이끼 낀 작은 조약돌 벽돌
+tile.stoneMoss.4.desc=이끼 낀 대형 조약돌 타일
+tile.stoneMoss.5.desc=이끼 낀 소형 조약돌 타일
+tile.stoneMoss.6.desc=이끼 낀 프랑스풍 조약돌 타일
+tile.stoneMoss.7.desc=이끼 낀 프랑스풍 조약돌 타일
+tile.stoneMoss.8.desc=이끼 낀 크리퍼 문양 조약돌 타일
+tile.stoneMoss.9.desc=이끼 낀 손상된 조약돌 타일
+tile.stoneMoss.10.desc=이끼 낀 거대한 조약돌 타일
+tile.stoneMoss.11.desc=이끼 낀 크리퍼 문양 조약돌 패널
+tile.stoneMoss.12.desc=이끼 낀 오목한 조약돌
+tile.stoneMoss.13.desc=이끼 낀 조약돌 패널
+tile.stoneMoss.14.desc=이끼 낀 밝은 조약돌 패널
+tile.stoneMoss.15.desc=이끼 낀 어두운 조약돌 패널
 
 # 석재 벽돌 (Stone Bricks)
 tile.chisel.stonebricksmooth.name=석재 벽돌
@@ -894,17 +894,17 @@ tile.obsidian.14.desc=Light Obsidian Blocks with Greek Decor
 tile.obsidian.15.desc=Small Obsidian Blocks inside an Oak Wood Crate
 
 # 목재 (Wood)
-tile.chisel.oak_planks.name=Oak Wood Planks
-tile.chisel.birch_planks.name=Birch Wood Planks
-tile.chisel.spruce_planks.name=Spruce Wood Planks
-tile.chisel.jungle_planks.name=Jungle Wood Planks
-tile.chisel.dark_oak_planks.name=Dark Oak Wood Planks
-tile.chisel.acacia_planks.name=Acacia Wood Planks
+tile.chisel.oak_planks.name=참나무 목재
+tile.chisel.birch_planks.name=자작나무 목재
+tile.chisel.spruce_planks.name=가문비나무 목재
+tile.chisel.jungle_planks.name=정글 나무 목재
+tile.chisel.dark_oak_planks.name=짙은 참나무 목재
+tile.chisel.acacia_planks.name=아카시아 나무 목재
 
 #Remember to do the descriptions.
 
-# 철 울타리 (Iron Fence)
-tile.chisel.iron_bars.name=Iron Bars
+# 철창 (Iron Fence)
+tile.chisel.iron_bars.name=철창
 tile.iron_bars.1.desc=Iron Bars without Frame
 tile.iron_bars.2.desc=Menacing Iron Bars
 tile.iron_bars.3.desc=Iron Cage Bars
@@ -916,7 +916,7 @@ tile.iron_bars.8.desc=Vertical Iron Bars
 tile.iron_bars.9.desc=Iron Spikes
 
 # 유리판 (Glass Panes)
-tile.chisel.glass_pane.name=Glass Pane
+tile.chisel.glass_pane.name=유리판
 tile.glass_pane.1.desc=Bubble Glass Pane
 tile.glass_pane.2.desc=Borderless Glass Pane
 tile.glass_pane.3.desc=Screen Pane
@@ -927,7 +927,7 @@ tile.glass_pane.14.desc=Japanese Glass Pane
 tile.glass_pane.15.desc=Ornate Japanese Glass Pane
 
 # 레드스톤 블록 (Redstone block)
-tile.chisel.redstone_block.name=Redstone Block
+tile.chisel.redstone_block.name=레드스톤 블록
 tile.redstone_block.1.desc=Smooth Redstone
 tile.redstone_block.2.desc=Large Redstone Block
 tile.redstone_block.3.desc=Small Redstone Block
