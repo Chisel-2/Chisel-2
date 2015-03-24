@@ -1,12 +1,12 @@
-# Key localizations
+# 핵심 한글화 (Key localizations)
 
-# Item localizations
+# 아이템 한글화 (Item localizations)
 item.chisel.name=끌
 
 item.chisel.chisel.desc.gui=우클릭으로 GUI 열기
 item.chisel.chisel.desc.lc1=왼클릭으로 블록을 순차적으로 모양을 변경
 item.chisel.chisel.desc.lc2=끌에 변경된 블록이 있으면 해당 블록으로만 변경
-item.chisel.chisel.desc.modes=Has multiple modes for chiseling.
+item.chisel.chisel.desc.modes=변환 범위를 선택 할 수 있습니다.
 
 item.chisel.chisel_diamond.name=다이아몬드 끌
 
@@ -24,7 +24,7 @@ item.upgrade_speed.desc=작업 속도를 증가시킵니다.
 item.upgrade_automation.desc=블록들을 자동으로 넣고 뺄 수 있게 합니다.
 item.upgrade_stack.desc=한 번에 작업하는 블록 양을 늘립니다.
 
-# Block localizations
+# 블록 한글화 (Block localizations)
 # Have fun! ~zombiepig333
 
 #Chisel 2
@@ -211,12 +211,12 @@ tile.grimstone.0.desc=음산한 돌
 tile.grimstone.1.desc=부드러운 음산한 돌
 tile.grimstone.2.desc=알 수 없는 문양의 음산한 돌
 tile.grimstone.3.desc=조각된 음산한 돌
-tile.grimstone.4.desc=음산한 돌 블록
-tile.grimstone.5.desc=거친 음산한 돌 블록
-tile.grimstone.6.desc=음산한 돌 벽돌
-tile.grimstone.7.desc=커다란 음산한 돌 벽돌
-tile.grimstone.8.desc=음산한 돌 강단
-tile.grimstone.9.desc=음산한 돌 강단 타일
+tile.grimstone.4.desc=음산한 블록
+tile.grimstone.5.desc=거친 음산한 블록
+tile.grimstone.6.desc=음산한 벽돌
+tile.grimstone.7.desc=커다란 음산한 벽돌
+tile.grimstone.8.desc=음산한 강단
+tile.grimstone.9.desc=음산한 강단 타일
 tile.grimstone.10.desc=화려한 음산한 돌
 tile.grimstone.11.desc=화려한 음산한 돌 타일
 tile.grimstone.12.desc=부드러운 음산한 돌판
@@ -640,7 +640,7 @@ tile.gold.14.desc=금 블록
 
 # 발광석 (Glowstone)
 tile.chisel.glowstone.name=발광석
-tile.lightstone.1.desc=조약돌 문양 발광석
+tile.lightstone.1.desc=조약돌 모양 발광석
 tile.lightstone.2.desc=침식된 발광석 블록
 tile.lightstone.3.desc=유리가 포함된 발광석 블록
 tile.lightstone.4.desc=네온 발광석
@@ -736,62 +736,62 @@ tile.stoneMoss.15.desc=이끼 낀 어두운 조약돌 패널
 
 # 석재 벽돌 (Stone Bricks)
 tile.chisel.stonebricksmooth.name=석재 벽돌
-tile.stonebricksmooth.4.desc=Small Stone Bricks
-tile.stonebricksmooth.5.desc=Wide Stone Bricks
-tile.stonebricksmooth.6.desc=Small Disordered Stone Bricks
-tile.stonebricksmooth.7.desc=Disordered Stone Bricks
-tile.stonebricksmooth.8.desc=Disordered Stone Panels
-tile.stonebricksmooth.9.desc=Stone Bricks in a Fancy Arrangement
-tile.stonebricksmooth.10.desc=Ornate Stone Brick tiles
-tile.stonebricksmooth.11.desc=Large Ornate Stone Brick Tiles
-tile.stonebricksmooth.12.desc=Stone Panel
-tile.stonebricksmooth.13.desc=Sunken Stone Panel
-tile.stonebricksmooth.14.desc=Ornate Stone Panel
-tile.stonebricksmooth.15.desc=Poison Stone Brick
+tile.stonebricksmooth.4.desc=작은 석재 벽돌
+tile.stonebricksmooth.5.desc=넓은 석재 벽돌
+tile.stonebricksmooth.6.desc=작고 복잡한 석재 벽돌
+tile.stonebricksmooth.7.desc=복잡한 석재 벽돌
+tile.stonebricksmooth.8.desc=복잡한 석재 패널
+tile.stonebricksmooth.9.desc=멋지게 배치된 석재 벽돌
+tile.stonebricksmooth.10.desc=화려한 석재 벽돌 타일
+tile.stonebricksmooth.11.desc=넓고 화려한 석재 벽돌 타일
+tile.stonebricksmooth.12.desc=석재 패널
+tile.stonebricksmooth.13.desc=오목한 석재 패널
+tile.stonebricksmooth.14.desc=화려한 석재 패널
+tile.stonebricksmooth.15.desc=꽃 문양 석재 벽돌
 
 # 흙 (Dirt)
 tile.chisel.dirt.name=흙
-tile.dirt.0.desc=Dirt Bricks in Disarray
-tile.dirt.1.desc=Dirt Bricks Imitating Nether Brick Design
-tile.dirt.2.desc=Dirt Bricks
-tile.dirt.3.desc=Cobble-Dirt
-tile.dirt.4.desc=Reinforced Cobble-Dirt
-tile.dirt.5.desc=Reinforced Dirt
-tile.dirt.6.desc=Happy Dirt
-tile.dirt.7.desc=Large Dirt Bricks
-tile.dirt.8.desc=Large Dirt Bricks on top of Dirt
-tile.dirt.9.desc=Horizontal Dirt
-tile.dirt.10.desc=Vertical Dirt
-tile.dirt.11.desc=Dirt Layers
-tile.dirt.12.desc=Crumbling Dirt
+tile.dirt.0.desc=복잡한 흙 벽돌
+tile.dirt.1.desc=네더 벽돌 모양 흙 벽돌
+tile.dirt.2.desc=흙 벽돌
+tile.dirt.3.desc=조약돌 모양 흙
+tile.dirt.4.desc=강화된 조약돌 모양 흙
+tile.dirt.5.desc=강화된 흙
+tile.dirt.6.desc=행복한 흙
+tile.dirt.7.desc=대형 흙 벽돌
+tile.dirt.8.desc=흙을 덮은 대형 흙 벽돌
+tile.dirt.9.desc=수평 무늬 흙
+tile.dirt.10.desc=수직 무늬 흙
+tile.dirt.11.desc=층이 있는 흙
+tile.dirt.12.desc=무너져가는 흙
 
 # 얼음 (Ice)
 tile.chisel.ice.name=얼음
-tile.ice.1.desc=Rough Ice Block
-tile.ice.2.desc=Cobble-Ice
-tile.ice.3.desc=Large Rough Ice Bricks
-tile.ice.4.desc=Large Ice Bricks
-tile.ice.5.desc=Small Ice Bricks
-tile.ice.6.desc=Fancy Glass Wall
-tile.ice.7.desc=Large Ice Tiles
-tile.ice.8.desc=Fancy Ice Tiles
-tile.ice.9.desc=Sunken Ice Tiles
-tile.ice.10.desc=Disordered Ice Tiles
-tile.ice.11.desc=Ice Panel
-tile.ice.12.desc=Ice Double Slab
-tile.ice.13.desc=Ice Zelda Block
-tile.ice.14.desc=Ice Bismuth Block
-tile.ice.15.desc=Ice Poison Block
+tile.ice.1.desc=거친 얼음
+tile.ice.2.desc=조약돌 모양 얼음
+tile.ice.3.desc=거친 대형 얼음 벽돌
+tile.ice.4.desc=대형 얼음 벽돌
+tile.ice.5.desc=작은 얼음 벽돌
+tile.ice.6.desc=화려한 유리 벽
+tile.ice.7.desc=대형 얼음 타일
+tile.ice.8.desc=화려한 얼음 타일
+tile.ice.9.desc=오목한 얼음 타일
+tile.ice.10.desc=복잡한 얼음 타일
+tile.ice.11.desc=얼음 패널
+tile.ice.12.desc=이중 얼음 반 블록
+tile.ice.13.desc=젤다의 얼음 블록
+tile.ice.14.desc=비스무트 문양 얼음 블록
+tile.ice.15.desc=꽃 문양 얼음 블록
 
 # 얼음 기둥 (Ice Pillars)
 tile.chisel.ice_pillar.name=얼음 기둥
-tile.icePillar.0.desc=Plain Ice Pillar with Plain Capstone
-tile.icePillar.1.desc=Plain Ice Pillar with Greek Capstone
-tile.icePillar.2.desc=Greek Ice Pillar with Plain Capstone
-tile.icePillar.3.desc=Greek Ice Pillar with Greek Capstone
-tile.icePillar.4.desc=Carved Ice Pillar Capstone
-tile.icePillar.5.desc=Ornamental Ice Pillar Capstone
-tile.icePillar.6.desc=Inscribed Ice Pillar
+tile.icePillar.0.desc=단순한 얼음 기둥과 단순한 갓돌
+tile.icePillar.1.desc=단순한 얼음 기둥과 그리스풍의 갓돌
+tile.icePillar.2.desc=그리스풍의 얼음 기둥과 단순한 갓돌
+tile.icePillar.3.desc=그리스풍의 얼음 기둥과 그리스풍의 갓돌
+tile.icePillar.4.desc=조각된 얼음 기둥과 갓돌
+tile.icePillar.5.desc=장식된 얼음 기둥과 갓돌
+tile.icePillar.6.desc=새겨진 얼음 기둥
 
 # 얼음 계단 (Ice Stairs)
 tile.chisel.ice_stairs.name=얼음 계단
@@ -804,94 +804,94 @@ tile.chisel.ice_stairs.5.name=얼음 계단
 tile.chisel.ice_stairs.6.name=얼음 계단
 tile.chisel.ice_stairs.7.name=얼음 계단
 tile.ice_stairs.0.desc=얼음 계단
-tile.ice_stairs.1.desc=Rough Ice Stairs
-tile.ice_stairs.2.desc=Cobble-Ice Stairs
-tile.ice_stairs.3.desc=Large rough Ice Brick Stairs
-tile.ice_stairs.4.desc=Large Ice Brick Stairs
-tile.ice_stairs.5.desc=Small Ice Brick Stairs
-tile.ice_stairs.6.desc=Fancy Ice Wall Stairs
-tile.ice_stairs.7.desc=Large Ice Tile Stairs
-tile.ice_stairs.8.desc=Fancy Ice Tile Stairs
-tile.ice_stairs.9.desc=Sunken Ice Tile Stairs
-tile.ice_stairs.10.desc=Disordered Ice Tile Stairs
-tile.ice_stairs.11.desc=Ice Panel Stairs
-tile.ice_stairs.12.desc=Ice Double Slab Stairs
-tile.ice_stairs.13.desc=Ice Zelda Stairs
-tile.ice_stairs.14.desc=Ice Bismuth Stairs
-tile.ice_stairs.15.desc=Ice Poison Stairs
+tile.ice_stairs.1.desc=거친 얼음 계단
+tile.ice_stairs.2.desc=조약돌 모양 얼음 계단
+tile.ice_stairs.3.desc=거친 대형 얼음 벽돌 계단
+tile.ice_stairs.4.desc=대형 얼음 벽돌 계단
+tile.ice_stairs.5.desc=작은 얼음 벽돌 계단
+tile.ice_stairs.6.desc=화려한 유리 벽 계단
+tile.ice_stairs.7.desc=대형 얼음 타일 계단
+tile.ice_stairs.8.desc=화려한 얼음 타일 계단
+tile.ice_stairs.9.desc=오목한 얼음 타일 계단
+tile.ice_stairs.10.desc=복잡한 얼음 타일 계단
+tile.ice_stairs.11.desc=얼음 패널 계단
+tile.ice_stairs.12.desc=이중 얼음 반 블록 계단
+tile.ice_stairs.13.desc=젤다의 얼음 블록 계단
+tile.ice_stairs.14.desc=비스무트 문양 얼음 블록 계단
+tile.ice_stairs.15.desc=꽃 문양 얼음 블록 계단
 
 # 단단한 얼음 (Packed Ice)
 tile.chisel.packedice.name=단단한 얼음
-tile.packedice.1.desc=Rough Packed Ice Block
-tile.packedice.2.desc=Cobble-Packed Ice
-tile.packedice.3.desc=Large Rough Packed Ice Bricks
-tile.packedice.4.desc=Large Packed Ice Bricks
-tile.packedice.5.desc=Small Packed Ice Bricks
-tile.packedice.6.desc=Fancy Glass Wall
-tile.packedice.7.desc=Large Packed Ice Tiles
-tile.packedice.8.desc=Fancy Packed Ice Tiles
-tile.packedice.9.desc=Sunken Packed Ice Tiles
-tile.packedice.10.desc=Disordered Packed Ice Tiles
-tile.packedice.11.desc=Packed Ice Panel
-tile.packedice.12.desc=Packed Ice Double Slab
-tile.packedice.13.desc=Packed Ice Zelda Block
-tile.packedice.14.desc=Packed Ice Bismuth Block
-tile.packedice.15.desc=Packed Ice Poison Block
+tile.packedice.1.desc=거친 단단한 얼음
+tile.packedice.2.desc=조약돌 모양 단단한 얼음
+tile.packedice.3.desc=거친 대형 단단한 얼음 벽돌
+tile.packedice.4.desc=대형 단단한 얼음 벽돌
+tile.packedice.5.desc=작은 단단한 얼음 벽돌
+tile.packedice.6.desc=화려한 유리 벽
+tile.packedice.7.desc=대형 단단한 얼음 타일
+tile.packedice.8.desc=화려한 단단한 얼음 타일
+tile.packedice.9.desc=오목한 단단한 얼음 타일
+tile.packedice.10.desc=복잡한 단단한 얼음 타일
+tile.packedice.11.desc=단단한 얼음 패널
+tile.packedice.12.desc=이중 단단한 얼음 반 블록
+tile.packedice.13.desc=젤다의 단단한 얼음 블록
+tile.packedice.14.desc=비스무트 문양 단단한 얼음 블록
+tile.packedice.15.desc=꽃 문양 단단한 얼음 블록
 
 # 단단한 얼음 기둥 (Packed Ice Pillars)
-tile.chisel.packedice_pillar.name=Packed Ice Pillar
-tile.packedice_pillar.0.desc=Plain Packed Ice Pillar with Plain Capstone
-tile.packedice_pillar.1.desc=Plain Packed Ice Pillar with Greek Capstone
-tile.packedice_pillar.2.desc=Greek Packed Ice Pillar with Plain Capstone
-tile.packedice_pillar.3.desc=Greek Packed Ice Pillar with Greek Capstone
-tile.packedice_pillar.4.desc=Carved Packed Ice Pillar Capstone
-tile.packedice_pillar.5.desc=Ornamental Packed Ice Pillar Capstone
-tile.packedice_pillar.6.desc=Inscribed Packed Ice Pillar
+tile.chisel.packedice_pillar.name=단단한 얼음 기둥
+tile.packedice_pillar.0.desc=단순한 단단한 얼음 기둥과 단순한 갓돌
+tile.packedice_pillar.1.desc=단순한 단단한 얼음 기둥과 그리스풍의 갓돌
+tile.packedice_pillar.2.desc=그리스풍의 단단한 얼음 기둥과 단순한 갓돌
+tile.packedice_pillar.3.desc=그리스풍의 단단한 얼음 기둥과 그리스풍의 갓돌
+tile.packedice_pillar.4.desc=조각된 단단한 얼음 기둥과 갓돌
+tile.packedice_pillar.5.desc=장식된 단단한 얼음 기둥과 갓돌
+tile.packedice_pillar.6.desc=새겨진 단단한 얼음 기둥
 
 # 단단한 얼음 계단 (Packed Ice Stairs)
-tile.chisel.packedice_stairs.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.0.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.1.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.2.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.3.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.4.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.5.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.6.name=Packed Ice Stairs
-tile.chisel.packedice_stairs.7.name=Packed Ice Stairs
-tile.packedice_stairs.0.desc=Packed Ice Stairs
-tile.packedice_stairs.1.desc=Rough Packed Ice Stairs
-tile.packedice_stairs.2.desc=Cobble-Packed Ice Stairs
-tile.packedice_stairs.3.desc=Large rough Packed Ice Brick Stairs
-tile.packedice_stairs.4.desc=Large Packed Ice Brick Stairs
-tile.packedice_stairs.5.desc=Small Packed Ice Brick Stairs
-tile.packedice_stairs.6.desc=Fancy Packed Ice Wall Stairs
-tile.packedice_stairs.7.desc=Large Packed Ice Tile Stairs
-tile.packedice_stairs.8.desc=Fancy Packed Ice Tile Stairs
-tile.packedice_stairs.9.desc=Sunken Packed Ice Tile Stairs
-tile.packedice_stairs.10.desc=Disordered Packed Ice Tile Stairs
-tile.packedice_stairs.11.desc=Packed Ice Panel Stairs
-tile.packedice_stairs.12.desc=Packed Ice Double Slab Stairs
-tile.packedice_stairs.13.desc=Packed Ice Zelda Stairs
-tile.packedice_stairs.14.desc=Packed Ice Bismuth Stairs
-tile.packedice_stairs.15.desc=Packed Ice Poison Stairs
+tile.chisel.packedice_stairs.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.0.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.1.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.2.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.3.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.4.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.5.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.6.name=단단한 얼음 계단
+tile.chisel.packedice_stairs.7.name=단단한 얼음 계단
+tile.packedice_stairs.0.desc=단단한 얼음 계단
+tile.packedice_stairs.1.desc=거친 단단한 얼음 계단
+tile.packedice_stairs.2.desc=조약돌 모양 단단한 얼음 계단
+tile.packedice_stairs.3.desc=거친 대형 단단한 얼음 벽돌 계단
+tile.packedice_stairs.4.desc=대형 단단한 얼음 벽돌 계단
+tile.packedice_stairs.5.desc=작은 단단한 얼음 벽돌 계단
+tile.packedice_stairs.6.desc=화려한 유리 벽 계단
+tile.packedice_stairs.7.desc=대형 단단한 얼음 타일 계단
+tile.packedice_stairs.8.desc=화려한 단단한 얼음 타일 계단
+tile.packedice_stairs.9.desc=오목한 단단한 얼음 타일 계단
+tile.packedice_stairs.10.desc=복잡한 단단한 얼음 타일 계단
+tile.packedice_stairs.11.desc=단단한 얼음 패널 계단
+tile.packedice_stairs.12.desc=이중 단단한 얼음 반 블록 계단
+tile.packedice_stairs.13.desc=젤다의 단단한 얼음 블록 계단
+tile.packedice_stairs.14.desc=비스무트 문양 단단한 얼음 블록 계단
+tile.packedice_stairs.15.desc=꽃 문양 단단한 얼음 블록 계단
 
 # 흑요석 (Obsidian)
 tile.chisel.obsidian.name=흑요석
-tile.obsidian.1.desc=Large Obsidian Pillar
-tile.obsidian.2.desc=Obsidian Pillar
-tile.obsidian.3.desc=Chiseled Obsidian
-tile.obsidian.4.desc=Shiny Obsidian Panel
-tile.obsidian.5.desc=Obsidian Panel
-tile.obsidian.6.desc=Organic-Looking Obsidian Chunks
-tile.obsidian.7.desc=Organic-Looking Obsidian Growth
-tile.obsidian.8.desc=Obsidian Crystal
-tile.obsidian.9.desc=Obsidian Panel with Map
-tile.obsidian.10.desc=Obsidian Panel with Region Map
-tile.obsidian.11.desc=Bright Obsidian Panel
-tile.obsidian.12.desc=Obsidian Blocks
-tile.obsidian.13.desc=Obsidian Tiles
-tile.obsidian.14.desc=Light Obsidian Blocks with Greek Decor
-tile.obsidian.15.desc=Small Obsidian Blocks inside an Oak Wood Crate
+tile.obsidian.1.desc=대형 흑요석 기둥
+tile.obsidian.2.desc=흑요석 기둥
+tile.obsidian.3.desc=조각된 흑요석
+tile.obsidian.4.desc=빛나는 흑요석 패널
+tile.obsidian.5.desc=흑요석 패널
+tile.obsidian.6.desc=복잡한 흑요석 덩어리
+tile.obsidian.7.desc=수직으로 쌓은 흑요석
+tile.obsidian.8.desc=흑요석 결정
+tile.obsidian.9.desc=지도 문양 흑요석 패널
+tile.obsidian.10.desc=지역 지도 문양 흑요석 패널
+tile.obsidian.11.desc=밝은 흑요석 패널
+tile.obsidian.12.desc=흑요석 블록
+tile.obsidian.13.desc=흑요석 타일
+tile.obsidian.14.desc=그리스풍 장식의 밝은 흑요석 블록
+tile.obsidian.15.desc=참나무 상자를 덮은 흑요석
 
 # 목재 (Wood)
 tile.chisel.oak_planks.name=참나무 목재
@@ -905,61 +905,61 @@ tile.chisel.acacia_planks.name=아카시아 나무 목재
 
 # 철창 (Iron Fence)
 tile.chisel.iron_bars.name=철창
-tile.iron_bars.1.desc=Iron Bars without Frame
-tile.iron_bars.2.desc=Menacing Iron Bars
-tile.iron_bars.3.desc=Iron Cage Bars
-tile.iron_bars.4.desc=Menacing Iron Spikes
-tile.iron_bars.5.desc=Thick Iron Grid
-tile.iron_bars.6.desc=Thin Iron Grid
-tile.iron_bars.7.desc=Ornate Iron Pane Fence
-tile.iron_bars.8.desc=Vertical Iron Bars
-tile.iron_bars.9.desc=Iron Spikes
+tile.iron_bars.1.desc=테두리 없는 철창
+tile.iron_bars.2.desc=구속용 철창
+tile.iron_bars.3.desc=우리용 철창
+tile.iron_bars.4.desc=구속용 쇠못
+tile.iron_bars.5.desc=두꺼운 철 격자
+tile.iron_bars.6.desc=얇은 철 격자
+tile.iron_bars.7.desc=화려한 철창
+tile.iron_bars.8.desc=수직 철창
+tile.iron_bars.9.desc=쇠못
 
 # 유리판 (Glass Panes)
 tile.chisel.glass_pane.name=유리판
-tile.glass_pane.1.desc=Bubble Glass Pane
-tile.glass_pane.2.desc=Borderless Glass Pane
-tile.glass_pane.3.desc=Screen Pane
-tile.glass_pane.4.desc=Streak Glass Pane
-tile.glass_pane.12.desc=Chinese Glass Pane
-tile.glass_pane.13.desc=Chinese Glass Pane with Golden Frame
-tile.glass_pane.14.desc=Japanese Glass Pane
-tile.glass_pane.15.desc=Ornate Japanese Glass Pane
+tile.glass_pane.1.desc=광택나는 유리판
+tile.glass_pane.2.desc=경계선이 없는 유리판
+tile.glass_pane.3.desc=스크린
+tile.glass_pane.4.desc=테두리가 없는 유리판
+tile.glass_pane.12.desc=중국풍 유리판
+tile.glass_pane.13.desc=금테두리의 중국풍 유리판
+tile.glass_pane.14.desc=일본풍 유리판
+tile.glass_pane.15.desc=화려한 일본풍 유리판
 
 # 레드스톤 블록 (Redstone block)
 tile.chisel.redstone_block.name=레드스톤 블록
-tile.redstone_block.1.desc=Smooth Redstone
-tile.redstone_block.2.desc=Large Redstone Block
-tile.redstone_block.3.desc=Small Redstone Block
-tile.redstone_block.4.desc=Redstone Bricks
-tile.redstone_block.5.desc=Small Redstone Bricks
-tile.redstone_block.6.desc=Chaotic Redstone Bricks
-tile.redstone_block.7.desc=Chiseled Redstone
-tile.redstone_block.8.desc=Redstone Greek Decoration
-tile.redstone_block.9.desc=Ornate Redstone Tiles
-tile.redstone_block.10.desc=Redstone Pillar
-tile.redstone_block.11.desc=Redstone Tiles
-tile.redstone_block.12.desc=Redstone Circuit
-tile.redstone_block.13.desc=Redstone Supaplex Circuit
-tile.redstone_block.14.desc=Redstone Skulls
-tile.redstone_block.15.desc=Redstone Zelda Block
+tile.redstone_block.1.desc=부드러운 레드스톤
+tile.redstone_block.2.desc=레드스톤 블록
+tile.redstone_block.3.desc=작은 레드스톤 블록
+tile.redstone_block.4.desc=레드스톤 벽돌
+tile.redstone_block.5.desc=작은 레드스톤 벽돌
+tile.redstone_block.6.desc=복잡한 레드스톤 벽돌
+tile.redstone_block.7.desc=조각된 레드스톤
+tile.redstone_block.8.desc=그리스풍으로 장식된 레드스톤
+tile.redstone_block.9.desc=화려한 레드스톤 타일
+tile.redstone_block.10.desc=레드스톤 기둥
+tile.redstone_block.11.desc=레드스톤 타일
+tile.redstone_block.12.desc=레드스톤 회로
+tile.redstone_block.13.desc=레드스톤 슈파플렉스 회로
+tile.redstone_block.14.desc=해골이 새겨진 레드스톤
+tile.redstone_block.15.desc=젤다의 레드스톤 블록
 
-# 성석 (Holystone)
-tile.chisel.holystone.name=Holystone
-tile.holystone.0.desc=Holystone
-tile.holystone.1.desc=Smooth Holystone
-tile.holystone.2.desc=Mysterious Holystone Symbol
-tile.holystone.3.desc=Chiseled Holystone
-tile.holystone.4.desc=Holystone Blocks
-tile.holystone.5.desc=Rough Holystone Blocks
-tile.holystone.6.desc=Holystone Bricks
-tile.holystone.7.desc=Large Holystone Bricks
-tile.holystone.8.desc=Holystone Platform
-tile.holystone.9.desc=Holystone Platform Tiles
-tile.holystone.10.desc=Fancy Holystone Construction
-tile.holystone.11.desc=Fancy Holystone Tiles
-tile.holystone.12.desc=Smooth Holystone Plate
-tile.holystone.13.desc=Holystone Plate
+# 성스러운 돌 (Holystone)
+tile.chisel.holystone.name=성스러운 돌
+tile.holystone.0.desc=성스러운 돌
+tile.holystone.1.desc=부드러운 성스러운 돌
+tile.holystone.2.desc=신비로운 문양의 성스러운 돌
+tile.holystone.3.desc=조각된 성스러운 돌
+tile.holystone.4.desc=성스러운 블록
+tile.holystone.5.desc=거친 성스러운 블록
+tile.holystone.6.desc=성스러운 벽돌
+tile.holystone.7.desc=대형 성스러운 벽돌
+tile.holystone.8.desc=성스러운 강단
+tile.holystone.9.desc=성스러운 강단 타일
+tile.holystone.10.desc=화려한 성스러운 돌
+tile.holystone.11.desc=화려한 성스러운 타일
+tile.holystone.12.desc=부드러운 성스러운 돌판
+tile.holystone.13.desc=성스러운 돌판
 
 # 용암석 (Lavastone)
 tile.chisel.lavastone.name=용암석
@@ -1230,7 +1230,7 @@ tile.laboratory.13.desc=오른쪽 방향 콘솔
 tile.laboratory.14.desc=왼쪽 방향 콘솔
 tile.laboratory.15.desc=정보 콘솔
 
-# 크리에이티브 탭 한글화
+# 크리에이티브 탭 한글화 (Creative Tab localizations)
 itemGroup.tabOtherChiselBlocks=기타 치슬 블록
 itemGroup.tabStoneChiselBlocks=돌 치슬 블록
 itemGroup.tabWoodChiselBlocks=나무 치슬 블록
@@ -1238,12 +1238,12 @@ itemGroup.tabMetalChiselBlocks=금속 치슬 블록
 itemGroup.tabModdedChiselBlocks=모드 치슬 블록
 itemGroup.tabChisel=치슬 아이템
 
-#Container
+# GUI 창 (Container)
 container.chisel=치슬
-container.chisel.title=치슬 조각
-container.chisel.titleShort=조각
-container.chisel.mode=Mode:
-container.chisel.mode.single=Single
-container.chisel.mode.panel=Panel
-container.chisel.mode.column=Column
-container.chisel.mode.row=Row
+container.chisel.title=블력 변환
+container.chisel.titleShort=변환
+container.chisel.mode=변환 범위:
+container.chisel.mode.single=단일
+container.chisel.mode.panel=판
+container.chisel.mode.column=수직
+container.chisel.mode.row=수평
