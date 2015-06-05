@@ -1,15 +1,12 @@
 package com.cricketcraft.chisel.init;
 
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-
-import com.cricketcraft.chisel.Features;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 public class ChiselTabs {
 
@@ -69,43 +66,10 @@ public class ChiselTabs {
 
 	// this serves mostly just to load the static initializers
 	public static void preInit() {
-		atLeastOneModIsLoaded = Features.oneModdedFeatureLoaded();
+		tabOtherChiselBlocks.setTabIconItemStack(new ItemStack(Items.command_block_minecart, 1));
 	}
 
 	public static void postInit() {
 
-		if (Features.CHISEL.enabled())
-			tabChisel.setTabIconItemStack(new ItemStack(ChiselItems.chisel));
-		else
-			tabChisel.setTabIconItemStack(new ItemStack(Items.stick));
-		if (Features.HOLYSTONE.enabled())
-			tabStoneChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.holystone));
-		else
-			tabStoneChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.stonebrick));
-		if (Features.WOOD.enabled())
-			tabWoodChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.planks[0], 1, 1));
-		else
-			tabWoodChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.planks));
-		if (Features.TECHNICAL.enabled())
-			tabMetalChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.technical));
-		else
-			tabMetalChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.iron_block));
-		if (Features.JACKOLANTERN.enabled())
-			tabOtherChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.jackolantern[0]));
-		else
-			tabOtherChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.lit_pumpkin));
-
-		if (atLeastOneModIsLoaded) {
-			if (Features.ARCANE.enabled()) {
-				tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.arcane));
-			} else if (Features.BLOOD_RUNE.enabled()) {
-				tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.bloodRune));
-			} else {
-				if (ChiselBlocks.voidstone != null)
-					tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.voidstone));
-				else
-					tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.obsidian));
-			}
-		}
 	}
 }

@@ -1,29 +1,26 @@
 package com.cricketcraft.chisel.block;
 
-import java.util.List;
-
+import com.cricketcraft.chisel.Chisel;
+import com.cricketcraft.chisel.Features;
+import com.cricketcraft.chisel.init.ChiselTabs;
+import net.minecraft.block.properties.PropertyEnum;
+import net.minecraft.block.state.BlockState;
+import net.minecraft.block.state.IBlockState;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.IIcon;
-import net.minecraft.world.IBlockAccess;
 
-import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.api.ICarvable;
-import com.cricketcraft.chisel.api.carving.CarvableHelper;
-import com.cricketcraft.chisel.api.carving.IVariationInfo;
-import com.cricketcraft.chisel.api.rendering.ClientUtils;
-import com.cricketcraft.chisel.init.ChiselTabs;
+import java.util.Collection;
+import java.util.List;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+public class BlockCarvable extends Block {
 
-public class BlockCarvable extends Block implements ICarvable {
+	public static final PropertyEnum VARIANTS = PropertyEnum.create("variant", Features.class);
 
-	public CarvableHelper carverHelper;
 	private boolean isAlpha;
 
 	public BlockCarvable() {
@@ -35,10 +32,10 @@ public class BlockCarvable extends Block implements ICarvable {
 		if (m == Material.rock || m == Material.iron) {
 			setHarvestLevel("pickaxe", 0);
 		}
-		carverHelper = new CarvableHelper(this);
 		setResistance(10.0F);
 		setHardness(2.0F);
 		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
+		setDefaultState(this.blockState.getBaseState().withProperty(VARIANTS, Features.TESTING0));
 	}
 
 	public BlockCarvable setStained(boolean a) {
@@ -46,50 +43,38 @@ public class BlockCarvable extends Block implements ICarvable {
 		return this;
 	}
 
-	@Override
 	@SideOnly(Side.CLIENT)
 	public int getRenderBlockPass() {
 		return isAlpha ? 1 : 0;
 	}
 
 	@Override
-	public IIcon getIcon(int side, int metadata) {
-		return carverHelper.getIcon(side, metadata);
-	}
-
-	@Override
-	public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
-		return carverHelper.getIcon(world, x, y, z, side);
-	}
-
-	@Override
-	public int damageDropped(int i) {
-		return i;
-	}
-
-	@Override
-	public void registerBlockIcons(IIconRegister register) {
-		carverHelper.registerBlockIcons("Chisel", this, register);
+	public int damageDropped(IBlockState state) {
+		return ((Features)state.getValue(VARIANTS)).getMetaFromState();
 	}
 
 	@Override
 	public void getSubBlocks(Item item, CreativeTabs tabs, List list) {
-		carverHelper.registerSubBlocks(this, tabs, list);
+		Features[] features = Features.values();
+
+		for(int c = 0; c < features.length; c++){
+			Features feature = features[c];
+			list.add(new ItemStack(item, 1, feature.getMetaFromState()));
+		}
 	}
 
 	@Override
-	public int getRenderType() {
-		return ClientUtils.renderCTMId;
+	public IBlockState getStateFromMeta(int meta){
+		return this.getDefaultState().withProperty(VARIANTS, Features.getStateFromMeta(meta));
 	}
 
 	@Override
-	public IVariationInfo getVariation(IBlockAccess world, int x, int y, int z, int metadata) {
-		return carverHelper.getVariation(metadata);
+	public int getMetaFromState(IBlockState state){
+		return ((Features)state.getValue(VARIANTS)).getMetaFromState();
 	}
 
-	@Override
-	public IVariationInfo getVariation(ItemStack stack) {
-		return carverHelper.getVariation(stack.getItemDamage());
+	public BlockState createBlockState(){
+		return new BlockState(this, VARIANTS);
 	}
 
 	public static class SoundType extends Block.SoundType {
@@ -164,7 +149,7 @@ public class BlockCarvable extends Block implements ICarvable {
 		}
 
 		@Override
-		public String getStepResourcePath() {
+		public String getStepSound() {
 			if (soundNameStep == null)
 				return Chisel.MOD_ID + ":step." + this.soundName;
 			else
@@ -172,7 +157,7 @@ public class BlockCarvable extends Block implements ICarvable {
 		}
 
 		@Override
-		public String func_150496_b() {
+		public String getPlaceSound() {
 			if (soundNamePlace == null)
 				return getBreakSound();
 			else

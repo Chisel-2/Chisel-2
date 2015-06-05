@@ -2,11 +2,8 @@ package com.cricketcraft.chisel.config;
 
 import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.Features;
-import com.cricketcraft.chisel.api.rendering.CTM;
-
 import net.minecraft.item.ItemDye;
 import net.minecraftforge.common.config.Configuration;
-
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Locale;
@@ -54,7 +51,7 @@ public class Configurations {
 	public static String getRoadLineTool;
 	public static int roadLineToolLevel;
 
-	public static int[] configColors = new int[ItemDye.field_150923_a.length];
+	public static int[] configColors = new int[ItemDye.dyeColors.length];
 
 	public static boolean fullBlockConcrete;
 
@@ -90,8 +87,8 @@ public class Configurations {
 		particlesTickrate = config.get(category, "particleTickrate", 1, "Particle tick rate. Greater value = less particles.").getInt(1);
 		oldPillars = config.get(category, "pillarOldGraphics", false, "Use old pillar textures").getBoolean(false);
 		disableCTM = !config.get(category, "connectedTextures", true, "Enable connected textures").getBoolean(true);
-		CTM.disableObscuredFaceCheckConfig = connectInsideCTM = config.get(category, "connectInsideCTM", false,
-				"Choose whether the inside corner is disconnected on a CTM block - http://imgur.com/eUywLZ4").getBoolean(false);
+		//CTM.disableObscuredFaceCheckConfig = connectInsideCTM = config.get(category, "connectInsideCTM", false,
+		//		"Choose whether the inside corner is disconnected on a CTM block - http://imgur.com/eUywLZ4").getBoolean(false);
 		blockDescriptions = config.get(category, "tooltipsUseBlockDescriptions", true, "Make variations of blocks have the same name, and use the description in tooltip to distinguish them.")
 				.getBoolean(true);
 
@@ -123,16 +120,16 @@ public class Configurations {
 		/* hexColors */
 		category = "hexColors";
 
-		for (int i = 0; i < ItemDye.field_150923_a.length; i++) {
+		for (int i = 0; i < ItemDye.dyeColors.length; i++) {
 			// tterrag... don't kill me over this formatting.
-			String temp = config.get(category, "hex" + ItemDye.field_150923_a[i], "#" + Integer.toHexString(ItemDye.field_150922_c[i]),
-					Character.toUpperCase(ItemDye.field_150923_a[i].charAt(0)) + ItemDye.field_150923_a[i].substring(1) + " color for hex block overlay #RRGGBB").getString();
+			String temp = config.get(category, "hex" + ItemDye.dyeColors[i], "#" + Integer.toHexString(ItemDye.dyeColors[i]),
+					Character.toUpperCase(ItemDye.dyeColors[i]) + ItemDye.dyeColors[i] + " color for hex block overlay #RRGGBB").getString();
 			// Or this
 			try {
 				configColors[i] = Integer.decode(temp);
 			} catch (NumberFormatException e) {
-				Chisel.logger.warn("Configuration error, " + temp + " was not recognized as a color.  Using default: #" + Integer.toHexString(ItemDye.field_150922_c[i]));
-				configColors[i] = ItemDye.field_150922_c[i];
+				Chisel.logger.warn("Configuration error, " + temp + " was not recognized as a color.  Using default: #" + Integer.toHexString(ItemDye.dyeColors[i]));
+				configColors[i] = ItemDye.dyeColors[i];
 			}
 		}
 

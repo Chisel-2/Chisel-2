@@ -39,7 +39,6 @@ libs
 #world   this is taken care of with the run folder up at runtime you are actually removing the packages
 
 *.txt
-*.json
 /server.properties
 *.dat
 *.psd

@@ -1,18 +1,21 @@
 package com.cricketcraft.chisel.world;
 
-import java.util.Map;
-import java.util.Random;
-
+import com.google.common.collect.Maps;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.BlockPos;
+import net.minecraftforge.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 
-import com.google.common.collect.Maps;
-
-import cpw.mods.fml.common.IWorldGenerator;
+import java.util.Map;
+import java.util.Random;
 
 public class GeneratorChisel implements IWorldGenerator {
+
+	private World worldObj = Minecraft.getMinecraft().theWorld;
 
 	private class WorldGenInfo {
 
@@ -32,16 +35,16 @@ public class GeneratorChisel implements IWorldGenerator {
 
 	private final Map<WorldGenMinable, WorldGenInfo> map = Maps.newHashMap();
 
-	public void addFeature(Block block, int count, int amount) {
-		addFeature(block, count, amount, 40, 128);
+	public void addFeature(IBlockState state, int count, int amount) {
+		addFeature(state, count, amount, 40, 128);
 	}
 
-	public void addFeature(Block block, int count, int amount, int minY, int maxY) {
-		addFeature(block, count, amount, minY, maxY, 1);
+	public void addFeature(IBlockState state, int count, int amount, int minY, int maxY) {
+		addFeature(state, count, amount, minY, maxY, 1);
 	}
 
-	public void addFeature(Block block, int count, int amount, int minY, int maxY, double chance) {
-		map.put(new WorldGenMinable(block, count), new WorldGenInfo(amount, minY, maxY, chance));
+	public void addFeature(IBlockState state, int count, int amount, int minY, int maxY, double chance) {
+		map.put(new WorldGenMinable(state, count), new WorldGenInfo(amount, minY, maxY, chance));
 	}
 
 	protected void genStandardOre(WorldGenMinable gen, WorldGenInfo info, World world, Random random, int x, int z) {
@@ -50,7 +53,7 @@ public class GeneratorChisel implements IWorldGenerator {
 				int avgX = x + random.nextInt(16);
 				int avgY = info.minY + random.nextInt(info.maxY - info.minY) + 1;
 				int avgZ = z + random.nextInt(16);
-				gen.generate(world, random, avgX, avgY, avgZ);
+				gen.generate(world, random, new BlockPos(avgX, avgY, avgZ));
 			}
 		}
 	}
