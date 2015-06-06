@@ -1,11 +1,12 @@
 package com.cricketcraft.chisel.init;
 
 import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.block.*;
-import net.minecraft.block.material.Material;
+import com.cricketcraft.chisel.block.BlockCloud;
+import com.cricketcraft.chisel.item.ItemBlockCarvable;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
-import net.minecraft.block.Block;
+
+import static com.cricketcraft.chisel.Features.*;
 
 @ObjectHolder(Chisel.MOD_ID)
 public final class ChiselBlocks {
@@ -58,7 +59,7 @@ public final class ChiselBlocks {
 //	public static final BlockCarvable bookshelf = null;
 //	public static final BlockCarvable tyrian = null;
 //	public static final BlockCarvable dirt = null;
-//	public static final BlockCloud cloud = null;
+	public static BlockCloud cloud;
 //	public static final BlockCarvable templeblock = null;
 //	public static final BlockCarvable mossy_templeblock = null;
 //	public static final BlockCarvable factoryblock = null;
@@ -121,12 +122,17 @@ public final class ChiselBlocks {
 //	public static BlockCarvableGlass[] stainedGlass = new BlockCarvableGlass[4];
 //	public static BlockCarvablePane[] stainedGlassPane = new BlockCarvablePane[8];
 
-	public static BlockCarvable testing = new BlockCarvable(Material.rock);
-
 	private ChiselBlocks() {
+
 	}
 
+
 	public static void init(){
-		GameRegistry.registerBlock(testing, testing.getUnlocalizedName());
+		cloud = new BlockCloud(new CLOUD());
+		register();
+	}
+
+	private static void register(){
+		GameRegistry.registerBlock(cloud, ItemBlockCarvable.class, "cloud");
 	}
 }

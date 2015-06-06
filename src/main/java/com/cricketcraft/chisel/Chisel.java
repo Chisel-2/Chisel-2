@@ -3,6 +3,7 @@ package com.cricketcraft.chisel;
 import com.cricketcraft.chisel.block.BlockCarvable;
 import com.cricketcraft.chisel.config.Configurations;
 import com.cricketcraft.chisel.init.ChiselBlocks;
+import com.cricketcraft.chisel.init.ChiselItems;
 import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.proxy.CommonProxy;
 import com.cricketcraft.chisel.world.GeneratorChisel;
@@ -66,24 +67,18 @@ public class Chisel {
 		Configurations.config.load();
 		Configurations.refreshConfig();
 		ChiselBlocks.init();
+		ChiselItems.init();
 		ChiselTabs.preInit();
 		proxy.preInit();
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		proxy.init();
 	}
 
 	private void addWorldgen(Features feature, IBlockState state, double... data) {
-		if (feature.enabled()) {
-			if (data.length == 1) {
-				GeneratorChisel.INSTANCE.addFeature(state, 32, (int) data[0]);
-			} else if (data.length > 1 && data.length < 4) {
-				GeneratorChisel.INSTANCE.addFeature(state, 32, (int) data[0], (int) data[1], (int) data[2]);
-			} else if (data.length == 4) {
-				GeneratorChisel.INSTANCE.addFeature(state, 32, (int) data[0], (int) data[1], (int) data[2], data[3]);
-			}
-		}
+
 	}
 
 	@EventHandler

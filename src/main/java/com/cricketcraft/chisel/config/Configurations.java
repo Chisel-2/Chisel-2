@@ -139,26 +139,6 @@ public class Configurations {
 		return true;
 	}
 
-	public static boolean featureEnabled(Features feature) {
-		return config.get("features", featureName(feature), true).getBoolean(true) && refreshConfig();
-	}
-
-	/**
-	 * Makes the old camelCase names from the new CONSTANT_CASE names
-	 */
-	public static String featureName(Features feature) {
-		String[] words = feature.name().toLowerCase(Locale.ENGLISH).split("_");
-		if (words.length == 1) {
-			return words[0];
-		}
-
-		String ret = words[0];
-		for (int i = 1; i < words.length; i++) {
-			ret += StringUtils.capitalize(words[i]);
-		}
-		return ret;
-	}
-
 	@Deprecated
 	public static boolean featureEnabled(String feature) {
 		return false;

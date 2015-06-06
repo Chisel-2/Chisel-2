@@ -3,7 +3,10 @@ package com.cricketcraft.chisel.block;
 import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.Features;
 import com.cricketcraft.chisel.init.ChiselTabs;
-import net.minecraft.block.properties.PropertyEnum;
+import com.cricketcraft.chisel.util.BlockVariant;
+import com.cricketcraft.chisel.util.Feature;
+import com.cricketcraft.chisel.util.IBlockWithSubtypes;
+import com.cricketcraft.chisel.util.PropertyVariant;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraftforge.fml.relauncher.Side;
@@ -14,28 +17,27 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import java.util.Collection;
 import java.util.List;
 
-public class BlockCarvable extends Block {
+public class BlockCarvable extends Block implements IBlockWithSubtypes{
 
-	public static final PropertyEnum VARIANTS = PropertyEnum.create("variant", Features.class);
+	public static PropertyVariant VARIANTS = null;
 
 	private boolean isAlpha;
 
-	public BlockCarvable() {
-		this(Material.rock);
+	public BlockCarvable(Feature feature) {
+		this(Material.rock, feature);
 	}
 
-	public BlockCarvable(Material m) {
+	public BlockCarvable(Material m, Feature feature) {
 		super(m);
 		if (m == Material.rock || m == Material.iron) {
 			setHarvestLevel("pickaxe", 0);
 		}
+		VARIANTS = PropertyVariant.create("variant", feature.getVariants());
 		setResistance(10.0F);
 		setHardness(2.0F);
 		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
-		setDefaultState(this.blockState.getBaseState().withProperty(VARIANTS, Features.TESTING0));
 	}
 
 	public BlockCarvable setStained(boolean a) {
@@ -43,38 +45,37 @@ public class BlockCarvable extends Block {
 		return this;
 	}
 
+	@SuppressWarnings({"rawtypes", "unchecked"})
+	@Override
 	@SideOnly(Side.CLIENT)
-	public int getRenderBlockPass() {
-		return isAlpha ? 1 : 0;
-	}
-
-	@Override
-	public int damageDropped(IBlockState state) {
-		return ((Features)state.getValue(VARIANTS)).getMetaFromState();
-	}
-
-	@Override
-	public void getSubBlocks(Item item, CreativeTabs tabs, List list) {
-		Features[] features = Features.values();
-
-		for(int c = 0; c < features.length; c++){
-			Features feature = features[c];
-			list.add(new ItemStack(item, 1, feature.getMetaFromState()));
+	public void getSubBlocks(Item item, CreativeTabs tab, List list){
+		for(Object variant : VARIANTS.getAllowedValues()){
+			list.add(new ItemStack(item, 1, ((BlockVariant) variant).getMeta()));
 		}
 	}
 
 	@Override
 	public IBlockState getStateFromMeta(int meta){
-		return this.getDefaultState().withProperty(VARIANTS, Features.getStateFromMeta(meta));
+		return this.getDefaultState().withProperty(VARIANTS, VARIANTS.getVariantFromMeta(meta));
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state){
-		return ((Features)state.getValue(VARIANTS)).getMetaFromState();
+		return ((BlockVariant) state.getValue(VARIANTS)).getMeta();
 	}
 
-	public BlockState createBlockState(){
-		return new BlockState(this, VARIANTS);
+	@Override
+	public int damageDropped(IBlockState state){
+		return ((BlockVariant) state.getValue(VARIANTS)).getMeta();
+	}
+
+	@Override
+	public String getSubtypeUnlocalizedName(ItemStack stack) {
+		return VARIANTS.getVariantFromMeta(stack.getMetadata()).getName();
+	}
+
+	public PropertyVariant getVariants(){
+		return this.VARIANTS;
 	}
 
 	public static class SoundType extends Block.SoundType {
