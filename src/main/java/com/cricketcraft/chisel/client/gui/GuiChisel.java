@@ -4,8 +4,11 @@ import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 
-public class GuiChisel extends GuiContainer{
+import com.cricketcraft.chisel.inventory.ContainerChisel;
+
+public class GuiChisel extends GuiContainer {
 	public EntityPlayer player;
+
 	public ContainerChisel chisel;
 
 	public GuiChisel(Container container) {

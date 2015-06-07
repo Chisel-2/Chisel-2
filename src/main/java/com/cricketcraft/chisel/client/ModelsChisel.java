@@ -1,14 +1,15 @@
 package com.cricketcraft.chisel.client;
 
-import java.util.ArrayList;
-
+import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_GRID;
+import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_LARGE;
+import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_NORMAL;
+import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_SMALL;
+import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_VERTICAL;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -17,8 +18,6 @@ import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
 import com.cricketcraft.chisel.util.IItemWithVariants;
-
-import static com.cricketcraft.chisel.block.variant.BlockVariants.*;
 
 @SideOnly(Side.CLIENT)
 public class ModelsChisel {
@@ -43,6 +42,7 @@ public class ModelsChisel {
 		registerItemModel(ChiselItems.cloudInABottle);
 		registerItemModel(ChiselItems.smashing_rock);
 		registerItemModel(ChiselItems.ballOMoss);
+		registerItemModelVariant(ChiselItems.upgrade);
 	}
 
 	private static void registerBlockModel(Block block) {
@@ -80,14 +80,6 @@ public class ModelsChisel {
 			String NAME = item.getUnlocalizedName().substring(5) + "_" + ((IItemWithVariants) item).getVariantNames()[i];
 			ModelBakery.addVariantName(item, (Chisel.MOD_ID + ":") + NAME);
 			registerItemModel(item, i, NAME);
-		}
-	}
-
-	public static void registerItemSubTypesModel(Item item, CreativeTabs tab) {
-		ArrayList<ItemStack> list = new ArrayList<ItemStack>();
-		item.getSubItems(item, tab, list);
-		for (ItemStack i : list) {
-			registerItemModel(item, i.getItemDamage(), item.getUnlocalizedName().substring(5));
 		}
 	}
 

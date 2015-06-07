@@ -12,15 +12,17 @@ import com.cricketcraft.chisel.entity.EntitySmashingRock;
 import com.cricketcraft.chisel.item.ItemBallOMoss;
 import com.cricketcraft.chisel.item.ItemCloudInABottle;
 import com.cricketcraft.chisel.item.ItemSmashingRock;
+import com.cricketcraft.chisel.item.ItemUpgrade;
 
 @ObjectHolder(Chisel.MOD_ID)
 public final class ChiselItems {
-	public static Item cloudInABottle, smashing_rock, ballOMoss;
+	public static Item cloudInABottle, smashing_rock, ballOMoss, upgrade;
 
 	public static void preInit() {
 		cloudInABottle = registerItem("cloudBottle", new ItemCloudInABottle());
 		smashing_rock = registerItem("smashingRock", new ItemSmashingRock());
 		ballOMoss = registerItem("ballMoss", new ItemBallOMoss());
+		upgrade = registerItem("upgrade", new ItemUpgrade());
 	}
 
 	public static void init() {
