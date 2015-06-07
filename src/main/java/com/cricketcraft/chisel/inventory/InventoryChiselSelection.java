@@ -1,8 +1,12 @@
 package com.cricketcraft.chisel.inventory;
 
+import com.cricketcraft.chisel.api.IChiselItem;
+import com.cricketcraft.chisel.item.chisel.ItemChisel;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTool;
 import net.minecraft.util.IChatComponent;
 
 public class InventoryChiselSelection implements IInventory {
@@ -11,12 +15,27 @@ public class InventoryChiselSelection implements IInventory {
 	public static final int normalSlots = 60;
 	public int activeVariations;
 	ContainerChisel container;
-	ItemStack[] inventory;
+	public ItemStack[] inventory;
 
 	public InventoryChiselSelection(ItemStack stack){
 		super();
 		inventory = new ItemStack[normalSlots + 1];
 		chisel = stack;
+	}
+
+	public void updateItems(){
+		ItemStack chiseledItem = inventory[normalSlots];
+		clear();
+		if(chiseledItem == null){
+			container.onChiselSlotChanged();
+			return;
+		}
+
+		Item item = chiseledItem.getItem();
+		if(item == null){
+			return;
+		}
+		//TODO; the rest
 	}
 
 	public void onInventoryUpdate(int slot){
@@ -30,27 +49,53 @@ public class InventoryChiselSelection implements IInventory {
 
 	@Override
 	public ItemStack getStackInSlot(int index) {
-		return null;
+		return inventory[index];
 	}
 
 	@Override
 	public ItemStack decrStackSize(int index, int count) {
-		return null;
+		if(this.inventory[index] != null){
+			ItemStack stack;
+			if(this.inventory[index].stackSize <= count){
+				stack = this.inventory[index];
+				this.inventory[index] = null;
+				onInventoryUpdate(index);
+				return stack;
+			} else {
+				stack = this.inventory[index].splitStack(count);
+
+				if(this.inventory[index].stackSize == 0)
+					this.inventory[index] = null;
+
+				onInventoryUpdate(index);
+				return stack;
+			}
+		} else {
+			return null;
+		}
 	}
 
 	@Override
 	public ItemStack getStackInSlotOnClosing(int index) {
-		return null;
+		ItemStack stack = getStackInSlot(index);
+
+		if (stack == null)
+			return null;
+		inventory[index] = null;
+
+		onInventoryUpdate(index);
+		return stack;
 	}
 
 	@Override
 	public void setInventorySlotContents(int index, ItemStack stack) {
-
+		inventory[index] = stack;
+		onInventoryUpdate(index);
 	}
 
 	@Override
 	public int getInventoryStackLimit() {
-		return 0;
+		return 64;
 	}
 
 	@Override
@@ -60,7 +105,7 @@ public class InventoryChiselSelection implements IInventory {
 
 	@Override
 	public boolean isUseableByPlayer(EntityPlayer player) {
-		return false;
+		return true;
 	}
 
 	@Override
@@ -75,7 +120,11 @@ public class InventoryChiselSelection implements IInventory {
 
 	@Override
 	public boolean isItemValidForSlot(int index, ItemStack stack) {
-		return false;
+		if(stack.getItem() instanceof ItemTool){
+			return false;
+		}
+
+		return !(stack != null && (stack.getItem() instanceof ItemChisel)) && index == normalSlots;
 	}
 
 	@Override
@@ -95,7 +144,10 @@ public class InventoryChiselSelection implements IInventory {
 
 	@Override
 	public void clear() {
-
+		activeVariations = 0;
+		for(int index = 0; index < normalSlots; index++){
+			inventory[index] = null;
+		}
 	}
 
 	@Override

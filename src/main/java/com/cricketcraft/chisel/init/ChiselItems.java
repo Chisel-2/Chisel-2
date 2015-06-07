@@ -1,5 +1,6 @@
 package com.cricketcraft.chisel.init;
 
+import com.cricketcraft.chisel.item.chisel.ItemChisel;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -17,12 +18,20 @@ import com.cricketcraft.chisel.item.ItemUpgrade;
 @ObjectHolder(Chisel.MOD_ID)
 public final class ChiselItems {
 	public static Item cloudInABottle, smashing_rock, ballOMoss, upgrade;
+	public static ItemChisel chisel, diamondChisel, obsidianChisel;
 
 	public static void preInit() {
 		cloudInABottle = registerItem("cloudBottle", new ItemCloudInABottle());
 		smashing_rock = registerItem("smashingRock", new ItemSmashingRock());
 		ballOMoss = registerItem("ballMoss", new ItemBallOMoss());
 		upgrade = registerItem("upgrade", new ItemUpgrade());
+		chisel = new ItemChisel(ItemChisel.ChiselType.IRON);
+		diamondChisel = new ItemChisel(ItemChisel.ChiselType.DIAMOND);
+		obsidianChisel = new ItemChisel(ItemChisel.ChiselType.OBSIDIAN);
+
+		GameRegistry.registerItem(chisel, "chisel");
+		GameRegistry.registerItem(diamondChisel, "diamondChisel");
+		GameRegistry.registerItem(obsidianChisel, "obsidianChisel");
 	}
 
 	public static void init() {

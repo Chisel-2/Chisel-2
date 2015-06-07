@@ -43,6 +43,9 @@ public class ModelsChisel {
 		registerItemModel(ChiselItems.smashing_rock);
 		registerItemModel(ChiselItems.ballOMoss);
 		registerItemModelVariant(ChiselItems.upgrade);
+		registerItemModel(ChiselItems.chisel);
+		registerItemModel(ChiselItems.diamondChisel);
+		registerItemModel(ChiselItems.obsidianChisel);
 	}
 
 	private static void registerBlockModel(Block block) {

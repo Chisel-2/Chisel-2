@@ -6,6 +6,8 @@ import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
 import com.cricketcraft.chisel.init.ChiselRecipes;
 import com.cricketcraft.chisel.init.ChiselTabs;
+import com.cricketcraft.chisel.item.chisel.ChiselController;
+import com.cricketcraft.chisel.network.ChiselGuiHandler;
 import com.cricketcraft.chisel.proxy.CommonProxy;
 import net.minecraft.block.state.IBlockState;
 import net.minecraftforge.common.config.Configuration;
@@ -21,6 +23,7 @@ import net.minecraftforge.fml.common.event.FMLMissingMappingsEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -70,9 +73,9 @@ public class Chisel {
 
 		ChiselBlocks.preInit();
 		ChiselItems.preInit();
-
 		ChiselTabs.preInit();
 		ChiselRecipes.preInit();
+		ChiselController.INSTANCE.preInit();
 
 		proxy.preInit();
 	}
@@ -80,6 +83,7 @@ public class Chisel {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		ChiselItems.init();
+		NetworkRegistry.INSTANCE.registerGuiHandler(this, new ChiselGuiHandler());
 		proxy.init();
 	}
 
