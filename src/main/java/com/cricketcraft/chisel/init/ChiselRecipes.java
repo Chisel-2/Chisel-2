@@ -9,7 +9,8 @@ public class ChiselRecipes
 {
     public static void preInit()
     {
-        registerShapedRecipe(new ItemStack(ChiselItems.cloudInABottle), "X X", "XYX", " X ", 'X', Blocks.glass, 'Y', Items.quartz);
+        registerShapedRecipe(new ItemStack(ChiselItems.cloudInABottle, 1), "X X", "XYX", " X ", 'X', Blocks.glass, 'Y', Items.quartz);
+        registerShapedRecipe(new ItemStack(ChiselItems.ballOMoss, 1), "XYX", "YXY", "XYX", 'X', Blocks.vine, 'Y', Items.stick);
 
         registerShapelessRecipe(new ItemStack(ChiselItems.smashing_rock, 16), new ItemStack(Items.stone_pickaxe), new ItemStack(Items.glass_bottle, 1), new ItemStack(Items.stone_shovel));
     }
