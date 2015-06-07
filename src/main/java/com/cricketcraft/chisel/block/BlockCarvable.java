@@ -6,21 +6,16 @@ import net.minecraft.block.material.Material;
 import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.init.ChiselTabs;
 
-public class BlockCarvable extends Block
-{
-
+public class BlockCarvable extends Block {
 	private boolean isAlpha;
 
-	public BlockCarvable()
-	{
+	public BlockCarvable() {
 		this(Material.rock);
 	}
 
-	public BlockCarvable(Material m)
-	{
+	public BlockCarvable(Material m) {
 		super(m);
-		if (m == Material.rock || m == Material.iron)
-		{
+		if (m == Material.rock || m == Material.iron) {
 			setHarvestLevel("pickaxe", 0);
 		}
 		setResistance(10.0F);
@@ -28,20 +23,13 @@ public class BlockCarvable extends Block
 		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
 	}
 
-	public BlockCarvable setStained(boolean a)
-	{
+	public BlockCarvable setStained(boolean a) {
 		this.isAlpha = a;
 		return this;
 	}
 
-	public static class SoundType extends Block.SoundType
-	{
-
-		public final String soundNameStep;
-
-		public final String soundNameBreak;
-
-		public final String soundNamePlace;
+	public static class SoundType extends Block.SoundType {
+		public final String soundNameStep, soundNameBreak, soundNamePlace;
 
 		/**
 		 * Creates a SoundType with automatic names for step and break sounds. Sound names dig.soundName and step.soundName must be specified in the sounds.json
@@ -53,8 +41,7 @@ public class BlockCarvable extends Block
 		 * @param frequency
 		 *            default 1.0f
 		 */
-		public SoundType(String soundName, float volume, float frequency)
-		{
+		public SoundType(String soundName, float volume, float frequency) {
 			super(soundName, volume, frequency);
 			this.soundNameStep = null;
 			this.soundNameBreak = null;
@@ -73,8 +60,7 @@ public class BlockCarvable extends Block
 		 * @param frequency
 		 *            default 1.0f
 		 */
-		public SoundType(String soundNameBreak, String soundNameStep, float volume, float frequency)
-		{
+		public SoundType(String soundNameBreak, String soundNameStep, float volume, float frequency) {
 			super(soundNameStep, volume, frequency);
 			this.soundNameStep = soundNameStep;
 			this.soundNameBreak = soundNameBreak;
@@ -95,8 +81,7 @@ public class BlockCarvable extends Block
 		 * @param frequency
 		 *            default 1.0f
 		 */
-		public SoundType(String soundNameBreak, String soundNameStep, String soundNamePlace, float volume, float frequency)
-		{
+		public SoundType(String soundNameBreak, String soundNameStep, String soundNamePlace, float volume, float frequency) {
 			super(soundNameStep, volume, frequency);
 			this.soundNameStep = soundNameStep;
 			this.soundNameBreak = soundNameBreak;
@@ -104,8 +89,7 @@ public class BlockCarvable extends Block
 		}
 
 		@Override
-		public String getBreakSound()
-		{
+		public String getBreakSound() {
 			if (soundNameBreak == null)
 				return Chisel.MOD_ID + ":dig." + this.soundName;
 			else
@@ -113,8 +97,7 @@ public class BlockCarvable extends Block
 		}
 
 		@Override
-		public String getStepSound()
-		{
+		public String getStepSound() {
 			if (soundNameStep == null)
 				return Chisel.MOD_ID + ":step." + this.soundName;
 			else
@@ -122,8 +105,7 @@ public class BlockCarvable extends Block
 		}
 
 		@Override
-		public String getPlaceSound()
-		{
+		public String getPlaceSound() {
 			if (soundNamePlace == null)
 				return getBreakSound();
 			else

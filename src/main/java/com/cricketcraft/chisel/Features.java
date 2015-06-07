@@ -1,6 +1,5 @@
 package com.cricketcraft.chisel;
 
-public class Features
-{
+public class Features {
 
 }

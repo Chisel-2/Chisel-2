@@ -12,12 +12,10 @@ import org.lwjgl.opengl.GL11;
 
 import com.cricketcraft.chisel.init.ChiselItems;
 
-public class EntityBallOMossFX extends EntityFX
-{
+public class EntityBallOMossFX extends EntityFX {
 	public static Random rand = new Random();
 
-	public EntityBallOMossFX(World world, double x, double y, double z)
-	{
+	public EntityBallOMossFX(World world, double x, double y, double z) {
 		super(world, x, y + 0.5, z, 0, 0, 0);
 
 		particleScale = 0.5f + 0.5f * rand.nextFloat();
@@ -35,14 +33,12 @@ public class EntityBallOMossFX extends EntityFX
 	}
 
 	@Override
-	public int getFXLayer()
-	{
+	public int getFXLayer() {
 		return 1;
 	}
 
 	@Override
-	public void renderParticle(WorldRenderer renderer, Entity entity, float partialTicks, float rotX, float rotXZ, float rotZ, float rotYZ, float rotXY)
-	{
+	public void renderParticle(WorldRenderer renderer, Entity entity, float partialTicks, float rotX, float rotXZ, float rotZ, float rotYZ, float rotXY) {
 		GL11.glDepthMask(false);
 		GL11.glEnable(3042);
 		GL11.glBlendFunc(770, 771);
@@ -50,18 +46,15 @@ public class EntityBallOMossFX extends EntityFX
 	}
 
 	@Override
-	public void onUpdate()
-	{
+	public void onUpdate() {
 		super.onUpdate();
 
 		double remaining = particleMaxAge - particleAge;
 
-		if (remaining < 5)
-		{
+		if (remaining < 5) {
 			particleAlpha = (float) (remaining / 5.0);
 		}
-		else
-		{
+		else {
 			particleAlpha = 1.0f;
 		}
 	}

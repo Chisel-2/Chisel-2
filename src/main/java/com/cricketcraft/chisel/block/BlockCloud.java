@@ -24,8 +24,7 @@ import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
 import com.cricketcraft.chisel.util.PropertyVariant;
 
-public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes
-{
+public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes {
 	public static final BlockVariant
 			NORMAL = new BlockVariant(0, "cloud_normal"),
 			GRID = new BlockVariant(1, "cloud_grid"),
@@ -33,21 +32,20 @@ public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes
 			SMALL = new BlockVariant(3, "cloud_small"),
 			VERTICAL = new BlockVariant(4, "cloud_vertical");
 
-	public static final PropertyVariant VARIANTS = PropertyVariant.create("variant", NORMAL, GRID, LARGE, SMALL, VERTICAL);
+	public static final PropertyVariant PROPERTY_VARIANT = PropertyVariant.create("variant", NORMAL, GRID, LARGE, SMALL, VERTICAL);
 
-	public BlockCloud()
-	{
+	public BlockCloud() {
 		super(Material.ice);
 		setHardness(0.2F);
 		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
 		setLightOpacity(3);
 		setStepSound(Block.soundTypeCloth);
 		useNeighborBrightness = true;
+		this.setDefaultState(this.getBlockState().getBaseState().withProperty(PROPERTY_VARIANT, NORMAL));
 	}
 
 	@Override
-	public void onEntityCollidedWithBlock(World world, BlockPos pos, Entity entity)
-	{
+	public void onEntityCollidedWithBlock(World world, BlockPos pos, Entity entity) {
 		entity.fallDistance = 0.0F;
 
 		if (entity.motionY < 0.0D)
@@ -61,30 +59,25 @@ public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes
 	}
 
 	@Override
-	public boolean isOpaqueCube()
-	{
+	public boolean isOpaqueCube() {
 		return false;
 	}
 
 	@Override
-	public boolean isFullCube()
-	{
+	public boolean isFullCube() {
 		return false;
 	}
 
 	@Override
-	public EnumWorldBlockLayer getBlockLayer()
-	{
+	public EnumWorldBlockLayer getBlockLayer() {
 		return EnumWorldBlockLayer.TRANSLUCENT;
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
-	public boolean shouldSideBeRendered(IBlockAccess world, BlockPos pos, EnumFacing side)
-	{
+	public boolean shouldSideBeRendered(IBlockAccess world, BlockPos pos, EnumFacing side) {
 		Block block = world.getBlockState(pos).getBlock();
-		if (block == this)
-		{
+		if (block == this) {
 			return false;
 		}
 
@@ -92,43 +85,36 @@ public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes
 	}
 
 	@Override
-	public AxisAlignedBB getCollisionBoundingBox(World world, BlockPos pos, IBlockState state)
-	{
+	public AxisAlignedBB getCollisionBoundingBox(World world, BlockPos pos, IBlockState state) {
 		return AxisAlignedBB.fromBounds(pos.getX() + 0.2, pos.getY(), pos.getZ() + 0.2, pos.getX() + 0.8, pos.getY() + 0.2, pos.getZ() + 0.8);
 	}
 
 	@Override
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@SideOnly(Side.CLIENT)
-	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
-	{
-		for (BlockVariant variant : VARIANTS.getAllowedValues())
-		{
+	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
+		for (BlockVariant variant : PROPERTY_VARIANT.getAllowedValues()) {
 			list.add(new ItemStack(itemIn, 1, variant.getMeta()));
 		}
 	}
 
 	@Override
-	public IBlockState getStateFromMeta(int meta)
-	{
-		return this.getDefaultState().withProperty(VARIANTS, VARIANTS.fromMeta(meta));
+	public IBlockState getStateFromMeta(int meta) {
+		return this.getDefaultState().withProperty(PROPERTY_VARIANT, PROPERTY_VARIANT.fromMeta(meta));
 	}
 
 	@Override
-	public int getMetaFromState(IBlockState state)
-	{
-		return ((BlockVariant) state.getValue(VARIANTS)).getMeta();
+	public int getMetaFromState(IBlockState state) {
+		return ((BlockVariant) state.getValue(PROPERTY_VARIANT)).getMeta();
 	}
 
 	@Override
-	public String getSubtypeUnlocalizedName(ItemStack stack)
-	{
-		return VARIANTS.fromMeta(stack.getMetadata()).getName();
+	public String getSubtypeUnlocalizedName(ItemStack stack) {
+		return PROPERTY_VARIANT.fromMeta(stack.getMetadata()).getName();
 	}
 
 	@Override
-	protected BlockState createBlockState()
-	{
-		return new BlockState(this, VARIANTS);
+	protected BlockState createBlockState() {
+		return new BlockState(this, PROPERTY_VARIANT);
 	}
 }

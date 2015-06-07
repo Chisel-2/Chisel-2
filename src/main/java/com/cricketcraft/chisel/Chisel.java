@@ -29,9 +29,7 @@ import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.proxy.CommonProxy;
 
 @Mod(modid = Chisel.MOD_ID, name = Chisel.MOD_NAME, version = Chisel.VERSION, guiFactory = "com.cricketcraft.chisel.client.gui.GuiFactory", dependencies = "after:ForgeMultipart;after:Thaumcraft;after:appliedenergistics2;after:Railcraft;after:AWWayofTime;after:TwilightForest")
-public class Chisel
-{
-
+public class Chisel {
 	public static final String MOD_ID = "chisel";
 
 	public static final BlockCarvable.SoundType soundTempleFootstep = new BlockCarvable.SoundType("dig.stone", MOD_ID + ":step.templeblock", 1.0f, 1.0f);
@@ -53,8 +51,7 @@ public class Chisel
 	@Instance(MOD_ID)
 	public static Chisel instance;
 
-	public Chisel()
-	{
+	public Chisel() {
 
 	}
 
@@ -62,13 +59,11 @@ public class Chisel
 	public static CommonProxy proxy;
 
 	@EventHandler
-	public void missingMapping(FMLMissingMappingsEvent event)
-	{
+	public void missingMapping(FMLMissingMappingsEvent event) {
 	}
 
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
-	{
+	public void preInit(FMLPreInitializationEvent event) {
 		File configFile = event.getSuggestedConfigurationFile();
 		Configurations.configExists = configFile.exists();
 		Configurations.config = new Configuration(configFile);
@@ -85,38 +80,31 @@ public class Chisel
 	}
 
 	@EventHandler
-	public void init(FMLInitializationEvent event)
-	{
+	public void init(FMLInitializationEvent event) {
 		ChiselItems.init();
 		proxy.init();
 	}
 
-	private void addWorldgen(Features feature, IBlockState state, double... data)
-	{
+	private void addWorldgen(Features feature, IBlockState state, double... data) {
 
 	}
 
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent event)
-	{
+	public void postInit(FMLPostInitializationEvent event) {
 		ChiselTabs.postInit();
 		// Compatibility.init(event);
 	}
 
 	@EventHandler
-	public void onIMC(IMCEvent event)
-	{
-		for (IMCMessage msg : event.getMessages())
-		{
+	public void onIMC(IMCEvent event) {
+		for (IMCMessage msg : event.getMessages()) {
 			// IMCHandler.INSTANCE.handleMessage(msg);
 		}
 	}
 
 	@SubscribeEvent
-	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event)
-	{
-		if (event.modID.equals("chisel"))
-		{
+	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
+		if (event.modID.equals("chisel")) {
 			Configurations.refreshConfig();
 		}
 	}

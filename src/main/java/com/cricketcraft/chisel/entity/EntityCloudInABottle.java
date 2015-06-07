@@ -14,26 +14,21 @@ public class EntityCloudInABottle extends EntityThrowable
 {
 	private Random random = new Random();
 
-	public EntityCloudInABottle(World world)
-	{
+	public EntityCloudInABottle(World world) {
 		super(world);
 	}
 
-	public EntityCloudInABottle(World world, EntityLivingBase entityLivingBase)
-	{
+	public EntityCloudInABottle(World world, EntityLivingBase entityLivingBase) {
 		super(world, entityLivingBase);
 	}
 
-	public EntityCloudInABottle(World world, double x, double y, double z)
-	{
+	public EntityCloudInABottle(World world, double x, double y, double z) {
 		super(world, x, y, z);
 	}
 
 	@Override
-	protected void onImpact(MovingObjectPosition mop)
-	{
-		if (worldObj.isRemote)
-		{
+	protected void onImpact(MovingObjectPosition mop) {
+		if (worldObj.isRemote) {
 			return;
 		}
 
@@ -42,8 +37,7 @@ public class EntityCloudInABottle extends EntityThrowable
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		switch (mop.sideHit.getIndex())
-		{
+		switch (mop.sideHit.getIndex()) {
 		case 0:
 			y--;
 			break;
@@ -69,8 +63,7 @@ public class EntityCloudInABottle extends EntityThrowable
 		setDead();
 	}
 
-	public boolean generate(World world, Random random, int x, int y, int z, int numberOfBlocks)
-	{
+	public boolean generate(World world, Random random, int x, int y, int z, int numberOfBlocks) {
 		int X[] = new int[9];
 		int Y[] = new int[9];
 		int Z[] = new int[9];
@@ -84,20 +77,16 @@ public class EntityCloudInABottle extends EntityThrowable
 
 		int count = 0;
 
-		while (count < numberOfBlocks)
-		{
-			for (int dir = 0; dir < 9; dir++)
-			{
-				if (count >= numberOfBlocks)
-				{
+		while (count < numberOfBlocks) {
+			for (int dir = 0; dir < 9; dir++) {
+				if (count >= numberOfBlocks) {
 					break;
 				}
 
 				int dx = dir % 3 - 1;
 				int dz = dir / 3 - 1;
 
-				if (dx == 0 && dz == 0)
-				{
+				if (dx == 0 && dz == 0) {
 					continue;
 				}
 
@@ -109,16 +98,12 @@ public class EntityCloudInABottle extends EntityThrowable
 				int ny = Y[dir];
 				int nz = Z[dir];
 
-				for (int c = nx; c < nx + random.nextInt(4) + 1; c++)
-				{
-					for (int d = ny; d < ny + random.nextInt(1) + 2; d++)
-					{
-						for (int e = nz; e < nz + random.nextInt(4) + 1; e++)
-						{
+				for (int c = nx; c < nx + random.nextInt(4) + 1; c++) {
+					for (int d = ny; d < ny + random.nextInt(1) + 2; d++) {
+						for (int e = nz; e < nz + random.nextInt(4) + 1; e++) {
 							BlockPos positionToLook = new BlockPos(c, d, e);
 
-							if (world.getBlockState(positionToLook).getBlock().isAir(world, positionToLook) && Math.abs(c - nx) + Math.abs(d - ny) + Math.abs(e - nz) < 4 * 1 + random.nextInt(2))
-							{
+							if (world.getBlockState(positionToLook).getBlock().isAir(world, positionToLook) && Math.abs(c - nx) + Math.abs(d - ny) + Math.abs(e - nz) < 4 * 1 + random.nextInt(2)) {
 								world.setBlockState(positionToLook, ChiselBlocks.cloud.getDefaultState());
 								count++;
 							}

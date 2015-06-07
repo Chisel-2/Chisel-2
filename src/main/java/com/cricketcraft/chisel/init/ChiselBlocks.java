@@ -6,13 +6,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 import com.cricketcraft.chisel.Chisel;
+import com.cricketcraft.chisel.block.BlockCarvablePumpkin;
 import com.cricketcraft.chisel.block.BlockCloud;
-import com.cricketcraft.chisel.item.ItemBlockCarvable;
+import com.cricketcraft.chisel.item.itemblock.ItemBlockCarvable;
+import com.cricketcraft.chisel.item.itemblock.ItemCarvablePumpkin;
 
 @ObjectHolder(Chisel.MOD_ID)
-public final class ChiselBlocks
-{
-
+public final class ChiselBlocks {
 	// public static final Block autoChisel = null;
 	// public static final BlockCarvable antiBlock = null;
 	// public static final BlockCarvable marble = null;
@@ -61,7 +61,7 @@ public final class ChiselBlocks
 	// public static final BlockCarvable bookshelf = null;
 	// public static final BlockCarvable tyrian = null;
 	// public static final BlockCarvable dirt = null;
-	public static Block cloud;
+	public static Block cloud, pumpkin, jackolantern;
 
 	// public static final BlockCarvable templeblock = null;
 	// public static final BlockCarvable mossy_templeblock = null;
@@ -125,18 +125,17 @@ public final class ChiselBlocks
 	// public static BlockCarvableGlass[] stainedGlass = new BlockCarvableGlass[4];
 	// public static BlockCarvablePane[] stainedGlassPane = new BlockCarvablePane[8];
 
-	public static void preInit()
-	{
+	public static void preInit() {
 		cloud = registerBlock("cloud", ItemBlockCarvable.class, new BlockCloud());
+		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(false));
+		jackolantern = registerBlock("jackolantern", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(true));
 	}
 
-	private static Block registerBlock(String name, Block block)
-	{
+	private static Block registerBlock(String name, Block block) {
 		return registerBlock(name, ItemBlock.class, block);
 	}
 
-	private static Block registerBlock(String name, Class<? extends ItemBlock> itemClass, Block block)
-	{
+	private static Block registerBlock(String name, Class<? extends ItemBlock> itemClass, Block block) {
 		block.setUnlocalizedName("chisel." + name);
 		GameRegistry.registerBlock(block, itemClass, name);
 

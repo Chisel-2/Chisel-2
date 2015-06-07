@@ -1,64 +1,53 @@
 package com.cricketcraft.chisel.init;
 
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ChiselTabs
-{
-
-	private static class CustomCreativeTab extends CreativeTabs
-	{
+public class ChiselTabs {
+	private static class CustomCreativeTab extends CreativeTabs {
 
 		private boolean search;
 
 		private ItemStack stack;
 
-		public CustomCreativeTab(String label, boolean searchbar)
-		{
+		public CustomCreativeTab(String label, boolean searchbar) {
 			super(label);
 			this.search = searchbar;
 		}
 
 		@Override
-		public Item getTabIconItem()
-		{
+		public Item getTabIconItem() {
 			return stack.getItem();
 		}
 
-		public void setTabIconItemStack(ItemStack stack)
-		{
+		public void setTabIconItemStack(ItemStack stack) {
 			this.stack = stack;
 		}
 
 		@Override
-		public ItemStack getIconItemStack()
-		{
+		public ItemStack getIconItemStack() {
 			return stack;
 		}
 
 		@Override
 		@SideOnly(Side.CLIENT)
-		public String getBackgroundImageName()
-		{
+		public String getBackgroundImageName() {
 
 			return search ? "item_search.png" : super.getBackgroundImageName();
 		}
 
 		@Override
-		public int getSearchbarWidth()
-		{
+		public int getSearchbarWidth() {
 
 			return 89;
 		}
 
 		@Override
-		public boolean hasSearchBar()
-		{
+		public boolean hasSearchBar() {
 
 			return search;
 		}
@@ -79,13 +68,11 @@ public class ChiselTabs
 	public static final CustomCreativeTab tabModdedChiselBlocks = new CustomCreativeTab("tabModdedChiselBlocks", true);
 
 	// this serves mostly just to load the static initializers
-	public static void preInit()
-	{
+	public static void preInit() {
 		tabOtherChiselBlocks.setTabIconItemStack(new ItemStack(Items.command_block_minecart, 1));
 	}
 
-	public static void postInit()
-	{
+	public static void postInit() {
 
 	}
 }

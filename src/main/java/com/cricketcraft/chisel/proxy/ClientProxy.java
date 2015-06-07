@@ -12,17 +12,13 @@ import com.cricketcraft.chisel.entity.EntityCloudInABottle;
 import com.cricketcraft.chisel.entity.EntitySmashingRock;
 import com.cricketcraft.chisel.init.ChiselItems;
 
-public class ClientProxy extends CommonProxy
-{
-
+public class ClientProxy extends CommonProxy {
 	@Override
-	public void preInit()
-	{
+	public void preInit() {
 	}
 
 	@Override
-	public void init()
-	{
+	public void init() {
 		ModelsChisel.registerModels();
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityCloudInABottle.class, new RenderSnowball(Minecraft.getMinecraft().getRenderManager(), ChiselItems.cloudInABottle, Minecraft.getMinecraft().getRenderItem()));
@@ -31,14 +27,12 @@ public class ClientProxy extends CommonProxy
 	}
 
 	@Override
-	public EntityPlayer getClientPlayer()
-	{
+	public EntityPlayer getClientPlayer() {
 		return Minecraft.getMinecraft().thePlayer;
 	}
 
 	@Override
-	public World getClientWorld()
-	{
+	public World getClientWorld() {
 		return Minecraft.getMinecraft().theWorld;
 	}
 }

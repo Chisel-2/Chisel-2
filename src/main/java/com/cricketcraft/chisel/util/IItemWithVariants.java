@@ -1,6 +1,5 @@
 package com.cricketcraft.chisel.util;
 
-public interface IItemWithVariants
-{
+public interface IItemWithVariants {
 	String[] getVariantNames();
 }

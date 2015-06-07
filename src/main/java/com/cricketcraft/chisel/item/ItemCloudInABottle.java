@@ -7,30 +7,23 @@ import net.minecraft.world.World;
 import com.cricketcraft.chisel.entity.EntityCloudInABottle;
 import com.cricketcraft.chisel.init.ChiselTabs;
 
-public class ItemCloudInABottle extends BaseItem
-{
-
-	public ItemCloudInABottle()
-	{
+public class ItemCloudInABottle extends BaseItem {
+	public ItemCloudInABottle() {
 		super();
 		setCreativeTab(ChiselTabs.tabChisel);
 	}
 
 	@Override
-	public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
-	{
-		if (!player.capabilities.isCreativeMode)
-		{
+	public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
+		if (!player.capabilities.isCreativeMode) {
 			--stack.stackSize;
 		}
 
-		if (world.isRemote)
-		{
+		if (world.isRemote) {
 			world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 		}
 
-		if (!world.isRemote)
-		{
+		if (!world.isRemote) {
 			world.spawnEntityInWorld(new EntityCloudInABottle(world, player));
 		}
 

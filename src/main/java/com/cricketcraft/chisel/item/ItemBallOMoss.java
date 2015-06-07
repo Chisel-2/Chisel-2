@@ -5,12 +5,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 import com.cricketcraft.chisel.entity.EntityBallOMoss;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
 public class ItemBallOMoss extends BaseItem
 {
 	public ItemBallOMoss()
 	{
 		super();
+		this.setCreativeTab(ChiselTabs.tabChisel);
 	}
 
 	@Override
