@@ -15,6 +15,7 @@ import com.cricketcraft.chisel.init.ChiselItems;
 public class ClientProxy extends CommonProxy {
 	@Override
 	public void preInit() {
+		ModelsChisel.prepareModels();
 	}
 
 	@Override
