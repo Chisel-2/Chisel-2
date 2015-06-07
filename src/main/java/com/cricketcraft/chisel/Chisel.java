@@ -24,6 +24,7 @@ import com.cricketcraft.chisel.block.BlockCarvable;
 import com.cricketcraft.chisel.config.Configurations;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
+import com.cricketcraft.chisel.init.ChiselRecipes;
 import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.proxy.CommonProxy;
 
@@ -31,98 +32,92 @@ import com.cricketcraft.chisel.proxy.CommonProxy;
 public class Chisel
 {
 
-	public static final String MOD_ID = "chisel";
+    public static final String MOD_ID = "chisel";
 
-	public static final BlockCarvable.SoundType soundTempleFootstep = new BlockCarvable.SoundType("dig.stone", MOD_ID + ":step.templeblock", 1.0f, 1.0f);
+    public static final BlockCarvable.SoundType soundTempleFootstep = new BlockCarvable.SoundType("dig.stone", MOD_ID + ":step.templeblock", 1.0f, 1.0f);
 
-	public static final String MOD_NAME = "Chisel 2";
+    public static final String MOD_NAME = "Chisel 2";
 
-	public static final String VERSION = "@VERSION@";
+    public static final String VERSION = "@VERSION@";
 
-	public static final BlockCarvable.SoundType soundHolystoneFootstep = new BlockCarvable.SoundType("holystone", 1.0f, 1.0f);
+    public static final BlockCarvable.SoundType soundHolystoneFootstep = new BlockCarvable.SoundType("holystone", 1.0f, 1.0f);
 
-	public static final BlockCarvable.SoundType soundMetalFootstep = new BlockCarvable.SoundType("metal", 1.0f, 1.0f);
+    public static final BlockCarvable.SoundType soundMetalFootstep = new BlockCarvable.SoundType("metal", 1.0f, 1.0f);
 
-	public static boolean multipartLoaded = false;
+    public static boolean multipartLoaded = false;
 
-	public static int renderEldritchId;
+    public static int renderEldritchId, renderAutoChiselId, renderGlowId, renderLayeredId, roadLineId;
 
-	public static int renderAutoChiselId;
+    public static final Logger logger = LogManager.getLogger(MOD_NAME);
 
-	public static int renderGlowId;
+    @Instance(MOD_ID)
+    public static Chisel instance;
 
-	public static int renderLayeredId;
+    public Chisel()
+    {
 
-	public static int roadLineId;
+    }
 
-	public static final Logger logger = LogManager.getLogger(MOD_NAME);
+    @SidedProxy(clientSide = "com.cricketcraft.chisel.proxy.ClientProxy", serverSide = "com.cricketcraft.chisel.proxy.CommonProxy")
+    public static CommonProxy proxy;
 
-	@Instance(MOD_ID)
-	public static Chisel instance;
+    @EventHandler
+    public void missingMapping(FMLMissingMappingsEvent event)
+    {
+    }
 
-	public Chisel()
-	{
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event)
+    {
+        File configFile = event.getSuggestedConfigurationFile();
+        Configurations.configExists = configFile.exists();
+        Configurations.config = new Configuration(configFile);
+        Configurations.config.load();
+        Configurations.refreshConfig();
 
-	}
+        ChiselBlocks.preInit();
+        ChiselItems.preInit();
 
-	@SidedProxy(clientSide = "com.cricketcraft.chisel.proxy.ClientProxy", serverSide = "com.cricketcraft.chisel.proxy.CommonProxy")
-	public static CommonProxy proxy;
+        ChiselTabs.preInit();
+        ChiselRecipes.preInit();
 
-	@EventHandler
-	public void missingMapping(FMLMissingMappingsEvent event)
-	{
-	}
+        proxy.preInit();
+    }
 
-	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
-	{
-		File configFile = event.getSuggestedConfigurationFile();
-		Configurations.configExists = configFile.exists();
-		Configurations.config = new Configuration(configFile);
-		Configurations.config.load();
-		Configurations.refreshConfig();
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+        ChiselItems.init();
+        proxy.init();
+    }
 
-		ChiselBlocks.preInit();
-		ChiselItems.preInit();
+    private void addWorldgen(Features feature, IBlockState state, double... data)
+    {
 
-		ChiselTabs.preInit();
-		proxy.preInit();
-	}
+    }
 
-	@EventHandler
-	public void init(FMLInitializationEvent event)
-	{
-		ChiselItems.init();
-		proxy.init();
-	}
+    @EventHandler
+    public void postInit(FMLPostInitializationEvent event)
+    {
+        ChiselTabs.postInit();
+        // Compatibility.init(event);
+    }
 
-	private void addWorldgen(Features feature, IBlockState state, double... data)
-	{
+    @EventHandler
+    public void onIMC(IMCEvent event)
+    {
+        for (IMCMessage msg : event.getMessages())
+        {
+            // IMCHandler.INSTANCE.handleMessage(msg);
+        }
+    }
 
-	}
-
-	@EventHandler
-	public void postInit(FMLPostInitializationEvent event)
-	{
-		ChiselTabs.postInit();
-		// Compatibility.init(event);
-	}
-
-	@EventHandler
-	public void onIMC(IMCEvent event)
-	{
-		for (IMCMessage msg : event.getMessages())
-		{
-			// IMCHandler.INSTANCE.handleMessage(msg);
-		}
-	}
-
-	@SubscribeEvent
-	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event)
-	{
-		if (event.modID.equals("chisel"))
-		{
-			Configurations.refreshConfig();
-		}
-	}
+    @SubscribeEvent
+    public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event)
+    {
+        if (event.modID.equals("chisel"))
+        {
+            Configurations.refreshConfig();
+        }
+    }
 }

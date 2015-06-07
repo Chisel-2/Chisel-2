@@ -36,6 +36,7 @@ public class ModelsChisel
 	private static void registerItemModels()
 	{
 		registerItemModel(ChiselItems.cloudInABottle);
+		registerItemModel(ChiselItems.smashing_rock);
 	}
 
 	private static void registerBlockModel(Block block)

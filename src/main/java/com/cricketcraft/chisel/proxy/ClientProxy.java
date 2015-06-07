@@ -8,6 +8,7 @@ import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 import com.cricketcraft.chisel.client.ModelsChisel;
 import com.cricketcraft.chisel.entity.EntityCloudInABottle;
+import com.cricketcraft.chisel.entity.EntitySmashingRock;
 import com.cricketcraft.chisel.init.ChiselItems;
 
 public class ClientProxy extends CommonProxy
@@ -23,6 +24,7 @@ public class ClientProxy extends CommonProxy
 	{
 		ModelsChisel.registerModels();
 		RenderingRegistry.registerEntityRenderingHandler(EntityCloudInABottle.class, new RenderSnowball(Minecraft.getMinecraft().getRenderManager(), ChiselItems.cloudInABottle, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntitySmashingRock.class, new RenderSnowball(Minecraft.getMinecraft().getRenderManager(), ChiselItems.smashing_rock, Minecraft.getMinecraft().getRenderItem()));
 	}
 
 	@Override
