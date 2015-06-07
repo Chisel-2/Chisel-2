@@ -1,10 +1,6 @@
 package com.cricketcraft.chisel.client;
 
-import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_GRID;
-import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_LARGE;
-import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_NORMAL;
-import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_SMALL;
-import static com.cricketcraft.chisel.block.variant.BlockVariants.CLOUD_VERTICAL;
+import static com.cricketcraft.chisel.block.variant.BlockVariants.*;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelBakery;

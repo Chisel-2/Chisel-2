@@ -29,11 +29,11 @@ public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes {
 
 	public BlockCloud() {
 		super(Material.ice);
-		setHardness(0.2F);
-		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
-		setLightOpacity(3);
-		setStepSound(Block.soundTypeCloth);
-		useNeighborBrightness = true;
+		this.setHardness(0.2F);
+		this.setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
+		this.setLightOpacity(3);
+		this.setStepSound(Block.soundTypeCloth);
+		this.useNeighborBrightness = true;
 		this.setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.CLOUD_VARIANTS, BlockVariants.CLOUD_NORMAL));
 	}
 
