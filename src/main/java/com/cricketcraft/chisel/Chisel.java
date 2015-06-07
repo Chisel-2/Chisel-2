@@ -32,92 +32,92 @@ import com.cricketcraft.chisel.proxy.CommonProxy;
 public class Chisel
 {
 
-    public static final String MOD_ID = "chisel";
+	public static final String MOD_ID = "chisel";
 
-    public static final BlockCarvable.SoundType soundTempleFootstep = new BlockCarvable.SoundType("dig.stone", MOD_ID + ":step.templeblock", 1.0f, 1.0f);
+	public static final BlockCarvable.SoundType soundTempleFootstep = new BlockCarvable.SoundType("dig.stone", MOD_ID + ":step.templeblock", 1.0f, 1.0f);
 
-    public static final String MOD_NAME = "Chisel 2";
+	public static final String MOD_NAME = "Chisel 2";
 
-    public static final String VERSION = "@VERSION@";
+	public static final String VERSION = "@VERSION@";
 
-    public static final BlockCarvable.SoundType soundHolystoneFootstep = new BlockCarvable.SoundType("holystone", 1.0f, 1.0f);
+	public static final BlockCarvable.SoundType soundHolystoneFootstep = new BlockCarvable.SoundType("holystone", 1.0f, 1.0f);
 
-    public static final BlockCarvable.SoundType soundMetalFootstep = new BlockCarvable.SoundType("metal", 1.0f, 1.0f);
+	public static final BlockCarvable.SoundType soundMetalFootstep = new BlockCarvable.SoundType("metal", 1.0f, 1.0f);
 
-    public static boolean multipartLoaded = false;
+	public static boolean multipartLoaded = false;
 
-    public static int renderEldritchId, renderAutoChiselId, renderGlowId, renderLayeredId, roadLineId;
+	public static int renderEldritchId, renderAutoChiselId, renderGlowId, renderLayeredId, roadLineId;
 
-    public static final Logger logger = LogManager.getLogger(MOD_NAME);
+	public static final Logger logger = LogManager.getLogger(MOD_NAME);
 
-    @Instance(MOD_ID)
-    public static Chisel instance;
+	@Instance(MOD_ID)
+	public static Chisel instance;
 
-    public Chisel()
-    {
+	public Chisel()
+	{
 
-    }
+	}
 
-    @SidedProxy(clientSide = "com.cricketcraft.chisel.proxy.ClientProxy", serverSide = "com.cricketcraft.chisel.proxy.CommonProxy")
-    public static CommonProxy proxy;
+	@SidedProxy(clientSide = "com.cricketcraft.chisel.proxy.ClientProxy", serverSide = "com.cricketcraft.chisel.proxy.CommonProxy")
+	public static CommonProxy proxy;
 
-    @EventHandler
-    public void missingMapping(FMLMissingMappingsEvent event)
-    {
-    }
+	@EventHandler
+	public void missingMapping(FMLMissingMappingsEvent event)
+	{
+	}
 
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
-        File configFile = event.getSuggestedConfigurationFile();
-        Configurations.configExists = configFile.exists();
-        Configurations.config = new Configuration(configFile);
-        Configurations.config.load();
-        Configurations.refreshConfig();
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		File configFile = event.getSuggestedConfigurationFile();
+		Configurations.configExists = configFile.exists();
+		Configurations.config = new Configuration(configFile);
+		Configurations.config.load();
+		Configurations.refreshConfig();
 
-        ChiselBlocks.preInit();
-        ChiselItems.preInit();
+		ChiselBlocks.preInit();
+		ChiselItems.preInit();
 
-        ChiselTabs.preInit();
-        ChiselRecipes.preInit();
+		ChiselTabs.preInit();
+		ChiselRecipes.preInit();
 
-        proxy.preInit();
-    }
+		proxy.preInit();
+	}
 
-    @EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-        ChiselItems.init();
-        proxy.init();
-    }
+	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+		ChiselItems.init();
+		proxy.init();
+	}
 
-    private void addWorldgen(Features feature, IBlockState state, double... data)
-    {
+	private void addWorldgen(Features feature, IBlockState state, double... data)
+	{
 
-    }
+	}
 
-    @EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
-        ChiselTabs.postInit();
-        // Compatibility.init(event);
-    }
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+		ChiselTabs.postInit();
+		// Compatibility.init(event);
+	}
 
-    @EventHandler
-    public void onIMC(IMCEvent event)
-    {
-        for (IMCMessage msg : event.getMessages())
-        {
-            // IMCHandler.INSTANCE.handleMessage(msg);
-        }
-    }
+	@EventHandler
+	public void onIMC(IMCEvent event)
+	{
+		for (IMCMessage msg : event.getMessages())
+		{
+			// IMCHandler.INSTANCE.handleMessage(msg);
+		}
+	}
 
-    @SubscribeEvent
-    public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event)
-    {
-        if (event.modID.equals("chisel"))
-        {
-            Configurations.refreshConfig();
-        }
-    }
+	@SubscribeEvent
+	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event)
+	{
+		if (event.modID.equals("chisel"))
+		{
+			Configurations.refreshConfig();
+		}
+	}
 }

@@ -18,65 +18,65 @@ import com.cricketcraft.chisel.init.ChiselItems;
 public class ModelsChisel
 {
 
-    public static void registerModels()
-    {
-        registerBlockModels();
-        registerItemModels();
-    }
+	public static void registerModels()
+	{
+		registerBlockModels();
+		registerItemModels();
+	}
 
-    private static void registerBlockModels()
-    {
-        registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.NORMAL.getMeta(), "cloud_normal");
-        registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.GRID.getMeta(), "cloud_grid");
-        registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.LARGE.getMeta(), "cloud_large");
-        registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.SMALL.getMeta(), "cloud_small");
-        registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.VERTICAL.getMeta(), "cloud_vertical");
-    }
+	private static void registerBlockModels()
+	{
+		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.NORMAL.getMeta(), "cloud_normal");
+		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.GRID.getMeta(), "cloud_grid");
+		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.LARGE.getMeta(), "cloud_large");
+		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.SMALL.getMeta(), "cloud_small");
+		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.VERTICAL.getMeta(), "cloud_vertical");
+	}
 
-    private static void registerItemModels()
-    {
-        registerItemModel(ChiselItems.cloudInABottle);
-        registerItemModel(ChiselItems.smashing_rock);
-        registerItemModel(ChiselItems.ballOMoss);
-    }
+	private static void registerItemModels()
+	{
+		registerItemModel(ChiselItems.cloudInABottle);
+		registerItemModel(ChiselItems.smashing_rock);
+		registerItemModel(ChiselItems.ballOMoss);
+	}
 
-    private static void registerBlockModel(Block block)
-    {
-        ResourceLocation resourceLocation = (ResourceLocation) Block.blockRegistry.getNameForObject(block);
+	private static void registerBlockModel(Block block)
+	{
+		ResourceLocation resourceLocation = (ResourceLocation) Block.blockRegistry.getNameForObject(block);
 
-        registerBlockModel(block, 0, resourceLocation.getResourcePath());
-    }
+		registerBlockModel(block, 0, resourceLocation.getResourcePath());
+	}
 
-    private static void registerItemModel(Item item)
-    {
-        ResourceLocation resourceLocation = (ResourceLocation) Item.itemRegistry.getNameForObject(item);
+	private static void registerItemModel(Item item)
+	{
+		ResourceLocation resourceLocation = (ResourceLocation) Item.itemRegistry.getNameForObject(item);
 
-        registerItemModel(item, 0, resourceLocation.getResourcePath());
-    }
+		registerItemModel(item, 0, resourceLocation.getResourcePath());
+	}
 
-    private static void registerBlockModel(Block block, int meta, String modelName)
-    {
-        registerItemModel(Item.getItemFromBlock(block), meta, modelName);
-    }
+	private static void registerBlockModel(Block block, int meta, String modelName)
+	{
+		registerItemModel(Item.getItemFromBlock(block), meta, modelName);
+	}
 
-    private static void registerItemModel(Item item, int meta, String resourcePath)
-    {
-        ModelResourceLocation modelResourceLocation = new ModelResourceLocation(getResource(resourcePath), "inventory");
+	private static void registerItemModel(Item item, int meta, String resourcePath)
+	{
+		ModelResourceLocation modelResourceLocation = new ModelResourceLocation(getResource(resourcePath), "inventory");
 
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, modelResourceLocation);
-    }
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, modelResourceLocation);
+	}
 
-    private static void registerBlockModelVariant(Block block, int meta, String resourcePath)
-    {
-        Item item = Item.getItemFromBlock(block);
+	private static void registerBlockModelVariant(Block block, int meta, String resourcePath)
+	{
+		Item item = Item.getItemFromBlock(block);
 
-        registerItemModel(item, meta, resourcePath);
+		registerItemModel(item, meta, resourcePath);
 
-        ModelBakery.addVariantName(item, getResource(resourcePath));
-    }
+		ModelBakery.addVariantName(item, getResource(resourcePath));
+	}
 
-    public static String getResource(String resource)
-    {
-        return (Chisel.MOD_ID + ":") + resource;
-    }
+	public static String getResource(String resource)
+	{
+		return (Chisel.MOD_ID + ":") + resource;
+	}
 }
