@@ -130,7 +130,7 @@ public final class ChiselBlocks {
 	public static void preInit() {
 		cloud = registerBlock("cloud", ItemBlockCarvable.class, new BlockCloud());
 		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(false));
-		jackolantern = registerBlock("jackolantern", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(true));
+		jackolantern = registerBlock("litpumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(true));
 		marble = registerBlock("marble", ItemBlockCarvable.class, new BlockMarble());
 		limestone = registerBlock("limestone", ItemBlockCarvable.class, new BlockLimestone());
 	}
