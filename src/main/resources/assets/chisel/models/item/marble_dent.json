@@ -1,5 +1,5 @@
 {
-    "parent": "chisel:block/cloud_large",
+    "parent": "chisel:block/marble_dent",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

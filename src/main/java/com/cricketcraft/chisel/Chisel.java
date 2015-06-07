@@ -1,6 +1,7 @@
 package com.cricketcraft.chisel;
 
 import com.cricketcraft.chisel.block.BlockCarvable;
+import com.cricketcraft.chisel.block.variant.BlockVariants;
 import com.cricketcraft.chisel.config.Configurations;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
@@ -9,6 +10,8 @@ import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.item.chisel.ChiselController;
 import com.cricketcraft.chisel.network.ChiselGuiHandler;
 import com.cricketcraft.chisel.proxy.CommonProxy;
+import com.cricketcraft.chisel.world.GeneratorChisel;
+import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -24,6 +27,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -84,11 +88,10 @@ public class Chisel {
 	public void init(FMLInitializationEvent event) {
 		ChiselItems.init();
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new ChiselGuiHandler());
+		GeneratorChisel.INSTANCE.addFeature(ChiselBlocks.marble.getDefaultState(), 32, Configurations.marbleAmount);
+		GeneratorChisel.INSTANCE.addFeature(ChiselBlocks.limestone.getDefaultState(), 32, Configurations.marbleAmount);
+		GameRegistry.registerWorldGenerator(GeneratorChisel.INSTANCE, 1000);
 		proxy.init();
-	}
-
-	private void addWorldgen(Features feature, IBlockState state, double... data) {
-
 	}
 
 	@EventHandler

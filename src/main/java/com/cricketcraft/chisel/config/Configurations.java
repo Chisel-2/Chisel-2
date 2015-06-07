@@ -10,7 +10,7 @@ public class Configurations {
 
 	public static boolean configExists, ghostCloud, allowMossy, allowSmoothStone, chiselRecipe, enableFMP, chiselStoneToCobbleBricks, chiselBackToVanillaLeaves, oldPillars, disableCTM, connectInsideCTM, blockDescriptions, allowChiselDamage, ironChiselCanLeftClick, ironChiselHasModes, allowChiselCrossColors, useRoadLineTool, fullBlockConcrete;
 
-	public static int factoryBlockAmount, marbleAmount, limestoneAmount, graniteAmount, dioriteAmount, andesiteAmount, particlesTickrate, ironChiselMaxDamage, diamondChiselMaxDamage, obsidianChiselMaxDamage, ironChiselAttackDamage, diamondChiselAttackDamage, obsidianChiselAttackDamage, roadLineToolLevel;
+	public static int factoryBlockAmount, marbleAmount, limestoneAmount, particlesTickrate, ironChiselMaxDamage, diamondChiselMaxDamage, obsidianChiselMaxDamage, ironChiselAttackDamage, diamondChiselAttackDamage, obsidianChiselAttackDamage, roadLineToolLevel;
 
 	public static String getRoadLineTool;
 
@@ -37,9 +37,6 @@ public class Configurations {
 		category = "worldgen";
 		marbleAmount = config.get(category, "marbleAmount", 7, "Amount of marble to generate in the world; use 0 for none").getInt(7);
 		limestoneAmount = config.get(category, "limestoneAmount", 8, "Amount of limestone to generate in the world; use 0 for none").getInt(8);
-		graniteAmount = config.get(category, "graniteAmount", 8, "Amount of granite to generate in the world; use 0 for none.").getInt(8);
-		dioriteAmount = config.get(category, "dioriteAmount", 8, "Amount of diorite to generate in the world; use 0 for none.").getInt(8);
-		andesiteAmount = config.get(category, "andesiteAmount", 8, "Amount of andesite to generate in the world; use 0 for none.").getInt(8);
 
 		/* client */
 		category = "client";

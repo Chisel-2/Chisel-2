@@ -1,5 +1,5 @@
 {
-    "parent": "chisel:block/cloud_large",
+    "parent": "chisel:block/limestone_panel_creeper",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

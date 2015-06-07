@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=marble_raw": {
+      "model": "chisel:marble_raw"
+    },
+    "variant=marble_brick": {
+      "model": "chisel:marble_brick"
+    },
+    "variant=marble_panel_classic": {
+      "model": "chisel:marble_panel_classic"
+    },
+    "variant=marble_panel_ornate": {
+      "model": "chisel:marble_panel_ornate"
+    },
+    "variant=marble_panel": {
+      "model": "chisel:marble_panel"
+    },
+    "variant=marble_block": {
+      "model": "chisel:marble_block"
+    },
+    "variant=marble_creeper_dark": {
+      "model": "chisel:marble_creeper_dark"
+    },
+    "variant=marble_creeper_light": {
+      "model": "chisel:marble_creeper_light"
+    },
+    "variant=marble_carved": {
+      "model": "chisel:marble_carved"
+    },
+    "variant=marble_carved_radial": {
+      "model": "chisel:marble_carved_radial"
+    },
+    "variant=marble_dent": {
+      "model": "chisel:marble_dent"
+    },
+    "variant=marble_dent_large": {
+      "model": "chisel:marble_dent_large"
+    },
+    "variant=marble_tiles": {
+      "model": "chisel:marble_tiles"
+    },
+    "variant=marble_tiles_arranged": {
+      "model": "chisel:marble_tiles_arranged"
+    },
+    "variant=marble_tiles_fancy": {
+      "model": "chisel:marble_tiles_fancy"
+    },
+    "variant=marble_blocks": {
+      "model": "chisel:marble_blocks"
+    }
+  }
+}

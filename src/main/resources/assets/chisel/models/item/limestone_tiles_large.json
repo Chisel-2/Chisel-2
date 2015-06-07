@@ -1,5 +1,5 @@
 {
-    "parent": "chisel:block/cloud_large",
+    "parent": "chisel:block/limestone_tiles_large",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

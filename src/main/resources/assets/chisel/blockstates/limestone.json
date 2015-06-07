@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=limestone_raw": {
+      "model": "chisel:limestone_raw"
+    },
+    "variant=limestone_tiles": {
+      "model": "chisel:limestone_tiles"
+    },
+    "variant=limestone_tiles_french": {
+      "model": "chisel:limestone_tiles_french"
+    },
+    "variant=limestone_tiles_french_light": {
+      "model": "chisel:limestone_tiles_french_light"
+    },
+    "variant=limestone_tiles_creeper": {
+      "model": "chisel:limestone_tiles_creeper"
+    },
+    "variant=limestone_tiles_damaged": {
+      "model": "chisel:limestone_tiles_damaged"
+    },
+    "variant=limestone_tiles_large": {
+      "model": "chisel:limestone_tiles_large"
+    },
+    "variant=limestone_bricks": {
+      "model": "chisel:limestone_bricks"
+    },
+    "variant=limestone_smooth": {
+      "model": "chisel:limestone_smooth"
+    },
+    "variant=limestone_panel_ornate": {
+      "model": "chisel:limestone_panel_ornate"
+    },
+    "variant=limestone_panel_engraved": {
+      "model": "chisel:limestone_panel_engraved"
+    },
+    "variant=limestone_panel_creeper": {
+      "model": "chisel:limestone_panel_creeper"
+    },
+    "variant=limestone_panel_light": {
+      "model": "chisel:limestone_panel_light"
+    },
+    "variant=limestone_panel_dark": {
+      "model": "chisel:limestone_panel_dark"
+    },
+    "variant=limestone_panel": {
+      "model": "chisel:limestone_panel"
+    },
+    "variant=limestone_dent": {
+      "model": "chisel:limestone_dent"
+    }
+  }
+}

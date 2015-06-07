@@ -1,5 +1,7 @@
 package com.cricketcraft.chisel.init;
 
+import com.cricketcraft.chisel.block.BlockLimestone;
+import com.cricketcraft.chisel.block.BlockMarble;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -61,7 +63,7 @@ public final class ChiselBlocks {
 	// public static final BlockCarvable bookshelf = null;
 	// public static final BlockCarvable tyrian = null;
 	// public static final BlockCarvable dirt = null;
-	public static Block cloud, pumpkin, jackolantern;
+	public static Block cloud, pumpkin, jackolantern, marble, limestone;
 
 	// public static final BlockCarvable templeblock = null;
 	// public static final BlockCarvable mossy_templeblock = null;
@@ -128,7 +130,9 @@ public final class ChiselBlocks {
 	public static void preInit() {
 		cloud = registerBlock("cloud", ItemBlockCarvable.class, new BlockCloud());
 		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(false));
-		jackolantern = registerBlock("litpumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(true));
+		jackolantern = registerBlock("jackolantern", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(true));
+		marble = registerBlock("marble", ItemBlockCarvable.class, new BlockMarble());
+		limestone = registerBlock("limestone", ItemBlockCarvable.class, new BlockLimestone());
 	}
 
 	private static Block registerBlock(String name, Block block) {

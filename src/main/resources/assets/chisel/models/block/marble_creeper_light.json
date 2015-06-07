@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "chisel:blocks/marble/terrain-pistonback-marblecreeperlight-side"
+    }
+}
