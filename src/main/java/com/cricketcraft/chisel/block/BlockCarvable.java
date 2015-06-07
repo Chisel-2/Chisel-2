@@ -1,87 +1,46 @@
 package com.cricketcraft.chisel.block;
 
-import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.Features;
-import com.cricketcraft.chisel.init.ChiselTabs;
-import com.cricketcraft.chisel.util.BlockVariant;
-import com.cricketcraft.chisel.util.Feature;
-import com.cricketcraft.chisel.util.IBlockWithSubtypes;
-import com.cricketcraft.chisel.util.PropertyVariant;
-import net.minecraft.block.state.BlockState;
-import net.minecraft.block.state.IBlockState;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
-import java.util.List;
+import com.cricketcraft.chisel.Chisel;
+import com.cricketcraft.chisel.init.ChiselTabs;
 
-public class BlockCarvable extends Block implements IBlockWithSubtypes{
-
-	public static PropertyVariant VARIANTS = null;
+public class BlockCarvable extends Block
+{
 
 	private boolean isAlpha;
 
-	public BlockCarvable(Feature feature) {
-		this(Material.rock, feature);
+	public BlockCarvable()
+	{
+		this(Material.rock);
 	}
 
-	public BlockCarvable(Material m, Feature feature) {
+	public BlockCarvable(Material m)
+	{
 		super(m);
-		if (m == Material.rock || m == Material.iron) {
+		if (m == Material.rock || m == Material.iron)
+		{
 			setHarvestLevel("pickaxe", 0);
 		}
-		VARIANTS = PropertyVariant.create("variant", feature.getVariants());
 		setResistance(10.0F);
 		setHardness(2.0F);
 		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
 	}
 
-	public BlockCarvable setStained(boolean a) {
+	public BlockCarvable setStained(boolean a)
+	{
 		this.isAlpha = a;
 		return this;
 	}
 
-	@SuppressWarnings({"rawtypes", "unchecked"})
-	@Override
-	@SideOnly(Side.CLIENT)
-	public void getSubBlocks(Item item, CreativeTabs tab, List list){
-		for(Object variant : VARIANTS.getAllowedValues()){
-			list.add(new ItemStack(item, 1, ((BlockVariant) variant).getMeta()));
-		}
-	}
-
-	@Override
-	public IBlockState getStateFromMeta(int meta){
-		return this.getDefaultState().withProperty(VARIANTS, VARIANTS.getVariantFromMeta(meta));
-	}
-
-	@Override
-	public int getMetaFromState(IBlockState state){
-		return ((BlockVariant) state.getValue(VARIANTS)).getMeta();
-	}
-
-	@Override
-	public int damageDropped(IBlockState state){
-		return ((BlockVariant) state.getValue(VARIANTS)).getMeta();
-	}
-
-	@Override
-	public String getSubtypeUnlocalizedName(ItemStack stack) {
-		return VARIANTS.getVariantFromMeta(stack.getMetadata()).getName();
-	}
-
-	public PropertyVariant getVariants(){
-		return this.VARIANTS;
-	}
-
-	public static class SoundType extends Block.SoundType {
+	public static class SoundType extends Block.SoundType
+	{
 
 		public final String soundNameStep;
+
 		public final String soundNameBreak;
+
 		public final String soundNamePlace;
 
 		/**
@@ -94,7 +53,8 @@ public class BlockCarvable extends Block implements IBlockWithSubtypes{
 		 * @param frequency
 		 *            default 1.0f
 		 */
-		public SoundType(String soundName, float volume, float frequency) {
+		public SoundType(String soundName, float volume, float frequency)
+		{
 			super(soundName, volume, frequency);
 			this.soundNameStep = null;
 			this.soundNameBreak = null;
@@ -113,7 +73,8 @@ public class BlockCarvable extends Block implements IBlockWithSubtypes{
 		 * @param frequency
 		 *            default 1.0f
 		 */
-		public SoundType(String soundNameBreak, String soundNameStep, float volume, float frequency) {
+		public SoundType(String soundNameBreak, String soundNameStep, float volume, float frequency)
+		{
 			super(soundNameStep, volume, frequency);
 			this.soundNameStep = soundNameStep;
 			this.soundNameBreak = soundNameBreak;
@@ -134,7 +95,8 @@ public class BlockCarvable extends Block implements IBlockWithSubtypes{
 		 * @param frequency
 		 *            default 1.0f
 		 */
-		public SoundType(String soundNameBreak, String soundNameStep, String soundNamePlace, float volume, float frequency) {
+		public SoundType(String soundNameBreak, String soundNameStep, String soundNamePlace, float volume, float frequency)
+		{
 			super(soundNameStep, volume, frequency);
 			this.soundNameStep = soundNameStep;
 			this.soundNameBreak = soundNameBreak;
@@ -142,7 +104,8 @@ public class BlockCarvable extends Block implements IBlockWithSubtypes{
 		}
 
 		@Override
-		public String getBreakSound() {
+		public String getBreakSound()
+		{
 			if (soundNameBreak == null)
 				return Chisel.MOD_ID + ":dig." + this.soundName;
 			else
@@ -150,7 +113,8 @@ public class BlockCarvable extends Block implements IBlockWithSubtypes{
 		}
 
 		@Override
-		public String getStepSound() {
+		public String getStepSound()
+		{
 			if (soundNameStep == null)
 				return Chisel.MOD_ID + ":step." + this.soundName;
 			else
@@ -158,7 +122,8 @@ public class BlockCarvable extends Block implements IBlockWithSubtypes{
 		}
 
 		@Override
-		public String getPlaceSound() {
+		public String getPlaceSound()
+		{
 			if (soundNamePlace == null)
 				return getBreakSound();
 			else

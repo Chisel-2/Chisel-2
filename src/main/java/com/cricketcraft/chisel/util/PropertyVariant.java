@@ -1,54 +1,65 @@
 package com.cricketcraft.chisel.util;
 
-import net.minecraft.block.properties.IProperty;
-
 import java.util.Collection;
 import java.util.HashMap;
 
-public class PropertyVariant implements IProperty {
-    private String name;
-    private BlockVariant defaultVariant;
-    private HashMap<Integer, BlockVariant> metaMap;
+import net.minecraft.block.properties.IProperty;
 
-    public PropertyVariant(String name, BlockVariant... variants){
-        this.name = name;
-        this.metaMap = new HashMap<Integer, BlockVariant>();
-        this.defaultVariant = variants[0];
-        for(BlockVariant variant : variants){
-            this.metaMap.put(variant.getMeta(), variant);
-        }
-    }
+public class PropertyVariant implements IProperty
+{
+	private String name;
 
-    public static PropertyVariant create(String name, BlockVariant... variants){
-        return new PropertyVariant(name, variants);
-    }
+	private BlockVariant defaultVariant;
 
-    @Override
-    public String getName() {
-        return this.name;
-    }
+	private HashMap<Integer, BlockVariant> metaMap;
 
-    @Override
-    public Collection getAllowedValues() {
-        return this.metaMap.values();
-    }
+	protected PropertyVariant(String name, BlockVariant... variants)
+	{
+		this.name = name;
+		this.metaMap = new HashMap<Integer, BlockVariant>();
 
-    @Override
-    public Class getValueClass() {
-        return BlockVariant.class;
-    }
+		this.defaultVariant = variants[0];
 
-    @Override
-    public String getName(Comparable value) {
-        return ((BlockVariant) value).getName();
-    }
+		for (BlockVariant variant : variants)
+		{
+			this.metaMap.put(variant.getMeta(), variant);
+		}
+	}
 
-    public BlockVariant getVariantFromMeta(int meta){
-        BlockVariant variant = this.metaMap.get(meta);
-        return variant != null ? variant : this.defaultVariant;
-    }
+	public static PropertyVariant create(String name, BlockVariant... variants)
+	{
+		return new PropertyVariant(name, variants);
+	}
 
-    public BlockVariant getDefaultVariant(){
-        return this.defaultVariant;
-    }
+	@Override
+	public String getName()
+	{
+		return this.name;
+	}
+
+	@Override
+	public Collection<BlockVariant> getAllowedValues()
+	{
+		return this.metaMap.values();
+	}
+
+	@Override
+	public Class<BlockVariant> getValueClass()
+	{
+		return BlockVariant.class;
+	}
+
+	@Override
+	public String getName(Comparable value)
+	{
+		return ((BlockVariant) value).getName();
+	}
+
+	public BlockVariant fromMeta(int meta)
+	{
+		BlockVariant variant = this.metaMap.get(meta);
+
+		return variant != null ? variant : this.defaultVariant;
+	}
+
 }

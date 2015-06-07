@@ -8,54 +8,83 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Locale;
 
-public class Configurations {
+public class Configurations
+{
 
 	public static Configuration config;
 
 	public static boolean configExists;
 
 	public static double concreteVelocity;
+
 	public static boolean ghostCloud;
+
 	public static int factoryBlockAmount;
+
 	public static boolean allowMossy;
+
 	public static boolean allowSmoothStone;
+
 	public static boolean chiselRecipe;
+
 	public static boolean enableFMP;
+
 	public static boolean chiselStoneToCobbleBricks;
+
 	public static boolean chiselBackToVanillaLeaves;
 
 	public static int marbleAmount;
+
 	public static int limestoneAmount;
+
 	public static int graniteAmount;
+
 	public static int dioriteAmount;
+
 	public static int andesiteAmount;
 
 	public static int particlesTickrate;
+
 	public static boolean oldPillars;
+
 	public static boolean disableCTM;
+
 	public static boolean connectInsideCTM;
+
 	public static boolean blockDescriptions;
 
 	public static boolean allowChiselDamage;
+
 	public static int ironChiselMaxDamage;
+
 	public static int diamondChiselMaxDamage;
+
 	public static int obsidianChiselMaxDamage;
+
 	public static boolean ironChiselCanLeftClick;
+
 	public static boolean ironChiselHasModes;
+
 	public static int ironChiselAttackDamage;
+
 	public static int diamondChiselAttackDamage;
+
 	public static int obsidianChiselAttackDamage;
+
 	public static boolean allowChiselCrossColors;
 
 	public static boolean useRoadLineTool;
+
 	public static String getRoadLineTool;
+
 	public static int roadLineToolLevel;
 
 	public static int[] configColors = new int[ItemDye.dyeColors.length];
 
 	public static boolean fullBlockConcrete;
 
-	public static boolean refreshConfig() {
+	public static boolean refreshConfig()
+	{
 
 		String category;
 
@@ -120,27 +149,33 @@ public class Configurations {
 		/* hexColors */
 		category = "hexColors";
 
-		for (int i = 0; i < ItemDye.dyeColors.length; i++) {
+		for (int i = 0; i < ItemDye.dyeColors.length; i++)
+		{
 			// tterrag... don't kill me over this formatting.
 			String temp = config.get(category, "hex" + ItemDye.dyeColors[i], "#" + Integer.toHexString(ItemDye.dyeColors[i]),
 					Character.toUpperCase(ItemDye.dyeColors[i]) + ItemDye.dyeColors[i] + " color for hex block overlay #RRGGBB").getString();
 			// Or this
-			try {
+			try
+			{
 				configColors[i] = Integer.decode(temp);
-			} catch (NumberFormatException e) {
+			}
+			catch (NumberFormatException e)
+			{
 				Chisel.logger.warn("Configuration error, " + temp + " was not recognized as a color.  Using default: #" + Integer.toHexString(ItemDye.dyeColors[i]));
 				configColors[i] = ItemDye.dyeColors[i];
 			}
 		}
 
-		if (config.hasChanged()) {
+		if (config.hasChanged())
+		{
 			config.save();
 		}
 		return true;
 	}
 
 	@Deprecated
-	public static boolean featureEnabled(String feature) {
+	public static boolean featureEnabled(String feature)
+	{
 		return false;
 	}
 }

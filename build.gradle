@@ -36,7 +36,8 @@ group = "com.cricketcraft.chisel" // http://maven.apache.org/guides/mini/guide-n
 archivesBaseName = dev ? "Chisel2_DEV" : "Chisel2"
 
 minecraft {
-    version = "1.8-11.14.2.1433"
+    version = "${minecraft_version}-${forge_version}"
+    mappings = "${forge_mappings}"
     runDir = "run"
 
     replaceIn "Chisel.java"
@@ -129,7 +130,7 @@ publishing {
     }
 }
 
-println('Changelog:\n' + getChangelogText())
+//println('Changelog:\n' + getChangelogText())
 
 String getChangelogText() {
     def changelogFile = new File('changelog')

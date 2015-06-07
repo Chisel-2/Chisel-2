@@ -3,22 +3,28 @@ package com.cricketcraft.chisel.proxy;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
-public class CommonProxy {
+public class CommonProxy
+{
 
-	public void registerTileEntities() {
+	public void registerTileEntities()
+	{
 	}
 
-	public void preInit() {
+	public void preInit()
+	{
 	}
 
-	public void init() {
+	public void init()
+	{
 	}
 
-	public EntityPlayer getClientPlayer() {
+	public EntityPlayer getClientPlayer()
+	{
 		return null;
 	}
 
-	public World getClientWorld() {
+	public World getClientWorld()
+	{
 		return null;
 	}
 }

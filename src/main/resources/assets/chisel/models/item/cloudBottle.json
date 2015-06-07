@@ -1,7 +1,7 @@
 {
   "parent": "builtin/generated",
   "textures": {
-    "layer0": "chisel:/items/cloudinabottle-x"
+    "layer0": "chisel:items/cloudinabottle-x"
   },
   "display": {
     "thirdperson": {

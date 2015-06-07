@@ -1,30 +1,39 @@
 package com.cricketcraft.chisel.proxy;
 
-import com.cricketcraft.chisel.client.ModelChisel;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderSnowball;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
-public class ClientProxy extends CommonProxy {
+import com.cricketcraft.chisel.client.ModelsChisel;
+import com.cricketcraft.chisel.entity.EntityCloudInABottle;
+import com.cricketcraft.chisel.init.ChiselItems;
 
-	private ModelChisel modelChisel = new ModelChisel();
+public class ClientProxy extends CommonProxy
+{
 
 	@Override
-	public void preInit() {
+	public void preInit()
+	{
 	}
 
 	@Override
-	public void init() {
-		modelChisel.registerModels();
+	public void init()
+	{
+		ModelsChisel.registerModels();
+		RenderingRegistry.registerEntityRenderingHandler(EntityCloudInABottle.class, new RenderSnowball(Minecraft.getMinecraft().getRenderManager(), ChiselItems.cloudInABottle, Minecraft.getMinecraft().getRenderItem()));
 	}
 
 	@Override
-	public EntityPlayer getClientPlayer() {
+	public EntityPlayer getClientPlayer()
+	{
 		return Minecraft.getMinecraft().thePlayer;
 	}
 
 	@Override
-	public World getClientWorld() {
+	public World getClientWorld()
+	{
 		return Minecraft.getMinecraft().theWorld;
 	}
 }
