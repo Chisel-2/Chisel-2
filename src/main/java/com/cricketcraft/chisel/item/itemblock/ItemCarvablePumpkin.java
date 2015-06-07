@@ -8,8 +8,8 @@ import net.minecraft.item.ItemStack;
 public class ItemCarvablePumpkin extends ItemBlock {
 	public ItemCarvablePumpkin(Block block) {
 		super(block);
-		setMaxDamage(0);
-		setHasSubtypes(true);
+		this.setMaxDamage(0);
+		this.setHasSubtypes(true);
 	}
 
 	@Override

@@ -13,8 +13,8 @@ import net.minecraft.util.StatCollector;
 public class ItemBlockCarvable extends ItemBlock {
 	public ItemBlockCarvable(Block block) {
 		super(block);
-		setMaxDamage(0);
-		setHasSubtypes(true);
+		this.setMaxDamage(0);
+		this.setHasSubtypes(true);
 	}
 
 	@Override
