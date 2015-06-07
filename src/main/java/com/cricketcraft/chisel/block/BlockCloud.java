@@ -2,6 +2,8 @@ package com.cricketcraft.chisel.block;
 
 import java.util.List;
 
+import com.cricketcraft.chisel.block.variant.BlockVariants;
+import com.cricketcraft.chisel.init.ChiselProperties;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
@@ -22,17 +24,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
-import com.cricketcraft.chisel.util.PropertyVariant;
 
 public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes {
-	public static final BlockVariant
-			NORMAL = new BlockVariant(0, "cloud_normal"),
-			GRID = new BlockVariant(1, "cloud_grid"),
-			LARGE = new BlockVariant(2, "cloud_large"),
-			SMALL = new BlockVariant(3, "cloud_small"),
-			VERTICAL = new BlockVariant(4, "cloud_vertical");
-
-	public static final PropertyVariant PROPERTY_VARIANT = PropertyVariant.create("variant", NORMAL, GRID, LARGE, SMALL, VERTICAL);
 
 	public BlockCloud() {
 		super(Material.ice);
@@ -41,7 +34,7 @@ public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes {
 		setLightOpacity(3);
 		setStepSound(Block.soundTypeCloth);
 		useNeighborBrightness = true;
-		this.setDefaultState(this.getBlockState().getBaseState().withProperty(PROPERTY_VARIANT, NORMAL));
+		this.setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.CLOUD_VARIANTS, BlockVariants.CLOUD_NORMAL));
 	}
 
 	@Override
@@ -93,28 +86,28 @@ public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
-		for (BlockVariant variant : PROPERTY_VARIANT.getAllowedValues()) {
+		for (BlockVariant variant : ChiselProperties.CLOUD_VARIANTS.getAllowedValues()) {
 			list.add(new ItemStack(itemIn, 1, variant.getMeta()));
 		}
 	}
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
-		return this.getDefaultState().withProperty(PROPERTY_VARIANT, PROPERTY_VARIANT.fromMeta(meta));
+		return this.getDefaultState().withProperty(ChiselProperties.CLOUD_VARIANTS, ChiselProperties.CLOUD_VARIANTS.fromMeta(meta));
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		return ((BlockVariant) state.getValue(PROPERTY_VARIANT)).getMeta();
+		return ((BlockVariant) state.getValue(ChiselProperties.CLOUD_VARIANTS)).getMeta();
 	}
 
 	@Override
 	public String getSubtypeUnlocalizedName(ItemStack stack) {
-		return PROPERTY_VARIANT.fromMeta(stack.getMetadata()).getName();
+		return ChiselProperties.CLOUD_VARIANTS.fromMeta(stack.getMetadata()).getName();
 	}
 
 	@Override
 	protected BlockState createBlockState() {
-		return new BlockState(this, PROPERTY_VARIANT);
+		return new BlockState(this, ChiselProperties.CLOUD_VARIANTS);
 	}
 }

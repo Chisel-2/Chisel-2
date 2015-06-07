@@ -14,10 +14,11 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.block.BlockCloud;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
 import com.cricketcraft.chisel.util.IItemWithVariants;
+
+import static com.cricketcraft.chisel.block.variant.BlockVariants.*;
 
 @SideOnly(Side.CLIENT)
 public class ModelsChisel {
@@ -31,11 +32,11 @@ public class ModelsChisel {
 	}
 
 	private static void registerBlockModels() {
-		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.NORMAL.getMeta(), "cloud_normal");
-		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.GRID.getMeta(), "cloud_grid");
-		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.LARGE.getMeta(), "cloud_large");
-		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.SMALL.getMeta(), "cloud_small");
-		registerBlockModelVariant(ChiselBlocks.cloud, BlockCloud.VERTICAL.getMeta(), "cloud_vertical");
+		registerBlockModelVariant(ChiselBlocks.cloud, CLOUD_NORMAL.getMeta(), "cloud_normal");
+		registerBlockModelVariant(ChiselBlocks.cloud, CLOUD_GRID.getMeta(), "cloud_grid");
+		registerBlockModelVariant(ChiselBlocks.cloud, CLOUD_LARGE.getMeta(), "cloud_large");
+		registerBlockModelVariant(ChiselBlocks.cloud, CLOUD_SMALL.getMeta(), "cloud_small");
+		registerBlockModelVariant(ChiselBlocks.cloud, CLOUD_VERTICAL.getMeta(), "cloud_vertical");
 	}
 
 	private static void registerItemModels() {

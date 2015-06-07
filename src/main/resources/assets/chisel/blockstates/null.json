@@ -1,11 +1,20 @@
 {
   "variants": {
-    "0": { "model": "chisel:blocks/bricks"}
-    "1" : { "model": "chisel:blocks/bricks2"}
-      { "model": "chisel:blocks/bricks3"},
-      { "model": "chisel:blocks/chunky"},
-      { "model": "chisel:blocks/cobble"},
-      { "model": "chisel:blocks/happy"},
-      { "model": "chisel:blocks/horizontal"}
-  }
+    "0": {
+      "model": "chisel:blocks/bricks"
+    }
+    "1": {
+      "model": "chisel:blocks/bricks2"
+    }
+{
+"model": "chisel:blocks/bricks3"},
+{"model": "chisel:blocks/chunky"},
+{
+"model": "chisel:blocks/cobble"
+}
+,
+{
+"model": "chisel:blocks/happy"},
+{"model": "chisel:blocks/horizontal"}
+}
 }

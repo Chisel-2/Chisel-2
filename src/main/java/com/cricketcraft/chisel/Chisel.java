@@ -1,7 +1,12 @@
 package com.cricketcraft.chisel;
 
-import java.io.File;
-
+import com.cricketcraft.chisel.block.BlockCarvable;
+import com.cricketcraft.chisel.config.Configurations;
+import com.cricketcraft.chisel.init.ChiselBlocks;
+import com.cricketcraft.chisel.init.ChiselItems;
+import com.cricketcraft.chisel.init.ChiselRecipes;
+import com.cricketcraft.chisel.init.ChiselTabs;
+import com.cricketcraft.chisel.proxy.CommonProxy;
 import net.minecraft.block.state.IBlockState;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -16,17 +21,10 @@ import net.minecraftforge.fml.common.event.FMLMissingMappingsEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cricketcraft.chisel.block.BlockCarvable;
-import com.cricketcraft.chisel.config.Configurations;
-import com.cricketcraft.chisel.init.ChiselBlocks;
-import com.cricketcraft.chisel.init.ChiselItems;
-import com.cricketcraft.chisel.init.ChiselRecipes;
-import com.cricketcraft.chisel.init.ChiselTabs;
-import com.cricketcraft.chisel.proxy.CommonProxy;
+import java.io.File;
 
 @Mod(modid = Chisel.MOD_ID, name = Chisel.MOD_NAME, version = Chisel.VERSION, guiFactory = "com.cricketcraft.chisel.client.gui.GuiFactory", dependencies = "after:ForgeMultipart;after:Thaumcraft;after:appliedenergistics2;after:Railcraft;after:AWWayofTime;after:TwilightForest")
 public class Chisel {

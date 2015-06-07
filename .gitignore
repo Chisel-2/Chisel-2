@@ -19,6 +19,7 @@ build
 #runtime
 eclipse
 run
+classes
 
 #mac
 .DS_Store

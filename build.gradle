@@ -45,22 +45,22 @@ minecraft {
 }
 
 repositories {
-	maven {
-		name 'Chicken Bones Repo'
-		url "http://chickenbones.net/maven/"
-	}
+    maven {
+        name 'Chicken Bones Repo'
+        url "http://chickenbones.net/maven/"
+    }
 
     maven {
-		name 'Prof Mobius Repo'
-		url "http://mobiusstrip.eu/maven"
-	}
+        name 'Prof Mobius Repo'
+        url "http://mobiusstrip.eu/maven"
+    }
 }
 
 dependencies {
     //compile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}:dev"
-	compile "codechicken:CodeChickenLib:${minecraft_version}-${ccl_version}:dev"
-	compile "codechicken:CodeChickenCore:${minecraft_version}-${ccc_version}:dev"
-	compile "codechicken:NotEnoughItems:${minecraft_version}-${nei_version}:dev"
+    compile "codechicken:CodeChickenLib:${minecraft_version}-${ccl_version}:dev"
+    compile "codechicken:CodeChickenCore:${minecraft_version}-${ccc_version}:dev"
+    compile "codechicken:NotEnoughItems:${minecraft_version}-${nei_version}:dev"
     //compile "codechicken:ForgeMultipart:${minecraft_version}-${fmp_version}:dev"
     //compile "com.pahimar.ee3:EquivalentExchange3:1.7.10-0.3.505:dev"
 }
@@ -95,7 +95,7 @@ task deobfJar(type: Jar) {
 task apiJar(type: Jar) {
     from sourceSets.main.allSource
     from sourceSets.main.output
-	include 'com/cricketcraft/chisel/api/**/*'
+    include 'com/cricketcraft/chisel/api/**/*'
     classifier = 'api'
 }
 
