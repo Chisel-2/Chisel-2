@@ -1,0 +1,208 @@
+{
+  "variants": {
+    "variant=litpumpkin_0,facing=north": {
+      "model": "chisel:litpumpkin_0"
+    },
+    "variant=litpumpkin_0,facing=south": {
+      "model": "chisel:litpumpkin_0", "y": 180
+    },
+    "variant=litpumpkin_0,facing=west": {
+      "model": "chisel:litpumpkin_0", "y": 270
+    },
+    "variant=litpumpkin_0,facing=south": {
+      "model": "chisel:litpumpkin_1", "y": 90
+    },
+    "variant=litpumpkin_1,facing=north": {
+      "model": "chisel:litpumpkin_1"
+    },
+    "variant=litpumpkin_1,facing=south": {
+      "model": "chisel:litpumpkin_1", "y": 180
+    },
+    "variant=litpumpkin_1,facing=west": {
+      "model": "chisel:litpumpkin_1", "y": 270
+    },
+    "variant=litpumpkin_1,facing=south": {
+      "model": "chisel:litpumpkin_1", "y": 90
+    },
+    "variant=litpumpkin_2,facing=north": {
+      "model": "chisel:litpumpkin_2"
+    },
+    "variant=litpumpkin_2,facing=south": {
+      "model": "chisel:litpumpkin_2", "y": 180
+    },
+    "variant=litpumpkin_2,facing=west": {
+      "model": "chisel:litpumpkin_2", "y": 270
+    },
+    "variant=litpumpkin_2,facing=south": {
+      "model": "chisel:litpumpkin_2", "y": 90
+    },
+    "variant=litpumpkin_3,facing=north": {
+      "model": "chisel:litpumpkin_3"
+    },
+    "variant=litpumpkin_3,facing=south": {
+      "model": "chisel:litpumpkin_3", "y": 180
+    },
+    "variant=litpumpkin_3,facing=west": {
+      "model": "chisel:litpumpkin_3", "y": 270
+    },
+    "variant=litpumpkin_3,facing=south": {
+      "model": "chisel:litpumpkin_3", "y": 90
+    },
+    "variant=litpumpkin_4,facing=north": {
+      "model": "chisel:litpumpkin_4"
+    },
+    "variant=litpumpkin_4,facing=south": {
+      "model": "chisel:litpumpkin_4", "y": 180
+    },
+    "variant=litpumpkin_4,facing=west": {
+      "model": "chisel:litpumpkin_4", "y": 270
+    },
+    "variant=litpumpkin_4,facing=south": {
+      "model": "chisel:litpumpkin_4", "y": 90
+    },
+    "variant=litpumpkin_5,facing=north": {
+      "model": "chisel:litpumpkin_5"
+    },
+    "variant=litpumpkin_5,facing=south": {
+      "model": "chisel:litpumpkin_5", "y": 180
+    },
+    "variant=litpumpkin_5,facing=west": {
+      "model": "chisel:litpumpkin_5", "y": 270
+    },
+    "variant=litpumpkin_5,facing=south": {
+      "model": "chisel:litpumpkin_5", "y": 90
+    },
+    "variant=litpumpkin_6,facing=north": {
+      "model": "chisel:litpumpkin_6"
+    },
+    "variant=litpumpkin_6,facing=south": {
+      "model": "chisel:litpumpkin_6", "y": 180
+    },
+    "variant=litpumpkin_6,facing=west": {
+      "model": "chisel:litpumpkin_6", "y": 270
+    },
+    "variant=litpumpkin_6,facing=south": {
+      "model": "chisel:litpumpkin_6", "y": 90
+    },
+    "variant=litpumpkin_7,facing=north": {
+      "model": "chisel:litpumpkin_7"
+    },
+    "variant=litpumpkin_7,facing=south": {
+      "model": "chisel:litpumpkin_7", "y": 180
+    },
+    "variant=litpumpkin_7,facing=west": {
+      "model": "chisel:litpumpkin_7", "y": 270
+    },
+    "variant=litpumpkin_7,facing=south": {
+      "model": "chisel:litpumpkin_7", "y": 90
+    },
+    "variant=litpumpkin_8,facing=north": {
+      "model": "chisel:litpumpkin_8"
+    },
+    "variant=litpumpkin_8,facing=south": {
+      "model": "chisel:litpumpkin_8", "y": 180
+    },
+    "variant=litpumpkin_8,facing=west": {
+      "model": "chisel:litpumpkin_8", "y": 270
+    },
+    "variant=litpumpkin_8,facing=south": {
+      "model": "chisel:litpumpkin_8", "y": 90
+    },
+    "variant=litpumpkin_9,facing=north": {
+      "model": "chisel:litpumpkin_9"
+    },
+    "variant=litpumpkin_9,facing=south": {
+      "model": "chisel:litpumpkin_9", "y": 180
+    },
+    "variant=litpumpkin_9,facing=west": {
+      "model": "chisel:litpumpkin_9", "y": 270
+    },
+    "variant=litpumpkin_9,facing=south": {
+      "model": "chisel:litpumpkin_9", "y": 90
+    },
+    "variant=litpumpkin_10,facing=north": {
+      "model": "chisel:litpumpkin_10"
+    },
+    "variant=litpumpkin_10,facing=south": {
+      "model": "chisel:litpumpkin_10", "y": 180
+    },
+    "variant=litpumpkin_10,facing=west": {
+      "model": "chisel:litpumpkin_10", "y": 270
+    },
+    "variant=litpumpkin_10,facing=south": {
+      "model": "chisel:litpumpkin_10", "y": 90
+    },
+    "variant=litpumpkin_11,facing=north": {
+      "model": "chisel:litpumpkin_11"
+    },
+    "variant=litpumpkin_11,facing=south": {
+      "model": "chisel:litpumpkin_11", "y": 180
+    },
+    "variant=litpumpkin_11,facing=west": {
+      "model": "chisel:litpumpkin_11", "y": 270
+    },
+    "variant=litpumpkin_11,facing=south": {
+      "model": "chisel:litpumpkin_11", "y": 90
+    },
+    "variant=litpumpkin_12,facing=north": {
+      "model": "chisel:litpumpkin_12"
+    },
+    "variant=litpumpkin_12,facing=south": {
+      "model": "chisel:litpumpkin_12", "y": 180
+    },
+    "variant=litpumpkin_12,facing=west": {
+      "model": "chisel:litpumpkin_12", "y": 270
+    },
+    "variant=litpumpkin_12,facing=south": {
+      "model": "chisel:litpumpkin_12", "y": 90
+    },
+    "variant=litpumpkin_13,facing=north": {
+      "model": "chisel:litpumpkin_13"
+    },
+    "variant=litpumpkin_13,facing=south": {
+      "model": "chisel:litpumpkin_13", "y": 180
+    },
+    "variant=litpumpkin_13,facing=west": {
+      "model": "chisel:litpumpkin_13", "y": 270
+    },
+    "variant=litpumpkin_13,facing=south": {
+      "model": "chisel:litpumpkin_13", "y": 90
+    },
+    "variant=litpumpkin_14,facing=north": {
+      "model": "chisel:litpumpkin_14"
+    },
+    "variant=litpumpkin_14,facing=south": {
+      "model": "chisel:litpumpkin_14", "y": 180
+    },
+    "variant=litpumpkin_14,facing=west": {
+      "model": "chisel:litpumpkin_14", "y": 270
+    },
+    "variant=litpumpkin_14,facing=south": {
+      "model": "chisel:litpumpkin_14", "y": 90
+    },
+    "variant=litpumpkin_15,facing=north": {
+      "model": "chisel:litpumpkin_15"
+    },
+    "variant=litpumpkin_15,facing=south": {
+      "model": "chisel:litpumpkin_15", "y": 180
+    },
+    "variant=litpumpkin_15,facing=west": {
+      "model": "chisel:litpumpkin_15", "y": 270
+    },
+    "variant=litpumpkin_15,facing=south": {
+      "model": "chisel:litpumpkin_15", "y": 90
+    },
+    "variant=litpumpkin_16,facing=north": {
+      "model": "chisel:litpumpkin_16"
+    },
+    "variant=litpumpkin_16,facing=south": {
+      "model": "chisel:litpumpkin_16", "y": 180
+    },
+    "variant=litpumpkin_16,facing=west": {
+      "model": "chisel:litpumpkin_1", "y": 270
+    },
+    "variant=litpumpkin_16,facing=south": {
+      "model": "chisel:litpumpkin_16", "y": 90
+    }
+  }
+}

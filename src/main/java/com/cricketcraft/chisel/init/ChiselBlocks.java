@@ -1,15 +1,12 @@
 package com.cricketcraft.chisel.init;
 
-import com.cricketcraft.chisel.block.BlockLimestone;
-import com.cricketcraft.chisel.block.BlockMarble;
+import com.cricketcraft.chisel.block.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.block.BlockCarvablePumpkin;
-import com.cricketcraft.chisel.block.BlockCloud;
 import com.cricketcraft.chisel.item.itemblock.ItemBlockCarvable;
 import com.cricketcraft.chisel.item.itemblock.ItemCarvablePumpkin;
 
@@ -129,8 +126,8 @@ public final class ChiselBlocks {
 
 	public static void preInit() {
 		cloud = registerBlock("cloud", ItemBlockCarvable.class, new BlockCloud());
-		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(false));
-		jackolantern = registerBlock("litpumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin(true));
+		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin());
+		jackolantern = registerBlock("litpumpkin", ItemCarvablePumpkin.class, new BlockJackolantern());
 		marble = registerBlock("marble", ItemBlockCarvable.class, new BlockMarble());
 		limestone = registerBlock("limestone", ItemBlockCarvable.class, new BlockLimestone());
 	}
