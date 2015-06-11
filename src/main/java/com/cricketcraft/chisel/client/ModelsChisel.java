@@ -1,5 +1,6 @@
 package com.cricketcraft.chisel.client;
 
+import static com.cricketcraft.chisel.block.variant.BlockVariants.*;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelBakery;
@@ -13,8 +14,6 @@ import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
 import com.cricketcraft.chisel.util.IItemWithVariants;
-
-import static com.cricketcraft.chisel.block.variant.BlockVariants.*;
 
 @SideOnly(Side.CLIENT)
 public class ModelsChisel {

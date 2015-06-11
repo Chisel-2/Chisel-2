@@ -1,47 +1,48 @@
 package com.cricketcraft.chisel.client.gui;
 
-import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.api.IChiselItem;
-import com.cricketcraft.chisel.inventory.InventoryChiselSelection;
-import com.cricketcraft.chisel.inventory.slot.SlotChiselInput;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-
-import com.cricketcraft.chisel.inventory.ContainerChisel;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
+
 import org.lwjgl.opengl.GL11;
 
+import com.cricketcraft.chisel.api.IChiselItem;
+import com.cricketcraft.chisel.client.GeneralChiselClient;
+import com.cricketcraft.chisel.inventory.ContainerChisel;
+import com.cricketcraft.chisel.inventory.InventoryChiselSelection;
+import com.cricketcraft.chisel.inventory.slot.SlotChiselInput;
+
 public class GuiChisel extends GuiContainer {
+
 	public EntityPlayer player;
 
-	public ContainerChisel chisel;
+	public ContainerChisel container;
 
-	public GuiChisel(InventoryPlayer inventoryPlayer, InventoryChiselSelection selection) {
-		super(new ContainerChisel(inventoryPlayer, selection));
-		player = inventoryPlayer.player;
+	public GuiChisel(InventoryPlayer iinventory, InventoryChiselSelection menu) {
+		super(new ContainerChisel(iinventory, menu));
+		player = iinventory.player;
 		xSize = 252;
 		ySize = 202;
 
-		chisel = (ContainerChisel)inventorySlots;
+		container = (ContainerChisel) inventorySlots;
 	}
 
 	@Override
-	public void onGuiClosed(){
+	public void onGuiClosed() {
 		super.onGuiClosed();
 		inventorySlots.onContainerClosed(player);
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public void initGui(){
+	public void initGui() {
 		super.initGui();
 
-		if(showMode()){
+		if (showMode()) {
 			int x = this.width / 2 - 120;
 			int y = this.height / 2 - 6;
 			buttonList.add(new GuiButton(0, x, y, 53, 20, ""));
@@ -50,7 +51,7 @@ public class GuiChisel extends GuiContainer {
 	}
 
 	@Override
-	public void updateScreen(){
+	public void updateScreen() {
 		super.updateScreen();
 		ItemStack held = player.getCurrentEquippedItem();
 		if (held == null || !(held.getItem() instanceof IChiselItem)) {
@@ -58,20 +59,54 @@ public class GuiChisel extends GuiContainer {
 		}
 	}
 
-	private void setButtonText(){
-		((GuiButton)buttonList.get(0)).displayString = I18n.format(chisel.inventory.getCommandSenderName()+ ".mode.");// + currentMode.name().toLowerCase();
+	private void setButtonText() {
+		((GuiButton) buttonList.get(0)).displayString = I18n.format(container.inventory.getCommandSenderName() + ".mode.");//+ currentMode.name().toLowerCase());
 	}
 
-	private boolean showMode(){
-		if(chisel.chisel != null && chisel.chisel.getItem() instanceof IChiselItem){
-			return ((IChiselItem)chisel.chisel.getItem()).hasModes(chisel.chisel);
+	private boolean showMode() {
+		if (container.chisel != null && container.chisel.getItem() instanceof IChiselItem) {
+			return ((IChiselItem) container.chisel.getItem()).hasModes(container.chisel);
 		}
 		return false;
 	}
 
 	@Override
-	protected void actionPerformed(GuiButton button) {
+	protected void drawGuiContainerForegroundLayer(int j, int i) {
+		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 
+		String line = I18n.format(this.container.inventory.getCommandSenderName() + ".title");
+		fontRendererObj.drawSplitString(line, 50 - fontRendererObj.getStringWidth(line) / 2, 60, 40, 0x404040);
+
+		if (showMode()) {
+			line = I18n.format(this.container.inventory.getCommandSenderName() + ".mode");
+			fontRendererObj.drawString(line, fontRendererObj.getStringWidth(line) / 2 + 6, 85, 0x404040);
+		}
+	}
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float f, int mx, int my) {
+		drawDefaultBackground();
+		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+
+		int i = width - xSize >> 1;
+		int j = height - ySize >> 1;
+
+		String texture = "chisel:textures/chisel2Gui.png";
+
+		GeneralChiselClient.bind(texture);
+		drawTexturedModalRect(i, j, 0, 0, xSize, ySize);
+
+		int x = (width - xSize) / 2;
+		int y = (height - ySize) / 2;
+
+		Slot main = (Slot) container.inventorySlots.get(InventoryChiselSelection.normalSlots);
+		if (main.getStack() == null) {
+			//GuiAutoChisel.drawSlotOverlay(this, x + 14, y + 14, main, 0, ySize, 60);
+		}
+	}
+
+	@Override
+	protected void actionPerformed(GuiButton button) {
 	}
 
 	@Override
@@ -85,38 +120,9 @@ public class GuiChisel extends GuiContainer {
 			slot.xDisplayPosition += 16;
 			slot.yDisplayPosition += 16;
 			GL11.glPopMatrix();
-		} else {
+		}
+		else {
 			super.drawSlot(slot);
-		}
-	}
-
-	@Override
-	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
-		drawDefaultBackground();
-		int x = xSize >> 1;
-		int y = ySize >> 1;
-
-		this.mc.renderEngine.bindTexture(new ResourceLocation(Chisel.MOD_ID, "textures/chisel2Gui.png"));
-		drawTexturedModalRect(x, y, 0, 0, xSize, ySize);
-
-		int x1 = (width - xSize) / 2;
-		int y1 = (height - ySize) / 2;
-
-		Slot main = (Slot)chisel.inventorySlots.get(InventoryChiselSelection.normalSlots);
-		if(main.getStack() == null){
-			//TODO: Will draw an overlay later on
-		}
-	}
-
-	@Override
-	protected void drawGuiContainerForegroundLayer(int x, int y){
-		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-		String line = I18n.format(chisel.inventory.getCommandSenderName() + ".title");
-		fontRendererObj.drawSplitString(line, 50 - fontRendererObj.getStringWidth(line) / 2, 60, 40, 0x404040);
-
-		if(showMode()){
-			line = I18n.format(chisel.inventory.getCommandSenderName() + ".mode");
-			fontRendererObj.drawString(line, fontRendererObj.getStringWidth(line) / 2 + 6, 85, 0x404040);
 		}
 	}
 }
