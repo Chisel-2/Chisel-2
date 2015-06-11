@@ -1,47 +1,6 @@
 All of these need JSONS Assign your name to a group if you plan on doing it
 ---------------------------------------------------------------------------
 
-
-Bricks:
-Large, Mortarless, Varied, Aged, Yellow
-
-Cobblestone:
-Aligned Bricks, Detailed Bricks, Small Bricks, Large Tiles, Small Tiles, French Tiles,
-French Tiles 2, Creeper Tiles, Damaged Tiles, Huge Tiles, Creeper Panel, Dent, Panel, Light Panel, Dark Panel
-
-Mossy Cobblestone:
-Aligned Bricks, Detailed Bricks, Small Bricks, Large Tiles, Small Tiles, French Tiles,
-French Tiles 2, Creeper Tiles, Damaged Tiles, Huge Tiles, Creeper Panel, Dent, Panel, Light Panel, Dark Panel
-
-Concrete:
-Raw, Block, Double Slab, Small Blocks, Weathered Raw, Weathered Block, Weathered Double Slab
-Partly Raw, Partly Block, Asphalt
-
-Diorite:
-Polished, Pillar, Bricks, Ornate, Prismatic, Small Tiles
-
-Andesite:
-Polished, Pillar, Bricks, Ornate, Prismatic, Small Tiles
-
-Purpled Fantasy:
-Brick, Faded Brick, Worn Brick, Damaged Brick, Decoration, Decoration Block, Pillar, Decoration Pillar, Gold Snake Decoration,
-Gold Noise Decoration, Gold Engravings Decoration, Gold Chainz Decoration, Decoration plate, Block, Disarray Bricks, Worn Disarray Bricks
-
-Fantasy Brick:
-Brick, Faded Brick, Worn Brick, Damaged Brick, Decoration, Decoration Block, Pillar, Decoration Pillar, Gold Snake Decoration,
-Gold Noise Decoration, Gold Engravings Decoration, Gold Chainz Decoration, Decoration plate, Block, Disarray Bricks, Worn Disarray Bricks
-
-Granite:
-Polished, Pillar, Bricks, Ornate, Prismatic, Small Tiles
-
-Grimstone:
-Raw, Smooth, Mysterious Symbol, Chiseled, Blocks, Rough Blocks, Bricks, Large Bricks, Platform, Platform Tiles, Fancy Construction, Fancy Tiles,
-Smooth Plate, Plate, Flaky
-
-Holystone:
-Raw, Smooth, Mysterious Symbol, Chiseled, Blocks, Rough Blocks, Bricks, Large Bricks, Platform, Platform Tiles, Fancy Construction, Fancy Tiles,
-Smooth Plate, Plate
-
 Lavastone:
 Raw, Black, Tiles, Chaotic Bricks, Creeper Tiles, Panel, Ornate Panel, Dark
 
