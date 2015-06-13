@@ -18,6 +18,15 @@ import com.cricketcraft.chisel.util.IItemWithVariants;
 @SideOnly(Side.CLIENT)
 public class ModelsChisel {
 	public static void prepareModels() {
+		addVariantNames(ChiselBlocks.acacia, ACACIA_PLANKS_SMOOTH.getName(), ACACIA_PLANKS_SHORT.getName(), ACACIA_PLANKS_FANCY.getName(), ACACIA_PLANKS_PANEL.getName(), ACACIA_PLANKS_DOUBLE_SLAB.getName(), ACACIA_PLANKS_CRATE.getName(), ACACIA_PLANKS_CRATE_FANCY.getName(), ACACIA_PLANKS_LONG.getName(), ACACIA_PLANKS_VERTICAL.getName(), ACACIA_PLANKS_VERTICAL_UNEVEN.getName(), ACACIA_PLANKS_PARQUET.getName(), ACACIA_PLANKS_BLINDS.getName(), ACACIA_PLANKS_SCAFFOLD.getName(), ACACIA_PLANKS_DISARRAY.getName(), ACACIA_PLANKS_DISARRAY_VERTICAL.getName());
+		addVariantNames(ChiselBlocks.aluminum, ALUMINUM_CAUTION.getName(), ALUMINUM_SHIPPING.getName(), ALUMINUM_THERMAL.getName(), ALUMINUM_125.getName(), ALUMINUM_BORDERED.getName(), ALUMINUM_BOLTED.getName());
+		addVariantNames(ChiselBlocks.andesite, ANDESITE_PILLAR.getName(), ANDESITE_BRICKS.getName(), ANDESITE_ORNATE.getName(), ANDESITE_PRISMATIC.getName(), ANDESITE_TILES_SMALL.getName());
+		addVariantNames(ChiselBlocks.antiblock, ANTIBLOCK_0.getName(), ANTIBLOCK_1.getName(), ANTIBLOCK_2.getName(), ANTIBLOCK_3.getName(), ANTIBLOCK_4.getName(), ANTIBLOCK_5.getName(), ANTIBLOCK_6.getName(), ANTIBLOCK_7.getName(), ANTIBLOCK_8.getName(), ANTIBLOCK_9.getName(), ANTIBLOCK_10.getName(), ANTIBLOCK_11.getName(), ANTIBLOCK_12.getName(), ANTIBLOCK_13.getName(), ANTIBLOCK_14.getName(), ANTIBLOCK_15.getName());
+		addVariantNames(ChiselBlocks.birch, BIRCH_PLANKS_SMOOTH.getName(), BIRCH_PLANKS_SHORT.getName(), BIRCH_PLANKS_FANCY.getName(), BIRCH_PLANKS_PANEL.getName(), BIRCH_PLANKS_DOUBLE_SLAB.getName(), BIRCH_PLANKS_CRATE.getName(), BIRCH_PLANKS_CRATE_FANCY.getName(), BIRCH_PLANKS_LONG.getName(), BIRCH_PLANKS_VERTICAL.getName(), BIRCH_PLANKS_VERTICAL_UNEVEN.getName(), BIRCH_PLANKS_PARQUET.getName(), BIRCH_PLANKS_BLINDS.getName(), BIRCH_PLANKS_SCAFFOLD.getName(), BIRCH_PLANKS_DISARRAY.getName(), BIRCH_PLANKS_DISARRAY_VERTICAL.getName());
+		addVariantNames(ChiselBlocks.bookshelf, BOOKSHELF_RAINBOW.getName(), BOOKSHELF_NECROMANCER_APPRENTICE.getName(), BOOKSHELF_NECROMANCER.getName(), BOOKSHELF_TOMES.getName(), BOOKSHELF_ABANDONED.getName(), BOOKSHELF_HOARDERS.getName(), BOOKSHELF_PASTEL.getName(), BOOKSHELF_HISTORIAN.getName());
+		addVariantNames(ChiselBlocks.bricks, BRICKS_LARGE.getName(), BRICKS_MORTARLESS.getName(), BRICKS_VARIED.getName(), BRICKS_AGED.getName(), BRICKS_YELLOW.getName());
+		addVariantNames(ChiselBlocks.bronze, BRONZE_CAUTION.getName(), BRONZE_SHIPPING.getName(), BRONZE_THERMAL.getName(), BRONZE_125.getName(), BRONZE_BORDERED.getName(), BRONZE_BOLTED.getName());
+
 		addVariantNames(ChiselBlocks.cloud, CLOUD_NORMAL.getName(), CLOUD_GRID.getName(), CLOUD_LARGE.getName(), CLOUD_SMALL.getName(), CLOUD_VERTICAL.getName());
 		addVariantNames(ChiselBlocks.marble, MARBLE_RAW.getName(), MARBLE_BRICK.getName(), MARBLE_PANEL_CLASSIC.getName(), MARBLE_PANEL_ORNATE.getName(), MARBLE_PANEL.getName(), MARBLE_BLOCK.getName(), MARBLE_CREEPER_DARK.getName(), MARBLE_CREEPER_LIGHT.getName(), MARBLE_CARVED.getName(), MARBLE_CARVED_RADIAL.getName(), MARBLE_DENT.getName(), MARBLE_DENT_LARGE.getName(), MARBLE_TILES.getName(), MARBLE_TILES_ARRANGED.getName(), MARBLE_TILES_FANCY.getName(), MARBLE_BLOCKS.getName());
 		addVariantNames(ChiselBlocks.limestone, LIMESTONE_RAW.getName(), LIMESTONE_TILES.getName(), LIMESTONE_TILES_FRENCH.getName(), LIMESTONE_TILES_FRENCH_LIGHT.getName(), LIMESTONE_TILES_CREEPER.getName(), LIMESTONE_TILES_LARGE.getName(), LIMESTONE_BRICKS.getName(), LIMESTONE_SMOOTH.getName(), LIMESTONE_PANEL_ORNATE.getName(), LIMESTONE_PANEL_ENGRAVED.getName(), LIMESTONE_PANEL_CREEPER.getName(), LIMESTONE_PANEL_LIGHT.getName(), LIMESTONE_PANEL_DARK.getName(), LIMESTONE_PANEL.getName(), LIMESTONE_DENT.getName());
@@ -28,6 +37,30 @@ public class ModelsChisel {
 	}
 
 	public static void registerModels() {
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_SMOOTH.getMeta(), getResource(ACACIA_PLANKS_SMOOTH.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_SHORT.getMeta(), getResource(ACACIA_PLANKS_SHORT.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_FANCY.getMeta(), getResource(ACACIA_PLANKS_FANCY.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_PANEL.getMeta(), getResource(ACACIA_PLANKS_PANEL.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_DOUBLE_SLAB.getMeta(), getResource(ACACIA_PLANKS_DOUBLE_SLAB.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_CRATE.getMeta(), getResource(ACACIA_PLANKS_CRATE.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_CRATE_FANCY.getMeta(), getResource(ACACIA_PLANKS_CRATE_FANCY.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_LONG.getMeta(), getResource(ACACIA_PLANKS_LONG.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_VERTICAL.getMeta(), getResource(ACACIA_PLANKS_VERTICAL.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_VERTICAL_UNEVEN.getMeta(), getResource(ACACIA_PLANKS_VERTICAL_UNEVEN.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_PARQUET.getMeta(), getResource(ACACIA_PLANKS_PARQUET.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_BLINDS.getMeta(), getResource(ACACIA_PLANKS_BLINDS.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_SCAFFOLD.getMeta(), getResource(ACACIA_PLANKS_SCAFFOLD.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_DISARRAY.getMeta(), getResource(ACACIA_PLANKS_DISARRAY.getName()));
+		registerBlockModel(ChiselBlocks.acacia, ACACIA_PLANKS_DISARRAY_VERTICAL.getMeta(), getResource(ACACIA_PLANKS_DISARRAY_VERTICAL.getName()));
+
+		registerBlockModel(ChiselBlocks.aluminum, ALUMINUM_CAUTION.getMeta(), getResource(ALUMINUM_CAUTION.getName()));
+		registerBlockModel(ChiselBlocks.aluminum, ALUMINUM_SHIPPING.getMeta(), getResource(ALUMINUM_SHIPPING.getName()));
+		registerBlockModel(ChiselBlocks.aluminum, ALUMINUM_THERMAL.getMeta(), getResource(ALUMINUM_THERMAL.getName()));
+		registerBlockModel(ChiselBlocks.aluminum, ALUMINUM_125.getMeta(), getResource(ALUMINUM_125.getName()));
+		registerBlockModel(ChiselBlocks.aluminum, ALUMINUM_BORDERED.getMeta(), getResource(ALUMINUM_BORDERED.getName()));
+		registerBlockModel(ChiselBlocks.aluminum, ALUMINUM_BOLTED.getMeta(), getResource(ALUMINUM_BOLTED.getName()));
+
+
 		registerBlockModel(ChiselBlocks.cloud, CLOUD_NORMAL.getMeta(), getResource(CLOUD_NORMAL.getName()));
 		registerBlockModel(ChiselBlocks.cloud, CLOUD_GRID.getMeta(), getResource(CLOUD_GRID.getName()));
 		registerBlockModel(ChiselBlocks.cloud, CLOUD_LARGE.getMeta(), getResource(CLOUD_LARGE.getName()));

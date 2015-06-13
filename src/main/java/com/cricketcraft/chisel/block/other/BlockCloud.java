@@ -1,7 +1,8 @@
-package com.cricketcraft.chisel.block;
+package com.cricketcraft.chisel.block.other;
 
 import java.util.List;
 
+import com.cricketcraft.chisel.block.BlockCarvable;
 import com.cricketcraft.chisel.block.variant.BlockVariants;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import net.minecraft.block.Block;
