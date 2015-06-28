@@ -29,36 +29,36 @@ public class BlockJackolantern extends BlockDirectional implements IBlockWithSub
 		this.setStepSound(Block.soundTypeWood);
 		setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
 		setLightLevel(10.0F);
-		this.setDefaultState(this.getBlockState().getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(ChiselProperties.JACKOLANTERN_VARIANTS, BlockVariants.LITPUMPKIN_0));
+		this.setDefaultState(this.getBlockState().getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(ChiselProperties.LITPUMPKIN_VARIANTS, BlockVariants.LITPUMPKIN_0));
 	}
 
 	@Override
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
-		for (BlockVariant variant : ChiselProperties.JACKOLANTERN_VARIANTS.getAllowedValues()) {
+		for (BlockVariant variant : ChiselProperties.LITPUMPKIN_VARIANTS.getAllowedValues()) {
 			list.add(new ItemStack(itemIn, 1, variant.getMeta()));
 		}
 	}
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
-		return this.getDefaultState().withProperty(ChiselProperties.JACKOLANTERN_VARIANTS, ChiselProperties.JACKOLANTERN_VARIANTS.fromMeta(meta));
+		return this.getDefaultState().withProperty(ChiselProperties.LITPUMPKIN_VARIANTS, ChiselProperties.LITPUMPKIN_VARIANTS.fromMeta(meta));
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		return ((BlockVariant) state.getValue(ChiselProperties.JACKOLANTERN_VARIANTS)).getMeta() + ((EnumFacing) state.getValue(FACING)).getIndex();
+		return ((BlockVariant) state.getValue(ChiselProperties.LITPUMPKIN_VARIANTS)).getMeta() + ((EnumFacing) state.getValue(FACING)).getIndex();
 	}
 
 	@Override
 	public int damageDropped(IBlockState state) {
-		return ((BlockVariant) state.getValue(ChiselProperties.JACKOLANTERN_VARIANTS)).getMeta();
+		return ((BlockVariant) state.getValue(ChiselProperties.LITPUMPKIN_VARIANTS)).getMeta();
 	}
 
 	@Override
 	protected BlockState createBlockState() {
-		return new BlockState(this, ChiselProperties.JACKOLANTERN_VARIANTS, FACING);
+		return new BlockState(this, ChiselProperties.LITPUMPKIN_VARIANTS, FACING);
 	}
 
 	@Override
@@ -68,11 +68,11 @@ public class BlockJackolantern extends BlockDirectional implements IBlockWithSub
 
 	@Override
 	protected ItemStack createStackedBlock(IBlockState state) {
-		return new ItemStack(this, 1, ((BlockVariant) state.getValue(ChiselProperties.JACKOLANTERN_VARIANTS)).getMeta());
+		return new ItemStack(this, 1, ((BlockVariant) state.getValue(ChiselProperties.LITPUMPKIN_VARIANTS)).getMeta());
 	}
 
 	@Override
 	public String getSubtypeUnlocalizedName(ItemStack stack) {
-		return ChiselProperties.JACKOLANTERN_VARIANTS.fromMeta(stack.getMetadata()).getName();
+		return ChiselProperties.LITPUMPKIN_VARIANTS.fromMeta(stack.getMetadata()).getName();
 	}
 }
