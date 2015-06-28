@@ -2,6 +2,7 @@ package com.cricketcraft.chisel.block.stone;
 
 import com.cricketcraft.chisel.block.BlockCarvable;
 import com.cricketcraft.chisel.init.ChiselProperties;
+import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
 import net.minecraft.block.state.BlockState;
@@ -18,6 +19,7 @@ public class BlockAndesite extends BlockCarvable implements IBlockWithSubtypes{
 
 	public BlockAndesite(){
 		super();
+		setCreativeTab(ChiselTabs.tabStoneChiselBlocks);
 		setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.ANDESITE_VARIANTS, ChiselProperties.ANDESITE_VARIANTS.fromMeta(0)));
 	}
 
