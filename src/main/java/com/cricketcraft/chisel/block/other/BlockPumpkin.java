@@ -24,9 +24,9 @@ import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
 
-public class BlockCarvablePumpkin extends BlockDirectional implements IBlockWithSubtypes {
+public class BlockPumpkin extends BlockDirectional implements IBlockWithSubtypes {
 
-	public BlockCarvablePumpkin() {
+	public BlockPumpkin() {
 		super(Material.gourd);
 		this.setTickRandomly(true);
 		this.setStepSound(Block.soundTypeWood);

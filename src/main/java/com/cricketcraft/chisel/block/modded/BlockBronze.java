@@ -1,5 +1,6 @@
-package com.cricketcraft.chisel.block.metal;
+package com.cricketcraft.chisel.block.modded;
 
+import com.cricketcraft.chisel.block.metal.BlockCarvableMetal;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
@@ -13,39 +14,39 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockAluminum extends BlockCarvableMetal implements IBlockWithSubtypes{
+public class BlockBronze extends BlockCarvableMetal implements IBlockWithSubtypes {
 
-	public BlockAluminum(){
+	public BlockBronze(){
 		super();
-		setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.ALUMINUM_VARIANTS, ChiselProperties.ALUMINUM_VARIANTS.fromMeta(0)));
+		setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.BRONZE_VARIANTS, ChiselProperties.BRONZE_VARIANTS.fromMeta(0)));
 	}
 
 	@Override
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
-		for (BlockVariant variant : ChiselProperties.ALUMINUM_VARIANTS.getAllowedValues()) {
+		for (BlockVariant variant : ChiselProperties.BRONZE_VARIANTS.getAllowedValues()) {
 			list.add(new ItemStack(itemIn, 1, variant.getMeta()));
 		}
 	}
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
-		return this.getDefaultState().withProperty(ChiselProperties.ALUMINUM_VARIANTS, ChiselProperties.ALUMINUM_VARIANTS.fromMeta(meta));
+		return this.getDefaultState().withProperty(ChiselProperties.BRONZE_VARIANTS, ChiselProperties.BRONZE_VARIANTS.fromMeta(meta));
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		return ((BlockVariant) state.getValue(ChiselProperties.ALUMINUM_VARIANTS)).getMeta();
+		return ((BlockVariant) state.getValue(ChiselProperties.BRONZE_VARIANTS)).getMeta();
 	}
 
 	@Override
 	public String getSubtypeUnlocalizedName(ItemStack stack) {
-		return ChiselProperties.ALUMINUM_VARIANTS.fromMeta(stack.getMetadata()).getName();
+		return ChiselProperties.BRONZE_VARIANTS.fromMeta(stack.getMetadata()).getName();
 	}
 
 	@Override
 	protected BlockState createBlockState() {
-		return new BlockState(this, ChiselProperties.ALUMINUM_VARIANTS);
+		return new BlockState(this, ChiselProperties.BRONZE_VARIANTS);
 	}
 }

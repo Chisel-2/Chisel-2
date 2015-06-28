@@ -1,6 +1,7 @@
 package com.cricketcraft.chisel.init;
 
-import com.cricketcraft.chisel.block.metal.*;
+import com.cricketcraft.chisel.block.modded.BlockAluminum;
+import com.cricketcraft.chisel.block.modded.BlockBronze;
 import com.cricketcraft.chisel.block.other.*;
 import com.cricketcraft.chisel.block.stone.*;
 import com.cricketcraft.chisel.block.wood.*;
@@ -56,7 +57,7 @@ public final class ChiselBlocks {
 		bookshelf = registerBlock("bookshelf", ItemBlockCarvable.class, new BlockBookshelf());
 
 		cloud = registerBlock("cloud", ItemBlockCarvable.class, new BlockCloud());
-		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockCarvablePumpkin());
+		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockPumpkin());
 		jackolantern = registerBlock("litpumpkin", ItemCarvablePumpkin.class, new BlockJackolantern());
 		marble = registerBlock("marble", ItemBlockCarvable.class, new BlockMarble());
 		limestone = registerBlock("limestone", ItemBlockCarvable.class, new BlockLimestone());
