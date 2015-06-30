@@ -26,12 +26,26 @@ public class ModelsChisel {
 		addVariantNames(ChiselBlocks.bookshelf, BOOKSHELF_RAINBOW.getName(), BOOKSHELF_NECROMANCER_APPRENTICE.getName(), BOOKSHELF_NECROMANCER.getName(), BOOKSHELF_TOMES.getName(), BOOKSHELF_ABANDONED.getName(), BOOKSHELF_HOARDERS.getName(), BOOKSHELF_PASTEL.getName(), BOOKSHELF_HISTORIAN.getName());
 		addVariantNames(ChiselBlocks.bricks, BRICKS_LARGE.getName(), BRICKS_MORTARLESS.getName(), BRICKS_VARIED.getName(), BRICKS_AGED.getName(), BRICKS_YELLOW.getName());
 		addVariantNames(ChiselBlocks.bronze, BRONZE_CAUTION.getName(), BRONZE_SHIPPING.getName(), BRONZE_THERMAL.getName(), BRONZE_125.getName(), BRONZE_BORDERED.getName(), BRONZE_BOLTED.getName());
-
+		addVariantNames(ChiselBlocks.carpet, CARPET_0.getName(), CARPET_1.getName(), CARPET_2.getName(), CARPET_3.getName(), CARPET_4.getName(), CARPET_5.getName(), CARPET_6.getName(), CARPET_7.getName(), CARPET_8.getName(), CARPET_9.getName(), CARPET_9.getName(), CARPET_10.getName(), CARPET_11.getName(), CARPET_12.getName(), CARPET_13.getName(), CARPET_14.getName(), CARPET_15.getName());
+		addVariantNames(ChiselBlocks.carpet_floor, CARPET_FLOOR_0.getName(), CARPET_FLOOR_1.getName(), CARPET_FLOOR_2.getName(), CARPET_FLOOR_3.getName(), CARPET_FLOOR_4.getName(), CARPET_FLOOR_5.getName(), CARPET_FLOOR_6.getName(), CARPET_FLOOR_7.getName(), CARPET_FLOOR_8.getName(), CARPET_FLOOR_9.getName(), CARPET_FLOOR_10.getName(), CARPET_FLOOR_11.getName(), CARPET_FLOOR_12.getName(), CARPET_FLOOR_13.getName(), CARPET_FLOOR_14.getName(), CARPET_FLOOR_15.getName());
+		addVariantNames(ChiselBlocks.chest, CHEST_0.getName(), CHEST_1.getName(), CHEST_2.getName(), CHEST_3.getName(), CHEST_4.getName(), CHEST_5.getName(), CHEST_6.getName(), CHEST_7.getName(), CHEST_8.getName(), CHEST_9.getName(), CHEST_10.getName(), CHEST_11.getName(), CHEST_12.getName(), CHEST_13.getName(), CHEST_14.getName(), CHEST_15.getName());
+		addVariantNames(ChiselBlocks.cobblestone, COBBLESTONE_BRICKS_ALIGNED.getName(), COBBLESTONE_BRICKS_DETAILED.getName(), COBBLESTONE_BRICKS_SMALL.getName(), COBBLESTONE_TILES_LARGE.getName(), COBBLESTONE_TILES_SMALL.getName(), COBBLESTONE_TILES_FRENCH.getName(), COBBLESTONE_TILES_FRENCH_LIGHT.getName(), COBBLESTONE_TILES_CREEPER.getName(), COBBLESTONE_TILES_DAMAGED.getName(), COBBLESTONE_TILES_HUGE.getName(), COBBLESTONE_PANEL_CREEPER.getName(), COBBLESTONE_DENT.getName(), COBBLESTONE_PANEL.getName(), COBBLESTONE_PANEL_LIGHT.getName(), COBBLESTONE_PANEL_DARK.getName());
+		addVariantNames(ChiselBlocks.concrete, CONCRETE_RAW.getName(), CONCRETE_BLOCK.getName(), CONCRETE_SLAB.getName(), CONCRETE_BLOCKS.getName(), CONCRETE_RAW_WEATHERED.getName(), CONCRETE_BLOCK_WEATHERED.getName(), CONCRETE_SLAB_WEATHERED.getName(), CONCRETE_BLOCK_WEATHERED.getName(), CONCRETE_RAW_PARTLY.getName(), CONCRETE_BLOCK_PARTLY.getName(), CONCRETE_ASPHALT.getName());
+		addVariantNames(ChiselBlocks.copper, COPPER_CAUTION.getName(), COPPER_SHIPPING.getName(), COPPER_THERMAL.getName(), COPPER_125.getName(), COPPER_BORDERED.getName(), COPPER_BOLTED.getName());
 		addVariantNames(ChiselBlocks.cloud, CLOUD_NORMAL.getName(), CLOUD_GRID.getName(), CLOUD_LARGE.getName(), CLOUD_SMALL.getName(), CLOUD_VERTICAL.getName());
+		addVariantNames(ChiselBlocks.dark_oak, DARK_OAK_PLANKS_SMOOTH.getName(), DARK_OAK_PLANKS_SHORT.getName(), DARK_OAK_PLANKS_FANCY.getName(), DARK_OAK_PLANKS_PANEL.getName(), DARK_OAK_PLANKS_DOUBLE_SLAB.getName(), DARK_OAK_PLANKS_CRATE.getName(), DARK_OAK_PLANKS_CRATE_FANCY.getName(), DARK_OAK_PLANKS_LONG.getName(), DARK_OAK_PLANKS_VERTICAL.getName(), DARK_OAK_PLANKS_VERTICAL_UNEVEN.getName(), DARK_OAK_PLANKS_PARQUET.getName(), DARK_OAK_PLANKS_BLINDS.getName(), DARK_OAK_PLANKS_SCAFFOLD.getName(), DARK_OAK_PLANKS_DISARRAY.getName(), DARK_OAK_PLANKS_DISARRAY_VERTICAL.getName());
+		addVariantNames(ChiselBlocks.diamond, DIAMOND_EMBOSSED.getName(), DIAMOND_PANEL.getName(), DIAMOND_CELLS.getName(), DIAMOND_OBSIDIAN_PURPLE.getName(), DIAMOND_OBSIDIAN.getName(), DIAMOND_SIMPLE.getName(), DIAMOND_BISMUTH.getName(), DIAMOND_CRUSHED.getName(), DIAMOND_SMALL_BLOCKS.getName(), DIAMOND_SMALL_BLOCKS_ORNATE.getName(), DIAMOND_ZELDA.getName(), DIAMOND_ORNATE.getName());
+		addVariantNames(ChiselBlocks.diorite, DIORITE_POLISHED.getName(), DIORITE_PILLAR.getName(), DIORITE_BRICKS.getName(), DIORITE_ORNATE.getName(), DIORITE_PRISMATIC.getName(), DIORITE_TILES_SMALL.getName());
+		addVariantNames(ChiselBlocks.dirt, DIRT_BRICKS_DISARRAY.getName(), DIRT_NETHER.getName(), DIRT_BRICKS.getName(), DIRT_COBBLE.getName(), DIRT_COBBLE_REINFORCED.getName(), DIRT_REINFORCED.getName(), DIRT_HAPPY.getName(), DIRT_BRICKS_LARGE.getName(), DIRT_BRICKS_LARGE_ON.getName(), DIRT_HORIZONTAL.getName(), DIRT_VERTICAL.getName(), DIRT_LAYERS.getName(), DIRT_CRUMBLING.getName());
+		addVariantNames(ChiselBlocks.emerald, EMERALD_PANEL.getName(), EMERALD_PANEL_CLASSIC.getName(), EMERALD_SMOOTH.getName(), EMERALD_CHUNK.getName(), EMERALD_ORNATE_LAYER.getName(), EMERALD_ZELDA.getName(), EMERALD_CELL.getName(), EMERALD_BISMUTH.getName(), EMERALD_BLOCKS_SMALL.getName(), EMERALD_BLOCKS_SMALL_ORNATE.getName(), EMERALD_ORNATE.getName());
+		addVariantNames(ChiselBlocks.energised_voidstone, ENERGISED_VOIDSTONE_RAW.getName(), ENERGISED_VOIDSTONE_TILES.getName(), ENERGISED_VOIDSTONE_SMOOTH.getName(), ENERGISED_VOIDSTONE_SKULL.getName(), ENERGISED_VOIDSTONE_RUNIC.getName(), ENERGISED_VOIDSTONE_RUNIC.getName(), ENERGISED_VOIDSTONE_METAL.getName(), ENERGISED_VOIDSTONE_EYE.getName(), ENERGISED_VOIDSTONE_BEVEL.getName());
+		addVariantNames(ChiselBlocks.energised_voidstone_pillar, ENERGISED_VOIDSTONE_PILLAR_NORMAL.getName());
+		addVariantNames(ChiselBlocks.factory, FACTORY_RUSTY_DOTTED.getName(), FACTORY_RUSTY_PLATE.getName(), FACTORY_RUSTY_VERY.getName(), FACTORY_RUSTY_LITTLE.getName(), FACTORY_WIREFRAME.getName(), FACTORY_WIREFRAME.getName(), FACTORY_WIREFRAME_PURPLE.getName(), FACTORY_HAZARD_YELLOW.getName(), FACTORY_HAZARD_ORANGE.getName(), FACTORY_CIRCUIT_FANCY.getName(), FACTORY_METAL.getName(), FACTORY_GOLD_CIRCUIT.getName(), FACTORY_GOLD_PURPLE.getName(), FACTORY_CONSTRUCTION.getName(), FACTORY_VENT_WORN.getName(), FACTORY_RUSTY_PLATES.getName(), FACTORY_COLUMN.getName(), FACTORY_BLUE.getName(), FACTORY_VENT_VERTICAL.getName(), FACTORY_CIRCUIT_BLUE.getName(), FACTORY_WIREFRAME_BLUE.getName());
+		//addVariantNames(ChiselBlocks.fantasy);
 		addVariantNames(ChiselBlocks.marble, MARBLE_RAW.getName(), MARBLE_BRICK.getName(), MARBLE_PANEL_CLASSIC.getName(), MARBLE_PANEL_ORNATE.getName(), MARBLE_PANEL.getName(), MARBLE_BLOCK.getName(), MARBLE_CREEPER_DARK.getName(), MARBLE_CREEPER_LIGHT.getName(), MARBLE_CARVED.getName(), MARBLE_CARVED_RADIAL.getName(), MARBLE_DENT.getName(), MARBLE_DENT_LARGE.getName(), MARBLE_TILES.getName(), MARBLE_TILES_ARRANGED.getName(), MARBLE_TILES_FANCY.getName(), MARBLE_BLOCKS.getName());
 		addVariantNames(ChiselBlocks.limestone, LIMESTONE_RAW.getName(), LIMESTONE_TILES.getName(), LIMESTONE_TILES_FRENCH.getName(), LIMESTONE_TILES_FRENCH_LIGHT.getName(), LIMESTONE_TILES_CREEPER.getName(), LIMESTONE_TILES_LARGE.getName(), LIMESTONE_BRICKS.getName(), LIMESTONE_SMOOTH.getName(), LIMESTONE_PANEL_ORNATE.getName(), LIMESTONE_PANEL_ENGRAVED.getName(), LIMESTONE_PANEL_CREEPER.getName(), LIMESTONE_PANEL_LIGHT.getName(), LIMESTONE_PANEL_DARK.getName(), LIMESTONE_PANEL.getName(), LIMESTONE_DENT.getName());
 		addVariantNames(ChiselBlocks.pumpkin, PUMPKIN_0.getName(), PUMPKIN_1.getName(), PUMPKIN_2.getName(), PUMPKIN_3.getName(), PUMPKIN_4.getName(), PUMPKIN_5.getName(), PUMPKIN_6.getName(), PUMPKIN_7.getName(), PUMPKIN_8.getName(), PUMPKIN_9.getName(), PUMPKIN_10.getName(), PUMPKIN_11.getName(), PUMPKIN_12.getName(), PUMPKIN_13.getName(), PUMPKIN_14.getName(), PUMPKIN_15.getName(), PUMPKIN_16.getName());
-		addVariantNames(ChiselBlocks.jackolantern, LITPUMPKIN_0.getName(), LITPUMPKIN_1.getName(), LITPUMPKIN_2.getName(), LITPUMPKIN_3.getName(), LITPUMPKIN_4.getName(), LITPUMPKIN_5.getName(), LITPUMPKIN_6.getName(), LITPUMPKIN_7.getName(), LITPUMPKIN_8.getName(), LITPUMPKIN_9.getName(), LITPUMPKIN_10.getName(), LITPUMPKIN_11.getName(), LITPUMPKIN_12.getName(), LITPUMPKIN_13.getName(), LITPUMPKIN_14.getName(), LITPUMPKIN_15.getName(), LITPUMPKIN_16.getName());
+		addVariantNames(ChiselBlocks.litpumpkin, LITPUMPKIN_0.getName(), LITPUMPKIN_1.getName(), LITPUMPKIN_2.getName(), LITPUMPKIN_3.getName(), LITPUMPKIN_4.getName(), LITPUMPKIN_5.getName(), LITPUMPKIN_6.getName(), LITPUMPKIN_7.getName(), LITPUMPKIN_8.getName(), LITPUMPKIN_9.getName(), LITPUMPKIN_10.getName(), LITPUMPKIN_11.getName(), LITPUMPKIN_12.getName(), LITPUMPKIN_13.getName(), LITPUMPKIN_14.getName(), LITPUMPKIN_15.getName(), LITPUMPKIN_16.getName());
 
 		addVariantNames(ChiselItems.upgrade, "upgrade_speed", "upgrade_automation", "upgrade_stack", "upgrade_reversion");
 	}
@@ -119,23 +133,23 @@ public class ModelsChisel {
 		registerBlockModel(ChiselBlocks.pumpkin, PUMPKIN_15.getMeta(), getResource(PUMPKIN_15.getName()));
 		registerBlockModel(ChiselBlocks.pumpkin, PUMPKIN_16.getMeta(), getResource(PUMPKIN_16.getName()));
 
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_0.getMeta(), getResource(LITPUMPKIN_0.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_1.getMeta(), getResource(LITPUMPKIN_1.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_2.getMeta(), getResource(LITPUMPKIN_2.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_3.getMeta(), getResource(LITPUMPKIN_3.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_4.getMeta(), getResource(LITPUMPKIN_4.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_5.getMeta(), getResource(LITPUMPKIN_5.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_6.getMeta(), getResource(LITPUMPKIN_6.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_7.getMeta(), getResource(LITPUMPKIN_7.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_8.getMeta(), getResource(LITPUMPKIN_8.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_9.getMeta(), getResource(LITPUMPKIN_9.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_10.getMeta(), getResource(LITPUMPKIN_10.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_11.getMeta(), getResource(LITPUMPKIN_11.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_12.getMeta(), getResource(LITPUMPKIN_12.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_13.getMeta(), getResource(LITPUMPKIN_13.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_14.getMeta(), getResource(LITPUMPKIN_14.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_15.getMeta(), getResource(LITPUMPKIN_15.getName()));
-		registerBlockModel(ChiselBlocks.jackolantern, LITPUMPKIN_16.getMeta(), getResource(LITPUMPKIN_16.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_0.getMeta(), getResource(LITPUMPKIN_0.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_1.getMeta(), getResource(LITPUMPKIN_1.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_2.getMeta(), getResource(LITPUMPKIN_2.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_3.getMeta(), getResource(LITPUMPKIN_3.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_4.getMeta(), getResource(LITPUMPKIN_4.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_5.getMeta(), getResource(LITPUMPKIN_5.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_6.getMeta(), getResource(LITPUMPKIN_6.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_7.getMeta(), getResource(LITPUMPKIN_7.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_8.getMeta(), getResource(LITPUMPKIN_8.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_9.getMeta(), getResource(LITPUMPKIN_9.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_10.getMeta(), getResource(LITPUMPKIN_10.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_11.getMeta(), getResource(LITPUMPKIN_11.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_12.getMeta(), getResource(LITPUMPKIN_12.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_13.getMeta(), getResource(LITPUMPKIN_13.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_14.getMeta(), getResource(LITPUMPKIN_14.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_15.getMeta(), getResource(LITPUMPKIN_15.getName()));
+		registerBlockModel(ChiselBlocks.litpumpkin, LITPUMPKIN_16.getMeta(), getResource(LITPUMPKIN_16.getName()));
 
 		// ITEMS BELOW.
 
