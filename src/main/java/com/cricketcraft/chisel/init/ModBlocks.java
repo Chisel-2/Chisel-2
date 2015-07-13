@@ -1028,7 +1028,8 @@ public class ModBlocks {
 		}
 
 		if (Configurations.featureEnabled("lavastone")) {
-			lavastone = (BlockLavastone) new BlockLavastone(Material.rock, "lava_flow").setCreativeTab(ModTabs.tabStoneChiselBlocks).setHardness(2.0F).setResistance(10F);
+			String lavaTexture = Configurations.flowingLiquids ? "lava_flow" : "lava_still";
+			lavastone = (BlockLavastone) new BlockLavastone(Material.rock, lavaTexture).setCreativeTab(ModTabs.tabStoneChiselBlocks).setHardness(2.0F).setResistance(10F);
 			lavastone.carverHelper.addVariation(StatCollector.translateToLocal("tile.lavastone.0.desc"), 0, "lavastone/cobble");
 			lavastone.carverHelper.addVariation(StatCollector.translateToLocal("tile.lavastone.1.desc"), 1, "lavastone/black");
 			lavastone.carverHelper.addVariation(StatCollector.translateToLocal("tile.lavastone.2.desc"), 2, "lavastone/tiles");
@@ -1472,7 +1473,8 @@ public class ModBlocks {
 		}
 
 		if (Configurations.featureEnabled("waterstone")) {
-			waterstone = (BlockWaterstone) new BlockWaterstone(Material.rock, "water_flow").setCreativeTab(ModTabs.tabStoneChiselBlocks).setHardness(2.0F).setResistance(10.0F);
+			String waterTexture = Configurations.flowingLiquids ? "water_flow" : "water_still";
+			waterstone = (BlockWaterstone) new BlockWaterstone(Material.rock, waterTexture).setCreativeTab(ModTabs.tabStoneChiselBlocks).setHardness(2.0F).setResistance(10.0F);
 			waterstone.carverHelper.addVariation(StatCollector.translateToLocal("tile.waterstone.0.desc"), 0, "waterstone/cobble");
 			waterstone.carverHelper.addVariation(StatCollector.translateToLocal("tile.waterstone.1.desc"), 1, "waterstone/black");
 			waterstone.carverHelper.addVariation(StatCollector.translateToLocal("tile.waterstone.2.desc"), 2, "waterstone/tiles");

@@ -28,6 +28,8 @@ public class Configurations {
 
 	public static double concreteVelocity;
 
+	public static boolean flowingLiquids;
+
 	public static boolean refreshConfig() {
 		concreteVelocity = config.get("general", "concreteVelocity", 0.45,
 				"Traversing concrete roads, players will acceleration to this velocity. For reference, normal running speed is about 0.28. Set to 0 to disable acceleration.").getDouble(0.45);
@@ -50,6 +52,7 @@ public class Configurations {
 		enableFMP = config.get("general", "enableFMP", true, "Do you want to enable FMP").getBoolean(true);
 		chiselStoneToCobbleBricks = config.get("general", "chiselStoneToCobbleBricks", true, "Chisel stone to cobblestone and bricks by left clicking.").getBoolean(false);
 
+		flowingLiquids = config.getBoolean("client", "flowingTextures", true, "If false, LavaStone and WaterStone will use the still version of water and lava.");
 		if (config.hasChanged()) {
 			config.save();
 		}
