@@ -9,24 +9,24 @@ entity.chisel.snowman.name=Sneeuw Golem
 #Item localizations
 item.chisel.chisel_iron.name=Beitel
 
-item.chisel.chisel.desc.gui=Right-Click to open GUI
-item.chisel.chisel.desc.lc1=Left click to chisel blocks in world
+item.chisel.chisel.desc.gui=Rechter-Muis Klik om de GUI te openen
+item.chisel.chisel.desc.lc1=Linker-Muis Klik om Blokken te Beitelen in de Wereld
 item.chisel.chisel.desc.lc2=Can target a block by leaving it in the inventory
-item.chisel.chisel.desc.modes=Has multiple modes for chiseling.
+item.chisel.chisel.desc.modes=Heeft Meerdere Modes voor Beitelen
 
 item.chisel.chisel_diamond.name=Diamanten Beitel
 item.chisel.chisel_obsidian.name=Obsidianen Beitel
 
 item.ballMoss.name=Ball O' Moss
 item.ballMoss.desc=Right-Click to throw. This will turn Cobblestone to Moss Stone on impact.
-item.cloudBottle.name=Cloud In A Bottle
+item.cloudBottle.name=Wolk in een Fles
 item.cloudBottle.desc=Right-Click to throw. This will spawn clouds on impact.
 item.smashingRock.name=Smashing Rock
 item.smashingRock.desc=Right-Click to throw. This will turn Cobblestone into Gravel, Gravel into Sand etc on impact.
-item.upgrade_speed.name=Speed Upgrade
-item.upgrade_automation.name=Automation Upgrade
+item.upgrade_speed.name=Snelheids Upgrade
+item.upgrade_automation.name=Automatie Upgrade
 item.upgrade_stack.name=Stack Upgrade
-item.upgrade_reversion.name=Reversion Upgrade
+item.upgrade_reversion.name=Terugkeer Upgrade
 
 item.upgrade_speed.desc=Increases the rate at which it works
 item.upgrade_automation.desc=Allows things to push in and out of the Auto Chisel
@@ -40,112 +40,112 @@ item.upgrade_reversion.desc=Reverts the base slot to its original form
 #Nation
 tile.chisel.nation.name=Imperialistic Block
 tile.chisel.rebel.name=Rebellious Block
-tile.nation.0.desc=Camouflaged
-tile.nation.1.desc=Camouflaged (Secluded)
-tile.nation.2.desc=Bolted Plate
-tile.nation.3.desc=White Caution Tape
-tile.nation.4.desc=Teamed Caution Tape
+tile.nation.0.desc=Gecamoufleerd
+tile.nation.1.desc=Gecamoufleerd (Afgezonderd)
+tile.nation.2.desc=Vastgebouten Plaat
+tile.nation.3.desc=Witte Voorzichtigheids Band
+tile.nation.4.desc=Aangespande Voorzichtigheids Band
 
 #Shingles
-tile.chisel.shingles.name=Shingles
-tile.shingles.0.desc=Red Diagonal
-tile.shingles.1.desc=Red Tiny Squares
-tile.shingles.2.desc=Red Big Squares
-tile.shingles.3.desc=Black Diagonal
-tile.shingles.4.desc=Black Tiny Squares
-tile.shingles.5.desc=Black Big Squares
+tile.chisel.shingles.name=Gordelroos
+tile.shingles.0.desc=Rode Diagonaal
+tile.shingles.1.desc=Rode Kleine Vierkantjes
+tile.shingles.2.desc=Rode Grote Vierkanten
+tile.shingles.3.desc=Zwarte Diagonaal
+tile.shingles.4.desc=Zwarte Kleine Vierkantjes
+tile.shingles.5.desc=Zwarte Grote Vierkanten
 
 #Valentines
-tile.chisel.valentines.name=Valentines Block
-tile.valentines.0.desc=Valentines Bricks
-tile.valentines.1.desc=If it speaks, I wouldn't touch it
+tile.chisel.valentines.name=Valentijns Blok
+tile.valentines.0.desc=Valentijns Bakstenen
+tile.valentines.1.desc=Als het Spreekt, zou ik het niet aanraken
 
 #AntiBlocks
-tile.chisel.antiBlock.name=Anti Block
-tile.antiBlock.black.desc=Black Anti Block
-tile.antiBlock.blue.desc=Blue Anti Block
-tile.antiBlock.brown.desc=Brown Anti Block
-tile.antiBlock.cyan.desc=Cyan Anti Block
-tile.antiBlock.green.desc=Green Anti Block
-tile.antiBlock.light_blue.desc=Light Blue Anti Block
-tile.antiBlock.silver.desc=Light Gray Anti Block
-tile.antiBlock.lime.desc=Lime Anti Block
-tile.antiBlock.magenta.desc=Magenta Anti Block
-tile.antiBlock.orange.desc=Orange Anti Block
-tile.antiBlock.pink.desc=Pink Anti Block
-tile.antiBlock.purple.desc=Purple Anti Block
-tile.antiBlock.red.desc=Red Anti Block
-tile.antiBlock.white.desc=White Anti Block
-tile.antiBlock.yellow.desc=Yellow Anti Block
-tile.antiBlock.gray.desc=Gray Anti Block
+tile.chisel.antiBlock.name=Anti Blok
+tile.antiBlock.black.desc=Zwart Anti Blok
+tile.antiBlock.blue.desc=Blauw Anti Blok
+tile.antiBlock.brown.desc=Bruin Anti Blok
+tile.antiBlock.cyan.desc=Turquoise Anti Blok
+tile.antiBlock.green.desc=Groen Anti Blok
+tile.antiBlock.light_blue.desc=Lcihtblauw Anti Blok
+tile.antiBlock.silver.desc=Lichtgrijs Anti Blok
+tile.antiBlock.lime.desc=Lichtgroen Anti Blok
+tile.antiBlock.magenta.desc=Magenta Anti Blok
+tile.antiBlock.orange.desc=Oranje Anti Blok
+tile.antiBlock.pink.desc=Roze Anti Blok
+tile.antiBlock.purple.desc=Paars Anti Blok
+tile.antiBlock.red.desc=Rood Anti Blok
+tile.antiBlock.white.desc=Wit Anti Blok
+tile.antiBlock.yellow.desc=Geel Anti Blok
+tile.antiBlock.gray.desc=Grijs Anti Blok
 
 #Diorite
-tile.chisel.diorite.name=Diorite
-tile.diorite.0.desc=Generates in your world
-tile.diorite.1.desc=Polished Diorite
-tile.diorite.2.desc=Diorite Pillar
-tile.diorite.3.desc=Diorite Bricks
-tile.diorite.4.desc=Ornate Diorite
-tile.diorite.5.desc=Prismatic Diorite
-tile.diorite.6.desc=Diorite Small Tiles
+tile.chisel.diorite.name=Dioriet
+tile.diorite.0.desc=Genereerd in je wereld
+tile.diorite.1.desc=Gepolijst Dioriet
+tile.diorite.2.desc=Diorieten Pilaar
+tile.diorite.3.desc=Diorieten Blokstenen
+tile.diorite.4.desc=Versierd Dioriet
+tile.diorite.5.desc=Prismatisch Dioriet
+tile.diorite.6.desc=Kleine Diorieten Tegels
 
 #Andesite
-tile.chisel.andesite.name=Andesite
-tile.andesite.0.desc=Generates in your world
-tile.andesite.1.desc=Polished Andesite
-tile.andesite.2.desc=Andesite Pillar
-tile.andesite.3.desc=Andesite Bricks
-tile.andesite.4.desc=Ornate Andesite
-tile.andesite.5.desc=Prismatic Andesite
-tile.andesite.6.desc=Andesite Small Tiles
+tile.chisel.andesite.name=Andesiet
+tile.andesite.0.desc=Genereerd in je wereld
+tile.andesite.1.desc=Gepolijst Andesite
+tile.andesite.2.desc=Andesieten Pilaar
+tile.andesite.3.desc=Andesieten Blokstenen
+tile.andesite.4.desc=Versierd Andesiet
+tile.andesite.5.desc=Prismatisch Andesiet
+tile.andesite.6.desc=Kleine Andesieten Tegels
 
 #Granite
-tile.chisel.granite.name=Granite
-tile.granite.0.desc=Generates in your world
-tile.granite.1.desc=Polished Granite
-tile.granite.2.desc=Granite Pillar
-tile.granite.3.desc=Granite Bricks
-tile.granite.4.desc=Ornate Granite
-tile.granite.5.desc=Prismatic Granite
-tile.granite.6.desc=Granite Small Tiles
+tile.chisel.granite.name=Graniet
+tile.granite.0.desc=Genereerd in je wereld 
+tile.granite.1.desc=Gepolijst Graniet
+tile.granite.2.desc=Granieten Pilaar
+tile.granite.3.desc=Granieten Blokstenen
+tile.granite.4.desc=Versierd Graniet
+tile.granite.5.desc=Prismatisch Graniet
+tile.granite.6.desc=Kleine Granieten Tegels
 
 #Auto Chisel
-tile.chisel.autoChisel.name=Auto Chisel
-autochisel.slot.chisel.tooltip=Chisel Slot
-autochisel.slot.target.tooltip=Target Slot
-autochisel.slot.speed.tooltip=Speed Upgrade
-autochisel.slot.automation.tooltip=Automation Upgrade
+tile.chisel.autoChisel.name=Auto Beitel
+autochisel.slot.chisel.tooltip=Beitel Slot
+autochisel.slot.target.tooltip=Doel Slot
+autochisel.slot.speed.tooltip=Snelheids Upgrade
+autochisel.slot.automation.tooltip=Automatie Upgrade
 autochisel.slot.stack.tooltip=Stack Upgrade
-autochisel.slot.reversion.tooltip=Reversion Upgrade
+autochisel.slot.reversion.tooltip=Terugkeer Upgrade
 
 #Beacon
-tile.chisel.beacon.name=Beacon
-tile.beacon.black.desc=Black Beamed Beacon
-tile.beacon.blue.desc=Blue Beamed Beacon
-tile.beacon.brown.desc=Brown Beamed Beacon
-tile.beacon.cyan.desc=Cyan Beamed Beacon
-tile.beacon.green.desc=Green Beamed Beacon
-tile.beacon.lightBlue.desc=Light Blue Beamed Beacon
-tile.beacon.silver.desc=Light Gray Beamed Beacon
-tile.beacon.lime.desc=Lime Beamed Beacon
-tile.beacon.magenta.desc=Magenta Beamed Beacon
-tile.beacon.orange.desc=Orange Beamed Beacon
-tile.beacon.pink.desc=Pink Beamed Beacon
-tile.beacon.purple.desc=Purple Beamed Beacon
-tile.beacon.red.desc=Red Beamed Beacon
-tile.beacon.white.desc=White Beamed Beacon
-tile.beacon.yellow.desc=Yellow Beamed Beacon
-tile.beacon.gray.desc=Gray Beamed Beacon
+tile.chisel.beacon.name=Baken
+tile.beacon.black.desc=Baken met Zwarte Straal
+tile.beacon.blue.desc=Baken met Blauwe Straal
+tile.beacon.brown.desc=Baken met Bruine Straal
+tile.beacon.cyan.desc=Baken met Turquoise Straal
+tile.beacon.green.desc=Baken met Groene Straal
+tile.beacon.lightBlue.desc=Baken met Lichtblauwe Straal
+tile.beacon.silver.desc=Baken met Lichgrijze Straal
+tile.beacon.lime.desc=Baken met Lichtgroene Straal
+tile.beacon.magenta.desc=Baken met Magenta Straal
+tile.beacon.orange.desc=Baken met OranjeStraal
+tile.beacon.pink.desc=Baken met Roze Straal
+tile.beacon.purple.desc=Baken met Paarse Straal
+tile.beacon.red.desc=Baken met Rode Straal
+tile.beacon.white.desc=Baken met Witte Straal
+tile.beacon.yellow.desc=Baken met Gele Straal
+tile.beacon.gray.desc=Baken met Grijze Straal
 
 #Leaves
-tile.chisel.leaves.name=Leaves
-tile.leaves.6.desc=Dead Leaves
-tile.leaves.7.desc=Fancy Leaves
-tile.leaves.8.desc=Pink Petals
-tile.leaves.9.desc=Red Rose
-tile.leaves.10.desc=White Rose
-tile.leaves.11.desc=Christmas Balls
-tile.leaves.12.desc=Christmas Lights
+tile.chisel.leaves.name=Bladeren
+tile.leaves.6.desc=Dode Bladeren
+tile.leaves.7.desc=Mooie Bladeren
+tile.leaves.8.desc=Roze Bloemblaajes
+tile.leaves.9.desc=Rode Roos
+tile.leaves.10.desc=Witte Roos
+tile.leaves.11.desc=Kerst Ballen
+tile.leaves.12.desc=Kerst Lichtjes
 
 #Void Stone Blocks
 tile.chisel.voidstone.name=Voidstone
@@ -179,7 +179,7 @@ tile.chisel.voidstonePillar.name=Voidstone Pillar
 tile.voidstonePillar.0.desc=Striped Voidstone Pillar
 
 #Warning
-tile.chisel.warningSign.name=Warning Sign
+tile.chisel.warningSign.name=Waarschuwings Bord
 tile.warningSign.0.desc=Radiation
 tile.warningSign.1.desc=Biohazard
 tile.warningSign.2.desc=Fire
