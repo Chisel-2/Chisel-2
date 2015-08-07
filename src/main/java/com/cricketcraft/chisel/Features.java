@@ -188,7 +188,7 @@ public enum Features {
 
 		@Override
 		void addRecipes() {
-			GameRegistry.addRecipe(new ItemStack(ChiselItems.ballomoss, 1), "XYX", "YXY", "XYX", 'X', Blocks.vine, 'Y', Items.stick);
+			GameRegistry.addRecipe(new ItemStack(ChiselItems.ballomoss, 16), "XYX", "YXY", "XYX", 'X', Blocks.vine, 'Y', Items.stick);
 		}
 	},
 
