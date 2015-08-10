@@ -10,7 +10,7 @@ import com.cricketcraft.chisel.carving.Carving;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
 import com.google.common.collect.Maps;
-import com.pahimar.ee3.api.EnergyValueRegistryProxy;
+import com.pahimar.ee3.api.exchange.EnergyValueRegistryProxy;
 
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Loader;
