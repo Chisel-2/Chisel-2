@@ -158,8 +158,8 @@ public class Compatibility {
 				EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.rebel, 1, x), 39);
 			}
 
-			EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.fantasyblock, 1, x), 29444);
-			EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.fantasyblock, 1, x), 31444);
+			EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.fantasyblock, 1, x), 235.556F);
+			EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.fantasyblock2, 1, x), 235.556F);
 			EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.limestone, 1, x), 1);
 			EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.marble, 1, x), 1);
 			EnergyValueRegistryProxy.addPreAssignedEnergyValue(new ItemStack(ChiselBlocks.marble_pillar, 1, x), 8);

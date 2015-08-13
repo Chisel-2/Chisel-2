@@ -13,6 +13,8 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.monster.EntityPigZombie;
+import net.minecraft.entity.passive.EntityPig;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -117,6 +119,18 @@ public class ItemChisel extends Item implements IChiselItem {
 
 	@Override
 	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
+		if(target instanceof EntityPig) {
+			double x = target.posX;
+			double y = target.posY;
+			double z = target.posZ;
+			EntityPigZombie zambie = new EntityPigZombie(attacker.worldObj);
+			zambie.setAttackTarget(attacker);
+			zambie.forceSpawn = true;
+			zambie.setLocationAndAngles(x, y, z, 0.0F, 0.0F);
+			attacker.worldObj.spawnEntityInWorld(zambie);
+			attacker.attackEntityAsMob(zambie);
+			target.setDead();
+		}
 		stack.damageItem(1, attacker);
 		return super.hitEntity(stack, attacker, target);
 	}

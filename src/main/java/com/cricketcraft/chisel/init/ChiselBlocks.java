@@ -59,6 +59,7 @@ public final class ChiselBlocks {
 	public static final BlockCarvable bookshelf = null;
 	public static final BlockCarvable tyrian = null;
 	public static final BlockCarvable dirt = null;
+	public static final BlockCarvableGrass grass = null;
 	public static final BlockCloud cloud = null;
 	public static final BlockCarvable templeblock = null;
 	public static final BlockCarvable mossy_templeblock = null;

@@ -66,8 +66,11 @@ public class SubmapManagerRCTM extends SubmapManagerBase {
 			super.renderFaceZPos(block, x, y, z, submapSmall.getSubIcon(0, 0));
 		}
 	}
-	
-	private class Submap extends TextureSubmap {
+
+	/**
+	 * TODO: Fix this so its usable
+	 */
+	private abstract class Submap extends TextureSubmap {
 
 		private TextureSubmap[][] submap;
 
@@ -107,11 +110,13 @@ public class SubmapManagerRCTM extends SubmapManagerBase {
 		this.rType = rType;
 	}
 
+	@SideOnly(Side.CLIENT)
 	@Override
 	public IIcon getIcon(int side, int meta) {
 		return defaultIcon;
 	}
 
+	@SideOnly(Side.CLIENT)
 	@Override
 	public RenderBlocks createRenderContext(RenderBlocks rendererOld, Block block, IBlockAccess world) {
 		if (rb == null) {
@@ -121,6 +126,7 @@ public class SubmapManagerRCTM extends SubmapManagerBase {
 		return rb;
 	}
 
+	@SideOnly(Side.CLIENT)
 	@SuppressWarnings("unchecked")
 	@Override
 	public void registerIcons(String modName, Block block, IIconRegister register) {
@@ -139,7 +145,7 @@ public class SubmapManagerRCTM extends SubmapManagerBase {
 				defaultIcon = triple.getRight().getSubIcon(0, 0);
 			}
 		}
-		submap = new Submap(base, wh, submaps);
-		smallSubmap = new Submap(base, wh, submapsSmall);
+		//submap = new Submap(base, wh, submaps);
+		//smallSubmap = new Submap(base, wh, submapsSmall);
 	}
 }

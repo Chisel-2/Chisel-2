@@ -17,7 +17,6 @@ import java.util.List;
 import com.cricketcraft.chisel.api.rendering.TextureType;
 import com.cricketcraft.chisel.client.render.*;
 import com.cricketcraft.chisel.item.chisel.ItemChisel;
-import com.cricketcraft.ctmlib.ISubmapManager;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -133,7 +132,7 @@ public enum Features {
 				GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ChiselBlocks.antiBlock, 8, 15), "SSS", "SGS", "SSS", 'S', "stone", 'G', "dustGlowstone"));
 			}
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ChiselBlocks.antiBlock, 8, meta), "BBB", "BdB", "BBB",
-                    'd', dyeOres[meta], 'B', new ItemStack(ChiselBlocks.antiBlock, 1, OreDictionary.WILDCARD_VALUE)));
+					'd', dyeOres[meta], 'B', new ItemStack(ChiselBlocks.antiBlock, 1, OreDictionary.WILDCARD_VALUE)));
 		}
 
 		@Override
@@ -174,6 +173,8 @@ public enum Features {
 					Blocks.hopper }));
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ChiselItems.upgrade, 1, 2), new Object[] { "IEI", "EUE", "RRR", 'I', "ingotIron", 'E', Items.emerald, 'R', Items.redstone, 'U',
 					Blocks.crafting_table }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ChiselItems.upgrade, 1, 3), new Object[] { "IEI", "EUE", "RRR", 'I', "ingotIron", 'E', Items.emerald, 'R', Items.redstone, 'U',
+					Items.cauldron}));
 		}
 	},
 
@@ -959,6 +960,17 @@ public enum Features {
 		@Override
 		void addRecipes() {
 			GameRegistry.addRecipe(new ShapelessOreRecipe(granite, diorite, "gemQuartz"));
+		}
+	},
+
+	GRASS {
+		@Override
+		void addBlocks() {
+			BlockCarvableGrass grass = (BlockCarvableGrass) new BlockCarvableGrass().setHardness(2.0F).setResistance(10.0F);
+			Carving.chisel.addVariation("grass", Blocks.grass, 0, 0);
+			grass.carverHelper.addVariation("tile.grass.0.desc", 0, "grass/diagonal");
+			grass.carverHelper.registerAll(grass, "grass");
+			grass.carverHelper.registerOre("blockGrass");
 		}
 	},
 
