@@ -7,14 +7,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 
 import com.cricketcraft.chisel.api.ICarvable;
 import com.cricketcraft.chisel.api.carving.CarvableHelper;
 import com.cricketcraft.chisel.api.carving.IVariationInfo;
-import com.cricketcraft.ctmlib.ClientUtils;
+import com.cricketcraft.chisel.api.rendering.ClientUtils;
 
 public class BlockCarvableCarpet extends BlockCarpet implements ICarvable {
 
@@ -55,12 +54,12 @@ public class BlockCarvableCarpet extends BlockCarpet implements ICarvable {
 	}
 
 	@Override
-	public IVariationInfo getVariation(IBlockAccess world, int x, int y, int z, int metadata) {
+	public IVariationInfo getManager(IBlockAccess world, int x, int y, int z, int metadata) {
 		return carverHelper.getVariation(metadata);
 	}
 
 	@Override
-	public IVariationInfo getVariation(ItemStack stack) {
-		return carverHelper.getVariation(stack.getItemDamage());
+	public IVariationInfo getManager(int meta) {
+		return carverHelper.getVariation(meta);
 	}
 }
