@@ -67,10 +67,7 @@ public class SubmapManagerRCTM extends SubmapManagerBase {
 		}
 	}
 
-	/**
-	 * TODO: Fix this so its usable
-	 */
-	private abstract class Submap extends TextureSubmap {
+	private class Submap extends TextureSubmap {
 
 		private TextureSubmap[][] submap;
 
@@ -145,7 +142,7 @@ public class SubmapManagerRCTM extends SubmapManagerBase {
 				defaultIcon = triple.getRight().getSubIcon(0, 0);
 			}
 		}
-		//submap = new Submap(base, wh, submaps);
-		//smallSubmap = new Submap(base, wh, submapsSmall);
+		submap = new Submap(base, wh, submaps);
+		smallSubmap = new Submap(base, wh, submapsSmall);
 	}
 }

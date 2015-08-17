@@ -119,18 +119,6 @@ public class ItemChisel extends Item implements IChiselItem {
 
 	@Override
 	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
-		if(target instanceof EntityPig) {
-			double x = target.posX;
-			double y = target.posY;
-			double z = target.posZ;
-			EntityPigZombie zambie = new EntityPigZombie(attacker.worldObj);
-			zambie.setAttackTarget(attacker);
-			zambie.forceSpawn = true;
-			zambie.setLocationAndAngles(x, y, z, 0.0F, 0.0F);
-			attacker.worldObj.spawnEntityInWorld(zambie);
-			attacker.attackEntityAsMob(zambie);
-			target.setDead();
-		}
 		stack.damageItem(1, attacker);
 		return super.hitEntity(stack, attacker, target);
 	}
