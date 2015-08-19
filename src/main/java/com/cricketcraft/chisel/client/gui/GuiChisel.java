@@ -1,5 +1,11 @@
 package com.cricketcraft.chisel.client.gui;
 
+import codechicken.lib.gui.GuiDraw;
+import com.cricketcraft.chisel.api.ICarvable;
+import com.cricketcraft.chisel.api.rendering.TextureType;
+import com.cricketcraft.chisel.block.BlockCarvable;
+import com.cricketcraft.chisel.item.ItemCarvable;
+import net.minecraft.block.Block;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
@@ -21,6 +27,8 @@ import com.cricketcraft.chisel.network.PacketHandler;
 import com.cricketcraft.chisel.network.message.MessageChiselMode;
 import com.cricketcraft.chisel.utils.General;
 import com.cricketcraft.chisel.utils.GeneralClient;
+
+import java.awt.*;
 
 public class GuiChisel extends GuiContainer {
 
@@ -64,6 +72,33 @@ public class GuiChisel extends GuiContainer {
 		if (held == null || !(held.getItem() instanceof IChiselItem)) {
 			mc.displayGuiScreen(null);
 		}
+
+		boolean flag = false;
+
+		for(int c = 0; c < container.inventory.activeVariations; c++) {
+			ItemStack stack = container.inventory.getStackInSlot(c);
+			if(stack.getItem() != null) {
+				if (stack.getItem() instanceof ItemCarvable) {
+					BlockCarvable block = (BlockCarvable) Block.getBlockFromItem(stack.getItem());
+					if (block.carverHelper.getVariation(stack.getItemDamage()).getType().equals(TextureType.CTMH)
+							|| block.carverHelper.getVariation(stack.getItemDamage()).getType().equals(TextureType.CTMX)
+							|| block.carverHelper.getVariation(stack.getItemDamage()).getType().equals(TextureType.CTMV)) {
+						flag = true;
+					}
+				} else if(stack.getItem() instanceof ICarvable) {
+					ICarvable block = (ICarvable) Block.getBlockFromItem(stack.getItem());
+					if (block.getManager(stack.getItemDamage()).getType().equals(TextureType.CTMH)
+							|| block.getManager(stack.getItemDamage()).getType().equals(TextureType.CTMX)
+							|| block.getManager(stack.getItemDamage()).getType().equals(TextureType.CTMV)) {
+						flag = true;
+					}
+				}
+				if (flag) {
+					GuiDraw.drawTexturedModalRect(container.getSlot(c).xDisplayPosition, container.getSlot(c).yDisplayPosition, 48, 202, 18, 18);
+				}
+			}
+		}
+		System.out.print(flag + "\n");
 	}
 
 	private void setButtonText() {
