@@ -58,6 +58,7 @@ public class ChiselTabs {
 		}
 	}
 
+	private static boolean atLeastOneModIsLoaded = false;
 
 	public static final CustomCreativeTab tabChisel = new CustomCreativeTab("tabChisel", false);
 	public static final CustomCreativeTab tabStoneChiselBlocks = new CustomCreativeTab("tabStoneChiselBlocks", true);
@@ -65,11 +66,12 @@ public class ChiselTabs {
 	public static final CustomCreativeTab tabMetalChiselBlocks = new CustomCreativeTab("tabMetalChiselBlocks", true);
 	public static final CustomCreativeTab tabOtherChiselBlocks = new CustomCreativeTab("tabOtherChiselBlocks", true);
 	public static final CustomCreativeTab tabStairChiselBlocks = new CustomCreativeTab("tabStairChiselBlocks", true);
+	public static final CustomCreativeTab tabModdedChiselBlocks = new CustomCreativeTab("tabModdedChiselBlocks", true);
 
 
 	// this serves mostly just to load the static initializers
 	public static void preInit() {
-
+		atLeastOneModIsLoaded = Features.oneModdedFeatureLoaded();
 	}
 
 	public static void postInit() {
@@ -98,6 +100,19 @@ public class ChiselTabs {
 			tabStairChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.iceStairs[0]));
 		else
 			tabStairChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.nether_brick_stairs));
+		if (atLeastOneModIsLoaded) {
+			if(Features.ARCANE.enabled()) {
+				tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.arcane));
+			} else if (Features.BLOOD_RUNE.enabled()) {
+				tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.bloodRune));
+			} else {
+				if (ChiselBlocks.voidstone != null) {
+					tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.voidstone));
+				} else {
+					tabModdedChiselBlocks.setTabIconItemStack(new ItemStack(Blocks.obsidian));
+				}
+			}
+		}
 
 	}
 }

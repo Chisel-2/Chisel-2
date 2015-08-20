@@ -6,6 +6,7 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
@@ -91,7 +92,7 @@ public class BlockCarvableSlab extends BlockCarvable {
 
 	@Override
 	@SideOnly(Side.CLIENT)
-	public ItemStack getPickBlock(MovingObjectPosition mop, World world, int x, int y, int z) {
+	public ItemStack getPickBlock(MovingObjectPosition mop, World world, int x, int y, int z, EntityPlayer player) {
 		return new ItemStack(bottom, 1, world.getBlockMetadata(x, y, z));
 	}
 

@@ -204,7 +204,7 @@ public class BlockPresent extends Block implements ICarvable {
 	}
 
 	@Override
-	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z) {
+	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z, EntityPlayer player) {
 		return new ItemStack(this, 1, world.getBlockMetadata(x, y, z));
 	}
 
