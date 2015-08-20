@@ -1046,17 +1046,6 @@ public enum Features {
 		}
 	},
 
-	GRASS {
-		@Override
-		void addBlocks() {
-			BlockCarvableGrass grass = (BlockCarvableGrass) new BlockCarvableGrass().setHardness(2.0F).setResistance(10.0F);
-			Carving.chisel.addVariation("grass", Blocks.grass, 0, 0);
-			grass.carverHelper.addVariation("tile.grass.0.desc", 0, "grass/diagonal");
-			grass.carverHelper.registerAll(grass, "grass");
-			grass.carverHelper.registerOre("blockGrass");
-		}
-	},
-
 	GRIMSTONE {
 
 		@Override
