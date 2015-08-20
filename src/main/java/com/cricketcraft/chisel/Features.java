@@ -81,7 +81,7 @@ public enum Features {
 
 		@Override
 		void addBlocks() {
-			BlockCarvable aluminum = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabOtherChiselBlocks).setHardness(5F)
+			BlockCarvable aluminum = (BlockCarvable) new BlockBeaconBase(Material.iron).setStepSound(Block.soundTypeMetal).setCreativeTab(ChiselTabs.tabModdedChiselBlocks).setHardness(5F)
 					.setResistance(10F);
 			aluminum.carverHelper.addVariation("tile.metalOre.0.desc", 0, "metals/aluminum/caution", 20);
 			aluminum.carverHelper.addVariation("tile.metalOre.1.desc", 1, "metals/aluminum/crate", 21);
