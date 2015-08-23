@@ -74,7 +74,7 @@ public class GuiChisel extends GuiContainer {
 		}
 
 		boolean flag = false;
-
+		/**
 		for(int c = 0; c < container.inventory.activeVariations; c++) {
 			ItemStack stack = container.inventory.getStackInSlot(c);
 			if(stack.getItem() != null) {
@@ -98,6 +98,7 @@ public class GuiChisel extends GuiContainer {
 				}
 			}
 		}
+		*/
 		System.out.print(flag + "\n");
 	}
 
