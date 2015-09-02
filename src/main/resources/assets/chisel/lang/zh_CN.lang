@@ -1,9 +1,12 @@
-# Key localizations
+#Key localizations
 
-# Entity localizations
+#Stat localizations
+stat.blockChiseled=凿刻方块
+
+#Entity localizations
 entity.chisel.snowman.name=雪傀儡
 
-# Item localizations
+#Item localizations
 item.chisel.chisel_iron.name=凿子
 
 item.chisel.chisel.desc.gui=右键打开界面
@@ -23,13 +26,14 @@ item.smashingRock.desc=右键丢出.可使圆石变成砂砾;砂砾变为沙子.
 item.upgrade_speed.name=速度升级组件
 item.upgrade_automation.name=自动化升级组件
 item.upgrade_stack.name=堆叠升级组件
+item.upgrade_reversion.name=还原升级组件
 
 item.upgrade_speed.desc=加快雕刻速度.
 item.upgrade_automation.desc=允许雕刻机自动输入或输出.
 item.upgrade_stack.desc=允许整组进行雕刻.
+item.upgrade_reversion.desc=将方块还原为初始形态
 
 # Block localizations
-# Have fun! ~zombiepig333
 
 #Chisel 2
 
@@ -109,6 +113,29 @@ tile.granite.6.desc=小方砖花岗岩
 tile.chisel.autoChisel.name=自动雕刻机
 autochisel.slot.chisel.tooltip=在此处放置凿子
 autochisel.slot.target.tooltip=在此处放置雕刻目标方块
+autochisel.slot.speed.tooltip=速度升级
+autochisel.slot.automation.tooltip=自动化升级
+autochisel.slot.stack.tooltip=堆叠升级
+autochisel.slot.reversion.tooltip=还原升级
+
+#Beacon
+tile.chisel.beacon.name=信标
+tile.beacon.black.desc=黑色光束信标
+tile.beacon.blue.desc=蓝色光束信标
+tile.beacon.brown.desc=棕色光束信标
+tile.beacon.cyan.desc=青色光束信标
+tile.beacon.green.desc=绿色光束信标
+tile.beacon.lightBlue.desc=淡蓝色光束信标
+tile.beacon.silver.desc=浅灰色光束信标
+tile.beacon.lime.desc=黄绿色光束信标
+tile.beacon.magenta.desc=品红色光束信标
+tile.beacon.orange.desc=橙色光束信标
+tile.beacon.pink.desc=粉色光束信标
+tile.beacon.purple.desc=紫色光束信标
+tile.beacon.red.desc=红色光束信标
+tile.beacon.white.desc=白色光束信标
+tile.beacon.yellow.desc=黄色光束信标
+tile.beacon.gray.desc=灰色光束信标
 
 #Leaves
 tile.chisel.leaves.name=树叶
@@ -131,21 +158,21 @@ tile.voidstone.5.desc=金属镶板虚空石
 tile.voidstone.6.desc=虚空之眼
 tile.voidstone.7.desc=斜纹虚空石
 tile.chisel.voidstoneRunic.name=符文虚空石
-tile.voidstoneRunic.0.desc=橙色符文
-tile.voidstoneRunic.1.desc=品红色符文
-tile.voidstoneRunic.2.desc=淡蓝色符文
-tile.voidstoneRunic.3.desc=黄色符文
-tile.voidstoneRunic.4.desc=黄绿色符文
-tile.voidstoneRunic.5.desc=粉色符文
-tile.voidstoneRunic.6.desc=灰色符文
-tile.voidstoneRunic.7.desc=淡灰色符文
-tile.voidstoneRunic.8.desc=青色符文
-tile.voidstoneRunic.9.desc=紫色符文
-tile.voidstoneRunic.10.desc=蓝色符文
-tile.voidstoneRunic.11.desc=棕色符文
-tile.voidstoneRunic.12.desc=绿色符文
-tile.voidstoneRunic.13.desc=红色符文
-tile.voidstoneRunic.14.desc=黑色符文
+tile.voidstoneRunic.orange.desc=虚空石-橙色符文
+tile.voidstoneRunic.magenta.desc=虚空石-品红色符文
+tile.voidstoneRunic.lightblue.desc=虚空石-淡蓝色符文
+tile.voidstoneRunic.yellow.desc=虚空石-黄色符文
+tile.voidstoneRunic.lime.desc=虚空石-黄绿色符文
+tile.voidstoneRunic.pink.desc=虚空石-粉色符文
+tile.voidstoneRunic.gray.desc=虚空石-灰色符文
+tile.voidstoneRunic.lightgray.desc=虚空石-浅灰色符文
+tile.voidstoneRunic.cyan.desc=虚空石-青色符文
+tile.voidstoneRunic.purple.desc=虚空石-紫色符文
+tile.voidstoneRunic.blue.desc=虚空石-蓝色符文
+tile.voidstoneRunic.brown.desc=虚空石-棕色符文
+tile.voidstoneRunic.green.desc=虚空石-绿色符文
+tile.voidstoneRunic.red.desc=虚空石-红色符文
+tile.voidstoneRunic.black.desc=虚空石-黑色符文
 
 #Void Stone Pillars
 tile.chisel.voidstonePillar.name=虚空石柱
@@ -224,10 +251,29 @@ tile.bloodRune.5.desc=方砖血符文石
 
 #Futura
 tile.chisel.futura.name=未来科技方块
+tile.chisel.futuraCircuit.name=未来科技电路
+tile.chisel.fakeController.name=ME控制器?
 tile.futura.0.desc=金属边框显示屏
 tile.futura.1.desc=青色边框显示屏
 tile.futura.2.desc=能源控制器霓虹灯
 tile.futura.3.desc=彩虹曲线
+tile.futura.4.desc=紫色能源控制器霓虹灯
+tile.futuraCircuit.black.desc=黑色
+tile.futuraCircuit.blue.desc=蓝色
+tile.futuraCircuit.brown.desc=棕色
+tile.futuraCircuit.cyan.desc=青色
+tile.futuraCircuit.green.desc=绿色
+tile.futuraCircuit.light_blue.desc=淡蓝色
+tile.futuraCircuit.silver.desc=浅灰色
+tile.futuraCircuit.lime.desc=黄绿色
+tile.futuraCircuit.magenta.desc=品红色
+tile.futuraCircuit.orange.desc=橙色
+tile.futuraCircuit.pink.desc=粉色
+tile.futuraCircuit.purple.desc=紫色
+tile.futuraCircuit.red.desc=红色
+tile.futuraCircuit.white.desc=白色
+tile.futuraCircuit.yellow.desc=黄色
+tile.futuraCircuit.gray.desc=灰色
 
 #Waterstone
 tile.chisel.waterstone.name=流水石
@@ -283,6 +329,7 @@ tile.grimstone.14.desc=诡异阴森石
 tile.chisel.technical.name=工艺方块
 tile.chisel.technical2.name=简易工艺方块
 tile.chisel.technical3.name=工业工艺方块
+tile.chisel.technical4.name=工艺方块
 tile.technical.0.desc=脚手架
 tile.technical.1.desc=警示带镶板
 tile.technical.2.desc=欧尼特芙大陆的古物
@@ -301,6 +348,36 @@ tile.technical.14.desc=风扇(故障)
 tile.technical.15.desc=生锈的炉条式火炉
 tile.technical3.0.desc=巨型风扇的一部分
 tile.technical3.1.desc=工业装甲护板
+tile.technical4.0.desc=锈蚀金属块
+tile.technical4.1.desc=生锈金属块
+tile.technical4.2.desc=牢固
+tile.technical4.3.desc=大型电池
+tile.technical4.4.desc=排热板
+tile.technical4.5.desc=简陋钉板
+tile.technical4.6.desc=磁带机?
+tile.technical4.7.desc=管道世界
+
+#End Stone
+tile.chisel.end_Stone.name=末地石
+tile.end_Stone.0.desc=末地石砖
+tile.end_Stone.1.desc=末地杂乱石砖
+tile.end_Stone.2.desc=方格瓷砖
+tile.end_Stone.3.desc=末地电路花纹
+tile.end_Stone.4.desc=精致石砖
+tile.end_Stone.5.desc=末地石柱
+tile.end_Stone.6.desc=风化末地石
+tile.end_Stone.7.desc=棱柱末地石
+
+#Purpur
+tile.chisel.purpur.name=紫色石头
+tile.purpur.0.desc=方块瓷砖
+tile.purpur.1.desc=石柱
+tile.purpur.2.desc=花纹
+tile.purpur.3.desc=小格瓷砖
+tile.purpur.4.desc=破损小格瓷砖
+tile.purpur.5.desc=棱柱
+tile.purpur.6.desc=粗糙石砖
+tile.purpur.7.desc=裂纹
 
 #Metal Blocks
 tile.chisel.aluminumblock.name=铝块
@@ -431,8 +508,8 @@ tile.marblePillar.14.desc=雕纹柱顶石
 tile.marblePillar.15.desc=华丽刻纹柱顶石
 
 #Marble Slabs (old)
-tile.chisel.marble_pillar_slab.name=Marble Pillar Slab
-tile.marblePillarSlabOld.0.desc=Marble Pillar Slab
+tile.chisel.marble_pillar_slab.name=大理石台阶
+tile.marblePillarSlabOld.0.desc=大理石台阶
 tile.marblePillarSlabOld.1.desc=Marble Pillar Capstone Slab
 tile.marblePillarSlabOld.2.desc=Marble Pillar Base Slab
 tile.marblePillarSlabOld.3.desc=Small Marble Pillar Slab
@@ -633,6 +710,11 @@ tile.glass2.0.desc=非对称式格栅铅框玻璃
 
 #Sandstone
 tile.chisel.sandstone.name=沙石
+
+tile.sandstone.0.desc=符文沙石
+tile.sandstone.1.desc=沙圆石
+tile.sandstone.2.desc=沙石苦力怕
+
 tile.sandstone.3.desc=褪色沙石
 tile.sandstone.4.desc=沙石柱
 tile.sandstone.5.desc=沙石柱顶石
@@ -973,8 +1055,6 @@ tile.chisel.spruce_planks.name=云杉木板
 tile.chisel.jungle_planks.name=丛林木板
 tile.chisel.dark_oak_planks.name=深色橡木板
 tile.chisel.acacia_planks.name=金合欢木板
-
-#Remember to do the descriptions.
 
 #Iron Fence
 tile.chisel.iron_bars.name=铁栅栏
