@@ -99,7 +99,6 @@ public class GuiChisel extends GuiContainer {
 			}
 		}
 		*/
-		System.out.print(flag + "\n");
 	}
 
 	private void setButtonText() {
