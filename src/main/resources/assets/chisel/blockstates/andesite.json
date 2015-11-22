@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=andesite_pillar": {
+      "model": "chisel:andesite_pillar"
+    },
+    "variant=andesite_bricks": {
+      "model": "chisel:andesite_bricks"
+    },
+    "variant=andesite_ornate": {
+      "model": "chisel:andesite_ornate"
+    },
+    "variant=andesite_prismatic": {
+      "model": "chisel:andesite_prismatic"
+    },
+    "variant=andesite_tiles_small": {
+      "model": "chisel:andesite_tiles_small"
+    }
+  }
+}

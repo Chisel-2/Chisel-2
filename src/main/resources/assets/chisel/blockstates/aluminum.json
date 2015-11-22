@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=aluminum_caution": {
+      "model": "chisel:aluminum_caution"
+    },
+    "variant=aluminum_shipping": {
+      "model": "chisel:aluminum_shipping"
+    },
+    "variant=aluminum_thermal": {
+      "model": "chisel:aluminum_thermal"
+    },
+    "variant=aluminum_125": {
+      "model": "chisel:aluminum_125"
+    },
+    "variant=aluminum_bordered": {
+      "model": "chisel:aluminum_bordered"
+    },
+    "variant=aluminum_bolted": {
+      "model": "chisel:aluminum_bolted"
+    }
+  }
+}

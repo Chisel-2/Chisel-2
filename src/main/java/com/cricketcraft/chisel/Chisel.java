@@ -1,7 +1,5 @@
 package com.cricketcraft.chisel;
 
-import com.cricketcraft.chisel.block.BlockCarvable;
-import com.cricketcraft.chisel.block.variant.BlockVariants;
 import com.cricketcraft.chisel.config.Configurations;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
@@ -11,8 +9,6 @@ import com.cricketcraft.chisel.item.chisel.ChiselController;
 import com.cricketcraft.chisel.network.ChiselGuiHandler;
 import com.cricketcraft.chisel.proxy.CommonProxy;
 import com.cricketcraft.chisel.world.GeneratorChisel;
-import net.minecraft.block.Block;
-import net.minecraft.block.state.IBlockState;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -37,15 +33,9 @@ import java.io.File;
 public class Chisel {
 	public static final String MOD_ID = "chisel";
 
-	public static final BlockCarvable.SoundType soundTempleFootstep = new BlockCarvable.SoundType("dig.stone", MOD_ID + ":step.templeblock", 1.0f, 1.0f);
-
 	public static final String MOD_NAME = "Chisel 2";
 
 	public static final String VERSION = "@VERSION@";
-
-	public static final BlockCarvable.SoundType soundHolystoneFootstep = new BlockCarvable.SoundType("holystone", 1.0f, 1.0f);
-
-	public static final BlockCarvable.SoundType soundMetalFootstep = new BlockCarvable.SoundType("metal", 1.0f, 1.0f);
 
 	public static boolean multipartLoaded = false;
 

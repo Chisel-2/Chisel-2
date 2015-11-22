@@ -1,10 +1,11 @@
 package com.cricketcraft.chisel.block.stone;
 
-import com.cricketcraft.chisel.block.BlockCarvable;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,10 +16,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockSnakestoneStone extends BlockCarvable implements IBlockWithSubtypes {
+public class BlockSnakestone extends Block implements IBlockWithSubtypes {
 
-    public BlockSnakestoneStone(){
-        super();
+    public BlockSnakestone(){
+        super(Material.rock);
         setCreativeTab(ChiselTabs.tabStoneChiselBlocks);
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.SNAKESTONE_STONE_VARIANTS, ChiselProperties.SNAKESTONE_STONE_VARIANTS.fromMeta(0)));
     }

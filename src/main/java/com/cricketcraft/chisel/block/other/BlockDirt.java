@@ -1,4 +1,10 @@
 package com.cricketcraft.chisel.block.other;
 
-public class BlockDirt {
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockDirt extends Block {
+    public BlockDirt() {
+        super(Material.ground);
+    }
 }

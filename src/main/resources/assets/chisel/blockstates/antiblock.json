@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=antiblock_0": {
+      "model": "chisel:antiblock_0"
+    },
+    "variant=antiblock_1": {
+      "model": "chisel:antiblock_1"
+    },
+    "variant=antiblock_2": {
+      "model": "chisel:antiblock_2"
+    },
+    "variant=antiblock_3": {
+      "model": "chisel:antiblock_3"
+    },
+    "variant=antiblock_4": {
+      "model": "chisel:antiblock_4"
+    },
+    "variant=antiblock_5": {
+      "model": "chisel:antiblock_5"
+    },
+    "variant=antiblock_6": {
+      "model": "chisel:antiblock_6"
+    },
+    "variant=antiblock_7": {
+      "model": "chisel:antiblock_7"
+    },
+    "variant=antiblock_8": {
+      "model": "chisel:antiblock_8"
+    },
+    "variant=antiblock_9": {
+      "model": "chisel:antiblock_9"
+    },
+    "variant=antiblock_10": {
+      "model": "chisel:antiblock_10"
+    },
+    "variant=antiblock_11": {
+      "model": "chisel:antiblock_11"
+    },
+    "variant=antiblock_12": {
+      "model": "chisel:antiblock_12"
+    },
+    "variant=antiblock_13": {
+      "model": "chisel:antiblock_13"
+    },
+    "variant=antiblock_14": {
+      "model": "chisel:antiblock_14"
+    },
+    "variant=antiblock_15": {
+      "model": "chisel:antiblock_15"
+    }
+  }
+}

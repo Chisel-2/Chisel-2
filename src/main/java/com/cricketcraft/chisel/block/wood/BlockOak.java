@@ -1,4 +1,10 @@
 package com.cricketcraft.chisel.block.wood;
 
-public class BlockOak {
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockOak extends Block {
+    public BlockOak() {
+        super(Material.wood);
+    }
 }

@@ -1,4 +1,6 @@
 package com.cricketcraft.chisel.block.other.stained;
 
-public class BlockStainedGlassRed {
+import com.cricketcraft.chisel.block.other.BlockCarvableGlass;
+
+public class BlockStainedGlassRed extends BlockCarvableGlass {
 }

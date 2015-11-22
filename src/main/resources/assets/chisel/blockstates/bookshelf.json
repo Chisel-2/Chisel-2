@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "variant=bookshelf_rainbow": {
+      "model": "chisel:bookshelf_rainbow"
+    },
+    "variant=bookshelf_necromancer_apprentice": {
+      "model": "chisel:bookshelf_necromancer_apprentice"
+    },
+    "variant=bookshelf_necromancer": {
+      "model": "chisel:bookshelf_necromancer"
+    },
+    "variant=bookshelf_tomes": {
+      "model": "chisel:bookshelf_tomes"
+    },
+    "variant=bookshelf_abandoned": {
+      "model": "chisel:bookshelf_abandoned"
+    },
+    "variant=bookshelf_hoarders": {
+      "model": "chisel:bookshelf_hoarders"
+    },
+    "variant=bookshelf_pastel": {
+      "model": "chisel:bookshelf_pastel"
+    },
+    "variant=bookshelf_historian": {
+      "model": "chisel:bookshelf_historian"
+    }
+  }
+}

@@ -2,7 +2,6 @@ package com.cricketcraft.chisel.block.other;
 
 import java.util.List;
 
-import com.cricketcraft.chisel.block.BlockCarvable;
 import com.cricketcraft.chisel.block.variant.BlockVariants;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import net.minecraft.block.Block;
@@ -26,7 +25,7 @@ import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
 
-public class BlockCloud extends BlockCarvable implements IBlockWithSubtypes {
+public class BlockCloud extends Block implements IBlockWithSubtypes {
 
 	public BlockCloud() {
 		super(Material.ice);

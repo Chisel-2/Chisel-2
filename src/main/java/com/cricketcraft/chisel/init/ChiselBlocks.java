@@ -147,9 +147,9 @@ public final class ChiselBlocks {
 		bronze = registerBlock("bronzeblock", new BlockBronze());
 		bricks = registerBlock("brickCustom", new BlockBricks());
 		bookshelf = registerBlock("bookshelf", new BlockBookshelf());
-		carpet = registerBlock("carpet_block", new BlockCarpet());
-		carpet_floor = registerBlock("carpet", BlockCarpetFloor());
-		chest = registerBlock("chest", new BlockChest());
+		carpet = registerBlock("carpet_block", new BlockCarvableCarpet());
+		carpet_floor = registerBlock("carpet", new BlockCarpetFloor());
+		chest = registerBlock("chest", new BlockCarvableChest());
 		cobblestone = registerBlock("cobblestone", new BlockCobblestone());
 		concrete = registerBlock("concrete", new BlockConcrete());
 		copper = registerBlock("copperblock", new BlockCopper());
@@ -164,7 +164,7 @@ public final class ChiselBlocks {
 		factory = registerBlock("factoryBlock", new BlockFactory());
 		fantasy = registerBlock("fantasyblock2", new BlockFantasy());
 		futura = registerBlock("futura", new BlockFutura());
-		glass = registerBlock("glass", new BlockGlass());
+		glass = registerBlock("glass", new BlockCarvableGlass());
 		glass_pane = registerBlock("glass_pane", new BlockGlassPane());
 		glowstone = registerBlock("glowstone", new BlockGlowstone());
 		gold = registerBlock("gold_block", new BlockGold());
@@ -191,7 +191,7 @@ public final class ChiselBlocks {
 		mossy_cobblestone = registerBlock("mossy_cobblestone", new BlockMossyCobblestone());
 		mossy_temple = registerBlock("mossy_temple", new BlockMossyTemple());
 		netherbrick = registerBlock("netherbrick", new BlockNetherBrick());
-		netherrack = registerBlock("netherrack", new BlockNetherrack());
+		//netherrack = registerBlock("netherrack", new BlockNetherrack());
 		oak = registerBlock("oak_planks", new BlockOak());
 		obsidian = registerBlock("obsidian", new BlockObsidian());
 		packed_ice = registerBlock("packed_ice", new BlockPackedIce());
@@ -208,7 +208,7 @@ public final class ChiselBlocks {
 		sandstone_scribbles = registerBlock("sandstone_scribbles", new BlockSandstoneScribbles());
 		silver = registerBlock("silverblock", new BlockSilver());
 		snakestone_sand = registerBlock("snakestone_sand", new BlockSnakestoneSand());
-		snakestone_stone = registerBlock("snakestone_stone", new BlockSnakestoneStone());
+		snakestone_stone = registerBlock("snakestone_stone", new BlockSnakestone());
 		spruce = registerBlock("spruce_planks", new BlockSpruce());
 		stained_glass_black = registerBlock("stained_glass_black", new BlockStainedGlassBlack());
 		stained_glass_red = registerBlock("stained_glass_red", new BlockStainedGlassRed());
@@ -247,7 +247,7 @@ public final class ChiselBlocks {
 		technical = registerBlock("technical", new BlockTechnical());
 		temple = registerBlock("temple", new BlockTemple());
 		tin = registerBlock("tinblock", new BlockTin());
-		torch = registerBlock("torch", new BlockTorch());
+		torch = registerBlock("torch", new BlockCarvableTorch());
 		transparent_technical = registerBlock("technical2", new BlockTransparentTechnical());
 		tyrian = registerBlock("tyrian", new BlockTyrian());
 		uranium = registerBlock("uraniumblock", new BlockUranium());

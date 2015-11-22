@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=bricks_large": {
+      "model": "chisel:bricks_large"
+    },
+    "variant=bricks_mortarless": {
+      "model": "chisel:bricks_mortarless"
+    },
+    "variant=bricks_varied": {
+      "model": "chisel:bricks_varied"
+    },
+    "variant=bricks_aged": {
+      "model": "chisel:bricks_aged"
+    },
+    "variant=bricks_yellow": {
+      "model": "chisel:bricks_yellow"
+    }
+  }
+}

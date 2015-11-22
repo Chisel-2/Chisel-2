@@ -1,4 +1,10 @@
 package com.cricketcraft.chisel.block.other;
 
-public class BlockDiamond {
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockDiamond extends Block {
+    public BlockDiamond() {
+        super(Material.rock);
+    }
 }

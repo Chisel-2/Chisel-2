@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "variant=acacia_planks_smooth": {
+      "model": "chisel:acacia_planks_smooth"
+    },
+    "variant=acacia_planks_short": {
+      "model": "chisel:acacia_planks_short"
+    },
+    "variant=acacia_planks_fancy": {
+      "model": "chisel:cloud_large"
+    },
+    "variant=acacia_planks_panel": {
+      "model": "chisel:acacia_planks_panel"
+    },
+    "variant=acacia_planks_double_slab": {
+      "model": "chisel:acacia_planks_double_slab"
+    },
+    "variant=acacia_planks_crate": {
+      "model": "chisel:acacia_planks_crate"
+    },
+    "variant=acacia_planks_crate_fancy": {
+      "model": "chisel:acacia_planks_crate_fancy"
+    },
+    "variant=acacia_planks_long": {
+      "model": "chisel:acacia_planks_long"
+    },
+    "variant=acacia_planks_vertical": {
+      "model": "chisel:acacia_planks_vertical"
+    },
+    "variant=acacia_planks_vertical_uneven": {
+      "model": "chisel:acacia_planks_vertical_uneven"
+    },
+    "variant=acacia_planks_parquet": {
+      "model": "chisel:acacia_planks_parquet"
+    },
+    "variant=acacia_planks_blinds": {
+      "model": "chisel:acacia_planks_blinds"
+    },
+    "variant=acacia_planks_scaffold": {
+      "model": "chisel:acacia_planks_scaffold"
+    },
+    "variant=acacia_planks_disarray": {
+      "model": "chisel:acacia_planks_disarray"
+    },
+    "variant=acacia_planks_disarray_vertical": {
+      "model": "chisel:acacia_planks_disarray_vertical"
+    }
+  }
+}

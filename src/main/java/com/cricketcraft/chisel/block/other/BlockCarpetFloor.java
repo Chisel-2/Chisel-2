@@ -1,4 +1,7 @@
 package com.cricketcraft.chisel.block.other;
 
-public class BlockCarpetFloor {
+
+import net.minecraft.block.BlockCarpet;
+
+public class BlockCarpetFloor extends BlockCarpet {
 }

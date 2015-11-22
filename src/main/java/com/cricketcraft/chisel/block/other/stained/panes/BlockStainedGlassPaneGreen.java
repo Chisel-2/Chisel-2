@@ -1,4 +1,10 @@
 package com.cricketcraft.chisel.block.other.stained.panes;
 
-public class BlockStainedGlassPaneGreen {
+import net.minecraft.block.BlockPane;
+import net.minecraft.block.material.Material;
+
+public class BlockStainedGlassPaneGreen extends BlockPane {
+    public BlockStainedGlassPaneGreen() {
+        super(Material.glass, true);
+    }
 }

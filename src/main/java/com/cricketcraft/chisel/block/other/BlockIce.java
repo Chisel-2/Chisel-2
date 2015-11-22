@@ -1,4 +1,10 @@
 package com.cricketcraft.chisel.block.other;
 
-public class BlockIce {
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockIce extends Block{
+    public BlockIce() {
+        super(Material.ice);
+    }
 }

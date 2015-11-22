@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "variant=birch_planks_smooth": {
+      "model": "chisel:birch_planks_smooth"
+    },
+    "variant=birch_planks_short": {
+      "model": "chisel:birch_planks_short"
+    },
+    "variant=birch_planks_fancy": {
+      "model": "chisel:birch_planks_fancy"
+    },
+    "variant=birch_planks_panel": {
+      "model": "chisel:birch_planks_panel"
+    },
+    "variant=birch_planks_double_slab": {
+      "model": "chisel:birch_planks_double_slab"
+    },
+    "variant=birch_planks_crate": {
+      "model": "chisel:birch_planks_crate"
+    },
+    "variant=birch_planks_crate_fancy": {
+      "model": "chisel:birch_planks_crate_fancy"
+    },
+    "variant=birch_planks_long": {
+      "model": "chisel:birch_planks_long"
+    },
+    "variant=birch_planks_vertical": {
+      "model": "chisel:birch_planks_vertical"
+    },
+    "variant=birch_planks_vertical_uneven": {
+      "model": "chisel:birch_planks_vertical_uneven"
+    },
+    "variant=birch_planks_parquet": {
+      "model": "chisel:birch_planks_parquet"
+    },
+    "variant=birch_planks_scaffold": {
+      "model": "chisel:birch_planks_scaffold"
+    },
+    "variant=birch_planks_disarray": {
+      "model": "chisel:birch_planks_disarray"
+    },
+    "variant=birch_planks_disarray_vertical": {
+      "model": "chisel:birch_planks_disarray_vertical"
+    }
+  }
+}

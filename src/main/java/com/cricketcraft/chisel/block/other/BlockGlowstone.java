@@ -1,4 +1,10 @@
 package com.cricketcraft.chisel.block.other;
 
-public class BlockGlowstone {
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockGlowstone extends Block {
+    public BlockGlowstone() {
+        super(Material.glass);
+    }
 }

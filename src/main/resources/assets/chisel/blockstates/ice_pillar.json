@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=cloud_normal": {
+      "model": "chisel:cloud_normal"
+    },
+    "variant=cloud_grid": {
+      "model": "chisel:cloud_grid"
+    },
+    "variant=cloud_large": {
+      "model": "chisel:cloud_large"
+    },
+    "variant=cloud_small": {
+      "model": "chisel:cloud_small"
+    },
+    "variant=cloud_vertical": {
+      "model": "chisel:cloud_vertical"
+    }
+  }
+}
