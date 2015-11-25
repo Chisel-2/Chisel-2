@@ -1,19 +1,52 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=chest_0": {
+      "model": "chisel:chest_0"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=chest_1": {
+      "model": "chisel:chest_1"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=chest_2": {
+      "model": "chisel:chest_2"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=chest_3": {
+      "model": "chisel:chest_3"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=chest_4": {
+      "model": "chisel:chest_4"
+    },
+    "variant=chest_5": {
+      "model": "chisel:chest_5"
+    },
+    "variant=chest_6": {
+      "model": "chisel:chest_6"
+    },
+    "variant=chest_7": {
+      "model": "chisel:chest_7"
+    },
+    "variant=chest_8": {
+      "model": "chisel:chest_8"
+    },
+    "variant=chest_9": {
+      "model": "chisel:chest_9"
+    },
+    "variant=chest_10": {
+      "model": "chisel:chest_10"
+    },
+    "variant=chest_11": {
+      "model": "chisel:chest_11"
+    },
+    "variant=chest_12": {
+      "model": "chisel:chest_12"
+    },
+    "variant=chest_13": {
+      "model": "chisel:chest_13"
+    },
+    "variant=chest_14": {
+      "model": "chisel:chest_14"
+    },
+    "variant=chest_15": {
+      "model": "chisel:chest_15"
     }
   }
 }

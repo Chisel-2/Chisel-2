@@ -1,19 +1,52 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=carpet_floor_0": {
+      "model": "chisel:carpet_floor_0"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=carpet_floor_1": {
+      "model": "chisel:carpet_floor_1"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=carpet_floor_2": {
+      "model": "chisel:carpet_floor_2"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=carpet_floor_3": {
+      "model": "chisel:carpet_floor_3"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=carpet_floor_4": {
+      "model": "chisel:carpet_floor_4"
+    },
+    "variant=carpet_floor_5": {
+      "model": "chisel:carpet_floor_5"
+    },
+    "variant=carpet_floor_6": {
+      "model": "chisel:carpet_floor_6"
+    },
+    "variant=carpet_floor_7": {
+      "model": "chisel:carpet_floor_7"
+    },
+    "variant=carpet_floor_8": {
+      "model": "chisel:carpet_floor_8"
+    },
+    "variant=carpet_floor_9": {
+      "model": "chisel:carpet_floor_9"
+    },
+    "variant=carpet_floor_10": {
+      "model": "chisel:carpet_floor_10"
+    },
+    "variant=carpet_floor_11": {
+      "model": "chisel:carpet_floor_11"
+    },
+    "variant=carpet_floor_12": {
+      "model": "chisel:carpet_floor_12"
+    },
+    "variant=carpet_floor_13": {
+      "model": "chisel:carpet_floor_13"
+    },
+    "variant=carpet_floor_14": {
+      "model": "chisel:carpet_floor_14"
+    },
+    "variant=carpet_floor_15": {
+      "model": "chisel:carpet_floor_15"
     }
   }
 }

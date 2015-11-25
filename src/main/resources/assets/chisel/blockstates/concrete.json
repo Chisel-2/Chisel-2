@@ -1,19 +1,37 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=concrete_raw": {
+      "model": "chisel:concrete_raw"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=concrete_block": {
+      "model": "chisel:concrete_block"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=concrete_slab": {
+      "model": "chisel:concrete_slab"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=concrete_blocks": {
+      "model": "chisel:concrete_blocks"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=concrete_raw_weathered": {
+      "model": "chisel:concrete_raw_weathered"
+    },
+    "variant=concrete_block_weathered": {
+      "model": "chisel:concrete_block_weathered"
+    },
+    "variant=concrete_slab_weathered": {
+      "model": "chisel:concrete_slab_weathered"
+    },
+    "variant=concrete_blocks_weathered": {
+      "model": "chisel:concrete_blocks_weathered"
+    },
+    "variant=concrete_raw_partly": {
+      "model": "chisel:concrete_raw_partly"
+    },
+    "variant=concrete_block_partly": {
+      "model": "chisel:concrete_block_partly"
+    },
+    "variant=concrete_asphalt": {
+      "model": "chisel:concrete_asphalt"
     }
   }
 }

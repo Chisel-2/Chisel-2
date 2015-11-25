@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=cobblestone_bricks_aligned": {
+      "model": "chisel:cobblestone_bricks_aligned"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=cobblestone_bricks_detailed": {
+      "model": "chisel:cobblestone_bricks_detailed"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=cobblestone_bricks_small": {
+      "model": "chisel:cobblestone_bricks_small"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=cobblestone_tiles_large": {
+      "model": "chisel:cobblestone_tiles_large"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=cobblestone_tiles_small": {
+      "model": "chisel:cobblestone_tiles_small"
+    },
+    "variant=cobblestone_tiles_french": {
+      "model": "chisel:cobblestone_tiles_french"
+    },
+    "variant=cobblestone_tiles_french_light": {
+      "model": "chisel:cobblestone_tiles_french_light"
+    },
+    "variant=cobblestone_tiles_creeper": {
+      "model": "chisel:cobblestone_tiles_creeper"
+    },
+    "variant=cobblestone_tiles_damaged": {
+      "model": "chisel:cobblestone_tiles_damaged"
+    },
+    "variant=cobblestone_tiles_huge": {
+      "model": "chisel:cobblestone_tiles_huge"
+    },
+    "variant=cobblestone_panel_creeper": {
+      "model": "chisel:cobblestone_panel_creeper"
+    },
+    "variant=cobblestone_dent": {
+      "model": "chisel:cobblestone_dent"
+    },
+    "variant=cobblestone_panel": {
+      "model": "chisel:cobblestone_panel"
+    },
+    "variant=cobblestone_panel_light": {
+      "model": "chisel:cobblestone_panel_light"
+    },
+    "variant=cobblestone_panel_dark": {
+      "model": "chisel:cobblestone_panel_dark"
     }
   }
 }

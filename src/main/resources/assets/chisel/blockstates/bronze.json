@@ -1,19 +1,22 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=bronze_caution": {
+      "model": "chisel:bronze_caution"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=bronze_shipping": {
+      "model": "chisel:bronze_shipping"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=bronze_thermal": {
+      "model": "chisel:bronze_thermal"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=bronze_125": {
+      "model": "chisel:bronze_125"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=bronze_bordered": {
+      "model": "chisel:bronze_bordered"
+    },
+    "variant=bronze_bolted": {
+      "model": "chisel:bronze_bolted"
     }
   }
 }
