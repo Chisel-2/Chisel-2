@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=ice_rough": {
+      "model": "chisel:ice_rough"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=ice_cobble": {
+      "model": "chisel:ice_cobble"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=ice_rough_large": {
+      "model": "chisel:ice_rough_large"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=ice_bricks_large": {
+      "model": "chisel:ice_bricks_large"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=ice_bricks_small": {
+      "model": "chisel:ice_bricks_small"
+    },
+    "variant=ice_glass_wall": {
+      "model": "chisel:ice_glass_wall"
+    },
+    "variant=ice_tiles_large": {
+      "model": "chisel:ice_tiles_large"
+    },
+    "variant=ice_tiles_fancy": {
+      "model": "chisel:ice_tiles_fancy"
+    },
+    "variant=ice_tiles_sunken": {
+      "model": "chisel:ice_tiles_sunken"
+    },
+    "variant=ice_tiles_disordered": {
+      "model": "chisel:ice_tiles_disordered"
+    },
+    "variant=ice_panel": {
+      "model": "chisel:ice_panel"
+    },
+    "variant=ice_double_slab": {
+      "model": "chisel:ice_double_slab"
+    },
+    "variant=ice_zelda": {
+      "model": "chisel:ice_zelda"
+    },
+    "variant=ice_bismuth": {
+      "model": "chisel:ice_bismuth"
+    },
+    "variant=ice_poison": {
+      "model": "chisel:ice_poison"
     }
   }
 }

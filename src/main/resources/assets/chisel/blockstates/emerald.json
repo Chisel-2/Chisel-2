@@ -1,19 +1,37 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=emerald_panel": {
+      "model": "chisel:emerald_panel"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=emerald_panel_classic": {
+      "model": "chisel:emerald_panel_classic"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=emerald_smooth": {
+      "model": "chisel:emerald_smooth"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=emerald_chunk": {
+      "model": "chisel:emerald_chunk"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=emerald_ornate_layer": {
+      "model": "chisel:emerald_ornate_layer"
+    },
+    "variant=emerald_zelda": {
+      "model": "chisel:emerald_zelda"
+    },
+    "variant=emerald_cell": {
+      "model": "chisel:emerald_cell"
+    },
+    "variant=emerald_bismuth": {
+      "model": "chisel:emerald_bismuth"
+    },
+    "variant=emerald_blocks_small": {
+      "model": "chisel:emerald_blocks_small"
+    },
+    "variant=emerald_blocks_small_ornate": {
+      "model": "chisel:emerald_blocks_small_ornate"
+    },
+    "variant=emerald_ornate": {
+      "model": "chisel:emerald_ornate"
     }
   }
 }

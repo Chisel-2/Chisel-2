@@ -1,19 +1,64 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=factory_rusty_dotted": {
+      "model": "chisel:factory_rusted_dotted"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=factory_rusty_plate": {
+      "model": "chisel:factory_rusted_plate"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=factory_rusty_very": {
+      "model": "chisel:factory_rusty_very"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=factory_rusty_little": {
+      "model": "chisel:factory_rusty_little"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=factory_wireframe": {
+      "model": "chisel:factory_wireframe"
+    },
+    "variant=factory_wireframe_purple": {
+      "model": "chisel:factory_wireframe_purple"
+    },
+    "variant=factory_hazard_yellow": {
+      "model": "chisel:factory_hazard_yellow"
+    },
+    "variant=factory_hazard_orange": {
+      "model": "chisel:factory_hazard_orange"
+    },
+    "variant=factory_circuit_fancy": {
+      "model": "chisel:factory_circuit_fancy"
+    },
+    "variant=factory_metal": {
+      "model": "chisel:factory_metal"
+    },
+    "variant=factory_gold_circuit": {
+      "model": "chisel:factory_gold_circuit"
+    },
+    "variant=factory_gold_purple": {
+      "model": "chisel:factory_gold_purple"
+    },
+    "variant=factory_construction": {
+      "model": "chisel:factory_construction"
+    },
+    "variant=factory_vent_worn": {
+      "model": "chisel:factory_vent_worn"
+    },
+    "variant=factory_rusty_plates": {
+      "model": "chisel:factory_rusty_plates"
+    },
+    "variant=factory_column": {
+      "model": "chisel:factory_column"
+    },
+    "variant=factory_blue": {
+      "model": "chisel:factory_blue"
+    },
+    "variant=factory_vent_vertical": {
+      "model": "chisel:factory_vent_vertical"
+    },
+    "variant=factory_circuit_blue": {
+      "model": "chisel:factory_circuit_blue"
+    },
+    "variant=factory_wireframe_blue": {
+      "model": "chisel:factory_wireframe_blue"
     }
   }
 }

@@ -1,19 +1,22 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=granite_polished": {
+      "model": "chisel:granite_polished"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=granite_pillar": {
+      "model": "chisel:granite_pillar"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=granite_bricks": {
+      "model": "chisel:granite_bricks"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=granite_ornate": {
+      "model": "chisel:granite_ornate"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=granite_prismatic": {
+      "model": "chisel:granite_prismatic"
+    },
+    "variant=granite_tiles_small": {
+      "model": "chisel:granite_tiles_small"
     }
   }
 }

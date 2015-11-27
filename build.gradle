@@ -11,15 +11,18 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
         classpath 'org.ajoberstar:gradle-git:0.10.1'
     }
 
 }
 
-apply plugin: 'forge'
+//plugins {
+//    id "net.minecraftforge.gradle.forge" version "2.1"
+//}
+apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'maven-publish'
-apply plugin: 'curseforge'
+//apply plugin: 'curseforge'
 
 import org.ajoberstar.grgit.Grgit
 
@@ -33,11 +36,11 @@ project.buildnumber = System.getenv('BUILD_NUMBER') != null ? System.getenv('BUI
 
 version = "${mod_version}.${buildnumber}"
 group = "com.cricketcraft.chisel" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = dev ? "Chisel2_DEV" : "Chisel2"
+//archivesBaseName = dev ? "Chisel2_DEV" : "Chisel2"
 
 minecraft {
-    version = "${minecraft_version}-${forge_version}"
     mappings = "${forge_mappings}"
+    version = "${minecraft_version}-${forge_version}-${minecraft_version}"
     runDir = "run"
 
     replaceIn "Chisel.java"
@@ -153,19 +156,19 @@ String getChangelogText() {
     return str
 }
 
-curse {
-    dependsOn 'reobf'
-
-    onlyIf {
-        return project.hasProperty('chisel_curseforge_key') && System.getenv("CURSE") != null && System.getenv("CURSE").equalsIgnoreCase("true")
-    }
-
-    if (project.hasProperty('chisel_curseforge_key')) apiKey = project.chisel_curseforge_key
-    projectId = project.projectId
-    changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
-    releaseType = 'release'
-    displayName = "Chisel 2 - ${mod_version}"
-    additionalArtifact deobfJar, sourcesJar, apiJar
-}
+//curse {
+//    dependsOn 'reobf'
+//
+//    onlyIf {
+//        return project.hasProperty('chisel_curseforge_key') && System.getenv("CURSE") != null && System.getenv("CURSE").equalsIgnoreCase("true")
+//    }
+//
+//    if (project.hasProperty('chisel_curseforge_key')) apiKey = project.chisel_curseforge_key
+//    projectId = project.projectId
+//    changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
+//    releaseType = 'release'
+//    displayName = "Chisel 2 - ${mod_version}"
+//    additionalArtifact deobfJar, sourcesJar, apiJar
+//}
 
 idea { module { inheritOutputDirs = true } }

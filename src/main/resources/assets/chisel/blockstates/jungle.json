@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=jungle_planks_smooth": {
+      "model": "chisel:jungle_planks_smooth"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=jungle_planks_short": {
+      "model": "chisel:jungle_planks_short"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=jungle_planks_fancy": {
+      "model": "chisel:jungle_planks_fancy"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=jungle_planks_panel": {
+      "model": "chisel:jungle_planks_panel"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=jungle_planks_double_slab": {
+      "model": "chisel:jungle_planks_double_slab"
+    },
+    "variant=jungle_planks_crate": {
+      "model": "chisel:jungle_planks_crate"
+    },
+    "variant=jungle_planks_crate_fancy": {
+      "model": "chisel:jungle_planks_crate_fancy"
+    },
+    "variant=jungle_planks_long": {
+      "model": "chisel:jungle_planks_long"
+    },
+    "variant=jungle_planks_vertical": {
+      "model": "chisel:jungle_planks_vertical"
+    },
+    "variant=jungle_planks_vertical_uneven": {
+      "model": "chisel:jungle_planks_vertical_uneven"
+    },
+    "variant=jungle_planks_parquet": {
+      "model": "chisel:jungle_planks_parquet"
+    },
+    "variant=jungle_planks_blinds": {
+      "model": "chisel:jungle_planks_blinds"
+    },
+    "variant=jungle_planks_scaffold": {
+      "model": "chisel:jungle_planks_scaffold"
+    },
+    "variant=jungle_planks_disarray": {
+      "model": "chisel:jungle_planks_disarray"
+    },
+    "variant=jungle_planks_disarray_vertical": {
+      "model": "chisel:jungle_planks_disarray_vertical"
     }
   }
 }

@@ -1,19 +1,19 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=imperial_camo": {
+      "model": "chisel:imperial_camo"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=imperial_camo_secluded": {
+      "model": "chisel:imperial_camo_secluded"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=imperial_bolt": {
+      "model": "chisel:imperial_bolt"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=imperial_caution_white": {
+      "model": "chisel:imperial_caution_white"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=imperial_caution_team": {
+      "model": "chisel:imperial_caution_team"
     }
   }
 }

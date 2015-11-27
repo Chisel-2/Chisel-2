@@ -1,19 +1,52 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=fantasy_brick": {
+      "model": "chisel:fantasy_brick"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=fantasy_brick_faded": {
+      "model": "chisel:fantasy_brick_faded"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=fantasy_brick_worn": {
+      "model": "chisel:fantasy_brick_worn"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=fantasy_brick_damaged": {
+      "model": "chisel:fantasy_brick_damaged"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=fantasy_decoration": {
+      "model": "chisel:fantasy_decoration"
+    },
+    "variant=fantasy_decoration_block": {
+      "model": "chisel:fantasy_decoration_block"
+    },
+    "variant=fantasy_decoration_pillar": {
+      "model": "chisel:fantasy_decoration_pillar"
+    },
+    "variant=fantasy_pillar": {
+      "model": "chisel:fantasy_pillar"
+    },
+    "variant=fantasy_decoration_snake": {
+      "model": "chisel:fantasy_decoration_snake"
+    },
+    "variant=fantasy_decoration_noise": {
+      "model": "chisel:fantasy_decoration_noise"
+    },
+    "variant=fantasy_decoration_engraving": {
+      "model": "chisel:fantasy_decoration_engraving"
+    },
+    "variant=fantasy_decoration_chains": {
+      "model": "chisel:fantasy_decoration_chains"
+    },
+    "variant=fantasy_decoration_plate": {
+      "model": "chisel:fantasy_decoration_plate"
+    },
+    "variant=fantasy_block": {
+      "model": "chisel:fantasy_block"
+    },
+    "variant=fantasy_bricks_disarray": {
+      "model": "chisel:fantasy_bricks_disarray"
+    },
+    "variant=fantasy_bricks_disarray_worn": {
+      "model": "chisel:fantasy_bricks_disarray_worn"
     }
   }
 }

@@ -1,19 +1,43 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=dirt_bricks_disarray": {
+      "model": "chisel:dirt_bricks_disarray"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=dirt_nether": {
+      "model": "chisel:dirt_nether"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=dirt_bricks": {
+      "model": "chisel:dirt_bricks"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=dirt_cobble": {
+      "model": "chisel:dirt_cobble"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=dirt_cobble_reinforced": {
+      "model": "chisel:dirt_cobble_reinforced"
+    },
+    "variant=dirt_reinforced": {
+      "model": "chisel:dirt_reinforced"
+    },
+    "variant=dirt_happy": {
+      "model": "chisel:dirt_happy"
+    },
+    "variant=dirt_bricks_large": {
+      "model": "chisel:dirt_bricks_large"
+    },
+    "variant=dirt_bricks_large_on": {
+      "model": "chisel:dirt_bricks_large_on"
+    },
+    "variant=dirt_horizontal": {
+      "model": "chisel:dirt_horizontal"
+    },
+    "variant=dirt_vertical": {
+      "model": "chisel:dirt_horizontal"
+    },
+    "variant=dirt_layers": {
+      "model": "chisel:dirt_layers"
+    },
+    "variant=dirt_crumbling": {
+      "model": "chisel:dirt_crumbling"
     }
   }
 }

@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=glowstone_cobble": {
+      "model": "chisel:glowstone_cobble"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=glowstone_corroded": {
+      "model": "chisel:glowstone_corroded"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=glowstone_blocks": {
+      "model": "chisel:glowstone_blocks"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=glowstone_neon": {
+      "model": "chisel:glowstone_neon"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=glowstone_ornate": {
+      "model": "chisel:glowstone_ornate"
+    },
+    "variant=glowstone_rocky": {
+      "model": "chisel:glowstone_rocky"
+    },
+    "variant=glowstone_shale": {
+      "model": "chisel:glowstone_shale"
+    },
+    "variant=glowstone_tiles": {
+      "model": "chisel:glowstone_tiles"
+    },
+    "variant=glowstone_fancy": {
+      "model": "chisel:glowstone_fancy"
+    },
+    "variant=glowstone_crumbling": {
+      "model": "chisel:glowstone_crumbling"
+    },
+    "variant=glowstone_organic": {
+      "model": "chisel:glowstone_organic"
+    },
+    "variant=glowstone_layers": {
+      "model": "chisel:glowstone_layers"
+    },
+    "variant=glowstone_corroded_tiles": {
+      "model": "chisel:glowstone_corroded_tiles"
+    },
+    "variant=glowstone_bismuth": {
+      "model": "chisel:glowstone_bismuth"
+    },
+    "variant=glowstone_bismuth_panel": {
+      "model": "chisel:glowstone_bismuth_panel"
     }
   }
 }

@@ -1,19 +1,22 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=ice_pillar_plain_plain": {
+      "model": "chisel:ice_plain_plain"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=ice_pillar_plain_greek": {
+      "model": "chisel:ice_pillar_plain_greek"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=ice_pillar_greek_plain": {
+      "model": "chisel:ice_pillar_greek_greek"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=ice_pillar_carved": {
+      "model": "chisel:ice_pillar_carved"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=ice_pillar_ornamental": {
+      "model": "chisel:ice_pillar_ornamental"
+    },
+    "variant=ice_pillar_inscribed": {
+      "model": "chisel:ice_pillar_inscribed"
     }
   }
 }

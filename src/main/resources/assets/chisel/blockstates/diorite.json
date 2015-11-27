@@ -1,19 +1,19 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=diorite_polished": {
+      "model": "chisel:diorite_polished"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=diorite_pillar": {
+      "model": "chisel:diorite_pillar"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=diorite_bricks": {
+      "model": "chisel:diorite_bricks"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=diorite_prismatic": {
+      "model": "chisel:diorite_prismatic"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=diorite_tiles_small": {
+      "model": "chisel:diorite_tiles_small"
     }
   }
 }

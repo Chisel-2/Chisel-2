@@ -1,19 +1,25 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=energised_voidstone_raw": {
+      "model": "chisel:energised_voidstone_raw"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=energised_voidstone_tiles": {
+      "model": "chisel:energised_voidstone_smooth"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=energised_voidstone_skull": {
+      "model": "chisel:energised_voidstone_skull"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=energised_voidstone_runic": {
+      "model": "chisel:energised_voidstone_runic"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=energised_voidstone_metal": {
+      "model": "chisel:energised_voidstone_metal"
+    },
+    "variant=energised_voidstone_eye": {
+      "model": "chisel:energised_voidstone_eye"
+    },
+    "variant=energised_voidstone_bevel": {
+      "model": "chisel:energised_voidstone_bevel"
     }
   }
 }

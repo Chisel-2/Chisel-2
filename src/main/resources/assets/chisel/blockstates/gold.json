@@ -1,19 +1,64 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=gold_ingots_large": {
+      "model": "chisel:gold_ingots_large"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=gold_ingots_small": {
+      "model": "chisel:gold_ingots_small"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=gold_bricks": {
+      "model": "chisel:gold_bricks"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=gold_cart": {
+      "model": "chisel:gold_cart"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=gold_coin_heads": {
+      "model": "chisel:gold_coin_heads"
+    },
+    "variant=gold_coin_tails": {
+      "model": "chisel:gold_coin_tails"
+    },
+    "variant=gold_crate_dark": {
+      "model": "chisel:gold_crate_dark"
+    },
+    "variant=gold_crate_light": {
+      "model": "chisel:gold_crate_light"
+    },
+    "variant=gold_plates": {
+      "model": "chisel:gold_plates"
+    },
+    "variant=gold_rivets": {
+      "model": "chisel:gold_rivets"
+    },
+    "variant=gold_star_decor": {
+      "model": "chisel:gold_star_decor"
+    },
+    "variant=gold_star_obsidian_purple": {
+      "model": "chisel:gold_star_obsidian_purple"
+    },
+    "variant=gold_star_obsidian": {
+      "model": "chisel:gold_star_obsidian"
+    },
+    "variant=gold_simple": {
+      "model": "chisel:gold_simple"
+    },
+    "variant=gold_caution": {
+      "model": "chisel:gold_caution"
+    },
+    "variant=gold_shipping": {
+      "model": "chisel:gold_shipping"
+    },
+    "variant=gold_thermal": {
+      "model": "chisel:gold_thermal"
+    },
+    "variant=gold_125": {
+      "model": "chisel:gold_125"
+    },
+    "variant=gold_bordered": {
+      "model": "chisel:gold_bordered"
+    },
+    "variant=gold_bolted": {
+      "model": "chisel:gold_bolted"
     }
   }
 }

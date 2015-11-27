@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=grimstone_raw": {
+      "model": "chisel:grimstone_raw"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=grimstone_smooth": {
+      "model": "chisel:grimstone_smooth"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=grimstone_symbol": {
+      "model": "chisel:grimstone_symbol"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=grimstone_chiseled": {
+      "model": "chisel:grimstone_chiseled"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=grimstone_blocks": {
+      "model": "chisel:grimstone_blocks"
+    },
+    "variant=grimstone_blocks_rough": {
+      "model": "chisel:grimstone_blocks_rough"
+    },
+    "variant=grimstone_bricks": {
+      "model": "chisel:grimstone_bricks"
+    },
+    "variant=grimstone_bricks_large": {
+      "model": "chisel:grimstone_bricks_large"
+    },
+    "variant=grimstone_platform": {
+      "model": "chisel:grimstone_platform"
+    },
+    "variant=grimstone_platform_tiles": {
+      "model": "chisel:grimstone_platform_tiles"
+    },
+    "variant=grimstone_construction": {
+      "model": "chisel:grimstone_construction"
+    },
+    "variant=grimstone_tiles": {
+      "model": "chisel:grimstone_tiles"
+    },
+    "variant=grimstone_plate_smooth": {
+      "model": "chisel:grimstone_plate_smooth"
+    },
+    "variant=grimstone_plate": {
+      "model": "chisel:grimstone_plate"
+    },
+    "variant=grimstone_flaky": {
+      "model": "chisel:grimstone_flaky"
     }
   }
 }

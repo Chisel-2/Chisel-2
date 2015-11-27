@@ -1,19 +1,28 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=lapis_chunky": {
+      "model": "chisel:lapis_chunky"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=lapis_dark": {
+      "model": "chisel:lapis_dark"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=lapis_zelda": {
+      "model": "chisel:lapis_zelda"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=lapis_ornate": {
+      "model": "chisel:lapis_ornate"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=lapis_tile": {
+      "model": "chisel:lapis_tile"
+    },
+    "variant=lapis_panel": {
+      "model": "chisel:lapis_panel"
+    },
+    "variant=lapis_smooth": {
+      "model": "chisel:lapis_smooth"
+    },
+    "variant=lapis_ornate_layer": {
+      "model": "chisel:lapis_ornate_layer"
     }
   }
 }

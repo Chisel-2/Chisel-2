@@ -1,19 +1,46 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=holystone_raw": {
+      "model": "chisel:holystone_raw"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=holystone_smooth": {
+      "model": "chisel:holystone_smooth"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=holystone_symbol": {
+      "model": "chisel:holystone_symbol"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=holystone_chiseled": {
+      "model": "chisel:holystone_chiseled"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=holystone_blocks": {
+      "model": "chisel:holystone_blocks"
+    },
+    "variant=holystone_blocks_rough": {
+      "model": "chisel:holystone_blocks_rough"
+    },
+    "variant=holystone_bricks": {
+      "model": "chisel:holystone_bricks"
+    },
+    "variant=holystone_bricks_large": {
+      "model": "chisel:holystone_bricks_large"
+    },
+    "variant=holystone_platform": {
+      "model": "chisel:holystone_platform"
+    },
+    "variant=holystone_platform_tiles": {
+      "model": "chisel:holystone_platform_tiles"
+    },
+    "variant=holsytone_construction": {
+      "model": "chisel:holystone_construction"
+    },
+    "variant=holystone_tiles": {
+      "model": "chisel:holystone_tiles"
+    },
+    "variant=holystone_plate_smooth": {
+      "model": "chisel:holystone_plate_smooth"
+    },
+    "variant=holystone_plate": {
+      "model": "chisel:holystone_plate"
     }
   }
 }

@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=dark_oak_planks_smooth": {
+      "model": "chisel:dark_oak_planks_smooth"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=dark_oak_planks_short": {
+      "model": "chisel:dark_oak_planks_short"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=dark_oak_planks_fancy": {
+      "model": "chisel:dark_oak_planks_fancy"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=dark_oak_planks_panel": {
+      "model": "chisel:dark_oak_planks_panel"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=dark_oak_planks_double_slab": {
+      "model": "chisel:dark_oak_planks_double_slab"
+    },
+    "variant=dark_oak_planks_crate": {
+      "model": "chisel:dark_oak_planks_crate"
+    },
+    "variant=dark_oak_planks_crate_fancy": {
+      "model": "chisel:dark_oak_planks_crate_fancy"
+    },
+    "variant=dark_oak_planks_long": {
+      "model": "chisel:dark_oak_planks_long"
+    },
+    "variant=dark_oak_planks_vertical": {
+      "model": "chisel:dark_oak_planks_vertical"
+    },
+    "variant=dark_oak_planks_vertical_uneven": {
+      "model": "chisel:dark_oak_planks_vertical_uneven"
+    },
+    "variant=dark_oak_planks_parquet": {
+      "model": "chisel:dark_oak_planks_parquet"
+    },
+    "variant=dark_oak_planks_blinds": {
+      "model": "chisel:dark_oak_planks_blinds"
+    },
+    "variant=dark_oak_planks_scaffold": {
+      "model": "chisel:dark_oak_planks_scaffold"
+    },
+    "variant=dark_oak_planks_disarray": {
+      "model": "chisel:dark_oak_planks_disarray"
+    },
+    "variant=dark_oak_planks_disarray_vertical": {
+      "model": "chisel:dark_oak_planks_disarray_vertical"
     }
   }
 }

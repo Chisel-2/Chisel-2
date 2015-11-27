@@ -1,19 +1,37 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=diamond_embossed": {
+      "model": "chisel:diamond_embossed"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=diamond_panel": {
+      "model": "chisel:diamond_panel"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=diamond_obsidian_purple": {
+      "model": "chisel:diamond_obsidian_purple"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=diamond_obsidian": {
+      "model": "chisel:diamond_obsidian"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=diamond_simple": {
+      "model": "chisel:diamond_simple"
+    },
+    "variant=diamond_bismuth": {
+      "model": "chisel:diamond_bismuth"
+    },
+    "variant=diamond_crushed": {
+      "model": "chisel:diamond_crushed"
+    },
+    "variant=diamond_small_blocks": {
+      "model": "chisel:diamond_small_blocks"
+    },
+    "variant=diamond_small_blocks_ornate": {
+      "model": "chisel:diamond_small_blocks_ornate"
+    },
+    "variant=diamond_zelda": {
+      "model": "chisel:diamond_zelda"
+    },
+    "variant=diamond_ornate": {
+      "model": "chisel:diamond_ornate"
     }
   }
 }

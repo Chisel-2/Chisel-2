@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=glass_pane_bubble": {
+      "model": "chisel:glass_pane_bubble"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=glass_pane_chinese": {
+      "model": "chisel:glass_pane_chinese"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=glass_pane_japanese": {
+      "model": "chisel:glass_pane_japanese"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=glass_pane_dungeon": {
+      "model": "chisel:glass_pane_dungeon"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=glass_pane_light": {
+      "model": "chisel:glass_pane_light"
+    },
+    "variant=glass_pane_borderless": {
+      "model": "chisel:glass_pane_borderless"
+    },
+    "variant=glass_pane_ornate": {
+      "model": "chisel:glass_pane_ornate"
+    },
+    "variant=glass_pane_screen": {
+      "model": "chisel:glass_pane_screen"
+    },
+    "variant=glass_pane_shale": {
+      "model": "chisel:glass_pane_shale"
+    },
+    "variant=glass_pane_steel": {
+      "model": "chisel:glass_pane_steel"
+    },
+    "variant=glass_pane_stone": {
+      "model": "chisel:glass_pane_stone"
+    },
+    "variant=glass_pane_grid_thick": {
+      "model": "chisel:glass_pane_grid_thick"
+    },
+    "variant=glass_pane_grid_thin": {
+      "model": "chisel:glass_pane_grid_thin"
+    },
+    "variant=glass_pane_fence": {
+      "model": "chisel:glass_pane_fence"
+    },
+    "variant=glass_pane_leaded": {
+      "model": "chisel:glass_pane_leaded"
     }
   }
 }

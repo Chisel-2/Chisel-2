@@ -1,19 +1,31 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=iron_bars_no_frame": {
+      "model": "chisel:iron_bars_no_frame"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=iron_bars_menacing": {
+      "model": "chisel:iron_bars_menacing"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=iron_bars_cage": {
+      "model": "chisel:iron_bars_cage"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=iron_bars_menacing_spikes": {
+      "model": "chisel:iron_bars_menacing_spikes"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=iron_bars_grid_thick": {
+      "model": "chisel:iron_bars_grid_thick"
+    },
+    "variant=iron_bars_grid_thin": {
+      "model": "chisel:iron_bars_grid_thin"
+    },
+    "variant=iron_bars_ornate": {
+      "model": "chisel:iron_bars_ornate"
+    },
+    "variant=iron_bars_vertical": {
+      "model": "chisel:iron_bars_vertical"
+    },
+    "variant=iron_bars_spikes": {
+      "model": "chisel:iron_bars_spikes"
     }
   }
 }

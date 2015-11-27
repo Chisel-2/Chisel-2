@@ -1,19 +1,49 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=glass_bubble": {
+      "model": "chisel:glass_bubble"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=glass_chinese": {
+      "model": "chisel:glass_chinese"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=glass_japanese": {
+      "model": "chisel:glass_japanese"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=glass_dungeon": {
+      "model": "chisel:glass_dungeon"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=glass_light": {
+      "model": "chisel:glass_light"
+    },
+    "variant=glass_borderless": {
+      "model": "chisel:glass_borderless"
+    },
+    "variant=glass_ornate": {
+      "model": "chisel:glass_ornate"
+    },
+    "variant=glass_screen": {
+      "model": "chisel:glass_screen"
+    },
+    "variant=glass_shale": {
+      "model": "chisel:glass_shale"
+    },
+    "variant=glass_steel": {
+      "model": "chisel:glass_steel"
+    },
+    "variant=glass_stone": {
+      "model": "chisel:glass_stone"
+    },
+    "variant=glass_grid_thick": {
+      "model": "chisel:glass_grid_thick"
+    },
+    "variant=glass_grid_thin": {
+      "model": "chisel:glass_grid_thin"
+    },
+    "variant=glass_fence": {
+      "model": "chisel:glass_fence"
+    },
+    "variant=glass_leaded": {
+      "model": "chisel:glass_leaded"
     }
   }
 }

@@ -1,19 +1,19 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=futura_screen_gray": {
+      "model": "chisel:futura_screen_gray"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=futura_screen_cyan": {
+      "model": "chisel:futura_screen_cyan"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=futura_controller": {
+      "model": "chisel:futura_controller"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=futura_controller_purple": {
+      "model": "chisel:futura_controller_purple"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=futura_rainbow": {
+      "model": "chisel:futura_rainbow"
     }
   }
 }

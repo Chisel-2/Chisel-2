@@ -1,19 +1,52 @@
 {
   "variants": {
-    "variant=cloud_normal": {
-      "model": "chisel:cloud_normal"
+    "variant=large_hex_plating_0": {
+      "model": "chisel:large_hex_plating_0"
     },
-    "variant=cloud_grid": {
-      "model": "chisel:cloud_grid"
+    "variant=large_hex_plating_1": {
+      "model": "chisel:large_hex_plating_1"
     },
-    "variant=cloud_large": {
-      "model": "chisel:cloud_large"
+    "variant=large_hex_plating_2": {
+      "model": "chisel:large_hex_plating_2"
     },
-    "variant=cloud_small": {
-      "model": "chisel:cloud_small"
+    "variant=large_hex_plating_3": {
+      "model": "chisel:large_hex_plating_3"
     },
-    "variant=cloud_vertical": {
-      "model": "chisel:cloud_vertical"
+    "variant=large_hex_plating_4": {
+      "model": "chisel:large_hex_plating_4"
+    },
+    "variant=large_hex_plating_5": {
+      "model": "chisel:large_hex_plating_5"
+    },
+    "variant=large_hex_plating_6": {
+      "model": "chisel:large_hex_plating_6"
+    },
+    "variant=large_hex_plating_7": {
+      "model": "chisel:large_hex_plating_7"
+    },
+    "variant=large_hex_plating_8": {
+      "model": "chisel:large_hex_plating_8"
+    },
+    "variant=large_hex_plating_9": {
+      "model": "chisel:large_hex_plating_9"
+    },
+    "variant=large_hex_plating_10": {
+      "model": "chisel:large_hex_plating_10"
+    },
+    "variant=large_hex_plating_11": {
+      "model": "chisel:large_hex_plating_1`"
+    },
+    "variant=large_hex_plating_12": {
+      "model": "chisel:large_hex_plating_12"
+    },
+    "variant=large_hex_plating_13": {
+      "model": "chisel:large_hex_plating_13"
+    },
+    "variant=large_hex_plating_14": {
+      "model": "chisel:large_hex_plating_14"
+    },
+    "variant=large_hex_plating_15": {
+      "model": "chisel:large_hex_plating_15"
     }
   }
 }
