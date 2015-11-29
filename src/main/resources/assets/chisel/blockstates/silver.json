@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=silver_caution": {
+      "model": "chisel:silver_caution"
+    },
+    "variant=silver_shipping": {
+      "model": "chisel:silver_shipping"
+    },
+    "variant=silver_thermal": {
+      "model": "chisel:silver_thermal"
+    },
+    "variant=silver_125": {
+      "model": "chisel:silver_125"
+    },
+    "variant=silver_bordered": {
+      "model": "chisel:silver_bolted"
+    }
+  }
+}

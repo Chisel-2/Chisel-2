@@ -1,0 +1,31 @@
+{
+    "variants": {
+        "variant=paperwall_block_boxed": {
+            "model": "chisel:paperwall_block_boxed"
+        },
+        "variant=paperwall_block_strike_middle": {
+            "model": "chisel:paperwall_block_strike_middle"
+        },
+        "variant=paperwall_block_crossed": {
+            "model": "chisel:paperwall_block_crossed"
+        },
+        "variant=paperwall_block_six": {
+            "model": "chisel:paperwall_block_six"
+        },
+        "variant=paperwall_block_strike_vertical": {
+            "model": "chisel:paperwall_block_strike_vertical"
+        },
+        "variant=paperwall_block_strike_horizontal": {
+            "model": "chisel:paperwall_block_strike_horizontal"
+        },
+        "variant=paperwall_block_floral": {
+            "model": "chisel:paperwall_block_floral"
+        },
+        "variant=paperwall_block_plain": {
+            "model": "chisel:paperwall_block_plain"
+        },
+        "variant=paperwall_block_door": {
+            "model": "chisel:paperwall_block_door"
+        }
+    }
+}

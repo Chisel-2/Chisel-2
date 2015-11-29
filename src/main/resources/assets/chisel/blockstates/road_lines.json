@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "variant=road_lines_white": {
+            "model": "chisel:road_lines_white"
+        },
+        "variant=road_lines_yellow": {
+            "model": "chisel:road_lines_yellow"
+        },
+        "variant=road_lines_white_double": {
+            "model": "chisel:road_lines_white_double"
+        },
+        "variant=road_lines_yellow_double": {
+            "model": "chisel:road_lines_yellow_double"
+        }
+    }
+}

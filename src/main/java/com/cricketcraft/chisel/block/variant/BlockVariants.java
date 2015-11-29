@@ -2,8 +2,7 @@ package com.cricketcraft.chisel.block.variant;
 
 import com.cricketcraft.chisel.util.BlockVariant;
 
-public class BlockVariants
-{
+public class BlockVariants {
 	public static final BlockVariant
 
 			ACACIA_PLANKS_SMOOTH = new BlockVariant(0, "acacia_planks_smooth"),

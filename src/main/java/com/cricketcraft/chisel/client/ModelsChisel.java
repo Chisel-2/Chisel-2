@@ -1,22 +1,20 @@
 package com.cricketcraft.chisel.client;
 
-import static com.cricketcraft.chisel.block.variant.BlockVariants.*;
-
-import com.cricketcraft.chisel.block.variant.BlockVariants;
+import com.cricketcraft.chisel.Chisel;
+import com.cricketcraft.chisel.init.ChiselBlocks;
+import com.cricketcraft.chisel.init.ChiselItems;
 import com.cricketcraft.chisel.util.BlockVariant;
+import com.cricketcraft.chisel.util.IItemWithVariants;
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.init.ChiselBlocks;
-import com.cricketcraft.chisel.init.ChiselItems;
-import com.cricketcraft.chisel.util.IItemWithVariants;
+import static com.cricketcraft.chisel.block.variant.BlockVariants.*;
 
 @SideOnly(Side.CLIENT)
 public class ModelsChisel {
@@ -907,8 +905,7 @@ public class ModelsChisel {
 
 	private static void registerItemModel(Item item, int meta, String resourcePath) {
 		ModelResourceLocation modelResourceLocation = new ModelResourceLocation(resourcePath, "inventory");
-
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, modelResourceLocation);
+		ModelLoader.setCustomModelResourceLocation(item, meta, modelResourceLocation);
 	}
 
 	public static void registerItemModels(Item item) {

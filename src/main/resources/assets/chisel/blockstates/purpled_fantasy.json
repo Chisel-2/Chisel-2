@@ -1,0 +1,49 @@
+{
+    "variants": {
+        "variant=purpled_fantasy_brick": {
+            "model": "chisel:purpled_fantasy_brick"
+        },
+        "variant=purpled_fantasy_brick_faded": {
+            "model": "chisel:purpled_fantasy_brick_faded"
+        },
+        "variant=purpled_fantasy_brick_worn": {
+            "model": "chisel:purpled_fantasy_brick_worn"
+        },
+        "variant=purpled_fantasy_brick_damaged": {
+            "model": "chisel:purpled_fantasy_brick_damaged"
+        },
+        "variant=purpled_fantasy_decoration": {
+            "model": "chisel:purpled_fantasy_decoration"
+        },
+        "variant=purpled_fantasy_decoration_block": {
+            "model": "chisel:purpled_fantasy_decoration_block"
+        },
+        "variant=purpled_fantasy_decoration_pillar": {
+            "model": "chisel:purpled_fantasy_decoration_pillar"
+        },
+        "variant=purpled_fantasy_pillar": {
+            "model": "chisel:purpled_fantasy_pillar"
+        },
+        "variant=purpled_fantasy_decoration_snake": {
+            "model": "chisel:purpled_fantasy_decoration_snake"
+        },
+        "variant=purpled_fantasy_decoration_noise": {
+            "model": "chisel:purpled_fantasy_decoration_noise"
+        },
+        "variant=purpled_fantasy_decoration_engraving": {
+            "model": "chisel:purpled_fantasy_decoration_engraving"
+        },
+        "variant=purpled_fantasy_decoration_chains": {
+            "model": "chisel:purpled_fantasy_decoration_chains"
+        },
+        "variant=purpled_fantasy_decoration_plate": {
+            "model": "chisel:purpled_fantasy_decoration_plate"
+        },
+        "variant=purpled_fantasy_block": {
+            "model": "chisel:purpled_fantasy_block"
+        },
+        "variant=purpled_fantasy_bricks_disarray": {
+            "model": "chisel:purpled_fantasy_bricks_disarray_worn"
+        }
+    }
+}

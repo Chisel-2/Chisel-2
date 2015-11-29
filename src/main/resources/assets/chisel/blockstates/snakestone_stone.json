@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=snakestone_stone_0": {
+      "model": "chisel:snakestone_stone_0"
+    },
+    "variant=snakestone_stone_1": {
+      "model": "chisel:snakestone_stone_1"
+    }
+  }
+}

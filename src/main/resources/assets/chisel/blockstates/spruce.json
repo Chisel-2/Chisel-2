@@ -1,208 +1,49 @@
 {
     "variants": {
-        "variant=pumpkin_0,facing=north": {
-            "model": "chisel:pumpkin_0"
+        "variant=spruce_planks_smooth": {
+            "model": "chisel:spruce_planks_smooth"
         },
-        "variant=pumpkin_0,facing=south": {
-            "model": "chisel:pumpkin_0", "y": 180
+        "variant=spruce_planks_short": {
+            "model": "chisel:spruce_planks_short"
         },
-        "variant=pumpkin_0,facing=west": {
-            "model": "chisel:pumpkin_0", "y": 270
+        "variant=spruce_planks_fancy": {
+            "model": "chisel:spruce_planks_fancy"
         },
-        "variant=pumpkin_0,facing=south": {
-            "model": "chisel:pumpkin_1", "y": 90
+        "variant=spurce_planks_panel": {
+            "model": "chisel:spurce_planks_panel"
         },
-        "variant=pumpkin_1,facing=north": {
-            "model": "chisel:pumpkin_1"
+        "variant=spruce_planks_double_slab": {
+            "model": "chisel:spruce_planks_double_slab"
         },
-        "variant=pumpkin_1,facing=south": {
-            "model": "chisel:pumpkin_1", "y": 180
+        "variant=spruce_planks_crate": {
+            "model": "chisel:spruce_planks_crate"
         },
-        "variant=pumpkin_1,facing=west": {
-            "model": "chisel:pumpkin_1", "y": 270
+        "variant=spruce_planks_crate_fancy": {
+            "model": "chisel:spruce_planks_crate_fancy"
         },
-        "variant=pumpkin_1,facing=south": {
-            "model": "chisel:pumpkin_1", "y": 90
+        "variant=spruce_planks_long": {
+            "model": "chisel:spruce_planks_long"
         },
-        "variant=pumpkin_2,facing=north": {
-            "model": "chisel:pumpkin_2"
+        "variant=spruce_planks_vertical": {
+            "model": "chisel:spruce_planks_vertical"
         },
-        "variant=pumpkin_2,facing=south": {
-            "model": "chisel:pumpkin_2", "y": 180
+        "variant=spruce_planks_vertical_uneven": {
+            "model": "chisel:spruce_planks_vertical_uneven"
         },
-        "variant=pumpkin_2,facing=west": {
-            "model": "chisel:pumpkin_2", "y": 270
+        "variant=spruce_planks_parquet": {
+            "model": "chisel:spruce_planks_parquet"
         },
-        "variant=pumpkin_2,facing=south": {
-            "model": "chisel:pumpkin_2", "y": 90
+        "variant=spruce_planks_blinds": {
+            "model": "chisel:spruce_planks_blinds"
         },
-        "variant=pumpkin_3,facing=north": {
-            "model": "chisel:pumpkin_3"
+        "variant=spruce_planks_scaffold": {
+            "model": "chisel:spruce_planks_scaffold"
         },
-        "variant=pumpkin_3,facing=south": {
-            "model": "chisel:pumpkin_3", "y": 180
+        "variant=spruce_planks_disarray": {
+            "model": "chisel:spruce_planks_disarray"
         },
-        "variant=pumpkin_3,facing=west": {
-            "model": "chisel:pumpkin_3", "y": 270
-        },
-        "variant=pumpkin_3,facing=south": {
-            "model": "chisel:pumpkin_3", "y": 90
-        },
-        "variant=pumpkin_4,facing=north": {
-            "model": "chisel:pumpkin_4"
-        },
-        "variant=pumpkin_4,facing=south": {
-            "model": "chisel:pumpkin_4", "y": 180
-        },
-        "variant=pumpkin_4,facing=west": {
-            "model": "chisel:pumpkin_4", "y": 270
-        },
-        "variant=pumpkin_4,facing=south": {
-            "model": "chisel:pumpkin_4", "y": 90
-        },
-        "variant=pumpkin_5,facing=north": {
-            "model": "chisel:pumpkin_5"
-        },
-        "variant=pumpkin_5,facing=south": {
-            "model": "chisel:pumpkin_5", "y": 180
-        },
-        "variant=pumpkin_5,facing=west": {
-            "model": "chisel:pumpkin_5", "y": 270
-        },
-        "variant=pumpkin_5,facing=south": {
-            "model": "chisel:pumpkin_5", "y": 90
-        },
-        "variant=pumpkin_6,facing=north": {
-            "model": "chisel:pumpkin_6"
-        },
-        "variant=pumpkin_6,facing=south": {
-            "model": "chisel:pumpkin_6", "y": 180
-        },
-        "variant=pumpkin_6,facing=west": {
-            "model": "chisel:pumpkin_6", "y": 270
-        },
-        "variant=pumpkin_6,facing=south": {
-            "model": "chisel:pumpkin_6", "y": 90
-        },
-        "variant=pumpkin_7,facing=north": {
-            "model": "chisel:pumpkin_7"
-        },
-        "variant=pumpkin_7,facing=south": {
-            "model": "chisel:pumpkin_7", "y": 180
-        },
-        "variant=pumpkin_7,facing=west": {
-            "model": "chisel:pumpkin_7", "y": 270
-        },
-        "variant=pumpkin_7,facing=south": {
-            "model": "chisel:pumpkin_7", "y": 90
-        },
-        "variant=pumpkin_8,facing=north": {
-            "model": "chisel:pumpkin_8"
-        },
-        "variant=pumpkin_8,facing=south": {
-            "model": "chisel:pumpkin_8", "y": 180
-        },
-        "variant=pumpkin_8,facing=west": {
-            "model": "chisel:pumpkin_8", "y": 270
-        },
-        "variant=pumpkin_8,facing=south": {
-            "model": "chisel:pumpkin_8", "y": 90
-        },
-        "variant=pumpkin_9,facing=north": {
-            "model": "chisel:pumpkin_9"
-        },
-        "variant=pumpkin_9,facing=south": {
-            "model": "chisel:pumpkin_9", "y": 180
-        },
-        "variant=pumpkin_9,facing=west": {
-            "model": "chisel:pumpkin_9", "y": 270
-        },
-        "variant=pumpkin_9,facing=south": {
-            "model": "chisel:pumpkin_9", "y": 90
-        },
-        "variant=pumpkin_10,facing=north": {
-            "model": "chisel:pumpkin_10"
-        },
-        "variant=pumpkin_10,facing=south": {
-            "model": "chisel:pumpkin_10", "y": 180
-        },
-        "variant=pumpkin_10,facing=west": {
-            "model": "chisel:pumpkin_10", "y": 270
-        },
-        "variant=pumpkin_10,facing=south": {
-            "model": "chisel:pumpkin_10", "y": 90
-        },
-        "variant=pumpkin_11,facing=north": {
-            "model": "chisel:pumpkin_11"
-        },
-        "variant=pumpkin_11,facing=south": {
-            "model": "chisel:pumpkin_11", "y": 180
-        },
-        "variant=pumpkin_11,facing=west": {
-            "model": "chisel:pumpkin_11", "y": 270
-        },
-        "variant=pumpkin_11,facing=south": {
-            "model": "chisel:pumpkin_11", "y": 90
-        },
-        "variant=pumpkin_12,facing=north": {
-            "model": "chisel:pumpkin_12"
-        },
-        "variant=pumpkin_12,facing=south": {
-            "model": "chisel:pumpkin_12", "y": 180
-        },
-        "variant=pumpkin_12,facing=west": {
-            "model": "chisel:pumpkin_12", "y": 270
-        },
-        "variant=pumpkin_12,facing=south": {
-            "model": "chisel:pumpkin_12", "y": 90
-        },
-        "variant=pumpkin_13,facing=north": {
-            "model": "chisel:pumpkin_13"
-        },
-        "variant=pumpkin_13,facing=south": {
-            "model": "chisel:pumpkin_13", "y": 180
-        },
-        "variant=pumpkin_13,facing=west": {
-            "model": "chisel:pumpkin_13", "y": 270
-        },
-        "variant=pumpkin_13,facing=south": {
-            "model": "chisel:pumpkin_13", "y": 90
-        },
-        "variant=pumpkin_14,facing=north": {
-            "model": "chisel:pumpkin_14"
-        },
-        "variant=pumpkin_14,facing=south": {
-            "model": "chisel:pumpkin_14", "y": 180
-        },
-        "variant=pumpkin_14,facing=west": {
-            "model": "chisel:pumpkin_14", "y": 270
-        },
-        "variant=pumpkin_14,facing=south": {
-            "model": "chisel:pumpkin_14", "y": 90
-        },
-        "variant=pumpkin_15,facing=north": {
-            "model": "chisel:pumpkin_15"
-        },
-        "variant=pumpkin_15,facing=south": {
-            "model": "chisel:pumpkin_15", "y": 180
-        },
-        "variant=pumpkin_15,facing=west": {
-            "model": "chisel:pumpkin_15", "y": 270
-        },
-        "variant=pumpkin_15,facing=south": {
-            "model": "chisel:pumpkin_15", "y": 90
-        },
-        "variant=pumpkin_16,facing=north": {
-            "model": "chisel:pumpkin_16"
-        },
-        "variant=pumpkin_16,facing=south": {
-            "model": "chisel:pumpkin_16", "y": 180
-        },
-        "variant=pumpkin_16,facing=west": {
-            "model": "chisel:pumpkin_1", "y": 270
-        },
-        "variant=pumpkin_16,facing=south": {
-            "model": "chisel:pumpkin_16", "y": 90
+        "variant=sprice_planks_disarray_vertical": {
+            "model": "chisel:spruce_planks_disarray_vertical"
         }
     }
 }
