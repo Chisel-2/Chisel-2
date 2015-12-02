@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "chisel:blocks/andesite/andesitePillar-top",
+    "side": "chisel:blocks/andesite/andesitePillar-side"
+  }
+}
