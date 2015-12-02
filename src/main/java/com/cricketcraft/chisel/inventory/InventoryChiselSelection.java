@@ -1,6 +1,5 @@
 package com.cricketcraft.chisel.inventory;
 
-import com.cricketcraft.chisel.api.IChiselItem;
 import com.cricketcraft.chisel.item.chisel.ItemChisel;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -76,6 +75,10 @@ public class InventoryChiselSelection implements IInventory {
 	}
 
 	@Override
+	public ItemStack removeStackFromSlot(int index) {
+		return null;
+	}
+
 	public ItemStack getStackInSlotOnClosing(int index) {
 		ItemStack stack = getStackInSlot(index);
 
@@ -150,8 +153,12 @@ public class InventoryChiselSelection implements IInventory {
 		}
 	}
 
-	@Override
 	public String getCommandSenderName() {
+		return null;
+	}
+
+	@Override
+	public String getName() {
 		return null;
 	}
 

@@ -70,6 +70,8 @@ public class ChiselTabs {
 	// this serves mostly just to load the static initializers
 	public static void preInit() {
 		tabOtherChiselBlocks.setTabIconItemStack(new ItemStack(Items.command_block_minecart, 1));
+		tabWoodChiselBlocks.setTabIconItemStack(new ItemStack(ChiselBlocks.acacia, 1));
+		tabChisel.setTabIconItemStack(new ItemStack(ChiselItems.obsidianChisel, 1));
 	}
 
 	public static void postInit() {

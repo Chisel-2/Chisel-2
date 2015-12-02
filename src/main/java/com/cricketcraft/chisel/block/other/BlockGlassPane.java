@@ -3,7 +3,7 @@ package com.cricketcraft.chisel.block.other;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
-import net.minecraft.block.BlockPane;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
@@ -15,9 +15,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockGlassPane extends BlockPane implements IBlockWithSubtypes {
+public class BlockGlassPane extends Block implements IBlockWithSubtypes {
     public BlockGlassPane() {
-        super(Material.glass, true);
+        super(Material.glass);
+        //TODO: Block logic to actually make this function like a pane
+        //This is going to be a pane in my glass
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.GLASS_PANE_VARIANTS, ChiselProperties.GLASS_PANE_VARIANTS.fromMeta(0)));
     }
 

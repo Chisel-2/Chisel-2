@@ -4,7 +4,8 @@ package com.cricketcraft.chisel.block.other;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
-import net.minecraft.block.BlockCarpet;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,10 +16,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockCarpetFloor extends BlockCarpet implements IBlockWithSubtypes {
+public class BlockCarpetFloor extends Block implements IBlockWithSubtypes {
 
     public BlockCarpetFloor() {
-        super();
+        super(Material.cloth);
+        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.0625F, 1.0F);
+        this.setTickRandomly(true);
+        this.setCreativeTab(CreativeTabs.tabDecorations);
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.CARPET_FLOOR_VARIANTS, ChiselProperties.CARPET_FLOOR_VARIANTS.fromMeta(0)));
     }
 

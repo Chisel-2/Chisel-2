@@ -3,7 +3,7 @@ package com.cricketcraft.chisel.block.other.stained.panes;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
-import net.minecraft.block.BlockPane;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
@@ -15,9 +15,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockStainedGlassPaneMagenta extends BlockPane implements IBlockWithSubtypes {
+public class BlockStainedGlassPaneMagenta extends Block implements IBlockWithSubtypes {
     public BlockStainedGlassPaneMagenta() {
-        super(Material.glass, true);
+        super(Material.glass);
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.STAINED_GLASS_PANE_MAGENTA_VARIANTS, ChiselProperties.STAINED_GLASS_PANE_MAGENTA_VARIANTS.fromMeta(0)));
     }
 

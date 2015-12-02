@@ -3,7 +3,7 @@ package com.cricketcraft.chisel.block.other;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
-import net.minecraft.block.BlockGlass;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
@@ -16,10 +16,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.List;
 import java.util.Random;
 
-public class BlockCarvableGlass extends BlockGlass implements IBlockWithSubtypes {
+public class BlockCarvableGlass extends Block implements IBlockWithSubtypes {
     public BlockCarvableGlass() {
-        super(Material.glass, true);
-        setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.GLASS_VARIANTS, ChiselProperties.GLASS_VARIANTS.fromMeta(0)));
+        super(Material.glass);
+        //TODO: This may not function like glass, will have to look at this again once I get to the glass JSON's
+        this.setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.GLASS_VARIANTS, ChiselProperties.GLASS_VARIANTS.fromMeta(0)));
     }
 
     @Override

@@ -46,6 +46,12 @@ public class Chisel {
 	@Instance(MOD_ID)
 	public static Chisel instance;
 
+	/**
+	 * TODO: I need to make a few things act like panes
+	 * Glass pane, Stained glass panes, and iron bars
+	 * I also need to make sure the glass renders like glass
+	 * Connected texture work will being once I am done working on making sure all the blocks load
+	 */
 	public Chisel() {
 
 	}

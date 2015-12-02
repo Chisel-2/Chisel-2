@@ -1,9 +1,10 @@
 package com.cricketcraft.chisel.block.other.stained;
 
-import com.cricketcraft.chisel.block.other.BlockCarvableGlass;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,9 +15,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockStainedGlassMagenta extends BlockCarvableGlass implements IBlockWithSubtypes {
+public class BlockStainedGlassMagenta extends Block implements IBlockWithSubtypes {
     public BlockStainedGlassMagenta() {
-        super();
+        super(Material.glass);
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.STAINED_GLASS_MAGENTA_VARIANTS, ChiselProperties.STAINED_GLASS_MAGENTA_VARIANTS.fromMeta(0)));
     }
 

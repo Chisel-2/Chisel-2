@@ -7,7 +7,7 @@
       "model": "chisel:acacia_planks_short"
     },
     "variant=acacia_planks_fancy": {
-      "model": "chisel:cloud_large"
+      "model": "chisel:acacia_planks_fancy"
     },
     "variant=acacia_planks_panel": {
       "model": "chisel:acacia_planks_panel"

@@ -3,7 +3,8 @@ package com.cricketcraft.chisel.block.other;
 import com.cricketcraft.chisel.init.ChiselProperties;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
-import net.minecraft.block.BlockChest;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,9 +15,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockCarvableChest extends BlockChest implements IBlockWithSubtypes {
+public class BlockCarvableChest extends Block implements IBlockWithSubtypes {
     public BlockCarvableChest() {
-        super(0);
+        super(Material.wood);
         //TODO: This need the logic of a chest after I get all the other blocks loaded in the game
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.CHEST_VARIANTS, ChiselProperties.CHEST_VARIANTS.fromMeta(0)));
     }
