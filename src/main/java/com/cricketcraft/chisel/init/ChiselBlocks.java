@@ -1,5 +1,6 @@
 package com.cricketcraft.chisel.init;
 
+import com.cricketcraft.chisel.Chisel;
 import com.cricketcraft.chisel.block.metal.*;
 import com.cricketcraft.chisel.block.modded.*;
 import com.cricketcraft.chisel.block.other.*;
@@ -7,14 +8,12 @@ import com.cricketcraft.chisel.block.other.stained.*;
 import com.cricketcraft.chisel.block.other.stained.panes.*;
 import com.cricketcraft.chisel.block.stone.*;
 import com.cricketcraft.chisel.block.wood.*;
+import com.cricketcraft.chisel.item.itemblock.ItemBlockCarvable;
+import com.cricketcraft.chisel.item.itemblock.ItemCarvablePumpkin;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
-
-import com.cricketcraft.chisel.Chisel;
-import com.cricketcraft.chisel.item.itemblock.ItemBlockCarvable;
-import com.cricketcraft.chisel.item.itemblock.ItemCarvablePumpkin;
 
 @ObjectHolder(Chisel.MOD_ID)
 public final class ChiselBlocks {
@@ -148,7 +147,7 @@ public final class ChiselBlocks {
 		bricks = registerBlock("brickCustom", new BlockBricks());
 		bookshelf = registerBlock("bookshelf", new BlockBookshelf());
 		carpet = registerBlock("carpet_block", new BlockCarvableCarpet());
-		carpet_floor = registerBlock("carpet", new BlockCarpetFloor());
+		carpet_floor = registerBlock("carpet_floor", new BlockCarpetFloor());
 		chest = registerBlock("chest", new BlockCarvableChest());
 		cobblestone = registerBlock("cobblestone", new BlockCobblestone());
 		concrete = registerBlock("concrete", new BlockConcrete());

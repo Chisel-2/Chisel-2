@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "chisel:blocks/bookshelf/brim"
+    "end": "chisel:blocks/bookshelf/brim-top",
+    "side": "chisel:blocks/bookshelf/brim"
   }
 }

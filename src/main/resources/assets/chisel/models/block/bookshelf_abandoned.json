@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "chisel:blocks/bookshelf/abandoned"
+    "end": "chisel:blocks/bookshelf/abandoned-top",
+    "side": "chisel:blocks/bookshelf/abandoned"
   }
 }

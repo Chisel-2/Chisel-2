@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "chisel:blocks/bookshelf/necromancer"
+    "end": "chisel:blocks/bookshelf/necromancer-top",
+    "side": "chisel:blocks/bookshelf/necromancer"
   }
 }

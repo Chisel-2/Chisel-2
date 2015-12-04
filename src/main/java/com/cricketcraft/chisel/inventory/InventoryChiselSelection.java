@@ -20,6 +20,7 @@ public class InventoryChiselSelection implements IInventory {
 		super();
 		inventory = new ItemStack[normalSlots + 1];
 		chisel = stack;
+		//TODO: Work on saving inventory off stream
 	}
 
 	public void updateItems(){

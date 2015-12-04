@@ -1,5 +1,10 @@
 package com.cricketcraft.chisel.client.gui;
 
+import com.cricketcraft.chisel.api.IChiselItem;
+import com.cricketcraft.chisel.client.GeneralChiselClient;
+import com.cricketcraft.chisel.inventory.ContainerChisel;
+import com.cricketcraft.chisel.inventory.InventoryChiselSelection;
+import com.cricketcraft.chisel.inventory.slot.SlotChiselInput;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
@@ -7,14 +12,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-
+import net.minecraft.util.StatCollector;
 import org.lwjgl.opengl.GL11;
-
-import com.cricketcraft.chisel.api.IChiselItem;
-import com.cricketcraft.chisel.client.GeneralChiselClient;
-import com.cricketcraft.chisel.inventory.ContainerChisel;
-import com.cricketcraft.chisel.inventory.InventoryChiselSelection;
-import com.cricketcraft.chisel.inventory.slot.SlotChiselInput;
 
 public class GuiChisel extends GuiContainer {
 
@@ -74,11 +73,11 @@ public class GuiChisel extends GuiContainer {
 	protected void drawGuiContainerForegroundLayer(int j, int i) {
 		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 
-		String line = I18n.format(this.container.inventory.getCommandSenderName() + ".title");
+		String line = I18n.format(StatCollector.translateToLocal("chisel.gui.title"));
 		fontRendererObj.drawSplitString(line, 50 - fontRendererObj.getStringWidth(line) / 2, 60, 40, 0x404040);
 
 		if (showMode()) {
-			line = I18n.format(this.container.inventory.getCommandSenderName() + ".mode");
+			line = I18n.format(StatCollector.translateToLocal("chisel.gui.mode"));
 			fontRendererObj.drawString(line, fontRendererObj.getStringWidth(line) / 2 + 6, 85, 0x404040);
 		}
 	}

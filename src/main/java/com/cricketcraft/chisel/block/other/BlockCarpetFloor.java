@@ -2,6 +2,7 @@ package com.cricketcraft.chisel.block.other;
 
 
 import com.cricketcraft.chisel.init.ChiselProperties;
+import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
 import net.minecraft.block.Block;
@@ -22,7 +23,7 @@ public class BlockCarpetFloor extends Block implements IBlockWithSubtypes {
         super(Material.cloth);
         this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.0625F, 1.0F);
         this.setTickRandomly(true);
-        this.setCreativeTab(CreativeTabs.tabDecorations);
+        this.setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.CARPET_FLOOR_VARIANTS, ChiselProperties.CARPET_FLOOR_VARIANTS.fromMeta(0)));
     }
 

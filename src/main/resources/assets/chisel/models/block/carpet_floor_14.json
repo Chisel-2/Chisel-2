@@ -1,0 +1,6 @@
+{
+  "parent": "block/carpet",
+  "textures": {
+    "wool": "chisel:blocks/carpet/red"
+  }
+}

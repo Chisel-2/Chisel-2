@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "chisel:blocks/bookshelf/hoarder"
+    "end": "chisel:blocks/bookshelf/hoarder-top",
+    "side": "chisel:blocks/bookshelf/hoarder"
   }
 }

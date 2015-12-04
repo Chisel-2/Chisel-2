@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "chisel:blocks/bookshelf/historian"
+    "end": "chisel:blocks/bookshelf/historian-top",
+    "side": "chisel:blocks/bookshelf/historian"
   }
 }
