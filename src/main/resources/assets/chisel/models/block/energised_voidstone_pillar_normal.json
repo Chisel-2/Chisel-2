@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "chisel:blocks/voidstone/animated/pillar-top",
+    "side": "chisel:blocks/voidstone/animated/pillar"
+  }
+}

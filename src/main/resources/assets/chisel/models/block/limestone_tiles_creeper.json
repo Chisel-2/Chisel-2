@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "limestone/terrain-cobmoss-creepdungeonlight"
+        "all": "chisel:blocks/limestone/terrain-cobmoss-creepdungeonlight"
     }
 }

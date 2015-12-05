@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "limestone/terrain-cob-french2light"
+        "all": "chisel:blocks/limestone/terrain-cob-french2light"
     }
 }

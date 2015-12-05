@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "chisel:blocks/fantasy/gold-decor-2"
+  }
+}

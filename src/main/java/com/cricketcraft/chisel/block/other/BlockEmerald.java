@@ -1,6 +1,7 @@
 package com.cricketcraft.chisel.block.other;
 
 import com.cricketcraft.chisel.init.ChiselProperties;
+import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
 import net.minecraft.block.Block;
@@ -18,6 +19,7 @@ import java.util.List;
 public class BlockEmerald extends Block implements IBlockWithSubtypes {
     public BlockEmerald() {
         super(Material.rock);
+        setCreativeTab(ChiselTabs.tabOtherChiselBlocks);
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.EMERALD_VARIANTS, ChiselProperties.EMERALD_VARIANTS.fromMeta(0)));
     }
 

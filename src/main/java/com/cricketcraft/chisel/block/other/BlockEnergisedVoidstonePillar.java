@@ -1,6 +1,7 @@
 package com.cricketcraft.chisel.block.other;
 
 import com.cricketcraft.chisel.init.ChiselProperties;
+import com.cricketcraft.chisel.init.ChiselTabs;
 import com.cricketcraft.chisel.util.BlockVariant;
 import com.cricketcraft.chisel.util.IBlockWithSubtypes;
 import net.minecraft.block.Block;
@@ -18,6 +19,7 @@ import java.util.List;
 public class BlockEnergisedVoidstonePillar extends Block implements IBlockWithSubtypes {
     public BlockEnergisedVoidstonePillar() {
         super(Material.rock);
+        setCreativeTab(ChiselTabs.tabStoneChiselBlocks);
         setDefaultState(this.getBlockState().getBaseState().withProperty(ChiselProperties.ENERGISED_VOIDSTONE_PILLAR_VARIANTS, ChiselProperties.ENERGISED_VOIDSTONE_PILLAR_VARIANTS.fromMeta(0)));
     }
 

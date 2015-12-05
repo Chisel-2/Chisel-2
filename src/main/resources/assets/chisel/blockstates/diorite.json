@@ -9,6 +9,9 @@
     "variant=diorite_bricks": {
       "model": "chisel:diorite_bricks"
     },
+    "variant=diorite_ornate": {
+      "model": "chisel:diorite_ornate"
+    },
     "variant=diorite_prismatic": {
       "model": "chisel:diorite_prismatic"
     },
