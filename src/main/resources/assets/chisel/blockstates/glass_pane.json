@@ -1,49 +1,468 @@
 {
   "variants": {
-    "variant=glass_pane_bubble": {
-      "model": "chisel:glass_pane_bubble"
+    "variant=glass_pane_bubble,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_bubble_nsew"
     },
-    "variant=glass_pane_chinese": {
-      "model": "chisel:glass_pane_chinese"
+    "variant=glass_pane_bubble,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_bubble_n"
     },
-    "variant=glass_pane_japanese": {
-      "model": "chisel:glass_pane_japanese"
+    "variant=glass_pane_bubble,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_bubble_n",
+      "y": 90
     },
-    "variant=glass_pane_dungeon": {
-      "model": "chisel:glass_pane_dungeon"
+    "variant=glass_pane_bubble,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_bubble_n",
+      "y": 180
     },
-    "variant=glass_pane_light": {
-      "model": "chisel:glass_pane_light"
+    "variant=glass_pane_bubble,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_bubble_n",
+      "y": 270
     },
-    "variant=glass_pane_borderless": {
-      "model": "chisel:glass_pane_borderless"
+    "variant=glass_pane_bubble,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_bubble_ne"
     },
-    "variant=glass_pane_ornate": {
-      "model": "chisel:glass_pane_ornate"
+    "variant=glass_pane_bubble,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_bubble_ne",
+      "y": 90
     },
-    "variant=glass_pane_screen": {
-      "model": "chisel:glass_pane_screen"
+    "variant=glass_pane_bubble,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_bubble_n",
+      "y": 180
     },
-    "variant=glass_pane_shale": {
-      "model": "chisel:glass_pane_shale"
+    "variant=glass_pane_bubble,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_bubble_n",
+      "y": 270
     },
-    "variant=glass_pane_steel": {
-      "model": "chisel:glass_pane_steel"
+    "variant=glass_pane_bubble,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_bubble_ns"
     },
-    "variant=glass_pane_stone": {
-      "model": "chisel:glass_pane_stone"
+    "variant=glass_pane_bubble,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_bubble_ns",
+      "y": 90
     },
-    "variant=glass_pane_grid_thick": {
-      "model": "chisel:glass_pane_grid_thick"
+    "variant=glass_pane_bubble,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_bubble_nse"
     },
-    "variant=glass_pane_grid_thin": {
-      "model": "chisel:glass_pane_grid_thin"
+    "variant=glass_pane_bubble,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_bubble_nse",
+      "y": 90
     },
-    "variant=glass_pane_fence": {
-      "model": "chisel:glass_pane_fence"
+    "variant=glass_pane_bubble,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_bubble_nse",
+      "y": 180
     },
-    "variant=glass_pane_leaded": {
-      "model": "chisel:glass_pane_leaded"
+    "variant=glass_pane_bubble,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_bubble_nse",
+      "y": 270
+    },
+    "variant=glass_pane_bubble,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_bubble_nsew"
+    },
+    "variant=glass_pane_borderless,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_borderless_nsew"
+    },
+    "variant=glass_pane_borderless,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_borderless_n"
+    },
+    "variant=glass_pane_borderless,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_borderless_n",
+      "y": 90
+    },
+    "variant=glass_pane_borderless,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_borderless_n",
+      "y": 180
+    },
+    "variant=glass_pane_borderless,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_borderless_n",
+      "y": 270
+    },
+    "variant=glass_pane_borderless,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_borderless_ne"
+    },
+    "variant=glass_pane_borderless,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_borderless_ne",
+      "y": 90
+    },
+    "variant=glass_pane_borderless,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_borderless_n",
+      "y": 180
+    },
+    "variant=glass_pane_borderless,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_borderless_n",
+      "y": 270
+    },
+    "variant=glass_pane_borderless,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_borderless_ns"
+    },
+    "variant=glass_pane_borderless,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_borderless_ns",
+      "y": 90
+    },
+    "variant=glass_pane_borderless,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_borderless_nse"
+    },
+    "variant=glass_pane_borderless,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_borderless_nse",
+      "y": 90
+    },
+    "variant=glass_pane_borderless,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_borderless_nse",
+      "y": 180
+    },
+    "variant=glass_pane_borderless,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_borderless_nse",
+      "y": 270
+    },
+    "variant=glass_pane_borderless,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_borderless_nsew"
+    },
+    "variant=glass_pane_screen,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_screen_nsew"
+    },
+    "variant=glass_pane_screen,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_screen_n"
+    },
+    "variant=glass_pane_screen,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_screen_n",
+      "y": 90
+    },
+    "variant=glass_pane_screen,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_screen_n",
+      "y": 180
+    },
+    "variant=glass_pane_screen,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_screen_n",
+      "y": 270
+    },
+    "variant=glass_pane_screen,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_screen_ne"
+    },
+    "variant=glass_pane_screen,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_screen_ne",
+      "y": 90
+    },
+    "variant=glass_pane_screen,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_screen_n",
+      "y": 180
+    },
+    "variant=glass_pane_screen,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_screen_n",
+      "y": 270
+    },
+    "variant=glass_pane_screen,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_screen_ns"
+    },
+    "variant=glass_pane_screen,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_screen_ns",
+      "y": 90
+    },
+    "variant=glass_pane_screen,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_screen_nse"
+    },
+    "variant=glass_pane_screen,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_screen_nse",
+      "y": 90
+    },
+    "variant=glass_pane_screen,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_screen_nse",
+      "y": 180
+    },
+    "variant=glass_pane_screen,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_screen_nse",
+      "y": 270
+    },
+    "variant=glass_pane_screen,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_screen_nsew"
+    },
+    "variant=glass_pane_streak,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_streak_nsew"
+    },
+    "variant=glass_pane_streak,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_streak_n"
+    },
+    "variant=glass_pane_streak,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_streak_n",
+      "y": 90
+    },
+    "variant=glass_pane_streak,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_streak_n",
+      "y": 180
+    },
+    "variant=glass_pane_streak,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_streak_n",
+      "y": 270
+    },
+    "variant=glass_pane_streak,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_streak_ne"
+    },
+    "variant=glass_pane_streak,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_streak_ne",
+      "y": 90
+    },
+    "variant=glass_pane_streak,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_streak_n",
+      "y": 180
+    },
+    "variant=glass_pane_streak,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_streak_n",
+      "y": 270
+    },
+    "variant=glass_pane_streak,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_streak_ns"
+    },
+    "variant=glass_pane_streak,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_streak_ns",
+      "y": 90
+    },
+    "variant=glass_pane_streak,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_streak_nse"
+    },
+    "variant=glass_pane_streak,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_streak_nse",
+      "y": 90
+    },
+    "variant=glass_pane_streak,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_streak_nse",
+      "y": 180
+    },
+    "variant=glass_pane_streak,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_streak_nse",
+      "y": 270
+    },
+    "variant=glass_pane_streak,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_streak_nsew"
+    },
+    "variant=glass_pane_chinese,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_nsew"
+    },
+    "variant=glass_pane_chinese,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_n"
+    },
+    "variant=glass_pane_chinese,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_n",
+      "y": 90
+    },
+    "variant=glass_pane_chinese,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_n",
+      "y": 180
+    },
+    "variant=glass_pane_chinese,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_n",
+      "y": 270
+    },
+    "variant=glass_pane_chinese,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_ne"
+    },
+    "variant=glass_pane_chinese,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_ne",
+      "y": 90
+    },
+    "variant=glass_pane_chinese,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_n",
+      "y": 180
+    },
+    "variant=glass_pane_chinese,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_n",
+      "y": 270
+    },
+    "variant=glass_pane_chinese,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_ns"
+    },
+    "variant=glass_pane_chinese,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_ns",
+      "y": 90
+    },
+    "variant=glass_pane_chinese,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_nse"
+    },
+    "variant=glass_pane_chinese,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_nse",
+      "y": 90
+    },
+    "variant=glass_pane_chinese,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_nse",
+      "y": 180
+    },
+    "variant=glass_pane_chinese,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_nse",
+      "y": 270
+    },
+    "variant=glass_pane_chinese,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_nsew"
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_nsew"
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_n"
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_n",
+      "y": 90
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_n",
+      "y": 180
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_n",
+      "y": 270
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_ne"
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_ne",
+      "y": 90
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_n",
+      "y": 180
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_n",
+      "y": 270
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_ns"
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_ns",
+      "y": 90
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_chinese_gold_nse"
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_nse",
+      "y": 90
+    },
+    "variant=glass_pane_chinese_gold,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_nse",
+      "y": 180
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_nse",
+      "y": 270
+    },
+    "variant=glass_pane_chinese_gold,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_chinese_gold_nsew"
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_nsew"
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_n"
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_n",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_n",
+      "y": 180
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_n",
+      "y": 270
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_ne"
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_ne",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_n",
+      "y": 180
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_n",
+      "y": 270
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_ns"
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_ns",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_tiles_nse"
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_nse",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_tiles,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_nse",
+      "y": 180
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_nse",
+      "y": 270
+    },
+    "variant=glass_pane_japanese_tiles,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_tiles_nsew"
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_nsew"
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_n"
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=false,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_n",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_n",
+      "y": 180
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_n",
+      "y": 270
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=true,south=false,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_ne"
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=false,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_ne",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_n",
+      "y": 180
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_n",
+      "y": 270
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_ns"
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=false,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_ns",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=true,south=true,west=false": {
+      "model": "chisel:glass_pane_japanese_traditional_nse"
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=false,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_nse",
+      "y": 90
+    },
+    "variant=glass_pane_japanese_traditional,east=false,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_nse",
+      "y": 180
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=true,south=false,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_nse",
+      "y": 270
+    },
+    "variant=glass_pane_japanese_traditional,east=true,north=true,south=true,west=true": {
+      "model": "chisel:glass_pane_japanese_traditional_nsew"
     }
   }
 }

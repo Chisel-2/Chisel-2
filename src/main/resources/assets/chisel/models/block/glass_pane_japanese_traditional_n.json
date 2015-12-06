@@ -1,0 +1,7 @@
+{
+  "parent": "block/pane_n",
+  "textures": {
+    "edge": "chisel:blocks/glasspane/japanese2-top",
+    "pane": "chisel:blocks/glasspane/japanese2-side"
+  }
+}

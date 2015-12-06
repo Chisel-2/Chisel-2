@@ -45,7 +45,7 @@ public class ModelsChisel {
 		addVariantNames(ChiselBlocks.fantasy, FANTASY_BRICK.getName(), FANTASY_BRICK_FADED.getName(), FANTASY_BRICK_WORN.getName(), FANTASY_BRICK_DAMAGED.getName(), FANTASY_DECORATION.getName(), FANTASY_DECORATION_BLOCK.getName(), FANTASY_DECORATION_PILLAR.getName(), FANTASY_PILLAR.getName(), FANTASY_DECORATION_SNAKE.getName(), FANTASY_DECORATION_NOISE.getName(), FANTASY_DECORATION_ENGRAVING.getName(), FANTASY_DECORATION_CHAINS.getName(), FANTASY_DECORATION_PLATE.getName(), FANTASY_BLOCK.getName(), FANTASY_BRICKS_DISARRAY.getName(), FANTASY_BRICKS_DISARRAY_WORN.getName());
 		addVariantNames(ChiselBlocks.futura, FUTURA_SCREEN_GRAY.getName(), FUTURA_SCREEN_CYAN.getName(), FUTURA_CONTROLLER.getName(), FUTURA_CONTROLLER_PURPLE.getName(), FUTURA_RAINBOW.getName());
 		addVariantNames(ChiselBlocks.glass, GLASS_BUBBLE.getName(), GLASS_CHINESE.getName(), GLASS_JAPANESE.getName(), GLASS_DUNGEON.getName(), GLASS_LIGHT.getName(), GLASS_BORDERLESS.getName(), GLASS_SCREEN.getName(), GLASS_SHALE.getName(), GLASS_STEEL.getName(), GLASS_STONE.getName(), GLASS_GRID_THICK.getName(), GLASS_GRID_THIN.getName(), GLASS_FENCE.getName(), GLASS_LEADED.getName());
-		addVariantNames(ChiselBlocks.glass_pane, GLASS_PANE_BUBBLE.getName(), GLASS_PANE_CHINESE.getName(), GLASS_PANE_JAPANESE.getName(), GLASS_PANE_DUNGEON.getName(), GLASS_PANE_LIGHT.getName(), GLASS_PANE_BORDERLESS.getName(), GLASS_PANE_SCREEN.getName(), GLASS_PANE_SHALE.getName(), GLASS_PANE_STEEL.getName(), GLASS_PANE_STONE.getName(), GLASS_PANE_GRID_THICK.getName(), GLASS_PANE_GRID_THIN.getName(), GLASS_PANE_FENCE.getName(), GLASS_PANE_LEADED.getName());
+		addVariantNames(ChiselBlocks.glass_pane, GLASS_PANE_BUBBLE.getName(), GLASS_PANE_BORDERLESS.getName(), GLASS_PANE_SCREEN.getName(), GLASS_PANE_STREAK.getName(), GLASS_PANE_CHINESE.getName(), GLASS_PANE_CHINESE_GOLD.getName(), GLASS_PANE_JAPANESE_TILES.getName(), GLASS_PANE_JAPANESE_TRADITIONAL.getName());
 		addVariantNames(ChiselBlocks.glowstone, GLOWSTONE_COBBLE.getName(), GLOWSTONE_CORRODED.getName(), GLOWSTONE_NEON.getName(), GLOWSTONE_ORNATE.getName(), GLOWSTONE_ROCKY.getName(), GLOWSTONE_SHALE.getName(), GLOWSTONE_TILES.getName(), GLOWSTONE_FANCY.getName(), GLOWSTONE_CRUMBLING.getName(), GLOWSTONE_ORGANIC.getName(), GLOWSTONE_LAYERS.getName(), GLOWSTONE_CORRODED_TILES.getName(), GLOWSTONE_BISMUTH.getName(), GLOWSTONE_BISMUTH_PANEL.getName());
 		addVariantNames(ChiselBlocks.gold, GOLD_INGOTS_LARGE.getName(), GOLD_INGOTS_SMALL.getName(), GOLD_BRICKS.getName(), GOLD_CART.getName(), GOLD_COIN_HEADS.getName(), GOLD_COIN_TAILS.getName(), GOLD_CRATE_DARK.getName(), GOLD_CRATE_LIGHT.getName(), GOLD_PLATES.getName(), GOLD_RIVETS.getName(), GOLD_STAR_DECOR.getName(), GOLD_STAR_OBSIDIAN_PURPLE.getName(), GOLD_STAR_OBSIDIAN.getName(), GOLD_SIMPLE.getName(), GOLD_CAUTION.getName(), GOLD_SHIPPING.getName(), GOLD_THERMAL.getName(), GOLD_125.getName(), GOLD_BORDERED.getName(), GOLD_BOLTED.getName());
 		addVariantNames(ChiselBlocks.granite, GRANITE_POLISHED.getName(), GRANITE_PILLAR.getName(), GRANITE_BRICKS.getName(), GRANITE_ORNATE.getName(), GRANITE_PRISMATIC.getName(), GRANITE_TILES_SMALL.getName());
@@ -449,19 +449,13 @@ public class ModelsChisel {
 		registerBlockModelForVariant(ChiselBlocks.glass, GLASS_LEADED);
 
 		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_BUBBLE);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_CHINESE);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_JAPANESE);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_DUNGEON);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_LIGHT);
 		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_BORDERLESS);
 		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_SCREEN);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_SHALE);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_STEEL);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_STONE);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_GRID_THICK);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_GRID_THIN);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_FENCE);
-		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_LEADED);
+		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_STREAK);
+		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_CHINESE);
+		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_CHINESE_GOLD);
+		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_JAPANESE_TILES);
+		registerBlockModelForVariant(ChiselBlocks.glass_pane, GLASS_PANE_JAPANESE_TRADITIONAL);
 
 		registerBlockModelForVariant(ChiselBlocks.glowstone, GLOWSTONE_COBBLE);
 		registerBlockModelForVariant(ChiselBlocks.glowstone, GLOWSTONE_CORRODED);

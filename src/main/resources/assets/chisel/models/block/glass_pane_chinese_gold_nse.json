@@ -1,0 +1,7 @@
+{
+  "parent": "block/pane_nse",
+  "textures": {
+    "edge": "chisel:blocks/glasspane/chinese2-top",
+    "pane": "chisel:blocks/glasspane/chinese2-side"
+  }
+}

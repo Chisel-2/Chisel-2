@@ -1,0 +1,7 @@
+{
+  "parent": "block/pane_n",
+  "textures": {
+    "edge": "chisel:blocks/glasspane/terrain-glassstreak-top",
+    "pane": "chisel:blocks/glasspane/terrain-glassstreak-side"
+  }
+}

@@ -47,6 +47,7 @@ public final class ChiselBlocks {
 			glass_pane,
 			glowstone,
 			gold,
+			gold2,
 			granite,
 			grimstone,
 			hex_plating,
@@ -167,6 +168,7 @@ public final class ChiselBlocks {
 		glass_pane = registerBlock("glass_pane", new BlockGlassPane());
 		glowstone = registerBlock("glowstone", new BlockGlowstone());
 		gold = registerBlock("gold_block", new BlockGold());
+		gold2 = registerBlock("gold2_block", new BlockGold2());
 		granite = registerBlock("granite", new BlockGranite());
 		grimstone = registerBlock("grimstone", new BlockGrimstone());
 		hex_plating = registerBlock("hex_plating", new BlockHexPlating());
