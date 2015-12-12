@@ -72,7 +72,10 @@ public class ContainerChisel extends Container {
 
 	@Override
 	public void onContainerClosed(EntityPlayer entityplayer) {
-		inventory.clear();
+		for(int slot = 0; slot < inventory.getSizeInventory(); slot++) {
+			if(slot != 60)
+				inventory.setInventorySlotContents(slot, null);
+		}
 		super.onContainerClosed(entityplayer);
 	}
 

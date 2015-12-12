@@ -1,19 +1,29 @@
 package com.cricketcraft.chisel.init;
 
 import com.cricketcraft.chisel.Chisel;
+import com.cricketcraft.chisel.api.CarvingUtils;
+import com.cricketcraft.chisel.api.ICarvingGroup;
+import com.cricketcraft.chisel.api.ICarvingVariant;
 import com.cricketcraft.chisel.block.metal.*;
 import com.cricketcraft.chisel.block.modded.*;
 import com.cricketcraft.chisel.block.other.*;
 import com.cricketcraft.chisel.block.other.stained.*;
 import com.cricketcraft.chisel.block.other.stained.panes.*;
 import com.cricketcraft.chisel.block.stone.*;
+import com.cricketcraft.chisel.block.variant.BlockVariants;
 import com.cricketcraft.chisel.block.wood.*;
 import com.cricketcraft.chisel.item.itemblock.ItemBlockCarvable;
 import com.cricketcraft.chisel.item.itemblock.ItemCarvablePumpkin;
+import com.cricketcraft.chisel.util.BlockVariant;
+import com.cricketcraft.chisel.util.PropertyVariant;
 import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
+
+import java.util.Collection;
+import java.util.List;
 
 @ObjectHolder(Chisel.MOD_ID)
 public final class ChiselBlocks {
@@ -138,123 +148,123 @@ public final class ChiselBlocks {
 			woolen_clay;
 
 	public static void preInit() {
-
-		acacia = registerBlock("acacia_planks", new BlockAcacia());
-		aluminum = registerBlock("aluminumblock", new BlockAluminum());
-		andesite = registerBlock("andesite", new BlockAndesite());
-		antiblock = registerBlock("antiBlock", new BlockAntiblock());
-		birch = registerBlock("birch_planks", new BlockBirch());
-		bronze = registerBlock("bronzeblock", new BlockBronze());
-		bricks = registerBlock("brickCustom", new BlockBricks());
-		bookshelf = registerBlock("bookshelf", new BlockBookshelf());
-		carpet = registerBlock("carpet_block", new BlockCarvableCarpet());
-		carpet_floor = registerBlock("carpet_floor", new BlockCarpetFloor());
-		chest = registerBlock("chest", new BlockCarvableChest());
-		cobblestone = registerBlock("cobblestone", new BlockCobblestone());
-		concrete = registerBlock("concrete", new BlockConcrete());
-		copper = registerBlock("copperblock", new BlockCopper());
-		cloud = registerBlock("cloud", new BlockCloud());
-		dark_oak = registerBlock("dark_oak_planks", new BlockDarkOak());
-		diamond = registerBlock("diamond_block", new BlockDiamond());
-		diorite = registerBlock("diorite", new BlockDiorite());
-		dirt = registerBlock("dirt", new BlockDirt());
-		emerald = registerBlock("emerald_block", new BlockEmerald());
-		energised_voidstone = registerBlock("voidstone2", new BlockEnergisedVoidstone());
-		energised_voidstone_pillar = registerBlock("voidstonePillar2", new BlockEnergisedVoidstonePillar());
-		factory = registerBlock("factoryBlock", new BlockFactory());
-		fantasy = registerBlock("fantasyblock2", new BlockFantasy());
-		futura = registerBlock("futura", new BlockFutura());
-		glass = registerBlock("glass", new BlockCarvableGlass());
-		glass_pane = registerBlock("glass_pane", new BlockGlassPane());
-		glowstone = registerBlock("glowstone", new BlockGlowstone());
-		gold = registerBlock("gold_block", new BlockGold());
-		gold2 = registerBlock("gold2_block", new BlockGold2());
-		granite = registerBlock("granite", new BlockGranite());
-		grimstone = registerBlock("grimstone", new BlockGrimstone());
-		hex_plating = registerBlock("hex_plating", new BlockHexPlating());
-		holystone = registerBlock("holystone", new BlockHolystone());
-		ice = registerBlock("ice", new BlockIce());
-		ice_pillar = registerBlock("icePillar", new BlockIcePillar());
-		imperial = registerBlock("imperial", new BlockImperial());
-		industrial = registerBlock("industrial", new BlockIndustrial());
-		iron = registerBlock("iron_block", new BlockIron());
-		iron_bars = registerBlock("iron_bars", new BlockIronBars());
-		jungle = registerBlock("jungle_planks", new BlockJungle());
-		laboratory = registerBlock("laboratory", new BlockLaboratory());
-		lapis = registerBlock("lapis_block", new BlockLapis());
-		large_hex_plating = registerBlock("large_hex_plating", new BlockHexPlatingLarge());
-		lavastone = registerBlock("lavastone", new BlockLavastone());
-		lead = registerBlock("leadblock", new BlockLead());
-		leaf = registerBlock("leaf", new BlockLeaves());
-		limestone = registerBlock("limestone", new BlockLimestone());
-		litpumpkin = registerBlock("litpumpkin", ItemCarvablePumpkin.class, new BlockJackolantern());
-		marble = registerBlock("marble", new BlockMarble());
-		mossy_cobblestone = registerBlock("mossy_cobblestone", new BlockMossyCobblestone());
-		mossy_temple = registerBlock("mossy_temple", new BlockMossyTemple());
-		netherbrick = registerBlock("netherbrick", new BlockNetherBrick());
+		//acacia = createChiselGroup("acacia_planks", new ChiselBlockAcacia(), ChiselProperties.ACACIA_VARIANTS, "acacia", Chisel.MOD_ID + ":chisel.wood", "wood");
+		acacia = registerBlock("acacia_planks", new ChiselBlockAcacia());
+		aluminum = registerBlock("aluminumblock", new ChiselBlockAluminum());
+		andesite = registerBlock("andesite", new ChiselBlockAndesite());
+		antiblock = registerBlock("antiBlock", new ChiselBlockAntiblock());
+		birch = registerBlock("birch_planks", new ChiselBlockBirch());
+		bronze = registerBlock("bronzeblock", new ChiselBlockBronze());
+		bricks = registerBlock("brickCustom", new ChiselBlockBricks());
+		bookshelf = registerBlock("bookshelf", new ChiselBlockBookshelf());
+		carpet = registerBlock("carpet_block", new ChiselBlockCarvableCarpet());
+		carpet_floor = registerBlock("carpet_floor", new ChiselBlockCarpetFloor());
+		chest = registerBlock("chest", new ChiselBlockCarvableChest());
+		cobblestone = registerBlock("cobblestone", new ChiselBlockCobblestone());
+		concrete = registerBlock("concrete", new ChiselBlockConcrete());
+		copper = registerBlock("copperblock", new ChiselBlockCopper());
+		cloud = registerBlock("cloud", new ChiselBlockCloud());
+		dark_oak = registerBlock("dark_oak_planks", new ChiselBlockDarkOak());
+		diamond = registerBlock("diamond_block", new ChiselBlockDiamond());
+		diorite = registerBlock("diorite", new ChiselBlockDiorite());
+		dirt = registerBlock("dirt", new ChiselBlockDirt());
+		emerald = registerBlock("emerald_block", new ChiselBlockEmerald());
+		energised_voidstone = registerBlock("voidstone2", new ChiselBlockEnergisedVoidstone());
+		energised_voidstone_pillar = registerBlock("voidstonePillar2", new ChiselBlockEnergisedVoidstonePillar());
+		factory = registerBlock("factoryBlock", new ChiselBlockFactory());
+		fantasy = registerBlock("fantasyblock2", new ChiselBlockFantasy());
+		futura = registerBlock("futura", new ChiselBlockFutura());
+		glass = registerBlock("glass", new ChiselBlockCarvableGlass());
+		glass_pane = registerBlock("glass_pane", new ChiselBlockGlassPane());
+		glowstone = registerBlock("glowstone", new ChiselBlockGlowstone());
+		gold = registerBlock("gold_block", new ChiselBlockGold());
+		gold2 = registerBlock("gold2_block", new ChiselBlockGold2());
+		granite = registerBlock("granite", new ChiselBlockGranite());
+		grimstone = registerBlock("grimstone", new ChiselBlockGrimstone());
+		hex_plating = registerBlock("hex_plating", new ChiselBlockHexPlating());
+		holystone = registerBlock("holystone", new ChiselBlockHolystone());
+		ice = registerBlock("ice", new ChiselBlockIce());
+		ice_pillar = registerBlock("icePillar", new ChiselBlockIcePillar());
+		imperial = registerBlock("imperial", new ChiselBlockImperial());
+		industrial = registerBlock("industrial", new ChiselBlockIndustrial());
+		iron = registerBlock("iron_block", new ChiselBlockIron());
+		iron_bars = registerBlock("iron_bars", new ChiselBlockIronBars());
+		jungle = registerBlock("jungle_planks", new ChiselBlockJungle());
+		laboratory = registerBlock("laboratory", new ChiselBlockLaboratory());
+		lapis = registerBlock("lapis_block", new ChiselBlockLapis());
+		large_hex_plating = registerBlock("large_hex_plating", new ChiselBlockHexPlatingLarge());
+		lavastone = registerBlock("lavastone", new ChiselBlockLavastone());
+		lead = registerBlock("leadblock", new ChiselBlockLead());
+		leaf = registerBlock("leaf", new ChiselBlockLeaves());
+		limestone = registerBlock("limestone", new ChiselBlockLimestone());
+		litpumpkin = registerBlock("litpumpkin", ItemCarvablePumpkin.class, new ChiselBlockJackolantern());
+		marble = registerBlock("marble", new ChiselBlockMarble());
+		mossy_cobblestone = registerBlock("mossy_cobblestone", new ChiselBlockMossyCobblestone());
+		mossy_temple = registerBlock("mossy_temple", new ChiselBlockMossyTemple());
+		netherbrick = registerBlock("netherbrick", new ChiselBlockNetherBrick());
 		//netherrack = registerBlock("netherrack", new BlockNetherrack());
-		oak = registerBlock("oak_planks", new BlockOak());
-		obsidian = registerBlock("obsidian", new BlockObsidian());
-		packed_ice = registerBlock("packed_ice", new BlockPackedIce());
-		packed_ice_pillar = registerBlock("packed_ice_pillar", new BlockPackedIcePillar());
-		paperwall = registerBlock("paperwall", new BlockPaperWallPane());
-		paperwall_block = registerBlock("paperwall_block", new BlockPaperWall());
-		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new BlockPumpkin());
-		purple_fantasy = registerBlock("fantasy", new BlockFantasyPurple());
-		rebel = registerBlock("rebel", new BlockRebel());
-		redstone = registerBlock("redstone_block", new BlockRedstone());
-		road_line = registerBlock("road_line", new BlockRoadline());
-		runic_voidstone = registerBlock("runic_voidstone", new BlockRunicVoidstone());
-		sandstone = registerBlock("sandstone", new BlockSandstone());
-		sandstone_scribbles = registerBlock("sandstone_scribbles", new BlockSandstoneScribbles());
-		silver = registerBlock("silverblock", new BlockSilver());
-		snakestone_sand = registerBlock("snakestone_sand", new BlockSnakestoneSand());
-		snakestone_stone = registerBlock("snakestone_stone", new BlockSnakestone());
-		spruce = registerBlock("spruce_planks", new BlockSpruce());
-		stained_glass_black = registerBlock("stained_glass_black", new BlockStainedGlassBlack());
-		stained_glass_red = registerBlock("stained_glass_red", new BlockStainedGlassRed());
-		stained_glass_green = registerBlock("stained_glass_green", new BlockStainedGlassGreen());
-		stained_glass_brown = registerBlock("stained_glass_brown", new BlockStainedGlassBrown());
-		stained_glass_blue = registerBlock("stained_glass_blue", new BlockStainedGlassBlue());
-		stained_glass_purple = registerBlock("stained_glass_purple", new BlockStainedGlassPurple());
-		stained_glass_cyan = registerBlock("stained_glass_cyan", new BlockStainedGlassCyan());
-		stained_glass_light_gray = registerBlock("stained_glass_light_gray", new BlockStainedGlassLightGray());
-		stained_glass_gray = registerBlock("stained_glass_gray", new BlockStainedGlassGray());
-		stained_glass_pink = registerBlock("stained_glass_pink", new BlockStainedGlassPink());
-		stained_glass_lime = registerBlock("stained_glass_lime", new BlockStainedGlassLime());
-		stained_glass_yellow = registerBlock("stained_glass_yellow", new BlockStainedGlassYellow());
-		stained_glass_light_blue = registerBlock("stained_glass_light_blue", new BlockStainedGlassLightBlue());
-		stained_glass_magenta = registerBlock("stained_glass_magenta", new BlockStainedGlassMagenta());
-		stained_glass_orange = registerBlock("stained_glass_orange", new BlockStainedGlassOrange());
-		stained_glass_white = registerBlock("stained_glass_white", new BlockStainedGlassWhite());
-		stained_glass_pane_black = registerBlock("stained_glass_pane_black", new BlockStainedGlassPaneBlack());
-		stained_glass_pane_red = registerBlock("stained_glass_pane_red", new BlockStainedGlassPaneRed());
-		stained_glass_pane_green = registerBlock("stained_glass_pane_green", new BlockStainedGlassPaneGreen());
-		stained_glass_pane_brown = registerBlock("stained_glass_pane_brown", new BlockStainedGlassPaneBrown());
-		stained_glass_pane_blue = registerBlock("stained_glass_pane_blue", new BlockStainedGlassPaneBlue());
-		stained_glass_pane_purple = registerBlock("stained_glass_pane_purple", new BlockStainedGlassPanePurple());
-		stained_glass_pane_cyan = registerBlock("stained_glass_pane_cyan", new BlockStainedGlassPaneCyan());
-		stained_glass_pane_light_gray = registerBlock("stained_glass_pane_light_gray", new BlockStainedGlassPaneLightGray());
-		stained_glass_pane_gray = registerBlock("stained_glass_pane_gray", new BlockStainedGlassPaneGray());
-		stained_glass_pane_pink = registerBlock("stained_glass_pane_pink", new BlockStainedGlassPanePink());
-		stained_glass_pane_lime = registerBlock("stained_glass_pane_lime", new BlockStainedGlassPaneLime());
-		stained_glass_pane_yellow = registerBlock("stained_glass_pane_yellow", new BlockStainedGlassPaneYellow());
-		stained_glass_pane_light_blue = registerBlock("stained_glass_pane_light_blue", new BlockStainedGlassPaneLightBlue());
-		stained_glass_pane_magenta = registerBlock("stained_glass_pane_magenta", new BlockStainedGlassPaneMagenta());
-		stained_glass_pane_orange = registerBlock("stained_glass_pane_orange", new BlockStainedGlassPaneOrange());
-		stained_glass_pane_white = registerBlock("stained_glass_pane_white", new BlockStainedGlassPaneWhite());
-		steel = registerBlock("steelblock", new BlockSteel());
-		stone_bricks = registerBlock("stone_bricks", new BlockStoneBricks());
-		technical = registerBlock("technical", new BlockTechnical());
-		temple = registerBlock("temple", new BlockTemple());
-		tin = registerBlock("tinblock", new BlockTin());
-		torch = registerBlock("torch", new BlockCarvableTorch());
-		transparent_technical = registerBlock("technical2", new BlockTransparentTechnical());
-		tyrian = registerBlock("tyrian", new BlockTyrian());
-		uranium = registerBlock("uraniumblock", new BlockUranium());
-		valentines = registerBlock("valentines", new BlockValentines());
-		warning = registerBlock("warning", new BlockWarning());
-		woolen_clay = registerBlock("woolen_clay", new BlockWoolenClay());
+		oak = registerBlock("oak_planks", new ChiselBlockOak());
+		obsidian = registerBlock("obsidian", new ChiselBlockObsidian());
+		packed_ice = registerBlock("packed_ice", new ChiselBlockPackedIce());
+		packed_ice_pillar = registerBlock("packed_ice_pillar", new ChiselBlockPackedIcePillar());
+		paperwall = registerBlock("paperwall", new ChiselBlockPaperWallPane());
+		paperwall_block = registerBlock("paperwall_block", new ChiselBlockPaperWall());
+		pumpkin = registerBlock("pumpkin", ItemCarvablePumpkin.class, new ChiselBlockPumpkin());
+		purple_fantasy = registerBlock("fantasy", new ChiselBlockFantasyPurple());
+		rebel = registerBlock("rebel", new ChiselBlockRebel());
+		redstone = registerBlock("redstone_block", new ChiselBlockRedstone());
+		road_line = registerBlock("road_line", new ChiselBlockRoadline());
+		runic_voidstone = registerBlock("runic_voidstone", new ChiselBlockRunicVoidstone());
+		sandstone = registerBlock("sandstone", new ChiselBlockSandstone());
+		sandstone_scribbles = registerBlock("sandstone_scribbles", new ChiselBlockSandstoneScribbles());
+		silver = registerBlock("silverblock", new ChiselBlockSilver());
+		snakestone_sand = registerBlock("snakestone_sand", new ChiselBlockSnakestoneSand());
+		snakestone_stone = registerBlock("snakestone_stone", new ChiselBlockSnakestone());
+		spruce = registerBlock("spruce_planks", new ChiselBlockSpruce());
+		stained_glass_black = registerBlock("stained_glass_black", new ChiselBlockStainedGlassBlack());
+		stained_glass_red = registerBlock("stained_glass_red", new ChiselBlockStainedGlassRed());
+		stained_glass_green = registerBlock("stained_glass_green", new ChiselBlockStainedGlassGreen());
+		stained_glass_brown = registerBlock("stained_glass_brown", new ChiselBlockStainedGlassBrown());
+		stained_glass_blue = registerBlock("stained_glass_blue", new ChiselBlockStainedGlassBlue());
+		stained_glass_purple = registerBlock("stained_glass_purple", new ChiselBlockStainedGlassPurple());
+		stained_glass_cyan = registerBlock("stained_glass_cyan", new ChiselBlockStainedGlassCyan());
+		stained_glass_light_gray = registerBlock("stained_glass_light_gray", new ChiselBlockStainedGlassLightGray());
+		stained_glass_gray = registerBlock("stained_glass_gray", new ChiselBlockStainedGlassGray());
+		stained_glass_pink = registerBlock("stained_glass_pink", new ChiselBlockStainedGlassPink());
+		stained_glass_lime = registerBlock("stained_glass_lime", new ChiselBlockStainedGlassLime());
+		stained_glass_yellow = registerBlock("stained_glass_yellow", new ChiselBlockStainedGlassYellow());
+		stained_glass_light_blue = registerBlock("stained_glass_light_blue", new ChiselBlockStainedGlassLightBlue());
+		stained_glass_magenta = registerBlock("stained_glass_magenta", new ChiselBlockStainedGlassMagenta());
+		stained_glass_orange = registerBlock("stained_glass_orange", new ChiselBlockStainedGlassOrange());
+		stained_glass_white = registerBlock("stained_glass_white", new ChiselBlockStainedGlassWhite());
+		stained_glass_pane_black = registerBlock("stained_glass_pane_black", new ChiselBlockStainedGlassPaneBlack());
+		stained_glass_pane_red = registerBlock("stained_glass_pane_red", new ChiselBlockStainedGlassPaneRed());
+		stained_glass_pane_green = registerBlock("stained_glass_pane_green", new ChiselBlockStainedGlassPaneGreen());
+		stained_glass_pane_brown = registerBlock("stained_glass_pane_brown", new ChiselBlockStainedGlassPaneBrown());
+		stained_glass_pane_blue = registerBlock("stained_glass_pane_blue", new ChiselBlockStainedGlassPaneBlue());
+		stained_glass_pane_purple = registerBlock("stained_glass_pane_purple", new ChiselBlockStainedGlassPanePurple());
+		stained_glass_pane_cyan = registerBlock("stained_glass_pane_cyan", new ChiselBlockStainedGlassPaneCyan());
+		stained_glass_pane_light_gray = registerBlock("stained_glass_pane_light_gray", new ChiselBlockStainedGlassPaneLightGray());
+		stained_glass_pane_gray = registerBlock("stained_glass_pane_gray", new ChiselBlockStainedGlassPaneGray());
+		stained_glass_pane_pink = registerBlock("stained_glass_pane_pink", new ChiselBlockStainedGlassPanePink());
+		stained_glass_pane_lime = registerBlock("stained_glass_pane_lime", new ChiselBlockStainedGlassPaneLime());
+		stained_glass_pane_yellow = registerBlock("stained_glass_pane_yellow", new ChiselBlockStainedGlassPaneYellow());
+		stained_glass_pane_light_blue = registerBlock("stained_glass_pane_light_blue", new ChiselBlockStainedGlassPaneLightBlue());
+		stained_glass_pane_magenta = registerBlock("stained_glass_pane_magenta", new ChiselBlockStainedGlassPaneMagenta());
+		stained_glass_pane_orange = registerBlock("stained_glass_pane_orange", new ChiselBlockStainedGlassPaneOrange());
+		stained_glass_pane_white = registerBlock("stained_glass_pane_white", new ChiselBlockStainedGlassPaneWhite());
+		steel = registerBlock("steelblock", new ChiselBlockSteel());
+		stone_bricks = registerBlock("stone_bricks", new ChiselBlockStoneBricks());
+		technical = registerBlock("technical", new ChiselBlockTechnical());
+		temple = registerBlock("temple", new ChiselBlockTemple());
+		tin = registerBlock("tinblock", new ChiselBlockTin());
+		torch = registerBlock("torch", new ChiselBlockCarvableTorch());
+		transparent_technical = registerBlock("technical2", new ChiselBlockTransparentTechnical());
+		tyrian = registerBlock("tyrian", new ChiselBlockTyrian());
+		uranium = registerBlock("uraniumblock", new ChiselBlockUranium());
+		valentines = registerBlock("valentines", new ChiselBlockValentines());
+		warning = registerBlock("warning", new ChiselBlockWarning());
+		woolen_clay = registerBlock("woolen_clay", new ChiselBlockWoolenClay());
 	}
 
 	private static Block registerBlock(String name, Block block) {
@@ -266,5 +276,33 @@ public final class ChiselBlocks {
 		GameRegistry.registerBlock(block, itemClass, name);
 
 		return block;
+	}
+
+	private void addVariant(IBlockState state, String groupName) {
+		CarvingUtils.chisel.addVariant(groupName, state);
+	}
+
+	private static Block createChiselGroup(String unlocalizedName, Block block, Class<? extends ItemBlock> clazz, PropertyVariant propVariant, String groupName, String sound, String oreName) {
+		int order = 0;
+
+		Collection<BlockVariant> variants = propVariant.getAllowedValues();
+		ICarvingGroup group = new CarvingUtils.CarvingGroup(groupName);
+		group.setSound(sound);
+		group.setOreName(oreName);
+
+		CarvingUtils.chisel.addGroup(group);
+		for(BlockVariant v : variants) {
+			order++;
+			group.addVariant(new CarvingUtils.CarvingVariant(block, v.getMeta(), order));
+		}
+
+		block.setUnlocalizedName(unlocalizedName);
+		GameRegistry.registerBlock(block, clazz, unlocalizedName);
+
+		return block;
+	}
+
+	private static Block createChiselGroup(String unlocalizedName, Block block, PropertyVariant propVariant, String groupName, String sound, String oreName) {
+		return createChiselGroup(unlocalizedName, block, ItemBlockCarvable.class, propVariant, groupName, sound, oreName);
 	}
 }

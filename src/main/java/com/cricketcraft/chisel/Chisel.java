@@ -1,5 +1,7 @@
 package com.cricketcraft.chisel;
 
+import com.cricketcraft.chisel.api.CarvingUtils;
+import com.cricketcraft.chisel.api.ChiselAPI;
 import com.cricketcraft.chisel.config.Configurations;
 import com.cricketcraft.chisel.init.ChiselBlocks;
 import com.cricketcraft.chisel.init.ChiselItems;
@@ -53,7 +55,7 @@ public class Chisel {
 	 * Connected texture work will being once I am done working on making sure all the blocks load
 	 */
 	public Chisel() {
-
+		ChiselAPI.MOD_ID = MOD_ID;
 	}
 
 	@SidedProxy(clientSide = "com.cricketcraft.chisel.proxy.ClientProxy", serverSide = "com.cricketcraft.chisel.proxy.CommonProxy")
