@@ -43,6 +43,11 @@ public class BlockCarvableBookshelf extends BlockCarvable {
 	public Item getItemDropped(int ammount, Random random, int meta) {
 		return Items.book;
 	}
+	
+	@Override
+	public int damageDropped(int i) {
+		return 0;
+	}
 
     @Override
 	public int damageDropped(int damage) {
